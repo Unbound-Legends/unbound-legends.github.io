@@ -1,0 +1,209 @@
+{
+    "paginator": {
+        "items-per-page": "Elementos por página",
+        "next-page": "Página siguiente",
+        "last-page": "Última página",
+        "first-page": "Primera página",
+        "previous-page": "Página anterior",
+        "items-left-display-when-no-other-pages.comment": "This is displayed when there's either no items on the page or there's only one page",
+        "items-left-display-when-no-other-pages": "0 de {{ length }}",
+        "items-left-when-other-pages-exist.comment": "This is displayed when there are other pages to explore. It'll show you the range of items you're on and how many there are left",
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} de {{ length}}"
+    },
+    "generic": {
+        "enums": {
+            "dice-styles": {
+                "Name": "Nombre",
+                "Color-Based": "Basado en color"
+            },
+            "themes": {
+                "Dark Theme": "Tema oscuro",
+                "Light Theme": "Tema claro"
+            },
+            "dice-types": {
+                "Numbered": "Numerado",
+                "Star Wars": "Star Wars",
+                "Genesys": "Genesys"
+            },
+            "languages": {
+                "English": "Inglés",
+                "Spanish": "Español",
+                "French": "Francés"
+            },
+            "sort-by": {
+                "Name": "Nombre",
+                "Newest": "Más nuevo",
+                "Oldest": "Más antiguo",
+                "Modified": "Modificado",
+                "Favorite": "Favorito"
+            }
+        },
+        "labels": {
+            "language": "Idioma",
+            "link-copied.comment": "The link-copied value will pop up usually after a user hits a button that's puts a URL into a user's clipboard. This message lets the user know the URL was copied successfully",
+            "copy-link": "Copiar enlace",
+            "link-copied": "¡Enlace copiado!",
+            "roll-history": "Historial de tiradas",
+            "new-roll": "Nueva tirada",
+            "sort-by": "Ordenar por",
+            "new-button-text": "Nuevo"
+        }
+    },
+    "user": {
+        "pages": {
+            "profile": {
+                "profile-header": "Información del perfil",
+                "username-placeholder": "Nombre de usuario",
+                "email-placeholder": "Email",
+                "update-user-profile-button-text": "Actualizar perfil de usuario",
+                "security-header": "Seguridad",
+                "facebook-login-enabled": "Inicio de sesión en Facebook habilitado",
+                "google-login-enabled": "Inicio de sesión en Google habilitado",
+                "current-password-placeholder": "Contraseña actual",
+                "new-password-placeholder": "Nueva contraseña",
+                "confirm-new-password-placeholder": "Confirmar nueva contraseña",
+                "update-password-button-text": "Actualizar contraseña",
+                "user-settings-header": "Ajustes de usuario",
+                "selected-dice-type-alt": "Tipo de dado seleccionado",
+                "selected-dice-scheme-alt": "Esquema de dados seleccionados",
+                "selected-site-theme-alt": "Tema del sitio seleccionado",
+                "dice-type-placeholder": "Tipo de dados predeterminado",
+                "dice-input-style-placeholder": "Estilo de entrada de dados",
+                "theme-placeholder": "Tema",
+                "update-user-settings-button-text": "Actualizar configuración de usuario",
+                "badges-header": "Insignias",
+                "badges-coming-soon": "¡Próximamente!",
+                "linked-accounts-header": "Cuentas vinculadas",
+                "linked-account-description": "¡Vincula tu perfil de RPG Sessions para desbloquear funciones increíbles!",
+                "link-text": "Enlazar",
+                "unlink-text": "Desenlazar"
+            }
+        }
+    },
+    "character": {
+        "overlays": {
+            "import-overlay": {
+                "title-oggdude": "Importador de OggDude",
+                "title-oggdude-custom": "Importador de Datos Personalizados de OggDude",
+                "title-emporium": "Importador de Genesys Emporium",
+                "monthly-imports-label": "Importaciones mensuales:",
+                "non-patron-custom-data-warning": "Advertencia: el importador OggDude no admite actualmente datos personalizados para miembros que no sean usuarios.",
+                "create-import-file-instructions": "Para crear el archivo de importación para cargar, vaya al editor de datos y presione \"Copia de seguridad\", luego seleccione solo DataCustom y presione copia de seguridad.",
+                "import-data-button-text": "Importar Datos",
+                "import-character-button-text": "Importar Personaje",
+                "custom-oggdude-data-not-imported": "Advertencia: No tiene datos personalizados importados, los datos personalizados en su hoja de personaje serán ignorados.",
+                "custom-oggdude-data-already-imported": "¡Buenas noticias! Tienes datos personalizados importados. Se cargarán los datos personalizados<br />en su hoja de personaje.",
+                "custom-oggdude-data-confirm-delete": "¿Está seguro de que desea eliminar sus datos personalizados de OggDude?",
+                "oggdude-delete-cancel-button-text": "Cancelar",
+                "oggdude-delete-confirm-button-text": "Eliminar",
+                "overwrite-ignored-label": "Cuando sobrescribe un personaje, todos menos los siguientes serán reemplazados:",
+                "oggdude-import-wont-overwrite": [
+                    "Nombre",
+                    "Heridas actuales",
+                    "Tensión actual",
+                    "Críticos",
+                    "Especie",
+                    "Career",
+                    "Edad",
+                    "Motivaciónn",
+                    "Peso",
+                    "Altura",
+                    "Rasgos",
+                    "Trasfondo",
+                    "Fuerza",
+                    "Defecto",
+                    "Temor"
+                ],
+                "import-limit-greeting": "¡Oh no!",
+                "import-limit-description": "Parece que has alcanzado tu límite de importación para el mes.",
+                "import-limit-patreon-tier-error": "Para importar más personajes este mes, deberás considerar aumentar tu nivel de <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patrocinador</a >.",
+                "import-limit-no-patreon-error": "Para importar más personajes este mes, deberás considerar convertirte en <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patrocinador</a>.",
+                "import-limit-linking-instructions": "Si ya es un patrocinador nuestro, asegúrese de vincular su cuenta en la página de <a href=\"/user/profile\">Ajustes de Cuenta</a>",
+                "patreon-only-error-warning": "Actualmente, esta función solo está disponible para nuestros miembros patrocinadores. Si desea unirse a nuestro Patreon para usar esta función, eche un vistazo a <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >nuestra página en Patreon.com.</a>",
+                "patreon-only-error-call-to-action": "Si ya es un patrocinador nuestro, asegúrese de vincular su cuenta en la página de <a href=\"/user/profile\">Ajustes de Cuenta</a>",
+                "dialog-cancel-button": "Cancelar",
+                "drop-file-prompt": "Suelta {{ fileType }} el archivo aquí o haz clic para cargar"
+            }
+        }
+    },
+    "dice": {
+        "overlays": {
+            "help.comment": "This help section text shows up in the help dialog on the dice roller. It's broken into two sections for each question: category title and category description. The title is the question and the description is the answer",
+            "help": {
+                "categoryDescriptions": [
+                    {
+                        "category-title": "Cómo añadir dados:",
+                        "category-description": "Haga clic en el dado que desea añadir a la bandeja de una colección de dados."
+                    },
+                    {
+                        "category-title": "Cómo quitar dados:",
+                        "category-description": "Haga clic en los dados en la bandeja que desea eliminar."
+                    },
+                    {
+                        "category-title": "Cómo crear una tirada de dados:",
+                        "category-description": "Seleccione los dados que desee en la tirada de dados, agregue una descripción y haga clic en \"Crear tirada de dados\". En la nueva pantalla, haga clic en \"Copiar enlace\" y envíelo a su compañero de juego pegando el enlace."
+                    },
+                    {
+                        "category-title": "Como realizar una tirada de dados desde un enlace:",
+                        "category-description": "Haga clic en el enlace de la tirada de dados. Agregue sus dados a la bandeja y haga clic en \"Lanzar dados\"."
+                    }
+                ],
+                "close-dialog-button-text": "¡Ok, lo tengo!"
+            }
+        },
+        "pages": {
+            "chain": {
+                "page-title": "Tirada de dados",
+                "add-button-text": "AÑADIR",
+                "roll-dice-button-text": "Lanzar dados",
+                "update-roll-chain-button-text": "Actualizar tirada de dados",
+                "dice-chain-updated-toaster-message": "¡Tirada de dados actualizada!"
+            },
+            "history": {
+                "page-title": "Historial de tiradas"
+            },
+            "roller": {
+                "dice-roller-title": "Lanzar dados",
+                "test-tab-label": "TEST",
+                "live-tab-label": "LIVE",
+                "dice-description-placeholder": "Descripciónn",
+                "roll-dice-button-text": "Lanzar dados",
+                "create-roll-chain-button-text": "Crear tirada de dados",
+                "full-history-button-label": "Ver historial completo",
+                "dice-chain-created": "¡Tirada dedos creada!"
+            },
+            "result": {
+                "page-title": "{{ name }} Resultados",
+                "full-history-button-text": "Ver historial completo"
+            }
+        }
+    },
+    "game": {
+        "pages": {
+            "list": {
+                "no-games-warning": "¡Aún no tienes juegos!"
+            }
+        }
+    },
+    "shared": {
+        "containers": {
+            "secured-container": {
+                "menu-items": {
+                    "Characters": "Personajes",
+                    "Vehicles": "Vehículoss",
+                    "Dice": "Dados",
+                    "Games": "Juegos",
+                    "Profile": "Perfil",
+                    "Logout": "Cerrar sesión",
+                    "Login": "Iniciar sesión"
+                },
+                "footer-items": {
+                    "bot-help.comment": "The bot-help key is used to link the user to the help PDF for bot commands",
+                    "bot-help": "Ayuda Bot",
+                    "build.comment": "The build is the version number for the application, the user can check it to make sure they're on the newest version number and it's useful for seeing what features are available to the version the user has. This will typically have a value next to it like v0.11.12.0 or something.",
+                    "build": "Versión"
+                }
+            }
+        }
+    }
+}
