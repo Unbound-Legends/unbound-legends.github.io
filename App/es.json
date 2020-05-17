@@ -122,7 +122,8 @@
                 "patreon-only-error-warning": "Actualmente, esta función solo está disponible para nuestros miembros patrocinadores. Si desea unirse a nuestro Patreon para usar esta función, eche un vistazo a <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >nuestra página en Patreon.com.</a>",
                 "patreon-only-error-call-to-action": "Si ya es un patrocinador nuestro, asegúrese de vincular su cuenta en la página de <a href=\"/user/profile\">Ajustes de Cuenta</a>",
                 "dialog-cancel-button": "Cancelar",
-                "drop-file-prompt": "Suelta el archivo {{ fileType }} aquí o haz clic para cargar"
+                "drop-file-prompt": "Suelta el archivo {{ fileType }} aquí o haz clic para cargar",
+                "overwrite-character": "Sobrescribir Personaje"
             }
         }
     },
