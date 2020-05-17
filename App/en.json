@@ -36,6 +36,16 @@
                 "Oldest": "Oldest",
                 "Modified": "Modified",
                 "Favorite": "Favorite"
+            },
+            "game-types": {
+                "Genesys": "Genesys",
+                "Star Wars": "Star Wars"
+            },
+            "crit-tables": {
+                "Genesys FFG Crit Table": "Genesys FFG Crit Table",
+                "Genesys FFG Vehicle Crit Table": "Genesys FFG Vehicle Crit Table",
+                "Star Wars FFG Eote Crit Table": "Star Wars FFG Eote Crit Table",
+                "Star Wars FFG Eote Vehicle Crit Table": "Star Wars FFG Eote Vehicle Crit Table"
             }
         },
         "labels": {
@@ -46,7 +56,11 @@
             "roll-history": "Roll History",
             "new-roll": "New Roll",
             "sort-by": "Sort By",
-            "new-button-text": "New"
+            "new-button-text": "New",
+            "rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
+            "rpg-sessions-mark-alt-text": "RPG Sessions Mark",
+            "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
+            "select-list-none": "None"
         }
     },
     "user": {
@@ -122,7 +136,8 @@
                 "patreon-only-error-warning": "This feature is currently available only to our Patron members. If you'd like to join our Patreon to use this feature, check <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >out our page on Patreon.com.</a>",
                 "patreon-only-error-call-to-action": "If you're already a Patron of ours, make sure you link your account on your <a href=\"/user/profile\">account settings page.</a>",
                 "dialog-cancel-button": "Cancel",
-                "drop-file-prompt": "Drop {{ fileType }} file here or click to upload"
+                "drop-file-prompt": "Drop {{ fileType }} file here or click to upload",
+                "overwrite-character": "Overwrite Character"
             }
         }
     },
@@ -179,9 +194,33 @@
         }
     },
     "game": {
+        "components": {
+            "game-list-card": {
+                "settings-button-text": "Settings",
+                "game-table-view-button-text": "Game Table"
+            }
+        },
         "pages": {
             "list": {
+                "page-title": "Game List",
                 "no-games-warning": "You have no games yet!"
+            },
+            "view": {
+                "no-game-found-error": "No Game Found!",
+                "game-update-successful-message": "Game updated successfully!",
+                "game-name-placeholder": "Game Name",
+                "game-type-placeholder": "Game Type",
+                "dice-size-placeholder": "Dice Size",
+                "character-placeholder": "Character",
+                "character-crit-table-placeholder": "Character Crit Table",
+                "vehicle-crit-table-placeholder": "Vehicle Crit Table",
+                "party-vehicle-placeholder": "Party Vehicle",
+                "personal-vehicle-placeholder": "Personal Vehicle",
+                "save-changes-button-text": "Save Changes",
+                "dice-sizes": {
+                    "Regular": "Regular",
+                    "Large": "Large"
+                }
             }
         }
     },
