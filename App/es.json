@@ -88,7 +88,7 @@
                 "title-emporium": "Importador de Genesys Emporium",
                 "monthly-imports-label": "Importaciones mensuales:",
                 "non-patron-custom-data-warning": "Advertencia: el importador OggDude no admite actualmente datos personalizados para miembros que no sean usuarios.",
-                "create-import-file-instructions": "Para crear el archivo de importación para cargar, vaya al editor de datos y presione "Copia de seguridad", luego seleccione solo DataCustom y presione copia de seguridad.",
+                "create-import-file-instructions": "Para crear el archivo de importación para cargar, vaya al editor de datos y presione \"Copia de seguridad\", luego seleccione solo DataCustom y presione copia de seguridad.",
                 "import-data-button-text": "Importar Datos",
                 "import-character-button-text": "Importar Personaje",
                 "custom-oggdude-data-not-imported": "Advertencia: No tiene datos personalizados importados, los datos personalizados en su hoja de personaje serán ignorados.",
@@ -141,11 +141,11 @@
                     },
                     {
                         "category-title": "Cómo crear una tirada de dados:",
-                        "category-description": "Seleccione los dados que desee en la tirada de dados, agregue una descripción y haga clic en \ "Crear tirada de dados. \" En la nueva pantalla, haga clic en \ "Copiar enlace \" y envíelo a su compañero de juego pegando el enlace."
+                        "category-description": "Seleccione los dados que desee en la tirada de dados, agregue una descripción y haga clic en \"Crear tirada de dados\". En la nueva pantalla, haga clic en \"Copiar enlace\" y envíelo a su compañero de juego pegando el enlace."
                     },
                     {
                         "category-title": "Como realizar una tirada de dados desde un enlace:",
-                        "category-description": "Haga clic en el enlace de la tirada de dados. Agregue sus dados a la bandeja y haga clic en "Lanzar dados".""
+                        "category-description": "Haga clic en el enlace de la tirada de dados. Agregue sus dados a la bandeja y haga clic en \"Lanzar dados\"."
                     }
                 ],
                 "close-dialog-button-text": "¡Ok, lo tengo!"
