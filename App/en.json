@@ -178,6 +178,13 @@
             }
         }
     },
+    "game": {
+        "pages": {
+            "list": {
+                "no-games-warning": "You have no games yet!"
+            }
+        }
+    },
     "shared": {
         "containers": {
             "secured-container": {
