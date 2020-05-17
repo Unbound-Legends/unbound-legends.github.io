@@ -96,7 +96,7 @@
                 "custom-oggdude-data-confirm-delete": "¿Está seguro de que desea eliminar sus datos personalizados de OggDude?",
                 "oggdude-delete-cancel-button-text": "Cancelar",
                 "oggdude-delete-confirm-button-text": "Eliminar",
-                "overwrite-ignored-label": "Cuando sobrescribe un personaje, todos menos los siguientes serán reemplazados:",
+                "overwrite-ignored-label": "Cuando sobrescribe un personaje, todo excepto lo siguiente será reemplazado:",
                 "oggdude-import-wont-overwrite": [
                     "Nombre",
                     "Heridas actuales",
@@ -105,7 +105,7 @@
                     "Especie",
                     "Career",
                     "Edad",
-                    "Motivaciónn",
+                    "Motivación",
                     "Peso",
                     "Altura",
                     "Rasgos",
@@ -122,7 +122,7 @@
                 "patreon-only-error-warning": "Actualmente, esta función solo está disponible para nuestros miembros patrocinadores. Si desea unirse a nuestro Patreon para usar esta función, eche un vistazo a <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >nuestra página en Patreon.com.</a>",
                 "patreon-only-error-call-to-action": "Si ya es un patrocinador nuestro, asegúrese de vincular su cuenta en la página de <a href=\"/user/profile\">Ajustes de Cuenta</a>",
                 "dialog-cancel-button": "Cancelar",
-                "drop-file-prompt": "Suelta {{ fileType }} el archivo aquí o haz clic para cargar"
+                "drop-file-prompt": "Suelta el archivo {{ fileType }} aquí o haz clic para cargar"
             }
         }
     },
@@ -166,7 +166,7 @@
                 "dice-roller-title": "Lanzar dados",
                 "test-tab-label": "TEST",
                 "live-tab-label": "LIVE",
-                "dice-description-placeholder": "Descripciónn",
+                "dice-description-placeholder": "Descripción",
                 "roll-dice-button-text": "Lanzar dados",
                 "create-roll-chain-button-text": "Crear tirada de dados",
                 "full-history-button-label": "Ver historial completo",
@@ -190,7 +190,7 @@
             "secured-container": {
                 "menu-items": {
                     "Characters": "Personajes",
-                    "Vehicles": "Vehículoss",
+                    "Vehicles": "Vehículos",
                     "Dice": "Dados",
                     "Games": "Juegos",
                     "Profile": "Perfil",
