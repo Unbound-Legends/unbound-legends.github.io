@@ -36,6 +36,16 @@
                 "Oldest": "Más antiguo",
                 "Modified": "Modificado",
                 "Favorite": "Favorito"
+             },
+            "game-types": {
+                "Genesys": "Genesys",
+                "Star Wars": "Star Wars"
+            },
+            "crit-tables": {
+                "Genesys FFG Crit Table": "Tabla de Críticos Genesys FFG",
+                "Genesys FFG Vehicle Crit Table": "Tabla de Críticos de vehículos Genesys FFG",
+                "Star Wars FFG Eote Crit Table": "Tabla de Críticos Star Wars FFG AFDI",
+                "Star Wars FFG Eote Vehicle Crit Table": "Tabla de Críticos de vehículos Star Wars FFG AFDI"
             }
         },
         "labels": {
@@ -47,6 +57,12 @@
             "new-roll": "Nueva tirada",
             "sort-by": "Ordenar por",
             "new-button-text": "Nuevo"
+			"rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
+            "rpg-sessions-mark-alt-text": "Marca RPG Sessions",
+            "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
+            "select-list-none": "Ninguno",
+            "cancel-button-text.comment": "The following will be used on cancel buttons throughout the app",
+            "cancel-button-text": "Cancelar"
         }
     },
     "user": {
@@ -162,6 +178,7 @@
             },
             "history": {
                 "page-title": "Historial de tiradas"
+				"page-title-for-user": "Historial de tiradas de {{ name }}"
             },
             "roller": {
                 "dice-roller-title": "Lanzar dados",
@@ -180,10 +197,53 @@
         }
     },
     "game": {
+        "components": {
+            "game-list-card": {
+                "settings-button-text": "Ajustes",
+                "game-table-view-button-text": "Mesa de Juego"
+            }
+        },
+        "overlays": {
+            "new-game-prompt": {
+                "prompt-title": "Elige la plataforma para tu nuevo juego",
+                "create-discord-game-title": "Añadir un juego de Discord",
+                "create-sessions-game-title": "Nombra tu juego y selecciona el tipo de juego",
+                "create-discord-game-link-instruction-text.comment": "The below link instructions are shown when you try to create a discord game but do not have discord linked to your RPG Sessions account. Their intent is to tell you how to link your Discord account to RPG Sessions.",
+                "create-discord-game-link-instruction-text-part-1": "Para poder crear un juego de Discord, debes vincular tu cuenta de RPG Sessions con Discord.",
+                "create-discord-game-link-instruction-text-part-2": "Solo toma un segundo y se realiza desde el perfil de su cuenta.",
+                "user-profile-button-text": "Perfilde Usuario",
+                "create-discord-game-instruction-text.comment": "The below instruction text is shown when you go to create a Discord game and your account is successfully linked to Discord already",
+                "create-discord-game-instruction-text": "¡Invita al bot a tu servidor y un juego se creará automáticamente aquí! (Es posible que debas actualizar esta lista para ver tu nuevo juego)",
+                "invite-bot-button-text.comment": "The following button is how users invite the discord bot to their server",
+                "invite-bot-button-text": "Invitar al bot",
+                "game-name-placeholder-text": "Nombre del Juego",
+                "game-type-placeholder-text": "Tipo de Juego",
+                "create-game-button-text": "Crear Juego"
+            }
+        },
         "pages": {
             "list": {
+                "page-title": "Lista de Juegos",
+                "header": "Mis Juegos",
                 "no-games-warning": "¡Aún no tienes juegos!"
-            }
+            },
+			"view": {
+                "no-game-found-error": "¡No se encontró nigún juego!",
+                "game-update-successful-message": "¡Juego actualizado con éxito!",
+                "game-name-placeholder": "Nombre del Juego",
+                "game-type-placeholder": "Tipo de Juego",
+                "dice-size-placeholder": "Tamaño de Dados",
+                "character-placeholder": "Personaje",
+                "character-crit-table-placeholder": "Tabla de Críticos de Personaje",
+                "vehicle-crit-table-placeholder": "Tabla de Críticos de Vehículo",
+                "party-vehicle-placeholder": "Vehículo del Grupo",
+                "personal-vehicle-placeholder": "Vehículo Personal",
+                "save-changes-button-text": "Guardar Cambios",
+                "dice-sizes": {
+                    "Regular": "Normal",
+                    "Large": "Grande"
+                }
+			}
         }
     },
     "shared": {
