@@ -56,8 +56,8 @@
             "roll-history": "Historial de tiradas",
             "new-roll": "Nueva tirada",
             "sort-by": "Ordenar por",
-            "new-button-text": "Nuevo"
-			"rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
+            "new-button-text": "Nuevo",
+	    "rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
             "rpg-sessions-mark-alt-text": "Marca RPG Sessions",
             "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
             "select-list-none": "Ninguno",
@@ -177,8 +177,8 @@
                 "dice-chain-updated-toaster-message": "¡Tirada de dados actualizada!"
             },
             "history": {
-                "page-title": "Historial de tiradas"
-				"page-title-for-user": "Historial de tiradas de {{ name }}"
+                "page-title": "Historial de tiradas",
+		"page-title-for-user": "Historial de tiradas de {{ name }}"
             },
             "roller": {
                 "dice-roller-title": "Lanzar dados",
