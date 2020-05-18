@@ -60,7 +60,9 @@
             "rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
             "rpg-sessions-mark-alt-text": "RPG Sessions Mark",
             "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
-            "select-list-none": "None"
+            "select-list-none": "None",
+            "cancel-button-text.comment": "The following will be used on cancel buttons throughout the app",
+            "cancel-button-text": "Cancel"
         }
     },
     "user": {
@@ -175,7 +177,8 @@
                 "dice-chain-updated-toaster-message": "Dice chain updated!"
             },
             "history": {
-                "page-title": "Roll History"
+                "page-title": "Roll History",
+                "page-title-for-user": "{{ name }} Roll History"
             },
             "roller": {
                 "dice-roller-title": "Dice Rollerr",
@@ -200,9 +203,28 @@
                 "game-table-view-button-text": "Game Table"
             }
         },
+        "overlays": {
+            "new-game-prompt": {
+                "prompt-title": "Choose the platform for your new game",
+                "create-discord-game-title": "Add a Discord Game",
+                "create-sessions-game-title": "Name your game and select the type of game",
+                "create-discord-game-link-instruction-text.comment": "The below link instructions are shown when you try to create a discord game but do not have discord linked to your RPG Sessions account. Their intent is to tell you how to link your Discord account to RPG Sessions.",
+                "create-discord-game-link-instruction-text-part-1": "Before you can create a Discord game, you need to link your RPG Sessions account with Discord.",
+                "create-discord-game-link-instruction-text-part-2": "It only takes a second and is done from your account profile.",
+                "user-profile-button-text": "User Profile",
+                "create-discord-game-instruction-text.comment": "The below instruction text is shown when you go to create a Discord game and your account is successfully linked to Discord already",
+                "create-discord-game-instruction-text": "Invite the bot to your server and a game will be automatically created here! (You might need to refresh this list to see your new game)",
+                "invite-bot-button-text.comment": "The following button is how users invite the discord bot to their server",
+                "invite-bot-button-text": "Invite the bot",
+                "game-name-placeholder-text": "Game Name",
+                "game-type-placeholder-text": "Game Type",
+                "create-game-button-text": "Create Game"
+            }
+        },
         "pages": {
             "list": {
                 "page-title": "Game List",
+                "header": "My Games",
                 "no-games-warning": "You have no games yet!"
             },
             "view": {
