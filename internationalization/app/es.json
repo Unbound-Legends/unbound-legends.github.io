@@ -1,0 +1,270 @@
+{
+    "paginator": {
+        "items-per-page": "Elementos por página",
+        "next-page": "Página siguiente",
+        "last-page": "Última página",
+        "first-page": "Primera página",
+        "previous-page": "Página anterior",
+        "items-left-display-when-no-other-pages.comment": "This is displayed when there's either no items on the page or there's only one page",
+        "items-left-display-when-no-other-pages": "0 de {{ length }}",
+        "items-left-when-other-pages-exist.comment": "This is displayed when there are other pages to explore. It'll show you the range of items you're on and how many there are left",
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} de {{ length}}"
+    },
+    "generic": {
+        "enums": {
+            "dice-styles": {
+                "Name": "Nombre",
+                "Color-Based": "Basado en color"
+            },
+            "themes": {
+                "Dark Theme": "Tema oscuro",
+                "Light Theme": "Tema claro"
+            },
+            "dice-types": {
+                "Numbered": "Numerado",
+                "Star Wars": "Star Wars",
+                "Genesys": "Genesys"
+            },
+            "languages": {
+                "English": "Inglés",
+                "Spanish": "Español",
+                "French": "Francés"
+            },
+            "sort-by": {
+                "Name": "Nombre",
+                "Newest": "Más nuevo",
+                "Oldest": "Más antiguo",
+                "Modified": "Modificado",
+                "Favorite": "Favorito"
+            },
+            "game-types": {
+                "Genesys": "Genesys",
+                "Star Wars": "Star Wars"
+            },
+            "crit-tables": {
+                "Genesys FFG Crit Table": "Tabla de Críticos Genesys FFG",
+                "Genesys FFG Vehicle Crit Table": "Tabla de Críticos de vehículos Genesys FFG",
+                "Star Wars FFG Eote Crit Table": "Tabla de Críticos Star Wars FFG AFDI",
+                "Star Wars FFG Eote Vehicle Crit Table": "Tabla de Críticos de vehículos Star Wars FFG AFDI"
+            }
+        },
+        "labels": {
+            "language": "Idioma",
+            "link-copied.comment": "The link-copied value will pop up usually after a user hits a button that's puts a URL into a user's clipboard. This message lets the user know the URL was copied successfully",
+            "copy-link": "Copiar enlace",
+            "link-copied": "¡Enlace copiado!",
+            "roll-history": "Historial de tiradas",
+            "new-roll": "Nueva tirada",
+            "sort-by": "Ordenar por",
+            "new-button-text": "Nuevo",
+            "rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
+            "rpg-sessions-mark-alt-text": "Marca RPG Sessions",
+            "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
+            "select-list-none": "Ninguno",
+            "cancel-button-text.comment": "The following will be used on cancel buttons throughout the app",
+            "cancel-button-text": "Cancelar"
+        }
+    },
+    "user": {
+        "pages": {
+            "profile": {
+                "profile-header": "Información del perfil",
+                "username-placeholder": "Nombre de usuario",
+                "email-placeholder": "Email",
+                "update-user-profile-button-text": "Actualizar perfil de usuario",
+                "security-header": "Seguridad",
+                "facebook-login-enabled": "Inicio de sesión en Facebook habilitado",
+                "google-login-enabled": "Inicio de sesión en Google habilitado",
+                "current-password-placeholder": "Contraseña actual",
+                "new-password-placeholder": "Nueva contraseña",
+                "confirm-new-password-placeholder": "Confirmar nueva contraseña",
+                "update-password-button-text": "Actualizar contraseña",
+                "user-settings-header": "Ajustes de usuario",
+                "selected-dice-type-alt": "Tipo de dado seleccionado",
+                "selected-dice-scheme-alt": "Esquema de dados seleccionados",
+                "selected-site-theme-alt": "Tema del sitio seleccionado",
+                "dice-type-placeholder": "Tipo de dados predeterminado",
+                "dice-input-style-placeholder": "Estilo de entrada de dados",
+                "theme-placeholder": "Tema",
+                "update-user-settings-button-text": "Actualizar configuración de usuario",
+                "badges-header": "Insignias",
+                "badges-coming-soon": "¡Próximamente!",
+                "linked-accounts-header": "Cuentas vinculadas",
+                "linked-account-description": "¡Vincula tu perfil de RPG Sessions para desbloquear funciones increíbles!",
+                "link-text": "Enlazar",
+                "unlink-text": "Desenlazar"
+            }
+        }
+    },
+    "character": {
+        "overlays": {
+            "import-overlay": {
+                "title-oggdude": "Importador de OggDude",
+                "title-oggdude-custom": "Importador de Datos Personalizados de OggDude",
+                "title-emporium": "Importador de Genesys Emporium",
+                "monthly-imports-label": "Importaciones mensuales:",
+                "non-patron-custom-data-warning": "Advertencia: el importador OggDude no admite actualmente datos personalizados para miembros que no sean usuarios.",
+                "create-import-file-instructions": "Para crear el archivo de importación para cargar, vaya al editor de datos y presione \"Copia de seguridad\", luego seleccione solo DataCustom y presione copia de seguridad.",
+                "import-data-button-text": "Importar Datos",
+                "import-character-button-text": "Importar Personaje",
+                "custom-oggdude-data-not-imported": "Advertencia: No tiene datos personalizados importados, los datos personalizados en su hoja de personaje serán ignorados.",
+                "custom-oggdude-data-already-imported": "¡Buenas noticias! Tienes datos personalizados importados. Se cargarán los datos personalizados<br />en su hoja de personaje.",
+                "custom-oggdude-data-confirm-delete": "¿Está seguro de que desea eliminar sus datos personalizados de OggDude?",
+                "oggdude-delete-cancel-button-text": "Cancelar",
+                "oggdude-delete-confirm-button-text": "Eliminar",
+                "overwrite-ignored-label": "Cuando sobrescribe un personaje, todo excepto lo siguiente será reemplazado:",
+                "oggdude-import-wont-overwrite": [
+                    "Nombre",
+                    "Heridas actuales",
+                    "Tensión actual",
+                    "Críticos",
+                    "Especie",
+                    "Career",
+                    "Edad",
+                    "Motivación",
+                    "Peso",
+                    "Altura",
+                    "Rasgos",
+                    "Trasfondo",
+                    "Fuerza",
+                    "Defecto",
+                    "Temor"
+                ],
+                "import-limit-greeting": "¡Oh no!",
+                "import-limit-description": "Parece que has alcanzado tu límite de importación para el mes.",
+                "import-limit-patreon-tier-error": "Para importar más personajes este mes, deberás considerar aumentar tu nivel de <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patrocinador</a >.",
+                "import-limit-no-patreon-error": "Para importar más personajes este mes, deberás considerar convertirte en <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patrocinador</a>.",
+                "import-limit-linking-instructions": "Si ya es un patrocinador nuestro, asegúrese de vincular su cuenta en la página de <a href=\"/user/profile\">Ajustes de Cuenta</a>",
+                "patreon-only-error-warning": "Actualmente, esta función solo está disponible para nuestros miembros patrocinadores. Si desea unirse a nuestro Patreon para usar esta función, eche un vistazo a <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >nuestra página en Patreon.com.</a>",
+                "patreon-only-error-call-to-action": "Si ya es un patrocinador nuestro, asegúrese de vincular su cuenta en la página de <a href=\"/user/profile\">Ajustes de Cuenta</a>",
+                "dialog-cancel-button": "Cancelar",
+                "drop-file-prompt": "Suelta el archivo {{ fileType }} aquí o haz clic para cargar",
+                "overwrite-character": "Sobrescribir Personaje"
+            }
+        }
+    },
+    "dice": {
+        "overlays": {
+            "help.comment": "This help section text shows up in the help dialog on the dice roller. It's broken into two sections for each question: category title and category description. The title is the question and the description is the answer",
+            "help": {
+                "categoryDescriptions": [
+                    {
+                        "category-title": "Cómo añadir dados:",
+                        "category-description": "Haga clic en el dado que desea añadir a la bandeja de una colección de dados."
+                    },
+                    {
+                        "category-title": "Cómo quitar dados:",
+                        "category-description": "Haga clic en los dados en la bandeja que desea eliminar."
+                    },
+                    {
+                        "category-title": "Cómo crear una tirada de dados:",
+                        "category-description": "Seleccione los dados que desee en la tirada de dados, agregue una descripción y haga clic en \"Crear tirada de dados\". En la nueva pantalla, haga clic en \"Copiar enlace\" y envíelo a su compañero de juego pegando el enlace."
+                    },
+                    {
+                        "category-title": "Como realizar una tirada de dados desde un enlace:",
+                        "category-description": "Haga clic en el enlace de la tirada de dados. Agregue sus dados a la bandeja y haga clic en \"Lanzar dados\"."
+                    }
+                ],
+                "close-dialog-button-text": "¡Ok, lo tengo!"
+            }
+        },
+        "pages": {
+            "chain": {
+                "page-title": "Tirada de dados",
+                "add-button-text": "AÑADIR",
+                "roll-dice-button-text": "Lanzar dados",
+                "update-roll-chain-button-text": "Actualizar tirada de dados",
+                "dice-chain-updated-toaster-message": "¡Tirada de dados actualizada!"
+            },
+            "history": {
+                "page-title": "Historial de tiradas",
+                "page-title-for-user": "Historial de tiradas de {{ name }}"
+            },
+            "roller": {
+                "dice-roller-title": "Lanzar dados",
+                "test-tab-label": "TEST",
+                "live-tab-label": "LIVE",
+                "dice-description-placeholder": "Descripción",
+                "roll-dice-button-text": "Lanzar dados",
+                "create-roll-chain-button-text": "Crear tirada de dados",
+                "full-history-button-label": "Ver historial completo",
+                "dice-chain-created": "¡Tirada dedos creada!"
+            },
+            "result": {
+                "page-title": "{{ name }} Resultados",
+                "full-history-button-text": "Ver historial completo"
+            }
+        }
+    },
+    "game": {
+        "components": {
+            "game-list-card": {
+                "settings-button-text": "Ajustes",
+                "game-table-view-button-text": "Mesa de Juego"
+            }
+        },
+        "overlays": {
+            "new-game-prompt": {
+                "prompt-title": "Elige la plataforma para tu nuevo juego",
+                "create-discord-game-title": "Añadir un juego de Discord",
+                "create-sessions-game-title": "Nombra tu juego y selecciona el tipo de juego",
+                "create-discord-game-link-instruction-text.comment": "The below link instructions are shown when you try to create a discord game but do not have discord linked to your RPG Sessions account. Their intent is to tell you how to link your Discord account to RPG Sessions.",
+                "create-discord-game-link-instruction-text-part-1": "Para poder crear un juego de Discord, debes vincular tu cuenta de RPG Sessions con Discord.",
+                "create-discord-game-link-instruction-text-part-2": "Solo toma un segundo y se realiza desde el perfil de su cuenta.",
+                "user-profile-button-text": "Perfilde Usuario",
+                "create-discord-game-instruction-text.comment": "The below instruction text is shown when you go to create a Discord game and your account is successfully linked to Discord already",
+                "create-discord-game-instruction-text": "¡Invita al bot a tu servidor y un juego se creará automáticamente aquí! (Es posible que debas actualizar esta lista para ver tu nuevo juego)",
+                "invite-bot-button-text.comment": "The following button is how users invite the discord bot to their server",
+                "invite-bot-button-text": "Invitar al bot",
+                "game-name-placeholder-text": "Nombre del Juego",
+                "game-type-placeholder-text": "Tipo de Juego",
+                "create-game-button-text": "Crear Juego"
+            }
+        },
+        "pages": {
+            "list": {
+                "page-title": "Lista de Juegos",
+                "header": "Mis Juegos",
+                "no-games-warning": "¡Aún no tienes juegos!"
+            },
+            "view": {
+                "no-game-found-error": "¡No se encontró nigún juego!",
+                "game-update-successful-message": "¡Juego actualizado con éxito!",
+                "game-name-placeholder": "Nombre del Juego",
+                "game-type-placeholder": "Tipo de Juego",
+                "dice-size-placeholder": "Tamaño de Dados",
+                "character-placeholder": "Personaje",
+                "character-crit-table-placeholder": "Tabla de Críticos de Personaje",
+                "vehicle-crit-table-placeholder": "Tabla de Críticos de Vehículo",
+                "party-vehicle-placeholder": "Vehículo del Grupo",
+                "personal-vehicle-placeholder": "Vehículo Personal",
+                "save-changes-button-text": "Guardar Cambios",
+                "dice-sizes": {
+                    "Regular": "Normal",
+                    "Large": "Grande"
+                }
+            }
+        }
+    },
+    "shared": {
+        "containers": {
+            "secured-container": {
+                "menu-items": {
+                    "Characters": "Personajes",
+                    "Vehicles": "Vehículos",
+                    "Dice": "Dados",
+                    "Games": "Juegos",
+                    "Profile": "Perfil",
+                    "Logout": "Cerrar sesión",
+                    "Login": "Iniciar sesión"
+                },
+                "footer-items": {
+                    "bot-help.comment": "The bot-help key is used to link the user to the help PDF for bot commands",
+                    "bot-help": "Ayuda Bot",
+                    "build.comment": "The build is the version number for the application, the user can check it to make sure they're on the newest version number and it's useful for seeing what features are available to the version the user has. This will typically have a value next to it like v0.11.12.0 or something.",
+                    "build": "Versión"
+                }
+            }
+        }
+    }
+}
