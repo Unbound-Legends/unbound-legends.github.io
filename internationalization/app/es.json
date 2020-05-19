@@ -126,10 +126,6 @@
                     "Altura",
                     "Rasgos",
                     "Trasfondo",
-                    "Fuerza",
-                    "Defecto",
-                    "Temor"
-					"Deseo"
                 ],
                 "import-limit-greeting": "¡Oh no!",
                 "import-limit-description": "Parece que has alcanzado tu límite de importación para el mes.",
