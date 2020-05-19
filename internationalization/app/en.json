@@ -126,10 +126,6 @@
                     "Height",
                     "Features",
                     "Background",
-                    "Strength",
-                    "Flaw",
-                    "Fear",
-                    "Desire"
                 ],
                 "import-limit-greeting": "Oh no!",
                 "import-limit-description": "It appears you've hit your import limit for the month.",
