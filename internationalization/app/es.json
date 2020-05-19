@@ -36,7 +36,7 @@
                 "Oldest": "Más antiguo",
                 "Modified": "Modificado",
                 "Favorite": "Favorito"
-            },
+             },
             "game-types": {
                 "Genesys": "Genesys",
                 "Star Wars": "Star Wars"
@@ -57,7 +57,7 @@
             "new-roll": "Nueva tirada",
             "sort-by": "Ordenar por",
             "new-button-text": "Nuevo",
-            "rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
+	    "rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
             "rpg-sessions-mark-alt-text": "Marca RPG Sessions",
             "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
             "select-list-none": "Ninguno",
@@ -178,7 +178,7 @@
             },
             "history": {
                 "page-title": "Historial de tiradas",
-                "page-title-for-user": "Historial de tiradas de {{ name }}"
+		"page-title-for-user": "Historial de tiradas de {{ name }}"
             },
             "roller": {
                 "dice-roller-title": "Lanzar dados",
@@ -227,7 +227,7 @@
                 "header": "Mis Juegos",
                 "no-games-warning": "¡Aún no tienes juegos!"
             },
-            "view": {
+			"view": {
                 "no-game-found-error": "¡No se encontró nigún juego!",
                 "game-update-successful-message": "¡Juego actualizado con éxito!",
                 "game-name-placeholder": "Nombre del Juego",
@@ -243,7 +243,7 @@
                     "Regular": "Normal",
                     "Large": "Grande"
                 }
-            }
+			}
         }
     },
     "shared": {
