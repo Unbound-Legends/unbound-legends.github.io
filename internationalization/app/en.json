@@ -128,7 +128,8 @@
                     "Background",
                     "Strength",
                     "Flaw",
-                    "Fear"
+                    "Fear",
+                    "Desire"
                 ],
                 "import-limit-greeting": "Oh no!",
                 "import-limit-description": "It appears you've hit your import limit for the month.",
@@ -181,7 +182,7 @@
                 "page-title-for-user": "{{ name }} Roll History"
             },
             "roller": {
-                "dice-roller-title": "Dice Rollerr",
+                "dice-roller-title": "Dice Roller",
                 "test-tab-label": "TEST",
                 "live-tab-label": "LIVE",
                 "dice-description-placeholder": "Description",
