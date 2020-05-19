@@ -1,0 +1,202 @@
+{
+    "paginator": {
+        "items-per-page": "Objets par page",
+        "next-page": "Page Suivante",
+        "last-page": "Dernière page",
+        "first-page": "Première page",
+        "previous-page": "Page précédente",
+        "items-left-display-when-no-other-pages.comment": "This is displayed when there's either no items on the page or there's only one page",
+        "items-left-display-when-no-other-pages": "0 de {{ length }}",
+        "items-left-when-other-pages-exist.comment": "This is displayed when there are other pages to explore. It'll show you the range of items you're on and how many there are left",
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} de {{ length}}"
+    },
+    "generic": {
+        "enums": {
+            "dice-styles": {
+                "Name": "Nom",
+                "Color-Based": "Colorés"
+            },
+            "themes": {
+                "Dark Theme": "Sombre",
+                "Light Theme": "Clair"
+            },
+            "dice-types": {
+                "Numbered": "Chiffrés",
+                "Star Wars": "Star Wars",
+                "Genesys": "Genesys"
+            },
+            "languages": {
+                "English": "Anglais",
+                "Spanish": "Espagnol",
+                "French": "Français"
+            },
+            "sort-by": {
+                "Name": "Nom",
+                "Newest": "Le plus récent",
+                "Oldest": "Le plus ancien",
+                "Modified": "Modifié",
+                "Favorite": "Favoris"
+            }
+        },
+        "labels": {
+            "language": "Langue",
+            "link-copied.comment": "The link-copied value will pop up usually after a user hits a button that's puts a URL into a user's clipboard. This message lets the user know the URL was copied successfully",
+            "copy-link": "Copier lien",
+            "link-copied": "Lien copié!",
+            "roll-history": "Historique des jets",
+            "new-roll": "Nouveau jet",
+            "sort-by": "Trier par"
+        }
+    },
+    "user": {
+        "pages": {
+            "profile": {
+                "profile-header": "Informations du profil",
+                "username-placeholder": "Nom d'utilisateur",
+                "email-placeholder": "Courriel",
+                "update-user-profile-button-text": "Mettre à jour le profil d'utilisateur",
+                "security-header": "Sécurité",
+                "facebook-login-enabled": "Connexion via Facebook activée",
+                "google-login-enabled": "Connexion via Google activée",
+                "current-password-placeholder": "Mot de passe actuel",
+                "new-password-placeholder": "Nouveau mot de passe",
+                "confirm-new-password-placeholder": "Confirmer le nouveau mot de passe",
+                "update-password-button-text": "Mettre à jour le mot de passe",
+                "user-settings-header": "Paramètres d'utilisateur",
+                "selected-dice-type-alt": "Type de dés sélectionné",
+                "selected-dice-scheme-alt": "Type de dés sélectionné",
+                "selected-site-theme-alt": "Thème du site sélectionné",
+                "dice-type-placeholder": "Type de dés par défaut",
+                "dice-input-style-placeholder": "Style d'entrées de Dés",
+                "theme-placeholder": "Thème",
+                "update-user-settings-button-text": "Mettre à jour les paramètres d'utilisateur",
+                "badges-header": "Badges",
+                "badges-coming-soon": "Bientôt disponible!",
+                "linked-accounts-header": "Comptes associés",
+                "linked-account-description": "Associer votre profile RPGSessions pour dévérouiller des fonctionnalités impressionnantes!",
+                "link-text": "Associer",
+                "unlink-text": "Dissocier"
+            }
+        }
+    },
+    "character": {
+        "overlays": {
+            "import-overlay": {
+                "title-oggdude": "Importateur OggDude",
+                "title-oggdude-custom": "Importateur de données personnalisées OggDude ",
+                "title-emporium": "Importateur Genesys Emporium",
+                "monthly-imports-label": "Imports mensuels:",
+                "non-patron-custom-data-warning": "Attention: L'importateur OggDude ne supporte présentement pas les données personnalisées pour les usagers qui ne sont pas des membres patron.",
+                "create-import-file-instructions": "Pour créer le fichier à importer, rendez-vous à l'éditeur de données et appuyez sur Sauvegarde, puis sélectionner seulement les Données Personnalisées puis appuyez sur Sauvegarde.",
+                "import-data-button-text": "Importer données",
+                "import-character-button-text": "Importer personnage",
+                "custom-oggdude-data-not-imported": "Attention: Vous n'avez pas de données personnalisées importées. Les données personnaliséees dans la feuille de personnage vont être ignorées.",
+                "custom-oggdude-data-already-imported": "Bonne nouvelle! Vous avez importé des données personnalisées. Ces données se retrouveront dans votre feuille de personnage.",
+                "custom-oggdude-data-confirm-delete": "Êtes-vous certain de vouloir effacer vos données personnalisées OggDude?",
+                "oggdude-delete-cancel-button-text": "Annuler",
+                "oggdude-delete-confirm-button-text": "Effacer",
+                "overwrite-ignored-label": "Lorsque vous écrasez un personnage, toutes les informations seront remplacées à l'exception des suivantes:",
+                "oggdude-import-wont-overwrite": [
+                    "Nom",
+                    "Blessures actuelles",
+                    "Stress actuel",
+                    "Blessures critiques",
+                    "Espèce",
+                    "Carrière",
+                    "Âge",
+                    "Motivation",
+                    "Poids",
+                    "Grandeur",
+                    "Détails",
+                    "Histoire",
+                    "Force",
+                    "Défaut",
+                    "Peur",
+                    "Désir"
+                ],
+                "import-limit-greeting": "Oh non!",
+                "import-limit-description": "Il semble que vous avez atteint votre limite d'importation pour ce mois.",
+                "import-limit-patreon-tier-error": "Afin d'importer davantage de personnages ce mois-ci, envisagez d'augmenter votre niveau de <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a >.",
+                "import-limit-no-patreon-error": "Afin d'importer davanage de personanges ce mois-ci, envisager de devenir un <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a>.",
+                "import-limit-linking-instructions": "Si vous êtes déja un membre Patron, assurez-vous d'associer votre compte dans vos <a href=\"/user/profile\">paramètres de compte.</a>",
+                "patreon-only-error-warning": "Cette fonctionnalité est présentement exclusive à nos membres Patron. Si vous voulez joindre notre Patreon pour utiliser cette fonctionnalité, rendez-vous <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >sur notre page Patreon.com.</a>",
+                "patreon-only-error-call-to-action": "Si vous êtes déja un membre Patron, assurez-vous d'associer votre compte dans vos <a href=\"/user/profile\">paramètres de compte.</a>",
+                "dialog-cancel-button": "Annuler",
+                "drop-file-prompt": "Déposez votre {{ fileType }} fichier ici ou cliquer sur télécharger"
+            }
+        }
+    },
+    "dice": {
+        "overlays": {
+            "help.comment": "This help section text shows up in the help dialog on the dice roller. It's broken into two sections for each question: category title and category description. The title is the question and the description is the answer",
+            "help": {
+                "categoryDescriptions": [
+                    {
+                        "category-title": "Comment ajouter des dés:",
+                        "category-description": "Cliquez sur les dés que vous voulez ajouter à la réserve à partir de la collection de dés."
+                    },
+                    {
+                        "category-title": "Comment retirer des dés:",
+                        "category-description": "Cliquez sur les dés que vous voulez retirer dans la réserve."
+                    },
+                    {
+                        "category-title": "Comment utiliser une réserve de dés partagée:",
+                        "category-description": "Sélectionnez les dés que vous voulez ajouter à la réserve partagée, ajoutez une description et cliquez sur \"Créer une réserve partagée.\" Dans la nouvelle fenêtre, cliquez sur \"Copier lien\" et envoyez le lien à la personne à qui vous voulez partager la réserve."
+                    },
+                    {
+                        "category-title": "Comment lancer les dés à partir d'une réserve partagée:",
+                        "category-description": "Cliquez sur le lien de la réserve partagée. Ajoutez vos dés et cliquez sur \"Lancer les dés.\""
+                    }
+                ],
+                "close-dialog-button-text": "D'accord, compris!"
+            }
+        },
+        "pages": {
+            "chain": {
+                "page-title": "Réserve partagée",
+                "add-button-text": "Ajouter",
+                "roll-dice-button-text": "Lancer les dés",
+                "update-roll-chain-button-text": "Mettre à jour la réserve partagée",
+                "dice-chain-updated-toaster-message": "Réserve partagée copiée!"
+            },
+            "history": {
+                "page-title": "Historique des jets"
+            },
+            "roller": {
+                "dice-roller-title": "Lanceur de dés",
+                "test-tab-label": "Test",
+                "live-tab-label": "En direct",
+                "dice-description-placeholder": "Description",
+                "roll-dice-button-text": "Lancez les dés",
+                "create-roll-chain-button-text": "Créer une réserve partagée",
+                "full-history-button-label": "Voir l'historique complet",
+                "dice-chain-created": "Réserve partagée créée!"
+            },
+            "result": {
+                "page-title": "{{ name }} Résultats",
+                "full-history-button-text": "Voir l'historique complet"
+            }
+        }
+    },
+    "shared": {
+        "containers": {
+            "secured-container": {
+                "menu-items": {
+                    "Characters": "Personnages",
+                    "Vehicles": "Véhicules",
+                    "Dice": "Dés",
+                    "Games": "Parties",
+                    "Profile": "Profil",
+                    "Logout": "Déconnexion",
+                    "Login": "Connexion"
+                },
+                "footer-items": {
+                    "bot-help.comment": "The bot-help key is used to link the user to the help PDF for bot commands",
+                    "bot-help": "Aide du bot",
+                    "build.comment": "The build is the version number for the application, the user can check it to make sure they're on the newest version number and it's useful for seeing what features are available to the version the user has. This will typically have a value next to it like v0.11.12.0 or something.",
+                    "build": "Version"
+                }
+            }
+        }
+    }
+}
