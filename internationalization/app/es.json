@@ -26,6 +26,7 @@
         "Genesys": "Genesys"
       },
       "languages": {
+        "Auto-Detect": "Detección automática",
         "English": "Inglés",
         "Spanish": "Español",
         "French": "Francés"
@@ -46,8 +47,18 @@
         "Genesys FFG Vehicle Crit Table": "Tabla de Críticos de vehículos Genesys FFG",
         "Star Wars FFG Eote Crit Table": "Tabla de Críticos Star Wars FFG AFDI",
         "Star Wars FFG Eote Vehicle Crit Table": "Tabla de Críticos de vehículos Star Wars FFG AFDI"
-      }
     },
+	"initiative-types": {
+		"singular": {
+			"[Initiative Type] PC": "PJ",
+			"[Initiative Type] NPC": "PNJ"
+		},
+		"plural": {
+			"[Initiative Type] PC": "PJs",
+			"[Initiative Type] NPC": "PNJs"
+		}
+	}
+},	
     "labels": {
       "language": "Idioma",
       "link-copied.comment": "The link-copied value will pop up usually after a user hits a button that's puts a URL into a user's clipboard. This message lets the user know the URL was copied successfully",
@@ -140,6 +151,120 @@
       }
     }
   },
+  "character2": {
+      "ffg-sw": {
+          "enums": {
+              "character-attribute": {
+                  "Soak": "Protección",
+                  "Wounds": "Heridas",
+                  "Strain": "Tensión",
+                  "Defense": "Defensa",
+                  "Force Rating": "Dominio de la Fuerza",
+                  "Threshold": "Umbral",
+                  "Current": "Actual",
+                  "Melee": "Cuerpo a cuerpo",
+                  "Ranged": "A distancia",
+                  "Committed": "Asignado",
+                  "Available XP": "PE disponibles",
+                  "Total XP": "PE Totales",
+                  "Credits": "Créditos",
+                  "Encumbrance": "Impedimento"
+              },
+              "character-characteristic": {
+                  "Brawn": "Fortaleza",
+                  "Agility": "Agilidad",
+                  "Intellect": "Intelecto",
+                  "Cunning": "Astucia",
+                  "Willpower": "Voluntad",
+                  "Presence": "Presencia"
+              }
+          },
+          "components": {
+              "action-bar": {
+                  "edit": "Editar",
+                  "clone": "Clonar",
+                  "back-to-list": "Volever a Lista",
+                  "save": "Guardar",
+                  "cancel": "Cancelar"
+              },
+              "critical-injury": {
+                  "critical-injury": "Herida Crítica",
+                  "difficulty": "Dificultad",
+                  "name": "Nombre",
+                  "description": "Descripción",
+                  "add-critical-injury": "Añadir Herida Crítica"
+              },
+              "current-games": {
+                  "current-games": "Juegos Actuales"
+              },
+              "details": {
+                  "character-details": "Detalles del Personaje",
+                  "background": "Trasfondo",
+                  "obligation": "Obligaciónn",
+                  "duty": "Deber",
+                  "morality": "Moralidad",
+                  "motivation": "Motivación"
+              },
+              "details-background": {
+                  "background": "Trasfondo"
+              },
+              "details-motivation": {
+                  "motivation": "Motivación"
+              },
+              "details-obligation": {
+                  "obligation-name": "Tipo de Obligación",
+                  "obligation-amount": "Magnitud",
+                  "triggered": "Activada",
+                  "description": "Descripción",
+                  "add-obligation": "Añadir Obligación"
+              },
+              "details-duty": {
+                  "group-contribution-ranks": "Rango de Contribución al Grupo",
+                  "duty-name": "Tipo",
+                  "duty-amount": "Magnitud",
+                  "triggered": "Activado",
+                  "description": "Descripción",
+                  "add-duty": "Añadir Deber"
+              },
+              "details-morality": {
+                  "morality-score": "Valor de Moralidad",
+                  "session-conflict": "Conflicto de la Sesión",
+                  "emotional-strength": "Fortaleza Emocional",
+                  "emotional-weakness": "Debilidad Emocional",
+                  "description": "Descripción",
+                  "add-morality": "Añadir Moralidad"
+              },
+              "equipment": {
+                  "equipment-and-gear": "Equipment & Gear",
+                  "quantity": "Cantidad",
+                  "encumbrance": "Impedimento",
+                  "rarity": "Rareza",
+                  "price": "Precio",
+                  "carrying": "Transportado",
+                  "custom-name": "Nombre Personalizado",
+                  "notes": "Notas",
+                  "add-equipment": "Añadir Equipment"
+              },
+              "hide-toggle": {
+                  "hide": "Ocultar"
+              },
+              "notes": {
+                  "notes": "Notas"
+              },
+              "player-header": {
+                  "placeholder-name": "Nombre",
+                  "placeholder-image-url": "URL Imagén",
+                  "placeholder-species": "Especie",
+                  "placeholder-career": "Profesión",
+                  "placeholder-specialization": "Especialización",
+                  "placeholder-age": "Edad",
+                  "placeholder-weight": "Peso",
+                  "placeholder-height": "Altura",
+                  "placeholder-notable-features": "Rasgos destacados"
+              }
+          }
+      }
+  },
   "dice": {
     "overlays": {
       "help.comment": "This help section text shows up in the help dialog on the dice roller. It's broken into two sections for each question: category title and category description. The title is the question and the description is the answer",
@@ -198,6 +323,19 @@
       "game-list-card": {
         "settings-button-text": "Ajustes",
         "game-table-view-button-text": "Mesa de Juego"
+      },
+      "table-initiative": {
+        "initiative-round-abbreviation": "R{{ round }}",
+        "previous-slot-button-text": "Puesto Anterior",
+        "next-slot-button-text": "Puesto Siguiente",
+        "convert-button-text.comment": "The below text is shown as button text that allows users to convert initiative slots between NPC and PC slots",
+        "convert-button-text": "Convertir a {{ oppositeType }}",
+        "remove-slot-button-text.comment": "The below text is shown as a button users can click on to remove a slot from initiative",
+        "remove-slot-button-text": "Eliminar puesto",
+        "reset-initiative-button-text.comment": "The below text is used on the button that lets a user RESET initiative - that is, keep all of the slots the same, the round just goes back to 1",
+        "reset-initiative-button-text": "Reiniciar Iniciativa",
+        "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
+        "clear-initiative-button-text": "Borrar Iniciativa"
       }
     },
     "overlays": {
@@ -224,6 +362,23 @@
         "header": "Mis Juegos",
         "no-games-warning": "¡Aún no tienes juegos!"
       },
+      "table": {
+        "page-title": "Mesa de Juego {{ gameName }}",
+        "page-description": "Mesa de Juego proporcionada por RPG Sessions",
+        "no-connection-error-message": "Sin conexión",
+        "connecting-info-message": "Conectando...",
+        "reconnect-button-text": "Reconectando",
+        "non-member-warning": "¡Parece que no eres miembro de este juego!",
+        "join-game-button-text": "Unirse al juego",
+        "join-game-instructions": "Para unirte a este juego, asegúrate de que tu cuenta de RPG Sessions esté vinculada a tu cuenta de Discord y luego únete al servidor Discord correspondiente. ¡Serás agregado automáticamente como miembro a este juego!",
+        "table-not-found": "No se encontró la Mesa de Juego",
+        "game-not-loaded": "Juego no cargado",
+        "settings-updated-confirmation.comment": "The below is shown when the settings of a game table are successfully updated",
+        "settings-updated-confirmation": "¡Ajustes actualizados!",
+        "game-joined-confirmation.comment": "The below is shown when a user successfully joins an RPG Sessions-based game through the Game Table",
+        "game-joined-confirmation": "¡Te uniste al Juego!",
+        "link-copied-confir": "¡Enlace copiado!"
+      },
       "view": {
         "no-game-found-error": "¡No se encontró nigún juego!",
         "game-update-successful-message": "¡Juego actualizado con éxito!",
@@ -239,7 +394,10 @@
         "dice-sizes": {
           "Regular": "Normal",
           "Large": "Grande"
-        }
+        },
+        "gm-story-point-style": "Estilo de Punto de Destino del Lado Oscuro/Historia del DJ",
+        "pc-story-point-style": "Estilo de Punto de Destino del Lado Luminoso/Historia del PJ",
+        "patron-only-story-point-warning": "Debes ser Patrocinador para cambiar los estilos de puntos de destino/historia"
       }
     }
   },
