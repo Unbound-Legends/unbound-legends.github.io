@@ -395,8 +395,8 @@
           "Regular": "Normal",
           "Large": "Grande"
         },
-        "gm-story-point-style": "Estilo de Punto de Destino del Lado Oscuro/Historia del DJ",
-        "pc-story-point-style": "Estilo de Punto de Destino del Lado Luminoso/Historia del PJ",
+        "gm-story-point-style": "Estilo Punto Historia DJ",
+        "pc-story-point-style": "Estilo Punto Historia PJ",
         "patron-only-story-point-warning": "Debes ser Patrocinador para cambiar los estilos de puntos de destino/historia"
       }
     }
