@@ -21,11 +21,12 @@
                 "Light Theme": "Clair"
             },
             "dice-types": {
-                "Numbered": "Chiffrés",
+                "Numbered": "Numériques",
                 "Star Wars": "Star Wars",
                 "Genesys": "Genesys"
             },
             "languages": {
+                "Auto-Detect": "Détection automatique",
                 "English": "Anglais",
                 "Spanish": "Espagnol",
                 "French": "Français"
@@ -36,6 +37,26 @@
                 "Oldest": "Le plus ancien",
                 "Modified": "Modifié",
                 "Favorite": "Favoris"
+            },
+            "game-types": {
+                "Genesys": "Genesys",
+                "Star Wars": "Star Wars"
+            },
+            "crit-tables": {
+                "Genesys FFG Crit Table": "Table des critiques Genesys FFG",
+                "Genesys FFG Vehicle Crit Table": "Table des critiques des véhicules Genesys FFG",
+                "Star Wars FFG Eote Crit Table": "Table des critiques Star Wars FFG ACdE",
+                "Star Wars FFG Eote Vehicle Crit Table": "Table des critiques des véhicules Star Wars FFG ACdE"
+            },
+            "initiative-types": {
+                "singular": {
+                    "[Initiative Type] PC": "PJ",
+                    "[Initiative Type] NPC": "PNJ"
+                },
+                "plural": {
+                    "[Initiative Type] PC": "PJs",
+                    "[Initiative Type] NPC": "PNJs"
+                }
             }
         },
         "labels": {
@@ -45,7 +66,14 @@
             "link-copied": "Lien copié!",
             "roll-history": "Historique des jets",
             "new-roll": "Nouveau jet",
-            "sort-by": "Trier par"
+            "sort-by": "Trier par",
+            "new-button-text": "Nouveau",
+            "rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
+            "rpg-sessions-mark-alt-text": "Symbole RPG Sessions",
+            "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
+            "select-list-none": "Aucun",
+            "cancel-button-text.comment": "The following will be used on cancel buttons throughout the app",
+            "cancel-button-text": "Annuler"
         }
     },
     "user": {
@@ -108,11 +136,7 @@
                     "Poids",
                     "Grandeur",
                     "Détails",
-                    "Histoire",
-                    "Force",
-                    "Défaut",
-                    "Peur",
-                    "Désir"
+                    "Histoire"
                 ],
                 "import-limit-greeting": "Oh non!",
                 "import-limit-description": "Il semble que vous avez atteint votre limite d'importation pour ce mois.",
@@ -122,7 +146,8 @@
                 "patreon-only-error-warning": "Cette fonctionnalité est présentement exclusive à nos membres Patron. Si vous voulez joindre notre Patreon pour utiliser cette fonctionnalité, rendez-vous <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >sur notre page Patreon.com.</a>",
                 "patreon-only-error-call-to-action": "Si vous êtes déja un membre Patron, assurez-vous d'associer votre compte dans vos <a href=\"/user/profile\">paramètres de compte.</a>",
                 "dialog-cancel-button": "Annuler",
-                "drop-file-prompt": "Déposez votre {{ fileType }} fichier ici ou cliquer sur télécharger"
+                "drop-file-prompt": "Déposez votre {{ fileType }} fichier ici ou cliquer sur télécharger",
+                "overwrite-character": "Ecraser le personnage"
             }
         }
     },
