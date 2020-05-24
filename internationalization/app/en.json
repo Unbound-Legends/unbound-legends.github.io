@@ -57,6 +57,75 @@
                     "[Initiative Type] PC": "PCs",
                     "[Initiative Type] NPC": "NPCs"
                 }
+            },
+            "dice-names": {
+                "Proficiency": "Proficiency",
+                "Ability": "Ability",
+                "Boost": "Boost",
+                "Challenge": "Challenge",
+                "Difficulty": "Difficulty",
+                "Setback": "Setback",
+                "Force": "Force",
+                "Triumph": "Triumph",
+                "Success": "Success",
+                "Advantage": "Advantage",
+                "Despair": "Despair",
+                "Failure": "Failure",
+                "Threat": "Threat",
+                "Lightside": "Lightside",
+                "Darkside": "Darkside",
+                "Light/Dark": "Light/Dark",
+                "D4": "D4",
+                "D6": "D6",
+                "D8": "D8",
+                "D10": "D10",
+                "D12": "D12",
+                "D20": "D20",
+                "D100": "D100",
+                "Polyhedral": "Polyhedral",
+                "Modifier": "Modifier"
+            },
+            "character-attributes": {
+                "starwars": {
+                    "Soak": "Soak",
+                    "Wounds": "Wounds",
+                    "Strain": "Strain",
+                    "Defense": "Defense",
+                    "Current Wounds": "Current Wounds",
+                    "Wound Threshold": "Wound Threshold",
+                    "Current Strain": "Current Strain",
+                    "Strain Threshold": "Strain Threshold",
+                    "Ranged Defense": "Ranged Defense",
+                    "Melee Defense": "Melee Defense",
+                    "Available XP": "Available XP",
+                    "Total XP": "Total XP",
+                    "Money": "Money",
+                    "Encumbrance": "Encumbrance",
+                    "Current Encumbrance": "Current Encumbrance",
+                    "Total Encumbrance": "Total Encumbrance",
+                    "Force Rating": "Force Rating",
+                    "Current Rating": "Current Rating",
+                    "Committed": "Committed"
+                },
+                "genesys": {
+                    "Soak": "Soak",
+                    "Wounds": "Wounds",
+                    "Strain": "Strain",
+                    "Defense": "Defense",
+                    "Current Wounds": "Current Wounds",
+                    "Wound Threshold": "Wound Threshold",
+                    "Current Strain": "Current Strain",
+                    "Strain Threshold": "Strain Threshold",
+                    "Ranged Defense": "Ranged Defense",
+                    "Melee Defense": "Melee Defense",
+                    "Available XP": "Available XP",
+                    "Total XP": "Total XP",
+                    "Money": "Money",
+                    "Encumbrance": "Encumbrance",
+                    "Current Encumbrance": "Current Encumbrance",
+                    "Total Encumbrance": "Total Encumbrance",
+                    "Heroic Ability Points": "Heroic Ability Points"
+                }
             }
         },
         "labels": {
@@ -325,6 +394,7 @@
                 "game-table-view-button-text": "Game Table"
             },
             "table-initiative": {
+                "initiative-component-title": "Initiative",
                 "initiative-round-abbreviation": "R{{ round }}",
                 "previous-slot-button-text": "Previous Slot",
                 "next-slot-button-text": "Next Slot",
@@ -336,6 +406,47 @@
                 "reset-initiative-button-text": "Reset Initiative",
                 "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
                 "clear-initiative-button-text": "Clear Initiative"
+            },
+            "table-characters-list": {
+                "characters-tab-text": "Characters",
+                "vehicles-tab-text": "Vehicles",
+                "NPCs-tab-text": "NPCs",
+                "coming-soon-text": "Coming Soon",
+                "no-selected-character-warning": "No Selected Character!",
+                "select-character-button-text": "Select Character",
+                "character-image-alt-text": "Character Image",
+                "wound-abbreviation-text": "W",
+                "strain-abbreviation-text": "S",
+                "character-placeholder-text": "Character"
+            },
+            "table-character-hud": {
+                "no-character-selected-warning": "No Character Selected",
+                "wounds-label": "Wounds",
+                "strain-label": "Strain",
+                "soak-label": "Soak",
+                "defense-label": "Defense",
+                "melee-abbreviation": "M",
+                "ranged-abbreviation": "R"
+            },
+            "table-dice-roller": {
+                "character-skill-placeholder": "Character Skill",
+                "description-placeholder": "Description",
+                "roll-dice-button-text": "Roll Dice",
+                "roll-initiative-pc": "Roll Initiative (PC)",
+                "roll-initiative-npc": "Roll Initiative (NPC)",
+                "roll-crit-this-pc-button-text": "Roll Crit for this PC",
+                "plus-10-to-crit-button-text": "+10",
+                "minus-10-to-crit-button-text": "-10",
+                "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings"
+            },
+            "table-destiny": {
+                "no-points.comment": "The below text is shown when there are no destiny/story points on the current game table",
+                "no-points": "No Current Points"
+            },
+            "table-messages": {
+                "no-messages": "No Messages!",
+                "updated": "updated!",
+                "updated-count-times": "updated {{ count }} times!"
             }
         },
         "overlays": {
