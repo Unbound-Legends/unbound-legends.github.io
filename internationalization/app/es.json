@@ -57,8 +57,77 @@
 			"[Initiative Type] PC": "PJs",
 			"[Initiative Type] NPC": "PNJs"
 		}
-	}
-},	
+    },
+    "dice-names": {
+      "Proficiency": "Pericia",
+      "Ability": "Capacidad",
+      "Boost": "Beneficio",
+      "Challenge": "Desafio",
+      "Difficulty": "Dificultad",
+      "Setback": "Complicación",
+      "Force": "Fuerza",
+      "Triumph": "Triunfo",
+      "Success": "Éxito",
+      "Advantage": "Ventaja",
+      "Despair": "Deseperación",
+      "Failure": "Fallo",
+      "Threat": "Amenaza",
+      "Lightside": "Lado Luminoso",
+      "Darkside": "Lado Oscuro",
+      "Light/Dark": "Luminoso/Oscuro",
+      "D4": "D4",
+      "D6": "D6",
+      "D8": "D8",
+      "D10": "D10",
+      "D12": "D12",
+      "D20": "D20",
+      "D100": "D100",
+      "Polyhedral": "Poliédrico",
+      "Modifier": "Modificador"
+    },
+    "character-attributes": {
+        "starwars": {
+          "Soak": "Protección",
+          "Wounds": "Heridas",
+          "Strain": "Tensión",
+          "Defense": "Defensa",
+          "Current Wounds": "Heridas Actuales",
+          "Wound Threshold": "Umbral de Heridas",
+          "Current Strain": "Tensión Actual",
+          "Strain Threshold": "Umbral de Tensión",
+          "Ranged Defense": "Defensa a Distancia",
+          "Melee Defense": "Defensa Cuerpo a Cuerpo",
+          "Available XP": "PE Disponibles",
+          "Total XP": "PE Totales",
+          "Money": "Créditos",
+          "Encumbrance": "Impedimento",
+          "Current Encumbrance": "Impedimento Actual",
+          "Total Encumbrance": "Umbral de Impedimento",
+          "Force Rating": "Dominio de la Fuerza",
+          "Current Rating": "Dominio Actual",
+          "Committed": "Asignado"
+        },
+        "genesys": {
+          "Soak": "Protección",
+          "Wounds": "Heridas",
+          "Strain": "Tensión",
+          "Defense": "Defensa",
+          "Current Wounds": "Heridas Actuales",
+          "Wound Threshold": "Umbral de Heridas",
+          "Current Strain": "Tensión Actual",
+          "Strain Threshold": "Umbral de Tansión",
+          "Ranged Defense": "Defensa a Distancia",
+          "Melee Defense": "Defensa Cuerpo a Cuerpo",
+          "Available XP": "PE Disponibles",
+          "Total XP": "PE Totales",
+          "Money": "Dinero",
+          "Encumbrance": "Impedimento",
+          "Current Encumbrance": "Impedimento Actual",
+          "Total Encumbrance": "Umbral de Impedimento",
+          "Heroic Ability Points": "Puntos de Habilidad Heróicos"
+        }
+      }
+    },
     "labels": {
       "language": "Idioma",
       "link-copied.comment": "The link-copied value will pop up usually after a user hits a button that's puts a URL into a user's clipboard. This message lets the user know the URL was copied successfully",
@@ -325,6 +394,7 @@
         "game-table-view-button-text": "Mesa de Juego"
       },
       "table-initiative": {
+        "initiative-component-title": "Iniciativa",
         "initiative-round-abbreviation": "R{{ round }}",
         "previous-slot-button-text": "Puesto Anterior",
         "next-slot-button-text": "Puesto Siguiente",
@@ -336,6 +406,47 @@
         "reset-initiative-button-text": "Reiniciar Iniciativa",
         "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
         "clear-initiative-button-text": "Borrar Iniciativa"
+      },
+      "table-characters-list": {
+        "characters-tab-text": "Personajes",
+        "vehicles-tab-text": "Vehículos",
+        "NPCs-tab-text": "PNJs",
+        "coming-soon-text": "Próximamente",
+        "no-selected-character-warning": "¡Personaje No Seleccionado!",
+        "select-character-button-text": "Selecciona Personaje",
+        "character-image-alt-text": "Imagen del Personaje",
+        "wound-abbreviation-text": "H",
+        "strain-abbreviation-text": "T",
+        "character-placeholder-text": "Personaje"
+      },
+      "table-character-hud": {
+        "no-character-selected-warning": "Personaje No Seleccionado",
+        "wounds-label": "Heridas",
+        "strain-label": "Tensión",
+        "soak-label": "Protección",
+        "defense-label": "Defensa",
+        "melee-abbreviation": "CaC",
+        "ranged-abbreviation": "aD"
+      },
+      "table-dice-roller": {
+        "character-skill-placeholder": "Habilidad del Personaje",
+        "description-placeholder": "Descripción",
+        "roll-dice-button-text": "Lanzar Dados",
+        "roll-initiative-pc": "Tirar Iniciativa (PJ)",
+        "roll-initiative-npc": "Tirar Iniciativa (PNJ)",
+        "roll-crit-this-pc-button-text": "Tirar Crítico para este PJ",
+        "plus-10-to-crit-button-text": "+10",
+        "minus-10-to-crit-button-text": "-10",
+        "no-dice-channel-selected-error": "No se seleccionó ningún canal de dados: el lanzamiento no se reflejará en Discord. Selecciona un canal en la configuración del juego"
+      },
+      "table-destiny": {
+        "no-points.comment": "The below text is shown when there are no destiny/story points on the current game table",
+        "no-points": "Sin puntos actuales"
+      },
+      "table-messages": {
+        "no-messages": "¡Ningún mensaje!",
+        "updated": "¡actualizado!",
+        "updated-count-times": "¡actualizado {{ count }} veces!"
       }
     },
     "overlays": {
