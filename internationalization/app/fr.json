@@ -44,9 +44,9 @@
             },
             "crit-tables": {
                 "Genesys FFG Crit Table": "Genesys FFG",
-                "Genesys FFG Vehicle Crit Table": "Genesys FFG",
+                "Genesys FFG Vehicle Crit Table": "Genesys FFG - Véhicules",
                 "Star Wars FFG Eote Crit Table": "Star Wars FFG ACdE",
-                "Star Wars FFG Eote Vehicle Crit Table": "Star Wars FFG ACdE"
+                "Star Wars FFG Eote Vehicle Crit Table": "Star Wars FFG ACdE - Véhicules"
             },
             "initiative-types": {
                 "singular": {
