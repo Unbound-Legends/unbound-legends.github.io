@@ -43,10 +43,10 @@
                 "Star Wars": "Star Wars"
             },
             "crit-tables": {
-                "Genesys FFG Crit Table": "Table des critiques Genesys FFG",
-                "Genesys FFG Vehicle Crit Table": "Table des critiques des véhicules Genesys FFG",
-                "Star Wars FFG Eote Crit Table": "Table des critiques Star Wars FFG ACdE",
-                "Star Wars FFG Eote Vehicle Crit Table": "Table des critiques des véhicules Star Wars FFG ACdE"
+                "Genesys FFG Crit Table": "Genesys FFG",
+                "Genesys FFG Vehicle Crit Table": "Genesys FFG",
+                "Star Wars FFG Eote Crit Table": "Star Wars FFG ACdE",
+                "Star Wars FFG Eote Vehicle Crit Table": "Star Wars FFG ACdE"
             },
             "initiative-types": {
                 "singular": {
@@ -395,8 +395,8 @@
                     "Regular": "Standard",
                     "Large": "Large"
                 },
-                "gm-story-point-style": "Style des Points narratifs MJ",      //En attente réponse Genesys
-                "pc-story-point-style": "Style des Points narratifs PJ",      //En attente réponse Genesys
+                "gm-story-point-style": "Style des Points narratifs MJ",
+                "pc-story-point-style": "Style des Points narratifs PJ",
                 "patron-only-story-point-warning": "Vous devez être un Patron pour changer le style des Points narratifs."
             }
         }
