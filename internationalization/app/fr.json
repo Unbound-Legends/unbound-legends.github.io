@@ -434,7 +434,7 @@
                 "roll-dice-button-text": "Lancer les dés",
                 "roll-initiative-pc": "Lancer l'initiative (PJ)",
                 "roll-initiative-npc": "Lancer l'initiative (PNJ)",
-                "roll-crit-this-pc-button-text": "Lancer le critique pour the PJ",
+                "roll-crit-this-pc-button-text": "Lancer le critique pour le PJ",
                 "plus-10-to-crit-button-text": "+10",
                 "minus-10-to-crit-button-text": "-10",
                 "no-dice-channel-selected-error": "Aucun canal sélectionné pour les dés - Les lancer ne seront pas transmis à Discord. Choisissez un canal dans les paramètres de la partie"
