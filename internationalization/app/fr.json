@@ -108,23 +108,23 @@
                     "Committed": "Engagé"
                 },
                 "genesys": {
-                    "Soak": "Soak",
-                    "Wounds": "Wounds",
-                    "Strain": "Strain",
-                    "Defense": "Defense",
-                    "Current Wounds": "Current Wounds",
-                    "Wound Threshold": "Wound Threshold",
-                    "Current Strain": "Current Strain",
-                    "Strain Threshold": "Strain Threshold",
-                    "Ranged Defense": "Ranged Defense",
-                    "Melee Defense": "Melee Defense",
-                    "Available XP": "Available XP",
-                    "Total XP": "Total XP",
-                    "Money": "Money",
-                    "Encumbrance": "Encumbrance",
-                    "Current Encumbrance": "Current Encumbrance",
-                    "Total Encumbrance": "Total Encumbrance",
-                    "Heroic Ability Points": "Heroic Ability Points"
+                    "Soak": "Encaissement",
+                    "Wounds": "Blessures",
+                    "Strain": "Stress",
+                    "Defense": "Défense",
+                    "Current Wounds": "Blessures actuelles",
+                    "Wound Threshold": "Seuil de blessures",
+                    "Current Strain": "Stress actuel",
+                    "Strain Threshold": "Seuil de stress",
+                    "Ranged Defense": "Défense - Distance",
+                    "Melee Defense": "Défense - Corps à corps",
+                    "Available XP": "XP disponibles",
+                    "Total XP": "Total en XP",
+                    "Money": "Crédits",
+                    "Encumbrance": "Encombrement",
+                    "Current Encumbrance": "Encombrement actuel",
+                    "Total Encumbrance": "Encombrement total",
+                    "Heroic Ability Points": "Points de Capacité Héroique"
                 }
             }
         },
@@ -268,14 +268,14 @@
                 },
                 "details": {
                     "character-details": "Détails du personnage",
-                    "background": "Background",
+                    "background": "Histoire",
                     "obligation": "Obligation",
                     "duty": "Devoir",
                     "morality": "Moralité",
                     "motivation": "Motivations"
                 },
                 "details-background": {
-                    "background": "Background"
+                    "background": "Histoire"
                 },
                 "details-motivation": {
                     "motivation": "Motivations"
@@ -394,6 +394,7 @@
                 "game-table-view-button-text": "Table de Jeu"
             },
             "table-initiative": {
+                "initiative-component-title": "Initiative",
                 "initiative-round-abbreviation": "R{{ round }}",
                 "previous-slot-button-text": "Créneau précédent",
                 "next-slot-button-text": "Créneau suivant",
@@ -405,6 +406,47 @@
                 "reset-initiative-button-text": "Recommencer l'initiative",
                 "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
                 "clear-initiative-button-text": "Supprimer l'initiative"
+            },
+            "table-characters-list": {
+                "characters-tab-text": "Personnages",
+                "vehicles-tab-text": "Véhicules",
+                "NPCs-tab-text": "PNJs",
+                "coming-soon-text": "A venir",
+                "no-selected-character-warning": "Aucune personnage sélectionné !",
+                "select-character-button-text": "Sélectionner un personnage",
+                "character-image-alt-text": "Image personnage",
+                "wound-abbreviation-text": "B",
+                "strain-abbreviation-text": "S",
+                "character-placeholder-text": "Personnage"
+            },
+            "table-character-hud": {
+                "no-character-selected-warning": "Aucun personnage sélectionner",
+                "wounds-label": "Blessures",
+                "strain-label": "Stress",
+                "soak-label": "Encaissement",
+                "defense-label": "Défense",
+                "melee-abbreviation": "CaC",
+                "ranged-abbreviation": "D"
+            },
+            "table-dice-roller": {
+                "character-skill-placeholder": "Compétences du personnage",
+                "description-placeholder": "Description",
+                "roll-dice-button-text": "Lancer les dés",
+                "roll-initiative-pc": "Lancer l'initiative (PJ)",
+                "roll-initiative-npc": "Lancer l'initiative (PNJ)",
+                "roll-crit-this-pc-button-text": "Lancer le critique pour le PJ",
+                "plus-10-to-crit-button-text": "+10",
+                "minus-10-to-crit-button-text": "-10",
+                "no-dice-channel-selected-error": "Aucun canal sélectionné pour les dés - Les lancer ne seront pas transmis à Discord. Choisissez un canal dans les paramètres de la partie"
+            },
+            "table-destiny": {
+                "no-points.comment": "The below text is shown when there are no destiny/story points on the current game table",
+                "no-points": "Aucun point disponible"
+            },
+            "table-messages": {
+                "no-messages": "Aucun message !",
+                "updated": "Mis à jour !",
+                "updated-count-times": "Mis à jour {{ count }} fois !"
             }
         },
         "overlays": {
