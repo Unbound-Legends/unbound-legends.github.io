@@ -454,8 +454,16 @@
             },
             "table-messages": {
                 "no-messages": "No Messages!",
+                "no-notes": "No Notes!",
                 "updated": "updated!",
-                "updated-count-times": "updated {{ count }} times!"
+                "updated-count-times": "updated {{ count }} times!",
+                "history-tab-text": "History",
+                "notes-tab-text": "Notes",
+                "comment-placeholder": "Make a comment",
+                "no-patron-warning": "You must be a Patron to upload images",
+                "send-button-text": "Send",
+                "file-limit-error": "Import file must be under 10 MB.",
+                "file-type-error": "Import file must be an image."
             }
         },
         "overlays": {
@@ -474,6 +482,11 @@
                 "game-name-placeholder-text": "Game Name",
                 "game-type-placeholder-text": "Game Type",
                 "create-game-button-text": "Create Game"
+            },
+            "upload-image-overlay": {
+                "add-note-label": "Note (optional)",
+                "upload-button-text": "Upload",
+                "cancel-button-text": "Cancel"
             }
         },
         "pages": {
