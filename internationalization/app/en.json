@@ -42,6 +42,12 @@
                 "Genesys": "Genesys",
                 "Star Wars": "Star Wars"
             },
+            "game-themes": {
+                "[game theme] eote core": "Edge of the Empire Core",
+                "[game theme] genesys core": "Genesys Core",
+                "[game theme] genesys terrinoth": "Genesys Terrinoth",
+                "[game theme] genesys android": "Genesys Android"
+            },
             "crit-tables": {
                 "Genesys FFG Crit Table": "Genesys FFG Crit Table",
                 "Genesys FFG Vehicle Crit Table": "Genesys FFG Vehicle Crit Table",
@@ -142,7 +148,10 @@
             "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
             "select-list-none": "None",
             "cancel-button-text.comment": "The following will be used on cancel buttons throughout the app",
-            "cancel-button-text": "Cancel"
+            "cancel-button-text": "Cancel",
+            "view-button-text": "View",
+            "share-button-text": "Share",
+            "delete-button-text": "Share"
         }
     },
     "user": {
@@ -509,6 +518,42 @@
                 "gm-story-point-style": "GM Story Point Style",
                 "pc-story-point-style": "PC Story Point Style",
                 "patron-only-story-point-warning": "You must be a Patron to change story point styles."
+            }
+        }
+    },
+    "vehicle": {
+        "components": {
+            "detail-component": {
+                "Vehicle Type/Model": "Vehicle Type/Model",
+                "Manufacturer": "Manufacturer",
+                "Crew": "Crew",
+                "Passengers": "Passengers",
+                "Consumables": "Consumables",
+                "Hyperdrive": "Hyperdrive",
+                "Sensor Range": "Sensor Range",
+                "Background": "Background",
+                "Cargo Hold": "Cargo Hold"
+            },
+            "vehicle-card": {
+                "game-type-label": "Game Type:"
+            },
+            "name-image": {
+                "vehicle-name-placeholder": "Name",
+                "image-url-placeholder": "Image URL",
+                "has-clones-singular": "Has {{ count }} clone",
+                "has-clones-plural": "Has {{ count }} clones"
+            }
+        },
+        "pages": {
+            "create": {
+                "page-title": "Create Vehicle",
+                "vehicle-image-alt-text": "Vehicle Image"
+            },
+            "list": {
+                "page-title": "Vehicle List",
+                "vehicle-deleted": "Vehicle deleted successfully",
+                "page-header": "My Vehicles",
+                "no-vehicles": "You don't have any vehicles yet!"
             }
         }
     },
