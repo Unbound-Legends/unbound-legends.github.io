@@ -460,7 +460,7 @@
                 "history-tab-text": "History",
                 "notes-tab-text": "Notes",
                 "comment-placeholder": "Make a comment",
-                "no-patron-warning": "You must be a Patron to upload images",
+                "no-patron-warning": "You must be a \"The Duece\" tier Patron or higher to upload images",
                 "send-button-text": "Send",
                 "file-limit-error": "Import file must be under 10 MB.",
                 "file-type-error": "Import file must be an image."
