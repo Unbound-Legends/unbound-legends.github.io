@@ -453,13 +453,13 @@
                 "no-points": "No Current Points"
             },
             "table-messages": {
-                "no-messages": "No Messages!",
-                "no-notes": "No Notes!",
+                "no-messages": "No History!",
+                "no-notes": "No Messages!",
                 "updated": "updated!",
                 "updated-count-times": "updated {{ count }} times!",
                 "history-tab-text": "History",
-                "notes-tab-text": "Notes",
-                "comment-placeholder": "Make a comment",
+                "notes-tab-text": "Messages",
+                "comment-placeholder": "Write a message...",
                 "no-patron-warning": "You must be a \"The Duece\" tier Patron or higher to upload images",
                 "send-button-text": "Send",
                 "file-limit-error": "Import file must be under 10 MB.",
