@@ -454,8 +454,16 @@
             },
             "table-messages": {
                 "no-messages": "Aucun message !",
+                "no-notes": "Aucune note !",
                 "updated": "Mis à jour !",
-                "updated-count-times": "Mis à jour {{ count }} fois !"
+                "updated-count-times": "Mis à jour {{ count }} fois !",
+                "history-tab-text": "Histoire",
+                "notes-tab-text": "Notes",
+                "comment-placeholder": "Faites un commentaire",
+                "no-patron-warning": "Vous devez être Patron au tier \"The Duece\" ou plus pour importer des images",
+                "send-button-text": "Envoyer",
+                "file-limit-error": "Le fichier importé doit faire moins de 10 Mo.",
+                "file-type-error": "Le fichier importé doit être une image."
             }
         },
         "overlays": {
@@ -474,6 +482,11 @@
                 "game-name-placeholder-text": "Nom de la Partie",
                 "game-type-placeholder-text": "Type de la Partie",
                 "create-game-button-text": "Créer la Partie"
+            },
+            "upload-image-overlay": {
+                "add-note-label": "Note (facultatif)",
+                "upload-button-text": "Importer",
+                "cancel-button-text": "Annuler"
             }
         },
         "pages": {
