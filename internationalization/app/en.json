@@ -254,7 +254,26 @@
                     "Intellect": "Intellect",
                     "Cunning": "Cunning",
                     "Willpower": "Willpower",
-                    "Presence": "Presence"
+                    "Presence": "Presence",
+                    "BR": "BR",
+                    "AG": "AG",
+                    "INT": "INT",
+                    "CUN": "CUN",
+                    "WILL": "WILL",
+                    "PR": "PR"
+                },
+                "character-range-band": {
+                    "Engaged": "Engaged",
+                    "Short": "Short",
+                    "Medium": "Medium",
+                    "Long": "Long",
+                    "Extreme": "Extreme"
+                },
+                "character-talent-activation-type": {
+                    "Passive": "Passive",
+                    "Incidental": "Incidental",
+                    "Maneuver": "Maneuver",
+                    "Action": "Action"
                 }
             },
             "components": {
@@ -264,6 +283,29 @@
                     "back-to-list": "Back to List",
                     "save": "Save",
                     "cancel": "Cancel"
+                },
+                "armor": {
+                    "armor": "Armor",
+                    "soak": "Soak",
+                    "defense": "Defense",
+                    "encumbrance": "Encumbrance",
+                    "rarity": "Rarity",
+                    "price": "Price",
+                    "carrying": "Carrying",
+                    "equipped": "Equipped",
+                    "custom-name": "Custom Name",
+                    "qualities": "Qualities",
+                    "add-quality": "Add Quality",
+                    "add-armor": "Add Armor"
+                },
+                "armor-attachments": {
+                    "attachments": "Attachments",
+                    "cost": "Cost",
+                    "rarity": "Rarity",
+                    "required-hp": "Required HP",
+                    "base-modifier": "Base Modifier",
+                    "modifications": "Modifications",
+                    "add-attachment": "Add Attachment"
                 },
                 "critical-injury": {
                     "critical-injury": "Critical Injury",
@@ -321,6 +363,8 @@
                     "carrying": "Carrying",
                     "custom-name": "Custom Name",
                     "notes": "Notes",
+                    "qualities": "Qualities",
+                    "add-quality": "Add Quality",
                     "add-equipment": "Add Equipment"
                 },
                 "hide-toggle": {
@@ -339,7 +383,85 @@
                     "placeholder-weight": "Weight",
                     "placeholder-height": "Height",
                     "placeholder-notable-features": "Notable Features"
+                },
+                "skills-table": {
+                    "general-skills": "General Skills",
+                    "combat-skills": "Combat Skills",
+                    "social-skills": "Social Skills",
+                    "knowledge-skills": "Knowledge Skills",
+                    "other-skills": "Other Skills",
+                    "career": "Career",
+                    "rank": "Rank"
+                },
+                "talents": {
+                    "talents": "Talents"
+                },
+                "talent-slot": {
+                    "ranks": "Ranks",
+                    "xp": "XP"
+                },
+                "weapons": {
+                    "weapon": "Weapon",
+                    "skill": "Skill",
+                    "damage": "Damage",
+                    "crit": "Crit",
+                    "range": "Range",
+                    "encumbrance": "Encum",
+                    "hard-points": "HP",
+                    "rarity": "Rarity",
+                    "cost": "Cost",
+                    "carrying": "Carrying",
+                    "equipped": "Equipped",
+                    "custom-name": "Custom Name",
+                    "qualities": "Qualities",
+                    "add-quality": "Add Quality",
+                    "add-weapon": "Add Weapon"
+                },
+                "weapons-attachments": {
+                    "attachments": "Attachments",
+                    "cost": "Cost",
+                    "required-hp": "Required HP",
+                    "base-modifier": "Base Modifier",
+                    "modifications": "Modifications",
+                    "add-attachment": "Add Attachment"
                 }
+            },
+            "skills": {
+                "Astrogation": "Astrogation",
+                "Athletics": "Athletics",
+                "Brawl": "Brawl",
+                "Charm": "Charm",
+                "Coercion": "Coercion",
+                "Computers": "Computers",
+                "Cool": "Cool",
+                "Coordination": "Coordination",
+                "Core Worlds": "Core Worlds",
+                "Deception": "Deception",
+                "Discipline": "Discipline",
+                "Education": "Education",
+                "Gunnery": "Gunnery",
+                "Leadership": "Leadership",
+                "Lightsaber": "Lightsaber",
+                "Lore": "Lore",
+                "Mechanics": "Mechanics",
+                "Medicine": "Medicine",
+                "Melee": "Melee",
+                "Negotiation": "Negotiation",
+                "Outer Rim": "Outer Rim",
+                "Perception": "Perception",
+                "Piloting Planetary": "Piloting Planetary",
+                "Piloting Space": "Piloting Space",
+                "Ranged Heavy": "Ranged Heavy",
+                "Ranged Light": "Ranged Light",
+                "Resilience": "Resilience",
+                "Skulduggery": "Skulduggery",
+                "Stealth": "Stealth",
+                "Streetwise": "Streetwise",
+                "Survival": "Survival",
+                "Underworld": "Underworld",
+                "Vigilance": "Vigilance",
+                "Warfare": "Warfare",
+                "Xenology": "Xenology"
             }
         }
     },
