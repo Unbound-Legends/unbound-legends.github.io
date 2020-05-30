@@ -254,7 +254,26 @@
                     "Intellect": "Intelligence",
                     "Cunning": "Ruse",
                     "Willpower": "Volonté",
-                    "Presence": "Présence"
+                    "Presence": "Présence",
+                    "BR": "Vig",
+                    "AG": "Ag",
+                    "INT": "Int",
+                    "CUN": "Ru",
+                    "WILL": "Vol",
+                    "PR": "Pré"
+                },
+                "character-range-band": {
+                    "Engaged": "Au contact",
+                    "Short": "Courte",
+                    "Medium": "Moyenne",
+                    "Long": "Longue",
+                    "Extreme": "Extrême"
+                },
+                "character-talent-activation-type": {
+                    "Passive": "Passif",
+                    "Incidental": "Broutille",
+                    "Maneuver": "Manoeuvre",
+                    "Action": "Action"
                 }
             },
             "components": {
@@ -264,6 +283,29 @@
                     "back-to-list": "Retourner à la liste",
                     "save": "Sauvegarder",
                     "cancel": "Annuler"
+                },
+                "armor": {
+                    "armor": "Armure",
+                    "soak": "Encaissement",
+                    "defense": "Défense",
+                    "encumbrance": "Encombrement",
+                    "rarity": "Rareté",
+                    "price": "Prix",
+                    "carrying": "Emplacements",
+                    "equipped": "Equipé",
+                    "custom-name": "Nom personnalisé",
+                    "qualities": "Attributs",
+                    "add-quality": "Ajouter un attribut",
+                    "add-armor": "Ajouter une armure"
+                },
+                "armor-attachments": {
+                    "attachments": "Améliorations",
+                    "cost": "Coût",
+                    "rarity": "Rareté",
+                    "required-hp": "Emplacements nécessaires",
+                    "base-modifier": "Effets",
+                    "modifications": "Mods",
+                    "add-attachment": "Ajouter une amélioration"
                 },
                 "critical-injury": {
                     "critical-injury": "Blessures critiques",
@@ -321,6 +363,8 @@
                     "carrying": "Porté",
                     "custom-name": "Nom personnalisé",
                     "notes": "Notes",
+                    "qualities": "Attributs",
+                    "add-quality": "Ajouter un attribut",
                     "add-equipment": "Ajouter un équipement"
                 },
                 "hide-toggle": {
@@ -339,7 +383,85 @@
                     "placeholder-weight": "Poids",
                     "placeholder-height": "Taille",
                     "placeholder-notable-features": "Signes particuliers"
+                },
+                "skills-table": {
+                    "general-skills": "Compétences générales",
+                    "combat-skills": "Compétences de combat",
+                    "social-skills": "Compétences sociales",
+                    "knowledge-skills": "Compétences de connaissance",
+                    "other-skills": "Autres compétences",
+                    "career": "Carrière",
+                    "rank": "Rang"
+                },
+                "talents": {
+                    "talents": "Talents"
+                },
+                "talent-slot": {
+                    "ranks": "Rang",
+                    "xp": "XP"
+                },
+                "weapons": {
+                    "weapon": "Armes",
+                    "skill": "Compétence",
+                    "damage": "Dégâts",
+                    "crit": "Critique",
+                    "range": "Portée",
+                    "encumbrance": "Enc",
+                    "hard-points": "Emp",
+                    "rarity": "Rareté",
+                    "cost": "Coût",
+                    "carrying": "Porté",
+                    "equipped": "Equipé",
+                    "custom-name": "Nom personnalisé",
+                    "qualities": "Attributs",
+                    "add-quality": "Ajouter un attribut",
+                    "add-weapon": "Ajouter une arme"
+                },
+                "weapons-attachments": {
+                    "attachments": "Améliorations",
+                    "cost": "Coût",
+                    "required-hp": "Emplacements nécessaires",
+                    "base-modifier": "Effets",
+                    "modifications": "Mods",
+                    "add-attachment": "Ajouter une amélioration"
                 }
+            },
+            "skills": {
+                "Astrogation": "Astrogation",
+                "Athletics": "Athlétisme",
+                "Brawl": "Pugilat",
+                "Charm": "Charme",
+                "Coercion": "Coercition",
+                "Computers": "Informatique",
+                "Cool": "Calme",
+                "Coordination": "Coordination",
+                "Core Worlds": "Mondes du Noyau",
+                "Deception": "Tromperie",
+                "Discipline": "Sang-Froid",
+                "Education": "Education",
+                "Gunnery": "Artillerie",
+                "Leadership": "Commandement",
+                "Lightsaber": "Sabre laser",
+                "Lore": "Culture",
+                "Mechanics": "Mécanique",
+                "Medicine": "Médecine",
+                "Melee": "Corps à corps",
+                "Negotiation": "Négociation",
+                "Outer Rim": "Bordure extérieure",
+                "Perception": "Perception",
+                "Piloting Planetary": "Pilotage (planétaire)",
+                "Piloting Space": "Pilotage (espace)",
+                "Ranged Heavy": "Distance - Armes lourdes",
+                "Ranged Light": "Distance - Armes légères",
+                "Resilience": "Résistance",
+                "Skulduggery": "Magouilles",
+                "Stealth": "Discrétion",
+                "Streetwise": "Système D",
+                "Survival": "Survie",
+                "Underworld": "Pègre",
+                "Vigilance": "Vigilance",
+                "Warfare": "Stratégie",
+                "Xenology": "Xénologie"
             }
         }
     },
@@ -443,7 +565,7 @@
                 "roll-dice-button-text": "Lancer les dés",
                 "roll-initiative-pc": "Lancer l'initiative (PJ)",
                 "roll-initiative-npc": "Lancer l'initiative (PNJ)",
-                "roll-crit-this-pc-button-text": "Lancer le critique pour le PJ",
+                "roll-crit-this-pc-button-text": "Jet de blessure critique pour le PJ",
                 "plus-10-to-crit-button-text": "+10",
                 "minus-10-to-crit-button-text": "-10",
                 "no-dice-channel-selected-error": "Aucun canal sélectionné pour les dés - Les lancer ne seront pas transmis à Discord. Choisissez un canal dans les paramètres de la partie"
@@ -453,13 +575,13 @@
                 "no-points": "Aucun point disponible"
             },
             "table-messages": {
-                "no-messages": "Aucun message !",
-                "no-notes": "Aucune note !",
+                "no-messages": "Aucun historique !",
+                "no-notes": "Aucun message !",
                 "updated": "Mis à jour !",
                 "updated-count-times": "Mis à jour {{ count }} fois !",
-                "history-tab-text": "Histoire",
-                "notes-tab-text": "Notes",
-                "comment-placeholder": "Faites un commentaire",
+                "history-tab-text": "Historique",
+                "notes-tab-text": "Messages",
+                "comment-placeholder": "Ecrivez un message...",
                 "no-patron-warning": "Vous devez être Patron au tier \"The Duece\" ou plus pour importer des images",
                 "send-button-text": "Envoyer",
                 "file-limit-error": "Le fichier importé doit faire moins de 10 Mo.",
