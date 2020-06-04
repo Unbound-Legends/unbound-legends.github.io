@@ -522,7 +522,8 @@
         "components": {
             "game-list-card": {
                 "settings-button-text": "Settings",
-                "game-table-view-button-text": "Game Table"
+                "game-table-view-button-text": "Game Table",
+                "leave-game-button-text": "Leave"
             },
             "table-initiative": {
                 "initiative-component-title": "Initiative",
@@ -615,7 +616,13 @@
             "list": {
                 "page-title": "Game List",
                 "header": "My Games",
-                "no-games-warning": "You have no games yet!"
+                "no-games-warning": "You have no games yet!",
+                "leave-confirmation-title": "Leave {{ name }}?",
+                "leave-confirmation-description": "To join this game again, you'll need a link to it. If you are the last person to leave it, the game will be deleted. Are you sure you want to leave?",
+                "game-left": "You have left the game successfully!",
+                "leave-confirmation-discord-description": "To leave a Discord-based game, you must leave the server manually. You can click on the Discord icon in the game list to get taken to the server and leave it from there.",
+                "okay-button-text": "Okay",
+                "leave-button-text": "Leave"
             },
             "table": {
                 "page-title": "{{ gameName }} Game Table",
