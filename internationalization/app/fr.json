@@ -522,7 +522,8 @@
         "components": {
             "game-list-card": {
                 "settings-button-text": "Paramètres",
-                "game-table-view-button-text": "Table de Jeu"
+                "game-table-view-button-text": "Table de Jeu",
+                "leave-game-button-text": "Quitter"
             },
             "table-initiative": {
                 "initiative-component-title": "Initiative",
@@ -615,7 +616,13 @@
             "list": {
                 "page-title": "Liste des Parties",
                 "header": "Mes Parties",
-                "no-games-warning": "Vous n'avez aucune partie pour le moment !"
+                "no-games-warning": "Vous n'avez aucune partie pour le moment !",
+                "leave-confirmation-title": "Quitter {{ name }}?",
+                "leave-confirmation-description": "Pour rejoindre à nouveau cette partie, vous aurez besoin d'un lien.Si vous êtes la dernière personne à quitter la partie, elle sera supprimée. Etes cous sûr de vouloir quitter ?",
+                "game-left": "Vous avez quitté la partie avec succès !",
+                "leave-confirmation-discord-description": "Pour quitter une partie Discord, vous devez quitter un serveur manuellement. Vous pouvez cliquer sur l'icône Discord dans la liste des parties pour aller directement sur le serveur et le quitter de là-bas.",
+                "okay-button-text": "D'accord",
+                "leave-button-text": "Quitter"
             },
             "table": {
                 "page-title": "{{ gameName }} Table de jeu",
