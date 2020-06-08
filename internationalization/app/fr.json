@@ -181,7 +181,13 @@
                 "linked-accounts-header": "Comptes associés",
                 "linked-account-description": "Associer votre profile RPGSessions pour dévérouiller des fonctionnalités impressionnantes!",
                 "link-text": "Associer",
-                "unlink-text": "Dissocier"
+                "unlink-text": "Dissocier",
+                "patreon-features-header": "Fonctionnalités Patreon",
+                "patreon-features": {
+                    "honorary-titles": "Titres honorifiques"
+                },
+                "update-user-patreon-features-button-text": "Mise à jour des Fonctionnalités Patreon",
+                "patreon-features-updated-successfully": "Fonctionnalités Patreon mises à jour avec succès !"
             }
         }
     },
