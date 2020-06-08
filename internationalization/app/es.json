@@ -42,11 +42,17 @@
         "Genesys": "Genesys",
         "Star Wars": "Star Wars"
       },
+     "game-themes": {
+        "[game theme] eote core": "Al Filo del Imperio Básico",
+        "[game theme] genesys core": "Genesys Básico",
+        "[game theme] genesys terrinoth": "Genesys Terrinoth",
+        "[game theme] genesys android": "Genesys Android"
+      },
       "crit-tables": {
-        "Genesys FFG Crit Table": "Tabla de Críticos Genesys FFG",
-        "Genesys FFG Vehicle Crit Table": "Tabla de Críticos de vehículos Genesys FFG",
-        "Star Wars FFG Eote Crit Table": "Tabla de Críticos Star Wars FFG AFDI",
-        "Star Wars FFG Eote Vehicle Crit Table": "Tabla de Críticos de vehículos Star Wars FFG AFDI"
+        "Genesys FFG Crit Table": "Genesys FFG",
+        "Genesys FFG Vehicle Crit Table": "Vehículos Genesys FFG",
+        "Star Wars FFG Eote Crit Table": "Star Wars FFG Al Filo del Imperio",
+        "Star Wars FFG Eote Vehicle Crit Table": "Vehículos Star Wars FFG AFDI"
     },
 	"initiative-types": {
 		"singular": {
@@ -142,7 +148,10 @@
       "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
       "select-list-none": "Ninguno",
       "cancel-button-text.comment": "The following will be used on cancel buttons throughout the app",
-      "cancel-button-text": "Cancelar"
+      "cancel-button-text": "Cancelar",
+     "view-button-text": "Ver",
+      "share-button-text": "Compartir",
+      "delete-button-text": "Borrar"     
     }
   },
   "user": {
@@ -172,7 +181,13 @@
         "linked-accounts-header": "Cuentas vinculadas",
         "linked-account-description": "¡Vincula tu perfil de RPG Sessions para desbloquear funciones increíbles!",
         "link-text": "Enlazar",
-        "unlink-text": "Desenlazar"
+        "unlink-text": "Desenlazar",
+        "patreon-features-header": "Funciones para Patrocinadores",
+        "patreon-features": {
+          "honorary-titles": "Títulos Honorarios"
+        },
+        "update-user-patreon-features-button-text": "Actualizar Funciones para Patrocinadores",
+        "patreon-features-updated-successfully": "¡Funciones para Patrocinadores actualizadas con éxito!"
       }
     }
   },
@@ -221,118 +236,240 @@
     }
   },
   "character2": {
-      "ffg-sw": {
-          "enums": {
-              "character-attribute": {
-                  "Soak": "Protección",
-                  "Wounds": "Heridas",
-                  "Strain": "Tensión",
-                  "Defense": "Defensa",
-                  "Force Rating": "Dominio de la Fuerza",
-                  "Threshold": "Umbral",
-                  "Current": "Actual",
-                  "Melee": "Cuerpo a cuerpo",
-                  "Ranged": "A distancia",
-                  "Committed": "Asignado",
-                  "Available XP": "PE disponibles",
-                  "Total XP": "PE Totales",
-                  "Credits": "Créditos",
-                  "Encumbrance": "Impedimento"
-              },
-              "character-characteristic": {
-                  "Brawn": "Fortaleza",
-                  "Agility": "Agilidad",
-                  "Intellect": "Intelecto",
-                  "Cunning": "Astucia",
-                  "Willpower": "Voluntad",
-                  "Presence": "Presencia"
-              }
-          },
-          "components": {
-              "action-bar": {
-                  "edit": "Editar",
-                  "clone": "Clonar",
-                  "back-to-list": "Volever a Lista",
-                  "save": "Guardar",
-                  "cancel": "Cancelar"
-              },
-              "critical-injury": {
-                  "critical-injury": "Herida Crítica",
-                  "difficulty": "Dificultad",
-                  "name": "Nombre",
-                  "description": "Descripción",
-                  "add-critical-injury": "Añadir Herida Crítica"
-              },
-              "current-games": {
-                  "current-games": "Juegos Actuales"
-              },
-              "details": {
-                  "character-details": "Detalles del Personaje",
-                  "background": "Trasfondo",
-                  "obligation": "Obligaciónn",
-                  "duty": "Deber",
-                  "morality": "Moralidad",
-                  "motivation": "Motivación"
-              },
-              "details-background": {
-                  "background": "Trasfondo"
-              },
-              "details-motivation": {
-                  "motivation": "Motivación"
-              },
-              "details-obligation": {
-                  "obligation-name": "Tipo de Obligación",
-                  "obligation-amount": "Magnitud",
-                  "triggered": "Activada",
-                  "description": "Descripción",
-                  "add-obligation": "Añadir Obligación"
-              },
-              "details-duty": {
-                  "group-contribution-ranks": "Rango de Contribución al Grupo",
-                  "duty-name": "Tipo",
-                  "duty-amount": "Magnitud",
-                  "triggered": "Activado",
-                  "description": "Descripción",
-                  "add-duty": "Añadir Deber"
-              },
-              "details-morality": {
-                  "morality-score": "Valor de Moralidad",
-                  "session-conflict": "Conflicto de la Sesión",
-                  "emotional-strength": "Fortaleza Emocional",
-                  "emotional-weakness": "Debilidad Emocional",
-                  "description": "Descripción",
-                  "add-morality": "Añadir Moralidad"
-              },
-              "equipment": {
-                  "equipment-and-gear": "Equipment & Gear",
-                  "quantity": "Cantidad",
-                  "encumbrance": "Impedimento",
-                  "rarity": "Rareza",
-                  "price": "Precio",
-                  "carrying": "Transportado",
-                  "custom-name": "Nombre Personalizado",
-                  "notes": "Notas",
-                  "add-equipment": "Añadir Equipamiento"
-              },
-              "hide-toggle": {
-                  "hide": "Ocultar"
-              },
-              "notes": {
-                  "notes": "Notas"
-              },
-              "player-header": {
-                  "placeholder-name": "Nombre",
-                  "placeholder-image-url": "URL Imagén",
-                  "placeholder-species": "Especie",
-                  "placeholder-career": "Profesión",
-                  "placeholder-specialization": "Especialización",
-                  "placeholder-age": "Edad",
-                  "placeholder-weight": "Peso",
-                  "placeholder-height": "Altura",
-                  "placeholder-notable-features": "Rasgos destacados"
-              }
-          }
+    "ffg-sw": {
+      "enums": {
+        "character-attribute": {
+          "Soak": "Protección",
+          "Wounds": "Heridas",
+          "Strain": "Tensión",
+          "Defense": "Defensa",
+          "Force Rating": "Dominio de la Fuerza",
+          "Threshold": "Umbral",
+          "Current": "Actual",
+          "Melee": "Cuerpo a cuerpo",
+          "Ranged": "A distancia",
+          "Committed": "Asignado",
+          "Available XP": "PE disponibles",
+          "Total XP": "PE Totales",
+          "Credits": "Créditos",
+          "Encumbrance": "Impedimento"
+        },
+        "character-characteristic": {
+          "Brawn": "Fortaleza",
+          "Agility": "Agilidad",
+          "Intellect": "Intelecto",
+          "Cunning": "Astucia",
+          "Willpower": "Voluntad",
+          "Presence": "Presencia",
+          "BR": "FOR",
+          "AG": "AGI",
+          "INT": "INT",
+          "CUN": "AST",
+          "WILL": "VOL",
+          "PR": "PRE"
+        },
+        "character-range-band": {
+          "Engaged": "Interacción",
+          "Short": "Corto",
+          "Medium": "Medio",
+          "Long": "Largo",
+          "Extreme": "Extremo"
+        },
+        "character-talent-activation-type": {
+          "Passive": "Pasivo",
+          "Incidental": "Actividad menor",
+          "Maneuver": "Maniobra",
+          "Action": "Acción"
+        }
+      },
+      "components": {
+        "action-bar": {
+          "edit": "Editar",
+          "clone": "Clonar",
+          "back-to-list": "Volever a Lista",
+          "save": "Guardar",
+          "cancel": "Cancelar"
+        },
+        "armor": {
+          "armor": "Blindaje",
+          "soak": "Protección",
+          "defense": "Defensa",
+          "encumbrance": "Impedimento",
+          "rarity": "Rareza",
+          "price": "Precio",
+          "carrying": "Transportado",
+          "equipped": "Equipado",
+          "custom-name": "Nombre Personalizado",
+          "qualities": "Propiedades",
+          "add-quality": "Añadir Propiedad",
+          "add-armor": "Añadir Blindaje"
+        },
+        "armor-attachments": {
+          "attachments": "Accesorios",
+          "cost": "Coste",
+          "rarity": "Rareza",
+          "required-hp": "ENS Necesarios",
+          "base-modifier": "Modificador Básico",
+          "modifications": "Modificaciones",
+          "add-attachment": "Añadir Accesorio"
+        },
+        "critical-injury": {
+          "critical-injury": "Herida Crítica",
+          "difficulty": "Dificultad",
+          "name": "Nombre",
+          "description": "Descripción",
+          "add-critical-injury": "Añadir Herida Crítica"
+        },
+        "current-games": {
+          "current-games": "Juegos Actuales"
+        },
+        "details": {
+          "character-details": "Detalles del Personaje",
+          "background": "Trasfondo",
+          "obligation": "Obligaciónn",
+          "duty": "Deber",
+          "morality": "Moralidad",
+          "motivation": "Motivación"
+        },
+        "details-background": {
+          "background": "Trasfondo"
+        },
+        "details-motivation": {
+          "motivation": "Motivación"
+        },
+        "details-obligation": {
+          "obligation-name": "Tipo de Obligación",
+          "obligation-amount": "Magnitud",
+          "triggered": "Activada",
+          "description": "Descripción",
+          "add-obligation": "Añadir Obligación"
+        },
+        "details-duty": {
+          "group-contribution-ranks": "Rango de Contribución al Grupo",
+          "duty-name": "Tipo",
+          "duty-amount": "Magnitud",
+          "triggered": "Activado",
+          "description": "Descripción",
+          "add-duty": "Añadir Deber"
+        },
+        "details-morality": {
+          "morality-score": "Valor de Moralidad",
+          "session-conflict": "Conflicto de la Sesión",
+          "emotional-strength": "Fortaleza Emocional",
+          "emotional-weakness": "Debilidad Emocional",
+          "description": "Descripción",
+          "add-morality": "Añadir Moralidad"
+        },
+        "equipment": {
+          "equipment-and-gear": "Equipo y Objetos",
+          "quantity": "Cantidad",
+          "encumbrance": "Impedimento",
+          "rarity": "Rareza",
+          "price": "Precio",
+          "carrying": "Transportado",
+          "custom-name": "Nombre Personalizado",
+          "notes": "Notas",
+          "qualities": "Propiedades",
+          "add-quality": "Añadir Propiedad",
+          "add-equipment": "Añadir Equipamiento"
+        },
+        "hide-toggle": {
+          "hide": "Ocultar"
+        },
+        "notes": {
+          "notes": "Notas"
+        },
+        "player-header": {
+          "placeholder-name": "Nombre",
+          "placeholder-image-url": "URL Imagén",
+          "placeholder-species": "Especie",
+          "placeholder-career": "Profesión",
+          "placeholder-specialization": "Especialización",
+          "placeholder-age": "Edad",
+          "placeholder-weight": "Peso",
+          "placeholder-height": "Altura",
+          "placeholder-notable-features": "Rasgos destacados"
+        },
+        "skills-table": {
+          "general-skills": "Habilidades Generales",
+          "combat-skills": "Habilidades de Combate",
+          "social-skills": "Habilidades Sociales",
+          "knowledge-skills": "Habilidades de Conocimiento",
+          "other-skills": "Otras Habilidades",
+          "career": "Profesional",
+          "rank": "Rango"
+        },
+        "talents": {
+          "talents": "Talentos"
+        },
+        "talent-slot": {
+          "ranks": "Rangos",
+          "xp": "PE"
+        },
+        "weapons": {
+          "weapon": "Arma",
+          "skill": "Habilidad",
+          "damage": "Daño",
+          "crit": "Crítico",
+          "range": "Alcance",
+          "encumbrance": "IMPED",
+          "hard-points": "ENS",
+          "rarity": "Rareza",
+          "cost": "Coste",
+          "carrying": "Transportado",
+          "equipped": "Equipado",
+          "custom-name": "Nombre Personalizado",
+          "qualities": "Propiedades",
+          "add-quality": "Añadir Propiedad",
+          "add-weapon": "Añadir Arma"
+        },
+        "weapons-attachments": {
+          "attachments": "Accesorios",
+          "cost": "Coste",
+          "required-hp": "ENS Necesarios",
+          "base-modifier": "Modificador Básico",
+          "modifications": "Modificaciones",
+          "add-attachment": "Añadir Accesorio"
+        }
+      },
+      "skills": {
+        "Astrogation": "Astronavegación",
+        "Athletics": "Atletismo",
+        "Brawl": "Pelea",
+        "Charm": "Carisma",
+        "Coercion": "Coacción",
+        "Computers": "Computadoras",
+        "Cool": "Frialdad",
+        "Coordination": "Coordinación",
+        "Core Worlds": "Mundos del Núcleo",
+        "Deception": "Engaño",
+        "Discipline": "Disciplina",
+        "Education": "Educación",
+        "Gunnery": "Artillería",
+        "Leadership": "Liderazgo",
+        "Lightsaber": "Sable de Luz",
+        "Lore": "Saber Arcaico",
+        "Mechanics": "Mecánica",
+        "Medicine": "Medicina",
+        "Melee": "Armas Cuerpo a Cuerpo",
+        "Negotiation": "Negociación",
+        "Outer Rim": "Borde Exterior",
+        "Perception": "Percepción",
+        "Piloting Planetary": "Pilotar Vehículo Planetario",
+        "Piloting Space": "Pilotar Vehículo Espacial",
+        "Ranged Heavy": "Armas a Distancia Pesadas",
+        "Ranged Light": "Armas a Distancia Ligeras",
+        "Resilience": "Aguante",
+        "Skulduggery": "Actividad Criminal",
+        "Stealth": "Sigilo",
+        "Streetwise": "Callejeo",
+        "Survival": "Supervivencia",
+        "Underworld": "Bajos Fondos",
+        "Vigilance": "Alerta",
+        "Warfare": "Estrategia Militar",
+        "Xenology": "Xenología"
       }
+    }
   },
   "dice": {
     "overlays": {
@@ -391,7 +528,8 @@
     "components": {
       "game-list-card": {
         "settings-button-text": "Ajustes",
-        "game-table-view-button-text": "Mesa de Juego"
+        "game-table-view-button-text": "Mesa de Juego",
+        "leave-game-button-text": "Abandonar"
       },
       "table-initiative": {
         "initiative-component-title": "Iniciativa",
@@ -445,8 +583,16 @@
       },
       "table-messages": {
         "no-messages": "¡Ningún mensaje!",
+        "no-notes": "¡Ningún mensaje!",
         "updated": "¡actualizado!",
-        "updated-count-times": "¡actualizado {{ count }} veces!"
+        "updated-count-times": "¡actualizado {{ count }} veces!",
+        "history-tab-text": "Historia",
+        "notes-tab-text": "Mensajes",
+        "comment-placeholder": "Escribir un mensaje...",
+        "no-patron-warning": "Debes ser Patrocionador nivel \"The Duece\" o superior para subir imágenes",
+        "send-button-text": "Enviar",
+        "file-limit-error": "El archivo importado debe tener menos de 10 MB.",
+        "file-type-error": "El archivo importado debe ser una imagen."
       }
     },
     "overlays": {
@@ -465,13 +611,24 @@
         "game-name-placeholder-text": "Nombre del Juego",
         "game-type-placeholder-text": "Tipo de Juego",
         "create-game-button-text": "Crear Juego"
+      },
+      "upload-image-overlay": {
+        "add-note-label": "Nota (opcional)",
+        "upload-button-text": "Subir",
+        "cancel-button-text": "Cancelar"
       }
     },
     "pages": {
       "list": {
         "page-title": "Lista de Juegos",
         "header": "Mis Juegos",
-        "no-games-warning": "¡Aún no tienes juegos!"
+        "no-games-warning": "¡Aún no tienes juegos!",
+        "leave-confirmation-title": "Abandonar {{ name }}?",
+        "leave-confirmation-description": "Para volver a unirte a este juego, necesitarás un enlace. Si eres la última persona en abandonarlo, el juego se eliminará. ¿Estás seguro que quieres irte?",
+        "game-left": "¡Has abandonado el juego con éxito!",
+        "leave-confirmation-discord-description": "Para abandonar un juego basado en Discord, debe abandonar el servidor manualmente. Puedes hacer clic en el ícono Discord en la lista de juegos para ser llevado al servidor y abandonarlo desde allí.",
+        "okay-button-text": "OK",
+        "leave-button-text": "Abandonar"
       },
       "table": {
         "page-title": "Mesa de Juego {{ gameName }}",
@@ -509,6 +666,42 @@
         "gm-story-point-style": "Estilo Punto Historia DJ",
         "pc-story-point-style": "Estilo Punto Historia PJ",
         "patron-only-story-point-warning": "Debes ser Patrocinador para cambiar los estilos de puntos de destino/historia"
+      }
+    }
+  },
+  "vehicle": {
+    "components": {
+      "detail-component": {
+        "Vehicle Type/Model": "Modelo/Tipo",
+        "Manufacturer": "Fabricante",
+        "Crew": "Tripulación",
+        "Passengers": "Pasajeros",
+        "Consumables": "Autonomía",
+        "Hyperdrive": "Hiperimpulsor",
+        "Sensor Range": "Alcance de los Sensores",
+        "Background": "Trasfondo",
+        "Cargo Hold": "Bodega de Carga"
+      },
+      "vehicle-card": {
+        "game-type-label": "Tipo de Juego:"
+      },
+      "name-image": {
+        "vehicle-name-placeholder": "Nombre",
+        "image-url-placeholder": "URL Imagen",
+        "has-clones-singular": "Tiene {{ count }} clon",
+        "has-clones-plural": "Tiene {{ count }} clones"
+      }
+    },
+    "pages": {
+      "create": {
+        "page-title": "Crear Vehículo",
+        "vehicle-image-alt-text": "Imagen del Vehículo"
+      },
+      "list": {
+        "page-title": "Lista de Vehículos",
+        "vehicle-deleted": "Vehículo eliminado con éxito",
+        "page-header": "Mis Vehículos",
+        "no-vehicles": "¡Aún no tienes ningún vehículo!"
       }
     }
   },
