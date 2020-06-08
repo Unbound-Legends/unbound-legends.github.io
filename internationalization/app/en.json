@@ -181,7 +181,13 @@
                 "linked-accounts-header": "Linked Accounts",
                 "linked-account-description": "Link your RPG Sessions profile to unlock awesome features!",
                 "link-text": "Link",
-                "unlink-text": "Unlink"
+                "unlink-text": "Unlink",
+                "patreon-features-header": "Patreon Features",
+                "patreon-features": {
+                    "honorary-titles": "Honorary Titles"
+                },
+                "update-user-patreon-features-button-text": "Update Patreon Features",
+                "patreon-features-updated-successfully": "Patreon features updated successfully!"
             }
         }
     },
