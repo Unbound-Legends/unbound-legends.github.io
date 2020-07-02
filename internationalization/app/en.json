@@ -241,9 +241,17 @@
                 "character-attribute": {
                     "Soak": "Soak",
                     "Wounds": "Wounds",
+                    "Wound Threshold": "Wound Threshold",
+                    "Current Wounds": "Current Wounds",
                     "Strain": "Strain",
+                    "Strain Threshold": "Strain Threshold",
+                    "Current Strain": "Current Strain",
                     "Defense": "Defense",
+                    "Ranged Defense": "Ranged Defense",
+                    "Melee Defense": "Melee Defense",
                     "Force Rating": "Force Rating",
+                    "Current Rating": "Current Force Rating",
+                    "Force Committed": "Force Committed",
                     "Threshold": "Threshold",
                     "Current": "Current",
                     "Melee": "Melee",
@@ -252,7 +260,9 @@
                     "Available XP": "Available XP",
                     "Total XP": "Total XP",
                     "Credits": "Credits",
-                    "Encumbrance": "Encumbrance"
+                    "Encumbrance": "Encumbrance",
+                    "Encumbrance Threshold": "Encumbrance Threshold",
+                    "Current Encumbrance": "Current Encumbrance"
                 },
                 "character-characteristic": {
                     "Brawn": "Brawn",
@@ -275,11 +285,39 @@
                     "Long": "Long",
                     "Extreme": "Extreme"
                 },
-                "character-talent-activation-type": {
+                "character-activation-type": {
                     "Passive": "Passive",
                     "Incidental": "Incidental",
                     "Maneuver": "Maneuver",
                     "Action": "Action"
+                },
+                "force-display-type": {
+                    "Tree": "Tree",
+                    "Table": "Table"
+                },
+                "game-theme": {
+                    "Edge of the Empire": "Edge of the Empire",
+                    "Age of Rebellion": "Age of Rebellion",
+                    "Force and Destiny": "Force and Destiny"
+                },
+                "modifier-type": {
+                    "Armor": "Armor",
+                    "Attribute": "Attribute",
+                    "Characteristic": "Characteristic",
+                    "Narrative": "Narrative",
+                    "Skill": "Skill",
+                    "Weapon": "Weapon"
+                },
+                "skill-type": {
+                    "General": "General",
+                    "Combat": "Combat",
+                    "Social": "Social",
+                    "Knowledge": "Knowledge",
+                    "Other": "Other"
+                },
+                "talent-display-type": {
+                    "Tree": "Tree",
+                    "Table": "Table"
                 }
             },
             "components": {
@@ -295,6 +333,7 @@
                     "soak": "Soak",
                     "defense": "Defense",
                     "encumbrance": "Encumbrance",
+                    "hard-points": "HP",
                     "rarity": "Rarity",
                     "price": "Price",
                     "carrying": "Carrying",
@@ -310,6 +349,7 @@
                     "rarity": "Rarity",
                     "required-hp": "Required HP",
                     "base-modifier": "Base Modifier",
+                    "no-modifier": "None",
                     "modifications": "Modifications",
                     "add-attachment": "Add Attachment"
                 },
@@ -317,6 +357,7 @@
                     "critical-injury": "Critical Injury",
                     "difficulty": "Difficulty",
                     "name": "Name",
+                    "severity": "Severity",
                     "description": "Description",
                     "add-critical-injury": "Add Critical Injury"
                 },
@@ -373,11 +414,25 @@
                     "add-quality": "Add Quality",
                     "add-equipment": "Add Equipment"
                 },
+                "force-powers": {
+                    "force-powers": "Force Powers",
+                    "add-force-tree": "Add Force Power"
+                },
+                "force-slot": {
+                    "ranks": "Ranks",
+                    "xp": "XP",
+                    "combine": "Combine"
+                },
                 "hide-toggle": {
                     "hide": "Hide"
                 },
                 "notes": {
                     "notes": "Notes"
+                },
+                "npc-header": {
+                    "placeholder-name": "Name",
+                    "placeholder-image-url": "Image URL",
+                    "placeholder-description": "Description"
                 },
                 "player-header": {
                     "placeholder-name": "Name",
@@ -388,7 +443,17 @@
                     "placeholder-age": "Age",
                     "placeholder-weight": "Weight",
                     "placeholder-height": "Height",
-                    "placeholder-notable-features": "Notable Features"
+                    "placeholder-notable-features": "Notable Features",
+                    "label-species": "Species",
+                    "label-career": "Career",
+                    "label-specialization": "Specialization",
+                    "label-age": "Age",
+                    "label-weight": "Weight",
+                    "label-height": "Height",
+                    "label-notable-features": "Notable Features"
+                },
+                "skills": {
+                    "add-skill": "Add Skill"
                 },
                 "skills-table": {
                     "general-skills": "General Skills",
@@ -400,10 +465,12 @@
                     "rank": "Rank"
                 },
                 "talents": {
-                    "talents": "Talents"
+                    "talents": "Talents",
+                    "add-talent-tree": "Add New Talent Tree"
                 },
                 "talent-slot": {
                     "ranks": "Ranks",
+                    "ranked": "Ranked",
                     "xp": "XP"
                 },
                 "weapons": {
@@ -426,10 +493,209 @@
                 "weapons-attachments": {
                     "attachments": "Attachments",
                     "cost": "Cost",
+                    "rarity": "Rarity",
                     "required-hp": "Required HP",
                     "base-modifier": "Base Modifier",
+                    "no-modifier": "None",
                     "modifications": "Modifications",
                     "add-attachment": "Add Attachment"
+                }
+            },
+            "overlays": {
+                "edit-armor": {
+                    "placeholder-name": "Name",
+                    "placeholder-soak": "Soak",
+                    "placeholder-defense": "Defense",
+                    "placeholder-encumbrance": "Encumbrance",
+                    "placeholder-hard-points": "Hard Points",
+                    "placeholder-rarity": "Rarity",
+                    "placeholder-restricted": "Restricted",
+                    "placeholder-cost": "Cost",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-armor": "Add Armor",
+                    "action-save-armor": "Save Armor"
+                },
+                "edit-armor-attachment": {
+                    "placeholder-name": "Name",
+                    "placeholder-hard-points-cost": "Hard Points Cost",
+                    "placeholder-rarity": "Rarity",
+                    "placeholder-restricted": "Restricted",
+                    "placeholder-cost": "Cost",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modifiers",
+                    "add-modifier": "Add Modifier",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-attachment": "Add Attachment",
+                    "action-save-attachment": "Save Attachment"
+                },
+                "edit-armor-attachment-modification": {
+                    "placeholder-name": "Name",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modifiers",
+                    "add-modifier": "Add Modifier",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-mod": "Add Modification",
+                    "action-save-mod": "Save Modification"
+                },
+                "edit-critical-injury": {
+                    "placeholder-name": "Name",
+                    "placeholder-severity": "Severity (1-999)",
+                    "placeholder-difficulty": "Difficulty (1-5)",
+                    "placeholder-description": "Description",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-crit": "Add Critical",
+                    "action-save-crit": "Save Critical"
+                },
+                "edit-equipment": {
+                    "placeholder-name": "Name",
+                    "placeholder-quantity": "Quantity",
+                    "placeholder-encumbrance": "Encumbrance",
+                    "placeholder-rarity": "Rarity",
+                    "placeholder-restricted": "Restricted",
+                    "placeholder-cost": "Cost",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-equipment": "Add Equipment",
+                    "action-save-equipment": "Save Equipment"
+                },
+                "edit-force-power": {
+                    "placeholder-name": "Name",
+                    "placeholder-activation-type": "Activation Type",
+                    "placeholder-ranked": "Ranked",
+                    "placeholder-xp-cost": "XP Cost",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modifiers",
+                    "add-modifier": "Add Modifier",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-force-power": "Add Force Power",
+                    "action-save-force-power": "Save Force Power"
+                },
+                "edit-force-tree": {
+                    "placeholder-name": "Force Power Tree Name",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-force-tree": "Add Force Tree",
+                    "action-save-force-tree": "Save Force Tree"
+                },
+                "edit-modifier": {
+                    "placeholder-name": "Name",
+                    "placeholder-description": "Description",
+                    "placeholder-type": "Modifier Type",
+                    "placeholder-linked-armor": "Linked Armor",
+                    "placeholder-soak-modifier": "Soak Modifier",
+                    "placeholder-defense-modifier": "Defense Modifier",
+                    "placeholder-encumbrance-modifier": "Encumbrance Modifier",
+                    "placeholder-attribute": "Attribute",
+                    "placeholder-characteristic": "Characteristic",
+                    "placeholder-modifier-amount": "Modifier Amount",
+                    "placeholder-linked-skill": "Linked Skill",
+                    "placeholder-career-modifier": "Make Career Skill",
+                    "placeholder-rank-modifier": "Rank Modifier",
+                    "placeholder-linked-weapon": "Linked Weapon",
+                    "placeholder-damage-modifier": "Damage Modifier",
+                    "placeholder-crit-modifier": "Crit Rating Modifier",
+                    "placeholder-extra-dice": "Extra Dice",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-modifier": "Add Modifier",
+                    "action-save-modifier": "Save Modifier"
+                },
+                "edit-skill": {
+                    "placeholder-name": "Name",
+                    "placeholder-characteristic": "Linked Characteristic",
+                    "placeholder-skill-type": "Skill Type",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-skill": "Add Skill",
+                    "action-save-skill": "Save Skill"
+                },
+                "edit-talent": {
+                    "placeholder-name": "Name",
+                    "placeholder-activation-type": "Activation Type",
+                    "placeholder-ranked": "Ranked",
+                    "placeholder-is-force-talent": "Force Talent",
+                    "placeholder-is-conflict-talent": "Conflict Talent",
+                    "placeholder-xp-cost": "XP Cost",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modifiers",
+                    "add-modifier": "Add Modifier",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-talent": "Add Talent",
+                    "action-save-talent": "Save Talent"
+                },
+                "edit-talent-tree": {
+                    "placeholder-name": "Talent Tree Name",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-talent-tree": "Add Talent Tree",
+                    "action-save-talent-tree": "Save Talent Tree"
+                },
+                "edit-weapon": {
+                    "placeholder-name": "Name",
+                    "placeholder-linked-skill": "Linked Skill",
+                    "placeholder-base-damage": "Base Damage",
+                    "placeholder-damage-adds-brawn": "Damage Adds Brawn",
+                    "placeholder-crit": "Crit Rating",
+                    "placeholder-range": "Range",
+                    "placeholder-encumbrance": "Encumbrance",
+                    "placeholder-hard-points": "Hard Points",
+                    "placeholder-rarity": "Rarity",
+                    "placeholder-restricted": "Restricted",
+                    "placeholder-cost": "Cost",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-weapon": "Add Weapon",
+                    "action-save-weapon": "Save Weapon"
+                },
+                "edit-weapon-attachment": {
+                    "placeholder-name": "Name",
+                    "placeholder-hard-points-cost": "Hard Points Cost",
+                    "placeholder-rarity": "Rarity",
+                    "placeholder-restricted": "Restricted",
+                    "placeholder-cost": "Cost",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modifiers",
+                    "add-modifier": "Add Modifier",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-attachment": "Add Attachment",
+                    "action-save-attachment": "Save Attachment"
+                },
+                "edit-weapon-attachment-modification": {
+                    "placeholder-name": "Name",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modifiers",
+                    "add-modifier": "Add Modifier",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-mod": "Add Modification",
+                    "action-save-mod": "Save Modification"
+                },
+                "sheet-customizations": {
+                    "title": "Sheet Customization Options",
+                    "presets": "Presets",
+                    "customize": "Customize",
+                    "placeholder-sheet-theme": "Sheet Theme",
+                    "placeholder-talent-tree-layout": "Talent Tree Layout",
+                    "placeholder-force-enabled": "Force Rating / Force Power Trees",
+                    "placeholder-force-tree-layout": "Force Tree Layout",
+                    "placeholder-obligation-enabled": "Obligation",
+                    "placeholder-duty-enabled": "Duty",
+                    "placeholder-morality-enabled": "Morality",
+                    "warning-talent-tree": "Changing the tree layout will remove all talent data associated with this character. Once you save, it cannot be undone.",
+                    "warning-force-tree": "Changing the tree layout will remove all force power data associated with this character. Once you save, it cannot be undone.",
+                    "warning-force": "Turning this feature off will remove all Force data (both rating and powers). Once you save, it cannot be undone.",
+                    "warning-obligation": "Turning this feature off will remove all Obligation data. Once you save, it cannot be undone.",
+                    "warning-duty": "Turning this feature off will remove all Duty data. Once you save, it cannot be undone.",
+                    "warning-morality": "Turning this feature off will remove all Morality data. Once you save, it cannot be undone.",
+                    "action-cancel": "Cancel",
+                    "action-save-customizations": "Save Customizations"
                 }
             },
             "skills": {
