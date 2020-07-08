@@ -612,7 +612,7 @@
           "action-cancel": "Cancelar",
           "action-delete": "Eliminar",
           "action-add-skill": "Añadir Habilidad",
-          "action-save-skill": "Guardar Habilidad",
+          "action-save-skill": "Guardar Habilidad"
         },
         "edit-talent": {
           "placeholder-name": "Nombre",
