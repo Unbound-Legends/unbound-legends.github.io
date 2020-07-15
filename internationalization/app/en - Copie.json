@@ -1,0 +1,729 @@
+{
+    "paginator": {
+        "items-per-page": "Items per page",
+        "next-page": "Next page",
+        "last-page": "Last page",
+        "first-page": "First page",
+        "previous-page": "Previous page",
+        "items-left-display-when-no-other-pages.comment": "This is displayed when there's either no items on the page or there's only one page",
+        "items-left-display-when-no-other-pages": "0 of {{ length }}",
+        "items-left-when-other-pages-exist.comment": "This is displayed when there are other pages to explore. It'll show you the range of items you're on and how many there are left",
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} of {{ length}}"
+    },
+    "generic": {
+        "enums": {
+            "dice-styles": {
+                "Name": "Name",
+                "Color-Based": "Color-Based"
+            },
+            "themes": {
+                "Dark Theme": "Dark Theme",
+                "Light Theme": "Light Theme"
+            },
+            "dice-types": {
+                "Numbered": "Numbered",
+                "Star Wars": "Star Wars",
+                "Genesys": "Genesys"
+            },
+            "languages": {
+                "Auto-Detect": "Auto-Detect",
+                "English": "English",
+                "Spanish": "Spanish",
+                "French": "French"
+            },
+            "sort-by": {
+                "Name": "Name",
+                "Newest": "Newest",
+                "Oldest": "Oldest",
+                "Modified": "Modified",
+                "Favorite": "Favorite"
+            },
+            "game-types": {
+                "Genesys": "Genesys",
+                "Star Wars": "Star Wars"
+            },
+            "game-themes": {
+                "[game theme] eote core": "Edge of the Empire Core",
+                "[game theme] genesys core": "Genesys Core",
+                "[game theme] genesys terrinoth": "Genesys Terrinoth",
+                "[game theme] genesys android": "Genesys Android"
+            },
+            "crit-tables": {
+                "Genesys FFG Crit Table": "Genesys FFG Crit Table",
+                "Genesys FFG Vehicle Crit Table": "Genesys FFG Vehicle Crit Table",
+                "Star Wars FFG Eote Crit Table": "Star Wars FFG Eote Crit Table",
+                "Star Wars FFG Eote Vehicle Crit Table": "Star Wars FFG Eote Vehicle Crit Table"
+            },
+            "initiative-types": {
+                "singular": {
+                    "[Initiative Type] PC": "PC",
+                    "[Initiative Type] NPC": "NPC"
+                },
+                "plural": {
+                    "[Initiative Type] PC": "PCs",
+                    "[Initiative Type] NPC": "NPCs"
+                }
+            },
+            "dice-names": {
+                "Proficiency": "Proficiency",
+                "Ability": "Ability",
+                "Boost": "Boost",
+                "Challenge": "Challenge",
+                "Difficulty": "Difficulty",
+                "Setback": "Setback",
+                "Force": "Force",
+                "Triumph": "Triumph",
+                "Success": "Success",
+                "Advantage": "Advantage",
+                "Despair": "Despair",
+                "Failure": "Failure",
+                "Threat": "Threat",
+                "Lightside": "Lightside",
+                "Darkside": "Darkside",
+                "Light/Dark": "Light/Dark",
+                "D4": "D4",
+                "D6": "D6",
+                "D8": "D8",
+                "D10": "D10",
+                "D12": "D12",
+                "D20": "D20",
+                "D100": "D100",
+                "Polyhedral": "Polyhedral",
+                "Modifier": "Modifier"
+            },
+            "character-attributes": {
+                "starwars": {
+                    "Soak": "Soak",
+                    "Wounds": "Wounds",
+                    "Strain": "Strain",
+                    "Defense": "Defense",
+                    "Current Wounds": "Current Wounds",
+                    "Wound Threshold": "Wound Threshold",
+                    "Current Strain": "Current Strain",
+                    "Strain Threshold": "Strain Threshold",
+                    "Ranged Defense": "Ranged Defense",
+                    "Melee Defense": "Melee Defense",
+                    "Available XP": "Available XP",
+                    "Total XP": "Total XP",
+                    "Money": "Money",
+                    "Encumbrance": "Encumbrance",
+                    "Current Encumbrance": "Current Encumbrance",
+                    "Total Encumbrance": "Total Encumbrance",
+                    "Force Rating": "Force Rating",
+                    "Current Rating": "Current Rating",
+                    "Committed": "Committed"
+                },
+                "genesys": {
+                    "Soak": "Soak",
+                    "Wounds": "Wounds",
+                    "Strain": "Strain",
+                    "Defense": "Defense",
+                    "Current Wounds": "Current Wounds",
+                    "Wound Threshold": "Wound Threshold",
+                    "Current Strain": "Current Strain",
+                    "Strain Threshold": "Strain Threshold",
+                    "Ranged Defense": "Ranged Defense",
+                    "Melee Defense": "Melee Defense",
+                    "Available XP": "Available XP",
+                    "Total XP": "Total XP",
+                    "Money": "Money",
+                    "Encumbrance": "Encumbrance",
+                    "Current Encumbrance": "Current Encumbrance",
+                    "Total Encumbrance": "Total Encumbrance",
+                    "Heroic Ability Points": "Heroic Ability Points"
+                }
+            }
+        },
+        "labels": {
+            "language": "Language",
+            "link-copied.comment": "The link-copied value will pop up usually after a user hits a button that's puts a URL into a user's clipboard. This message lets the user know the URL was copied successfully",
+            "copy-link": "Copy Link",
+            "link-copied": "Link copied!",
+            "roll-history": "Roll History",
+            "new-roll": "New Roll",
+            "sort-by": "Sort By",
+            "new-button-text": "New",
+            "rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
+            "rpg-sessions-mark-alt-text": "RPG Sessions Mark",
+            "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
+            "select-list-none": "None",
+            "cancel-button-text.comment": "The following will be used on cancel buttons throughout the app",
+            "cancel-button-text": "Cancel",
+            "view-button-text": "View",
+            "share-button-text": "Share",
+            "delete-button-text": "Delete"
+        }
+    },
+    "user": {
+        "pages": {
+            "profile": {
+                "profile-header": "Profile Information",
+                "username-placeholder": "Username",
+                "email-placeholder": "Email",
+                "update-user-profile-button-text": "Update User Profile",
+                "security-header": "Security",
+                "facebook-login-enabled": "Facebook Login Enabled",
+                "google-login-enabled": "Google Login Enabled",
+                "current-password-placeholder": "Current Password",
+                "new-password-placeholder": "New Password",
+                "confirm-new-password-placeholder": "Confirm New Password",
+                "update-password-button-text": "Update Password",
+                "user-settings-header": "User Settings",
+                "selected-dice-type-alt": "Selected Dice Type",
+                "selected-dice-scheme-alt": "Selected Dice Scheme",
+                "selected-site-theme-alt": "Selected Site Theme",
+                "dice-type-placeholder": "Default Dice Type",
+                "dice-input-style-placeholder": "Dice Input Style",
+                "theme-placeholder": "Theme",
+                "update-user-settings-button-text": "Update User Settings",
+                "badges-header": "Badges",
+                "badges-coming-soon": "Coming Soon!",
+                "linked-accounts-header": "Linked Accounts",
+                "linked-account-description": "Link your RPG Sessions profile to unlock awesome features!",
+                "link-text": "Link",
+                "unlink-text": "Unlink",
+                "patreon-features-header": "Patreon Features",
+                "patreon-features": {
+                    "honorary-titles": "Honorary Titles"
+                },
+                "update-user-patreon-features-button-text": "Update Patreon Features",
+                "patreon-features-updated-successfully": "Patreon features updated successfully!"
+            }
+        }
+    },
+    "character": {
+        "overlays": {
+            "import-overlay": {
+                "title-oggdude": "OggDude Importer",
+                "title-oggdude-custom": "OggDude Custom Data Importer",
+                "title-emporium": "Genesys Emporium Importer",
+                "monthly-imports-label": "Monthly Imports:",
+                "non-patron-custom-data-warning": "Warning: The OggDude importer does not currently support custom data for non-patron members.",
+                "create-import-file-instructions": "To create the import file to upload, go to the data editor and hit \"Back Up\", then select only Data Custom and press back up.",
+                "import-data-button-text": "Import Data",
+                "import-character-button-text": "Import Character",
+                "custom-oggdude-data-not-imported": "Warning: You have no custom data imported, custom data in your character sheet will be ignored.",
+                "custom-oggdude-data-already-imported": "Good news! You have custom data imported. Custom data in your character sheet<br />will be loaded.",
+                "custom-oggdude-data-confirm-delete": "Are you sure you want to delete your custom OggDude data?",
+                "oggdude-delete-cancel-button-text": "Cancel",
+                "oggdude-delete-confirm-button-text": "Delete",
+                "overwrite-ignored-label": "When you overwrite a character, all but the following will be replaced:",
+                "oggdude-import-wont-overwrite": [
+                    "Name",
+                    "Current Wounds",
+                    "Current Strain",
+                    "Crits",
+                    "Species",
+                    "Career",
+                    "Age",
+                    "Motivation",
+                    "Weight",
+                    "Height",
+                    "Features",
+                    "Background"
+                ],
+                "import-limit-greeting": "Oh no!",
+                "import-limit-description": "It appears you've hit your import limit for the month.",
+                "import-limit-patreon-tier-error": "In order to import more characters this month, you'll need to consider increasing your <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a > tier.",
+                "import-limit-no-patreon-error": "In order to import more characters this month, you'll need to consider becoming a <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a>.",
+                "import-limit-linking-instructions": "If you're already a Patron of ours, make sure you link your account on your <a href=\"/user/profile\">account settings page.</a>",
+                "patreon-only-error-warning": "This feature is currently available only to our Patron members. If you'd like to join our Patreon to use this feature, check <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >out our page on Patreon.com.</a>",
+                "patreon-only-error-call-to-action": "If you're already a Patron of ours, make sure you link your account on your <a href=\"/user/profile\">account settings page.</a>",
+                "dialog-cancel-button": "Cancel",
+                "drop-file-prompt": "Drop {{ fileType }} file here or click to upload",
+                "overwrite-character": "Overwrite Character"
+            }
+        }
+    },
+    "character2": {
+        "ffg-sw": {
+            "enums": {
+                "character-attribute": {
+                    "Soak": "Soak",
+                    "Wounds": "Wounds",
+                    "Strain": "Strain",
+                    "Defense": "Defense",
+                    "Force Rating": "Force Rating",
+                    "Threshold": "Threshold",
+                    "Current": "Current",
+                    "Melee": "Melee",
+                    "Ranged": "Ranged",
+                    "Committed": "Committed",
+                    "Available XP": "Available XP",
+                    "Total XP": "Total XP",
+                    "Credits": "Credits",
+                    "Encumbrance": "Encumbrance"
+                },
+                "character-characteristic": {
+                    "Brawn": "Brawn",
+                    "Agility": "Agility",
+                    "Intellect": "Intellect",
+                    "Cunning": "Cunning",
+                    "Willpower": "Willpower",
+                    "Presence": "Presence",
+                    "BR": "BR",
+                    "AG": "AG",
+                    "INT": "INT",
+                    "CUN": "CUN",
+                    "WILL": "WILL",
+                    "PR": "PR"
+                },
+                "character-range-band": {
+                    "Engaged": "Engaged",
+                    "Short": "Short",
+                    "Medium": "Medium",
+                    "Long": "Long",
+                    "Extreme": "Extreme"
+                },
+                "character-talent-activation-type": {
+                    "Passive": "Passive",
+                    "Incidental": "Incidental",
+                    "Maneuver": "Maneuver",
+                    "Action": "Action"
+                }
+            },
+            "components": {
+                "action-bar": {
+                    "edit": "Edit",
+                    "clone": "Clone",
+                    "back-to-list": "Back to List",
+                    "save": "Save",
+                    "cancel": "Cancel"
+                },
+                "armor": {
+                    "armor": "Armor",
+                    "soak": "Soak",
+                    "defense": "Defense",
+                    "encumbrance": "Encumbrance",
+                    "rarity": "Rarity",
+                    "price": "Price",
+                    "carrying": "Carrying",
+                    "equipped": "Equipped",
+                    "custom-name": "Custom Name",
+                    "qualities": "Qualities",
+                    "add-quality": "Add Quality",
+                    "add-armor": "Add Armor"
+                },
+                "armor-attachments": {
+                    "attachments": "Attachments",
+                    "cost": "Cost",
+                    "rarity": "Rarity",
+                    "required-hp": "Required HP",
+                    "base-modifier": "Base Modifier",
+                    "modifications": "Modifications",
+                    "add-attachment": "Add Attachment"
+                },
+                "critical-injury": {
+                    "critical-injury": "Critical Injury",
+                    "difficulty": "Difficulty",
+                    "name": "Name",
+                    "description": "Description",
+                    "add-critical-injury": "Add Critical Injury"
+                },
+                "current-games": {
+                    "current-games": "Current Games"
+                },
+                "details": {
+                    "character-details": "Character Details",
+                    "background": "Background",
+                    "obligation": "Obligation",
+                    "duty": "Duty",
+                    "morality": "Morality",
+                    "motivation": "Motivation"
+                },
+                "details-background": {
+                    "background": "Background"
+                },
+                "details-motivation": {
+                    "motivation": "Motivation"
+                },
+                "details-obligation": {
+                    "obligation-name": "Obligation Name",
+                    "obligation-amount": "Obligation Amount",
+                    "triggered": "Triggered",
+                    "description": "Description",
+                    "add-obligation": "Add Obligation"
+                },
+                "details-duty": {
+                    "group-contribution-ranks": "Group Contribution Ranks",
+                    "duty-name": "Duty Name",
+                    "duty-amount": "Duty Amount",
+                    "triggered": "Triggered",
+                    "description": "Description",
+                    "add-duty": "Add Duty"
+                },
+                "details-morality": {
+                    "morality-score": "Morality Score",
+                    "session-conflict": "Session Conflict",
+                    "emotional-strength": "Emotional Strength",
+                    "emotional-weakness": "Emotional Weakness",
+                    "description": "Description",
+                    "add-morality": "Add Morality"
+                },
+                "equipment": {
+                    "equipment-and-gear": "Equipment & Gear",
+                    "quantity": "Quantity",
+                    "encumbrance": "Encumbrance",
+                    "rarity": "Rarity",
+                    "price": "Price",
+                    "carrying": "Carrying",
+                    "custom-name": "Custom Name",
+                    "notes": "Notes",
+                    "qualities": "Qualities",
+                    "add-quality": "Add Quality",
+                    "add-equipment": "Add Equipment"
+                },
+                "hide-toggle": {
+                    "hide": "Hide"
+                },
+                "notes": {
+                    "notes": "Notes"
+                },
+                "player-header": {
+                    "placeholder-name": "Name",
+                    "placeholder-image-url": "Image URL",
+                    "placeholder-species": "Species",
+                    "placeholder-career": "Career",
+                    "placeholder-specialization": "Specialization",
+                    "placeholder-age": "Age",
+                    "placeholder-weight": "Weight",
+                    "placeholder-height": "Height",
+                    "placeholder-notable-features": "Notable Features"
+                },
+                "skills-table": {
+                    "general-skills": "General Skills",
+                    "combat-skills": "Combat Skills",
+                    "social-skills": "Social Skills",
+                    "knowledge-skills": "Knowledge Skills",
+                    "other-skills": "Other Skills",
+                    "career": "Career",
+                    "rank": "Rank"
+                },
+                "talents": {
+                    "talents": "Talents"
+                },
+                "talent-slot": {
+                    "ranks": "Ranks",
+                    "xp": "XP"
+                },
+                "weapons": {
+                    "weapon": "Weapon",
+                    "skill": "Skill",
+                    "damage": "Damage",
+                    "crit": "Crit",
+                    "range": "Range",
+                    "encumbrance": "Encum",
+                    "hard-points": "HP",
+                    "rarity": "Rarity",
+                    "cost": "Cost",
+                    "carrying": "Carrying",
+                    "equipped": "Equipped",
+                    "custom-name": "Custom Name",
+                    "qualities": "Qualities",
+                    "add-quality": "Add Quality",
+                    "add-weapon": "Add Weapon"
+                },
+                "weapons-attachments": {
+                    "attachments": "Attachments",
+                    "cost": "Cost",
+                    "required-hp": "Required HP",
+                    "base-modifier": "Base Modifier",
+                    "modifications": "Modifications",
+                    "add-attachment": "Add Attachment"
+                }
+            },
+            "skills": {
+                "Astrogation": "Astrogation",
+                "Athletics": "Athletics",
+                "Brawl": "Brawl",
+                "Charm": "Charm",
+                "Coercion": "Coercion",
+                "Computers": "Computers",
+                "Cool": "Cool",
+                "Coordination": "Coordination",
+                "Core Worlds": "Core Worlds",
+                "Deception": "Deception",
+                "Discipline": "Discipline",
+                "Education": "Education",
+                "Gunnery": "Gunnery",
+                "Leadership": "Leadership",
+                "Lightsaber": "Lightsaber",
+                "Lore": "Lore",
+                "Mechanics": "Mechanics",
+                "Medicine": "Medicine",
+                "Melee": "Melee",
+                "Negotiation": "Negotiation",
+                "Outer Rim": "Outer Rim",
+                "Perception": "Perception",
+                "Piloting Planetary": "Piloting Planetary",
+                "Piloting Space": "Piloting Space",
+                "Ranged Heavy": "Ranged Heavy",
+                "Ranged Light": "Ranged Light",
+                "Resilience": "Resilience",
+                "Skulduggery": "Skulduggery",
+                "Stealth": "Stealth",
+                "Streetwise": "Streetwise",
+                "Survival": "Survival",
+                "Underworld": "Underworld",
+                "Vigilance": "Vigilance",
+                "Warfare": "Warfare",
+                "Xenology": "Xenology"
+            }
+        }
+    },
+    "dice": {
+        "overlays": {
+            "help.comment": "This help section text shows up in the help dialog on the dice roller. It's broken into two sections for each question: category title and category description. The title is the question and the description is the answer",
+            "help": {
+                "categoryDescriptions": [
+                    {
+                        "category-title": "How to add dice:",
+                        "category-description": "Click on the dice you would like to add to the tray from a dice collection."
+                    },
+                    {
+                        "category-title": "How to remove dice:",
+                        "category-description": "Click on the dice in the tray you would like to remove."
+                    },
+                    {
+                        "category-title": "How to make a dice chain:",
+                        "category-description": "Select the dice you want in the dice chain, add a description, and click on \"Create Roll Chain.\" From the new screen, click \"Copy Link\" and send it to your fellow gamer by pasting the link."
+                    },
+                    {
+                        "category-title": "How to roll from a dice chain link:",
+                        "category-description": "Click on the dice chain link. Add your dice to the tray, and click \"Roll Dice.\""
+                    }
+                ],
+                "close-dialog-button-text": "Okay, got it!"
+            }
+        },
+        "pages": {
+            "chain": {
+                "page-title": "Dice Chain",
+                "add-button-text": "ADD",
+                "roll-dice-button-text": "Roll Dice",
+                "update-roll-chain-button-text": "Update Roll Chain",
+                "dice-chain-updated-toaster-message": "Dice chain updated!"
+            },
+            "history": {
+                "page-title": "Roll History",
+                "page-title-for-user": "{{ name }} Roll History"
+            },
+            "roller": {
+                "dice-roller-title": "Dice Roller",
+                "test-tab-label": "TEST",
+                "live-tab-label": "LIVE",
+                "dice-description-placeholder": "Description",
+                "roll-dice-button-text": "Roll Dice",
+                "create-roll-chain-button-text": "Create Roll Chain",
+                "full-history-button-label": "See Full History",
+                "dice-chain-created": "Dice chain created!"
+            },
+            "result": {
+                "page-title": "{{ name }} Results",
+                "full-history-button-text": "See Full History"
+            }
+        }
+    },
+    "game": {
+        "components": {
+            "game-list-card": {
+                "settings-button-text": "Settings",
+                "game-table-view-button-text": "Game Table",
+                "leave-game-button-text": "Leave"
+            },
+            "table-initiative": {
+                "initiative-component-title": "Initiative",
+                "initiative-round-abbreviation": "R{{ round }}",
+                "previous-slot-button-text": "Previous Slot",
+                "next-slot-button-text": "Next Slot",
+                "convert-button-text.comment": "The below text is shown as button text that allows users to convert initiative slots between NPC and PC slots",
+                "convert-button-text": "Convert to {{ oppositeType }}",
+                "remove-slot-button-text.comment": "The below text is shown as a button users can click on to remove a slot from initiative",
+                "remove-slot-button-text": "Remove Slot",
+                "reset-initiative-button-text.comment": "The below text is used on the button that lets a user RESET initiative - that is, keep all of the slots the same, the round just goes back to 1",
+                "reset-initiative-button-text": "Reset Initiative",
+                "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
+                "clear-initiative-button-text": "Clear Initiative"
+            },
+            "table-characters-list": {
+                "characters-tab-text": "Characters",
+                "vehicles-tab-text": "Vehicles",
+                "NPCs-tab-text": "NPCs",
+                "coming-soon-text": "Coming Soon",
+                "no-selected-character-warning": "No Selected Character!",
+                "select-character-button-text": "Select Character",
+                "character-image-alt-text": "Character Image",
+                "wound-abbreviation-text": "W",
+                "strain-abbreviation-text": "S",
+                "character-placeholder-text": "Character"
+            },
+            "table-character-hud": {
+                "no-character-selected-warning": "No Character Selected",
+                "wounds-label": "Wounds",
+                "strain-label": "Strain",
+                "soak-label": "Soak",
+                "defense-label": "Defense",
+                "melee-abbreviation": "M",
+                "ranged-abbreviation": "R"
+            },
+            "table-dice-roller": {
+                "character-skill-placeholder": "Character Skill",
+                "description-placeholder": "Description",
+                "roll-dice-button-text": "Roll Dice",
+                "roll-initiative-pc": "Roll Initiative (PC)",
+                "roll-initiative-npc": "Roll Initiative (NPC)",
+                "roll-crit-this-pc-button-text": "Roll Crit for this PC",
+                "plus-10-to-crit-button-text": "+10",
+                "minus-10-to-crit-button-text": "-10",
+                "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings"
+            },
+            "table-destiny": {
+                "no-points.comment": "The below text is shown when there are no destiny/story points on the current game table",
+                "no-points": "No Current Points"
+            },
+            "table-messages": {
+                "no-messages": "No History!",
+                "no-notes": "No Messages!",
+                "updated": "updated!",
+                "updated-count-times": "updated {{ count }} times!",
+                "history-tab-text": "History",
+                "notes-tab-text": "Messages",
+                "comment-placeholder": "Write a message...",
+                "no-patron-warning": "You must be a \"The Duece\" tier Patron or higher to upload images",
+                "send-button-text": "Send",
+                "file-limit-error": "Import file must be under 10 MB.",
+                "file-type-error": "Import file must be an image."
+            }
+        },
+        "overlays": {
+            "new-game-prompt": {
+                "prompt-title": "Choose the platform for your new game",
+                "create-discord-game-title": "Add a Discord Game",
+                "create-sessions-game-title": "Name your game and select the type of game",
+                "create-discord-game-link-instruction-text.comment": "The below link instructions are shown when you try to create a discord game but do not have discord linked to your RPG Sessions account. Their intent is to tell you how to link your Discord account to RPG Sessions.",
+                "create-discord-game-link-instruction-text-part-1": "Before you can create a Discord game, you need to link your RPG Sessions account with Discord.",
+                "create-discord-game-link-instruction-text-part-2": "It only takes a second and is done from your account profile.",
+                "user-profile-button-text": "User Profile",
+                "create-discord-game-instruction-text.comment": "The below instruction text is shown when you go to create a Discord game and your account is successfully linked to Discord already",
+                "create-discord-game-instruction-text": "Invite the bot to your server and a game will be automatically created here! (You might need to refresh this list to see your new game)",
+                "invite-bot-button-text.comment": "The following button is how users invite the discord bot to their server",
+                "invite-bot-button-text": "Invite the bot",
+                "game-name-placeholder-text": "Game Name",
+                "game-type-placeholder-text": "Game Type",
+                "create-game-button-text": "Create Game"
+            },
+            "upload-image-overlay": {
+                "add-note-label": "Note (optional)",
+                "upload-button-text": "Upload",
+                "cancel-button-text": "Cancel"
+            }
+        },
+        "pages": {
+            "list": {
+                "page-title": "Game List",
+                "header": "My Games",
+                "no-games-warning": "You have no games yet!",
+                "leave-confirmation-title": "Leave {{ name }}?",
+                "leave-confirmation-description": "To join this game again, you'll need a link to it. If you are the last person to leave it, the game will be deleted. Are you sure you want to leave?",
+                "game-left": "You have left the game successfully!",
+                "leave-confirmation-discord-description": "To leave a Discord-based game, you must leave the server manually. You can click on the Discord icon in the game list to get taken to the server and leave it from there.",
+                "okay-button-text": "Okay",
+                "leave-button-text": "Leave"
+            },
+            "table": {
+                "page-title": "{{ gameName }} Game Table",
+                "page-description": "Game Table provided by RPG Sessions",
+                "no-connection-error-message": "No Connection",
+                "connecting-info-message": "Connecting...",
+                "reconnect-button-text": "Reconnect",
+                "non-member-warning": "Looks like you're not a member of this game!",
+                "join-game-button-text": "Join Game",
+                "join-game-instructions": "To join this game, make sure your RPG Sessions account is linked to your Discord account and then join the corresponding Discord server. You'll be automatically added as a member to this game!",
+                "table-not-found": "No Game Table Found",
+                "game-not-loaded": "Game not loaded",
+                "settings-updated-confirmation.comment": "The below is shown when the settings of a game table are successfully updated",
+                "settings-updated-confirmation": "Settings updated!",
+                "game-joined-confirmation.comment": "The below is shown when a user successfully joins an RPG Sessions-based game through the Game Table",
+                "game-joined-confirmation": "Game Joined!",
+                "link-copied-confir": "Link copied!"
+            },
+            "view": {
+                "no-game-found-error": "No Game Found!",
+                "game-update-successful-message": "Game updated successfully!",
+                "game-name-placeholder": "Game Name",
+                "game-type-placeholder": "Game Type",
+                "dice-size-placeholder": "Dice Size",
+                "character-placeholder": "Character",
+                "character-crit-table-placeholder": "Character Crit Table",
+                "vehicle-crit-table-placeholder": "Vehicle Crit Table",
+                "party-vehicle-placeholder": "Party Vehicle",
+                "personal-vehicle-placeholder": "Personal Vehicle",
+                "save-changes-button-text": "Save Changes",
+                "dice-sizes": {
+                    "Regular": "Regular",
+                    "Large": "Large"
+                },
+                "gm-story-point-style": "GM Story Point Style",
+                "pc-story-point-style": "PC Story Point Style",
+                "patron-only-story-point-warning": "You must be a Patron to change story point styles."
+            }
+        }
+    },
+    "vehicle": {
+        "components": {
+            "detail-component": {
+                "Vehicle Type/Model": "Vehicle Type/Model",
+                "Manufacturer": "Manufacturer",
+                "Crew": "Crew",
+                "Passengers": "Passengers",
+                "Consumables": "Consumables",
+                "Hyperdrive": "Hyperdrive",
+                "Sensor Range": "Sensor Range",
+                "Background": "Background",
+                "Cargo Hold": "Cargo Hold"
+            },
+            "vehicle-card": {
+                "game-type-label": "Game Type:"
+            },
+            "name-image": {
+                "vehicle-name-placeholder": "Name",
+                "image-url-placeholder": "Image URL",
+                "has-clones-singular": "Has {{ count }} clone",
+                "has-clones-plural": "Has {{ count }} clones"
+            }
+        },
+        "pages": {
+            "create": {
+                "page-title": "Create Vehicle",
+                "vehicle-image-alt-text": "Vehicle Image"
+            },
+            "list": {
+                "page-title": "Vehicle List",
+                "vehicle-deleted": "Vehicle deleted successfully",
+                "page-header": "My Vehicles",
+                "no-vehicles": "You don't have any vehicles yet!"
+            }
+        }
+    },
+    "shared": {
+        "containers": {
+            "secured-container": {
+                "menu-items": {
+                    "Characters": "Characters",
+                    "Vehicles": "Vehicles",
+                    "Dice": "Dice",
+                    "Games": "Games",
+                    "Profile": "Profile",
+                    "Logout": "Logout",
+                    "Login": "Login"
+                },
+                "footer-items": {
+                    "bot-help.comment": "The bot-help key is used to link the user to the help PDF for bot commands",
+                    "bot-help": "Bot Help",
+                    "build.comment": "The build is the version number for the application, the user can check it to make sure they're on the newest version number and it's useful for seeing what features are available to the version the user has. This will typically have a value next to it like v0.11.12.0 or something.",
+                    "build": "Build"
+                }
+            }
+        }
+    }
+}
