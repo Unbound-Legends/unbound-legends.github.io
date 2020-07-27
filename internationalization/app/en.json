@@ -237,6 +237,13 @@
     },
     "character2": {
         "ffg-sw": {
+            "pages": {
+                "edit": {
+                    "saving": "Saving",
+                    "create-success": "Character created successfully!",
+                    "edit-success": "Character updated successfully!"
+                }
+            },
             "enums": {
                 "character-attribute": {
                     "Soak": "Soak",
@@ -429,6 +436,23 @@
                 "notes": {
                     "notes": "Notes"
                 },
+                "notes-private": {
+                    "notes-private": "Private Notes",
+                    "these-are-private": "These notes are only visible to you and will not be visible to anyone else"
+                },
+                "npc-character-info": {
+                    "character-info": "Character Info",
+                    "talents": "Talents",
+                    "add-talent": "Add Talent",
+                    "abilities": "Abilities",
+                    "add-ability": "Add Ability",
+                    "equipment-and-gear": "Equipment & Gear",
+                    "add-equipment": "Add Equipment",
+                    "desire": "Desire",
+                    "fear": "Fear",
+                    "strength": "Strength",
+                    "flaw": "Flaw"
+                },
                 "npc-header": {
                     "placeholder-name": "Name",
                     "placeholder-image-url": "Image URL",
@@ -450,7 +474,9 @@
                     "label-age": "Age",
                     "label-weight": "Weight",
                     "label-height": "Height",
-                    "label-notable-features": "Notable Features"
+                    "label-notable-features": "Notable Features",
+                    "modifiers": "Modifiers",
+                    "add-modifier": "Add Modifier"
                 },
                 "skills": {
                     "add-skill": "Add Skill"
@@ -475,6 +501,8 @@
                 },
                 "weapons": {
                     "weapon": "Weapon",
+                    "weapons": "Weapons",
+                    "name": "Name",
                     "skill": "Skill",
                     "damage": "Damage",
                     "crit": "Crit",
@@ -557,6 +585,7 @@
                     "placeholder-rarity": "Rarity",
                     "placeholder-restricted": "Restricted",
                     "placeholder-cost": "Cost",
+                    "placeholder-description": "Description",
                     "action-cancel": "Cancel",
                     "action-delete": "Delete",
                     "action-add-equipment": "Add Equipment",
@@ -684,6 +713,7 @@
                     "placeholder-sheet-theme": "Sheet Theme",
                     "placeholder-talent-tree-layout": "Talent Tree Layout",
                     "placeholder-force-enabled": "Force Rating / Force Power Trees",
+                    "placeholder-npc-force-enabled": "Force Rating",
                     "placeholder-force-tree-layout": "Force Tree Layout",
                     "placeholder-obligation-enabled": "Obligation",
                     "placeholder-duty-enabled": "Duty",
@@ -691,6 +721,7 @@
                     "warning-talent-tree": "Changing the tree layout will remove all talent data associated with this character. Once you save, it cannot be undone.",
                     "warning-force-tree": "Changing the tree layout will remove all force power data associated with this character. Once you save, it cannot be undone.",
                     "warning-force": "Turning this feature off will remove all Force data (both rating and powers). Once you save, it cannot be undone.",
+                    "warning-npc-force": "Turning this feature off will remove all Force data. Once you save, it cannot be undone.",
                     "warning-obligation": "Turning this feature off will remove all Obligation data. Once you save, it cannot be undone.",
                     "warning-duty": "Turning this feature off will remove all Duty data. Once you save, it cannot be undone.",
                     "warning-morality": "Turning this feature off will remove all Morality data. Once you save, it cannot be undone.",
