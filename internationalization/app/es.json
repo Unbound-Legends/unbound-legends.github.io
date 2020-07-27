@@ -214,7 +214,7 @@
           "Tensión actual",
           "Críticos",
           "Especie",
-          "Career",
+          "Profesión",
           "Edad",
           "Motivación",
           "Peso",
@@ -241,9 +241,17 @@
         "character-attribute": {
           "Soak": "Protección",
           "Wounds": "Heridas",
+          "Wound Threshold": "Umbral de Heridas",
+          "Current Wounds": "Heridas Actuales",
           "Strain": "Tensión",
+          "Strain Threshold": "Umbral de Tensión",
+          "Current Strain": "Tensión Actual",
           "Defense": "Defensa",
+          "Ranged Defense": "Defensa a Distancia",
+          "Melee Defense": "Defensa Cuerpo a Cuerpo",
           "Force Rating": "Dominio de la Fuerza",
+          "Current Rating": "Dominio de la Fuerza Actual",
+          "Force Committed": "Fuerza Asignada",
           "Threshold": "Umbral",
           "Current": "Actual",
           "Melee": "Cuerpo a cuerpo",
@@ -252,7 +260,9 @@
           "Available XP": "PE disponibles",
           "Total XP": "PE Totales",
           "Credits": "Créditos",
-          "Encumbrance": "Impedimento"
+          "Encumbrance": "Impedimento",
+          "Encumbrance Threshold": "Umbral de Impedimento",
+          "Current Encumbrance": "Impedimento Actual"
         },
         "character-characteristic": {
           "Brawn": "Fortaleza",
@@ -280,6 +290,34 @@
           "Incidental": "Actividad menor",
           "Maneuver": "Maniobra",
           "Action": "Acción"
+        },
+        "force-display-type": {
+          "Tree": "Árbol",
+          "Table": "Tabla"
+        },
+        "game-theme": {
+          "Edge of the Empire": "Al Filo del Imperio",
+          "Age of Rebellion": "La Era de la Rebelión",
+          "Force and Destiny": "La Fuerza y el Destino"
+        },
+        "modifier-type": {
+          "Armor": "Blindaje",
+          "Attribute": "Atributo",
+          "Characteristic": "Característica",
+          "Narrative": "Narrativo",
+          "Skill": "Habilidad",
+          "Weapon": "Arma"
+        },
+        "skill-type": {
+          "General": "General",
+          "Combat": "Combate",
+          "Social": "Social",
+          "Knowledge": "Conocimiento",
+          "Other": "Otra"
+        },
+        "talent-display-type": {
+          "Tree": "Árbol",
+          "Table": "Tabla"
         }
       },
       "components": {
@@ -295,6 +333,7 @@
           "soak": "Protección",
           "defense": "Defensa",
           "encumbrance": "Impedimento",
+          "hard-points": "ENS",
           "rarity": "Rareza",
           "price": "Precio",
           "carrying": "Transportado",
@@ -310,6 +349,7 @@
           "rarity": "Rareza",
           "required-hp": "ENS Necesarios",
           "base-modifier": "Modificador Básico",
+          "no-modifier": "Ninguno",
           "modifications": "Modificaciones",
           "add-attachment": "Añadir Accesorio"
         },
@@ -317,6 +357,7 @@
           "critical-injury": "Herida Crítica",
           "difficulty": "Dificultad",
           "name": "Nombre",
+          "severity": "Gravedad",
           "description": "Descripción",
           "add-critical-injury": "Añadir Herida Crítica"
         },
@@ -373,11 +414,25 @@
           "add-quality": "Añadir Propiedad",
           "add-equipment": "Añadir Equipamiento"
         },
+        "force-powers": {
+          "force-powers": "Poderes de la Fuerza",
+          "add-force-tree": "Añadir Poder de la Fuerza"
+        },
+        "force-slot": {
+          "ranks": "Rango",
+          "xp": "PE",
+          "combine": "Combinar"
+        },
         "hide-toggle": {
           "hide": "Ocultar"
         },
         "notes": {
           "notes": "Notas"
+        },
+        "npc-header": {
+          "placeholder-name": "Nombre",
+          "placeholder-image-url": "URL Imagén",
+          "placeholder-description": "Descripción"
         },
         "player-header": {
           "placeholder-name": "Nombre",
@@ -388,7 +443,17 @@
           "placeholder-age": "Edad",
           "placeholder-weight": "Peso",
           "placeholder-height": "Altura",
-          "placeholder-notable-features": "Rasgos destacados"
+          "placeholder-notable-features": "Rasgos Destacados",
+          "label-species": "Especie",
+          "label-career": "Profesión",
+          "label-specialization": "Especialización",
+          "label-age": "Edad",
+          "label-weight": "Peso",
+          "label-height": "Altura",
+          "label-notable-features": "Rasgos Destacados"
+        },
+        "skills": {
+          "add-skill": "Añadir Habilidad"
         },
         "skills-table": {
           "general-skills": "Habilidades Generales",
@@ -400,10 +465,12 @@
           "rank": "Rango"
         },
         "talents": {
-          "talents": "Talentos"
+          "talents": "Talentos",
+          "add-talent-tree": "Añadir Nuevo Árbol de Talentos"
         },
         "talent-slot": {
           "ranks": "Rangos",
+          "ranked": "Con Rangos",
           "xp": "PE"
         },
         "weapons": {
@@ -426,10 +493,209 @@
         "weapons-attachments": {
           "attachments": "Accesorios",
           "cost": "Coste",
+          "rarity": "Rareza",
           "required-hp": "ENS Necesarios",
           "base-modifier": "Modificador Básico",
+          "no-modifier": "Ninguno",
           "modifications": "Modificaciones",
           "add-attachment": "Añadir Accesorio"
+        }
+      },
+      "overlays": {
+        "edit-armor": {
+          "placeholder-name": "Nombre",
+          "placeholder-soak": "Protección",
+          "placeholder-defense": "Defensa",
+          "placeholder-encumbrance": "Impedimento",
+          "placeholder-hard-points": "Ensamblajes",
+          "placeholder-rarity": "Rareza",
+          "placeholder-restricted": "Restringido",
+          "placeholder-cost": "Coste",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-armor": "Añadir Blindaje",
+          "action-save-armor": "Guardar Blindaje"
+        },
+        "edit-armor-attachment": {
+          "placeholder-name": "Nombre",
+          "placeholder-hard-points-cost": "ENS necesarios",
+          "placeholder-rarity": "Rareza",
+          "placeholder-restricted": "Restringido",
+          "placeholder-cost": "Coste",
+          "placeholder-description": "Descripción",
+          "modifiers": "Modificadores",
+          "add-modifier": "Añadir Modificador",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-attachment": "Añadir Accesorio",
+          "action-save-attachment": "Guardar Accesorio"
+        },
+        "edit-armor-attachment-modification": {
+          "placeholder-name": "Nombre",
+          "placeholder-description": "Descripción",
+          "modifiers": "Modificadores",
+          "add-modifier": "Añadir Modificador",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-mod": "Añadir Modificación",
+          "action-save-mod": "Guardar Modificación"
+        },
+        "edit-critical-injury": {
+          "placeholder-name": "Nombre",
+          "placeholder-severity": "Gravedad (1-999)",
+          "placeholder-difficulty": "Dificultad (1-5)",
+          "placeholder-description": "Descripción",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-crit": "Añadir Herida Crítica",
+          "action-save-crit": "Guardar Herida Crítica"
+      },
+        "edit-equipment": {
+          "placeholder-name": "Nombre",
+          "placeholder-quantity": "Cantidad",
+          "placeholder-encumbrance": "Impedimento",
+          "placeholder-rarity": "Rareza",
+          "placeholder-restricted": "Restringido",
+          "placeholder-cost": "Coste",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-equipment": "Añadir Equipamiento",
+          "action-save-equipment": "Save Equipamiento"
+        },
+        "edit-force-power": {
+          "placeholder-name": "Nombre",
+          "placeholder-activation-type": "Tipo de Activación",
+          "placeholder-ranked": "Con Rangos",
+          "placeholder-xp-cost": "Coste PE",
+          "placeholder-description": "Descripción",
+          "modifiers": "Modificadores",
+          "add-modifier": "Añadir Modificador",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-force-power": "Añadir Poder de la Fuerza",
+          "action-save-force-power": "Guardar Poder de la Fuerza"
+        },
+        "edit-force-tree": {
+          "placeholder-name": "Nombre del Árbol del Poder de la Fuerza",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-force-tree": "Añadir Árbol de la Fuerza",
+          "action-save-force-tree": "Guardar Árbol de la Fuerza"
+        },
+        "edit-modifier": {
+          "placeholder-name": "Nombre",
+          "placeholder-description": "Descripción",
+          "placeholder-type": "Tipo de Modificación",
+          "placeholder-linked-armor": "Blindaje Relacionado",
+          "placeholder-soak-modifier": "Modificador de Protección",
+          "placeholder-defense-modifier": "Modificador de Defensa",
+          "placeholder-encumbrance-modifier": "Modificador de Impedimento",
+          "placeholder-attribute": "Atributo",
+          "placeholder-characteristic": "Característica",
+          "placeholder-modifier-amount": "Modificador de Cantidad",
+          "placeholder-linked-skill": "Habilidad Relacionada",
+          "placeholder-career-modifier": "Hacer Habilidad Profesional",
+          "placeholder-rank-modifier": "Modificador de Rango",
+          "placeholder-linked-weapon": "Arma Relacionada",
+          "placeholder-damage-modifier": "Modificador de Daño",
+          "placeholder-crit-modifier": "Modificador de Rango de Crítico",
+          "placeholder-extra-dice": "Dado Extra",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-modifier": "Añadir Modificador",
+          "action-save-modifier": "Guardar Modificador"
+        },
+        "edit-skill": {
+          "placeholder-name": "Nombre",
+          "placeholder-characteristic": "Característica Relacionada",
+          "placeholder-skill-type": "Tipo de Habilidad",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-skill": "Añadir Habilidad",
+          "action-save-skill": "Guardar Habilidad"
+        },
+        "edit-talent": {
+          "placeholder-name": "Nombre",
+          "placeholder-activation-type": "Tipo de Activación",
+          "placeholder-ranked": "Con Rangos",
+          "placeholder-is-force-talent": "Talento de la Fuerza",
+          "placeholder-is-conflict-talent": "Talento de Conflicto",
+          "placeholder-xp-cost": "Coste PE",
+          "placeholder-description": "Descripción",
+          "modifiers": "Modificadores",
+          "add-modifier": "Añadir Modificador",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-talent": "Añadir Talento",
+          "action-save-talent": "Guardar Talento"
+        },
+        "edit-talent-tree": {
+          "placeholder-name": "Nombre del Árbol de Talentos",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-talent-tree": "Añadir Árbol de Talentos",
+          "action-save-talent-tree": "Guardar Árbol de Talentos"
+        },
+        "edit-weapon": {
+          "placeholder-name": "Nombre",
+          "placeholder-linked-skill": "Habilidad Relacionada",
+          "placeholder-base-damage": "Daño Based",
+          "placeholder-damage-adds-brawn": "Añadir Fortaleza al Daño",
+          "placeholder-crit": "Rango de Crítico",
+          "placeholder-range": "Alcance",
+          "placeholder-encumbrance": "Impedimento",
+          "placeholder-hard-points": "Ensamblajes",
+          "placeholder-rarity": "Rarity",
+          "placeholder-restricted": "Restringido",
+          "placeholder-cost": "Coste",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-weapon": "Añadir Arma",
+          "action-save-weapon": "Guardar Arma"
+        },
+        "edit-weapon-attachment": {
+          "placeholder-name": "Nombre",
+          "placeholder-hard-points-cost": "Ensamblajes Necesarios",
+          "placeholder-rarity": "Rareza",
+          "placeholder-restricted": "Restringido",
+          "placeholder-cost": "Coste",
+          "placeholder-description": "Descripción",
+          "modifiers": "Modificadores",
+          "add-modifier": "Añadir Modificador",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-attachment": "Añadir Accesorio",
+          "action-save-attachment": "Guardar Accesorio"
+        },
+        "edit-weapon-attachment-modification": {
+          "placeholder-name": "Nombre",
+          "placeholder-description": "Descripción",
+          "modifiers": "Modificadores",
+          "add-modifier": "Añadir Modificador",
+          "action-cancel": "Cancelar",
+          "action-delete": "Eliminar",
+          "action-add-mod": "Añadir Modificación",
+          "action-save-mod": "Guardar Modificación"
+        },
+        "sheet-customizations": {
+          "title": "Opciones de Personalización de la Hoja",
+          "presets": "Predefinidos",
+          "customize": "Personalizar",
+          "placeholder-sheet-theme": "Tema de la Hoja",
+          "placeholder-talent-tree-layout": "Diseño del Árbol de Talentos",
+          "placeholder-force-enabled": "Dominio de la Fuerza / Árbolés de Poderes de la Fuerza",
+          "placeholder-force-tree-layout": "Diseño del Árbol de la Fuerza",
+          "placeholder-obligation-enabled": "Obligaciónn",
+          "placeholder-duty-enabled": "Deber",
+          "placeholder-morality-enabled": "Moralidad",
+          "warning-talent-tree": "Cambiar el diseño del árbol eliminará todos los datos de talento asociados con este personaje. Una vez que guarde, no se puede deshacer.",
+          "warning-force-tree": "Cambiar el diseño del árbol eliminará todos los datos de Poderes de la Fuerza asociados con este personaje. Una vez que guarde, no se puede deshacer.",
+          "warning-force": "Al desactivar esta función, se eliminarán todos los datos de la Fuerza (tanto el Dominio como los Poderes). Una vez que guarde, no se puede deshacer.",
+          "warning-obligation": "Desactivar esta función eliminará todos los datos de Obligación. Una vez que guarde, no se puede deshacer.",
+          "warning-duty": "Desactivar esta función eliminará todos los datos de Deber. Una vez que guarde, no se puede deshacer.",
+          "warning-morality": "Desactivar esta función eliminará todos los datos de Moralidad. Una vez que guarde, no se puede deshacer.",
+          "action-cancel": "Cancelar",
+          "action-save-customizations": "Guardar Personalización"
         }
       },
       "skills": {
