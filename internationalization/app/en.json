@@ -298,6 +298,11 @@
                     "Maneuver": "Maneuver",
                     "Action": "Action"
                 },
+                "character-type": {
+                    "nemesis": "Nemesis",
+                    "rival": "Rival",
+                    "minion": "Minion"
+                },
                 "force-display-type": {
                     "Tree": "Tree",
                     "Table": "Table"
@@ -359,6 +364,9 @@
                     "no-modifier": "None",
                     "modifications": "Modifications",
                     "add-attachment": "Add Attachment"
+                },
+                "attributes-top": {
+                    "minions": "Minions"
                 },
                 "critical-injury": {
                     "critical-injury": "Critical Injuries",
@@ -488,6 +496,7 @@
                     "knowledge-skills": "Knowledge Skills",
                     "other-skills": "Other Skills",
                     "career": "Career",
+                    "group-skill": "Group Skill",
                     "rank": "Rank"
                 },
                 "talents": {
