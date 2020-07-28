@@ -448,6 +448,9 @@
                     "notes-private": "Private Notes",
                     "these-are-private": "These notes are only visible to you and will not be visible to anyone else"
                 },
+                "npc-adversary-level": {
+                    "adversary": "Adversary"
+                },
                 "npc-character-info": {
                     "character-info": "Character Info",
                     "talents": "Talents",
@@ -464,6 +467,7 @@
                 "npc-header": {
                     "placeholder-name": "Name",
                     "placeholder-image-url": "Image URL",
+                    "placeholder-adversary-level": "Adversary Level",
                     "placeholder-description": "Description"
                 },
                 "player-header": {
