@@ -237,22 +237,39 @@
     },
     "character2": {
         "ffg-sw": {
+            "pages": {
+                "edit": {
+                    "saving": "Sauvegarde",
+                    "create-success": "Personnage créé avec succès !",
+                    "edit-success": "Personnage mis à jour avec succès !"
+                }
+            },
             "enums": {
                 "character-attribute": {
                     "Soak": "Encaissement",
                     "Wounds": "Blessures",
+                    "Wound Threshold": "Seuil Blessure",
+                    "Current Wounds": "Blessures Actuelles",
                     "Strain": "Stress",
+                    "Strain Threshold": "Seuil Stress",
+                    "Current Strain": "Stress Actuel",
                     "Defense": "Défense",
+                    "Ranged Defense": "Defense Distance",
+                    "Melee Defense": "Defense CaC",
                     "Force Rating": "Valeur de Force",
+                    "Current Rating": "Valeur Actuelle",
+                    "Force Committed": "Force Engagée",
                     "Threshold": "Seuil",
                     "Current": "Actuel",
-                    "Melee": "Corps-à-corps",
+                    "Melee": "CaC",
                     "Ranged": "Distance",
                     "Committed": "Engagé",
                     "Available XP": "XP disponibles",
                     "Total XP": "Total en XP",
                     "Credits": "Crédits",
-                    "Encumbrance": "Encombrement"
+                    "Encumbrance": "Encombrement",
+                    "Encumbrance Threshold": "Seuil Encombrement",
+                    "Current Encumbrance": "Encombrement Actuel"
                 },
                 "character-characteristic": {
                     "Brawn": "Vigueur",
@@ -275,11 +292,44 @@
                     "Long": "Longue",
                     "Extreme": "Extrême"
                 },
-                "character-talent-activation-type": {
+                "character-activation-type": {
                     "Passive": "Passif",
                     "Incidental": "Broutille",
                     "Maneuver": "Manoeuvre",
                     "Action": "Action"
+                },
+                "character-type": {
+                    "nemesis": "Nemesis",
+                    "rival": "Rival",
+                    "minion": "Sbire"
+                },
+                "force-display-type": {
+                    "Tree": "Arborescence",
+                    "Table": "Table"
+                },
+                "game-theme": {
+                    "Edge of the Empire": "Aux Confins de l'Empire",
+                    "Age of Rebellion": "L'Ere de la Rébellion",
+                    "Force and Destiny": "Force et Destinée"
+                },
+                "modifier-type": {
+                    "Armor": "Armure",
+                    "Attribute": "Trait",
+                    "Characteristic": "Caractéristique",
+                    "Narrative": "Narratif",
+                    "Skill": "Compétence",
+                    "Weapon": "Arme"
+                },
+                "skill-type": {
+                    "General": "Général",
+                    "Combat": "Combat",
+                    "Social": "Social",
+                    "Knowledge": "Connaissance",
+                    "Other": "Autre"
+                },
+                "talent-display-type": {
+                    "Tree": "Arborescence",
+                    "Table": "Table"
                 }
             },
             "components": {
@@ -295,6 +345,7 @@
                     "soak": "Encaissement",
                     "defense": "Défense",
                     "encumbrance": "Encombrement",
+                    "hard-points": "Emp",
                     "rarity": "Rareté",
                     "price": "Prix",
                     "carrying": "Emplacements",
@@ -305,18 +356,23 @@
                     "add-armor": "Ajouter une armure"
                 },
                 "armor-attachments": {
-                    "attachments": "Améliorations",
+                    "attachments": "Kits",
                     "cost": "Coût",
                     "rarity": "Rareté",
                     "required-hp": "Emplacements nécessaires",
-                    "base-modifier": "Effets",
+                    "base-modifier": "Modificateur",
+                    "no-modifier": "Aucun",
                     "modifications": "Mods",
-                    "add-attachment": "Ajouter une amélioration"
+                    "add-attachment": "Ajouter un kit"
+                },
+                "attributes-top": {
+                    "minions": "Sbires"
                 },
                 "critical-injury": {
                     "critical-injury": "Blessures critiques",
                     "difficulty": "Difficulté",
                     "name": "Nom",
+                    "severity": "Gravité",
                     "description": "Description",
                     "add-critical-injury": "Ajouter une blessure critique"
                 },
@@ -373,23 +429,66 @@
                     "add-quality": "Ajouter un attribut",
                     "add-equipment": "Ajouter un équipement"
                 },
+                "force-powers": {
+                    "force-powers": "Pouvoir de la Force",
+                    "add-force-tree": "Ajouter un Pouvoir de la Force"
+                },
+                "force-slot": {
+                    "ranks": "Rangs",
+                    "xp": "XP",
+                    "combine": "Combiner"
+                },
                 "hide-toggle": {
                     "hide": "Masquer"
                 },
                 "notes": {
                     "notes": "Notes"
                 },
+                "notes-private": {
+                    "notes-private": "Notes privées",
+                    "these-are-private": "Ces notes sont uniquement visibles par vous et par personne d'autre"
+                },
+                "npc-character-info": {
+                    "character-info": "Info du Personnage",
+                    "talents": "Talents",
+                    "add-talent": "Ajouter un Talent",
+                    "abilities": "Aptitudes",
+                    "add-ability": "Ajouter une Aptitude",
+                    "equipment-and-gear": "Equipement et Matériel",
+                    "add-equipment": "Ajouter un Equipement",
+                    "desire": "Ambition",
+                    "fear": "Peur",
+                    "strength": "Force",
+                    "flaw": "Faiblesse"
+                },
+                "npc-header": {
+                    "placeholder-name": "Nom",
+                    "placeholder-image-url": "URL Image",
+                    "placeholder-description": "Description"
+                },
                 "player-header": {
                     "placeholder-name": "Nom",
                     "placeholder-image-url": "URL image",
                     "placeholder-species": "Espèce",
                     "placeholder-career": "Carrière",
-                    "placeholder-specialization": "Spécialisations",
+                    "placeholder-specialization": "Spécialités",
                     "placeholder-age": "Age",
                     "placeholder-weight": "Poids",
                     "placeholder-height": "Taille",
-                    "placeholder-notable-features": "Signes particuliers"
+                    "placeholder-notable-features": "Signes particuliers",
+                    "label-species": "Espèce",
+                    "label-career": "Carrière",
+                    "label-specialization": "Spécialités",
+                    "label-age": "Age",
+                    "label-weight": "Poids",
+                    "label-height": "Taille",
+                    "label-notable-features": "Signes Particuliers",
+                    "modifiers": "Modificateurs",
+                    "add-modifier": "Ajouter un modificateur"
                 },
+                "skills": {
+                    "add-skill": "Ajouter une Compétence"
+                },  
                 "skills-table": {
                     "general-skills": "Compétences générales",
                     "combat-skills": "Compétences de combat",
@@ -397,17 +496,22 @@
                     "knowledge-skills": "Compétences de connaissance",
                     "other-skills": "Autres compétences",
                     "career": "Carrière",
+                    "group-skill": "Compétence de Groupe",
                     "rank": "Rang"
                 },
                 "talents": {
-                    "talents": "Talents"
+                    "talents": "Talents",
+                    "add-talent-tree": "Ajouter un nouvel Arbre de Talent"
                 },
                 "talent-slot": {
-                    "ranks": "Rang",
+                    "ranks": "Rangs",
+                    "ranked": "Rangs",
                     "xp": "XP"
                 },
                 "weapons": {
-                    "weapon": "Armes",
+                    "weapon": "Arme",
+                    "weapons": "Armes",
+                    "name": "Nom",
                     "skill": "Compétence",
                     "damage": "Dégâts",
                     "crit": "Critique",
@@ -424,12 +528,214 @@
                     "add-weapon": "Ajouter une arme"
                 },
                 "weapons-attachments": {
-                    "attachments": "Améliorations",
+                    "attachments": "Kits",
                     "cost": "Coût",
+                    "rarity": "Rareté",
                     "required-hp": "Emplacements nécessaires",
-                    "base-modifier": "Effets",
+                    "base-modifier": "Modificateur",
+                    "no-modifier": "Aucun",
                     "modifications": "Mods",
-                    "add-attachment": "Ajouter une amélioration"
+                    "add-attachment": "Ajouter un kit"
+                }
+            },
+            "overlays": {
+                "edit-armor": {
+                    "placeholder-name": "Nom",
+                    "placeholder-soak": "Encaissement",
+                    "placeholder-defense": "Défense",
+                    "placeholder-encumbrance": "Encombrement",
+                    "placeholder-hard-points": "Emplacements",
+                    "placeholder-rarity": "Rareté",
+                    "placeholder-restricted": "Illégal",
+                    "placeholder-cost": "Coût",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-armor": "Ajouter une armure",
+                    "action-save-armor": "Sauvegarder l'armure"
+                },
+                "edit-armor-attachment": {
+                    "placeholder-name": "Nom",
+                    "placeholder-hard-points-cost": "Prix ",
+                    "placeholder-rarity": "Rareté",
+                    "placeholder-restricted": "Illégal",
+                    "placeholder-cost": "Prix",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modificateurs",
+                    "add-modifier": "Ajouter un modificateur",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-attachment": "Ajouter un kit",
+                    "action-save-attachment": "Sauvegarder le kit"
+                },
+                "edit-armor-attachment-modification": {
+                    "placeholder-name": "Nom",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modificateurs",
+                    "add-modifier": "Ajouter un modificateur",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-mod": "Ajouter un mods",
+                    "action-save-mod": "Sauvegarder le mods"
+                },
+                "edit-critical-injury": {
+                    "placeholder-name": "Nom",
+                    "placeholder-severity": "Gravité (1-999)",
+                    "placeholder-difficulty": "Difficulté (1-5)",
+                    "placeholder-description": "Description",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-crit": "Ajouter un critique",
+                    "action-save-crit": "Sauvegarder le critique"
+                },
+                "edit-equipment": {
+                    "placeholder-name": "Nom",
+                    "placeholder-quantity": "Quantité",
+                    "placeholder-encumbrance": "Encombrement",
+                    "placeholder-rarity": "Rareté",
+                    "placeholder-restricted": "Illégal",
+                    "placeholder-cost": "Prix",
+                    "placeholder-description": "Description",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-equipment": "Ajouter un équipement",
+                    "action-save-equipment": "Sauvegarder l'équipement"
+                },
+                "edit-force-power": {
+                    "placeholder-name": "Nom",
+                    "placeholder-activation-type": "Activation",
+                    "placeholder-ranked": "Rangs",
+                    "placeholder-xp-cost": "Coût XP",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modificateurs",
+                    "add-modifier": "Ajouter un modificateur",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-force-power": "Ajouter un pouvoir",
+                    "action-save-force-power": "Sauvegarder le pouvoir"
+                },
+                "edit-force-tree": {
+                    "placeholder-name": "Nom de l'arborescence de pouvoir de la Force",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-force-tree": "Ajouter une arborescence",
+                    "action-save-force-tree": "Sauvegarder l'arborescence"
+                },
+                "edit-modifier": {
+                    "placeholder-name": "Nom",
+                    "placeholder-description": "Description",
+                    "placeholder-type": "Type d'effet",
+                    "placeholder-linked-armor": "Armure liée",
+                    "placeholder-soak-modifier": "Modificateur Encaissement",
+                    "placeholder-defense-modifier": "Modificateur Défense",
+                    "placeholder-encumbrance-modifier": "Modificateur Encombrement",
+                    "placeholder-attribute": "Trait",
+                    "placeholder-characteristic": "Caractéristique",
+                    "placeholder-modifier-amount": "Modificateur Valeur",
+                    "placeholder-linked-skill": "Compétence liée",
+                    "placeholder-career-modifier": "Compétence de carrière",
+                    "placeholder-rank-modifier": "Modificateur Rangs",
+                    "placeholder-linked-weapon": "Arme liée",
+                    "placeholder-damage-modifier": "Modificateur Dommages",
+                    "placeholder-crit-modifier": "Modificateur Critique",
+                    "placeholder-extra-dice": "Dé supplémentaire",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-modifier": "Ajouter un modificateur",
+                    "action-save-modifier": "Sauvegarder le modificateur"
+                },
+                "edit-skill": {
+                    "placeholder-name": "Nom",
+                    "placeholder-characteristic": "Caractéristique liée",
+                    "placeholder-skill-type": "Type de compétence",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-skill": "Ajouter une compétence",
+                    "action-save-skill": "sauvegarder la compétence"
+                },
+                "edit-talent": {
+                    "placeholder-name": "Nom",
+                    "placeholder-activation-type": "Type d'activation",
+                    "placeholder-ranked": "Rangs",
+                    "placeholder-is-force-talent": "Talent de la Force",
+                    "placeholder-is-conflict-talent": "Talent de Conflit",
+                    "placeholder-xp-cost": "Coût XP",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modificateur",
+                    "add-modifier": "Ajouter un modificateur",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-talent": "Ajouter un talent",
+                    "action-save-talent": "Sauvegarde le talent"
+                },
+                "edit-talent-tree": {
+                    "placeholder-name": "Nom Arborescence de talent",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-talent-tree": "Ajouter un arbre de talent",
+                    "action-save-talent-tree": "Sauvegarder l'arborescence de talent"
+                },
+                "edit-weapon": {
+                    "placeholder-name": "Nom",
+                    "placeholder-linked-skill": "Compétence liée",
+                    "placeholder-base-damage": "Dommages",
+                    "placeholder-damage-adds-brawn": "Vigueur + Dommages",
+                    "placeholder-crit": "Critique",
+                    "placeholder-range": "Portée",
+                    "placeholder-encumbrance": "Encombrement",
+                    "placeholder-hard-points": "Emplacements",
+                    "placeholder-rarity": "Rareté",
+                    "placeholder-restricted": "Illégal",
+                    "placeholder-cost": "Coût",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-weapon": "Ajouter l'arme",
+                    "action-save-weapon": "Sauvegarder l'arme"
+                },
+                "edit-weapon-attachment": {
+                    "placeholder-name": "Nom",
+                    "placeholder-hard-points-cost": "Coût emplacements",
+                    "placeholder-rarity": "Rareté",
+                    "placeholder-restricted": "Illégal",
+                    "placeholder-cost": "Coût",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modificateurs",
+                    "add-modifier": "Ajouter un modificateur",
+                    "action-cancel": "Cancel",
+                    "action-delete": "Delete",
+                    "action-add-attachment": "Add Attachment",
+                    "action-save-attachment": "Save Attachment"
+                },
+                "edit-weapon-attachment-modification": {
+                    "placeholder-name": "Name",
+                    "placeholder-description": "Description",
+                    "modifiers": "Modifiers",
+                    "add-modifier": "Ajouter un modificateur",
+                    "action-cancel": "Annuler",
+                    "action-delete": "Supprimer",
+                    "action-add-mod": "Ajouter un mods",
+                    "action-save-mod": "Sauvegarder le mods"
+                },
+                "sheet-customizations": {
+                    "title": "Options de la fiche",
+                    "presets": "Presets",
+                    "customize": "Personnaliser",
+                    "placeholder-sheet-theme": "Thème de la Fiche",
+                    "placeholder-talent-tree-layout": "Mise en page de l'arborescence de talents",
+                    "placeholder-force-enabled": "Valeur de Force / Arborescence de pouvoir de la Force",
+                    "placeholder-npc-force-enabled": "Valeur de Force",
+                    "placeholder-force-tree-layout": "Mise en page de l'arborescence de talents",
+                    "placeholder-obligation-enabled": "Obligation",
+                    "placeholder-duty-enabled": "Devoir",
+                    "placeholder-morality-enabled": "Moralité",
+                    "warning-talent-tree": "Changer la mise en page de l'arborescence va supprimer tous les talents associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-force-tree": "Changer la mise en page de l'arborescence va supprimer tous les pouvoirs de la Force associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-force": "Désactiver cette fonctionnalité va supprimer tous les pouvoirs et la Valeur de Force. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-npc-force": "Désactiver cette fonctionnalité va supprimer tous les pouvoirs et la Valeur de Force. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-obligation": "Désactiver cette fonctionnalité va supprimer toutes les Obligations. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-duty": "Désactiver cette fonctionnalité va supprimer tous les Devoirs. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-morality": "Désactiver cette fonctionnalité va supprimer la Moralité. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "action-cancel": "Annuler",
+                    "action-save-customizations": "Sauvegarder"
                 }
             },
             "skills": {
