@@ -468,9 +468,6 @@
                     "placeholder-name": "Name",
                     "placeholder-image-url": "Image URL",
                     "placeholder-adversary-level": "Adversary Level",
-                    "placeholder-combat-power-level": "Combat Power Level",
-                    "placeholder-social-power-level": "Social Power Level",
-                    "placeholder-general-power-level": "General Power Level",
                     "placeholder-description": "Description"
                 },
                 "player-header": {
@@ -1010,6 +1007,9 @@
                     "placeholder-name": "Name",
                     "placeholder-image-url": "Image URL",
                     "placeholder-adversary-level": "Adversary Level",
+                    "placeholder-combat-power-level": "Combat Power Level",
+                    "placeholder-social-power-level": "Social Power Level",
+                    "placeholder-general-power-level": "General Power Level",
                     "placeholder-description": "Description"
                 },
                 "player-header": {
