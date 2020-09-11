@@ -1663,6 +1663,10 @@
                     "skill-placeholder": "Choose a Skill",
                     "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings",
                     "rolled-from-game-table": "Rolled from Game Table"
+                },
+                "panel-adversaries": {
+                    "Adversaries": "Adversaries",
+                    "coming-soon": "Coming Soon!"
                 }
             },
             "panel-history": {
@@ -1671,7 +1675,18 @@
             },
             "panel-initiative": {
                 "Initiative": "Initiative",
-                "coming-soon": "Coming Soon!"
+                "no-initiative": "No Initiative",
+                "initiative-round-abbreviation": "R{{ round }}",
+                "previous-slot-button-text": "Previous Slot",
+                "next-slot-button-text": "Next Slot",
+                "convert-button-text.comment": "The below text is shown as button text that allows users to convert initiative slots between NPC and PC slots",
+                "convert-button-text": "Convert to {{ oppositeType }}",
+                "remove-slot-button-text.comment": "The below text is shown as a button users can click on to remove a slot from initiative",
+                "remove-slot-button-text": "Remove Slot",
+                "reset-initiative-button-text.comment": "The below text is used on the button that lets a user RESET initiative - that is, keep all of the slots the same, the round just goes back to 1",
+                "reset-initiative-button-text": "Reset Initiative",
+                "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
+                "clear-initiative-button-text": "Clear Initiative"
             },
             "panel-messages": {
                 "Messages": "Messages",
