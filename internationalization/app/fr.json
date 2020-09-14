@@ -42,6 +42,14 @@
                 "Genesys": "Genesys",
                 "Star Wars": "Star Wars"
             },
+            "game-type": {
+                "FFG Star Wars": "FFG Star Wars",
+                "FFG Genesys": "FFG Genesys"
+            },
+            "game-dice-size": {
+                "Regular": "Normal",
+                "Large": "Large"
+            },
             "game-themes": {
                 "[game theme] eote core": "Aux Confins de l'Empire",
                 "[game theme] genesys core": "Genesys",
@@ -190,52 +198,17 @@
                 "patreon-features-updated-successfully": "Fonctionnalités Patreon mises à jour avec succès !"
             }
         }
-    },
-    "character": {
-        "overlays": {
-            "import-overlay": {
-                "title-oggdude": "Importateur OggDude",
-                "title-oggdude-custom": "Importateur de données personnalisées OggDude ",
-                "title-emporium": "Importateur Genesys Emporium",
-                "monthly-imports-label": "Imports mensuels:",
-                "non-patron-custom-data-warning": "Attention: L'importateur OggDude ne supporte présentement pas les données personnalisées pour les usagers qui ne sont pas des membres patron.",
-                "create-import-file-instructions": "Pour créer le fichier à importer, rendez-vous à l'éditeur de données et appuyez sur Sauvegarde, puis sélectionner seulement les Données Personnalisées puis appuyez sur Sauvegarde.",
-                "import-data-button-text": "Importer données",
-                "import-character-button-text": "Importer personnage",
-                "custom-oggdude-data-not-imported": "Attention: Vous n'avez pas de données personnalisées importées. Les données personnaliséees dans la feuille de personnage vont être ignorées.",
-                "custom-oggdude-data-already-imported": "Bonne nouvelle! Vous avez importé des données personnalisées. Ces données se retrouveront dans votre feuille de personnage.",
-                "custom-oggdude-data-confirm-delete": "Êtes-vous certain de vouloir effacer vos données personnalisées OggDude?",
-                "oggdude-delete-cancel-button-text": "Annuler",
-                "oggdude-delete-confirm-button-text": "Effacer",
-                "overwrite-ignored-label": "Lorsque vous écrasez un personnage, toutes les informations seront remplacées à l'exception des suivantes:",
-                "oggdude-import-wont-overwrite": [
-                    "Nom",
-                    "Blessures actuelles",
-                    "Stress actuel",
-                    "Blessures critiques",
-                    "Espèce",
-                    "Carrière",
-                    "Âge",
-                    "Motivation",
-                    "Poids",
-                    "Grandeur",
-                    "Détails",
-                    "Histoire"
-                ],
-                "import-limit-greeting": "Oh non!",
-                "import-limit-description": "Il semble que vous avez atteint votre limite d'importation pour ce mois.",
-                "import-limit-patreon-tier-error": "Afin d'importer davantage de personnages ce mois-ci, envisagez d'augmenter votre niveau de <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a >.",
-                "import-limit-no-patreon-error": "Afin d'importer davanage de personanges ce mois-ci, envisager de devenir un <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a>.",
-                "import-limit-linking-instructions": "Si vous êtes déja un membre Patron, assurez-vous d'associer votre compte dans vos <a href=\"/user/profile\">paramètres de compte.</a>",
-                "patreon-only-error-warning": "Cette fonctionnalité est présentement exclusive à nos membres Patron. Si vous voulez joindre notre Patreon pour utiliser cette fonctionnalité, rendez-vous <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >sur notre page Patreon.com.</a>",
-                "patreon-only-error-call-to-action": "Si vous êtes déja un membre Patron, assurez-vous d'associer votre compte dans vos <a href=\"/user/profile\">paramètres de compte.</a>",
-                "dialog-cancel-button": "Annuler",
-                "drop-file-prompt": "Déposez votre {{ fileType }} fichier ici ou cliquer sur télécharger",
-                "overwrite-character": "Ecraser le personnage"
-            }
-        }
-    },
+    },  
     "character2": {
+        "pages": {
+            "list": {
+                "title": "Mes personnages",
+                "sort-by": "Trier par",
+                "import": "Importer",
+                "new": "Nouveau",
+                "no-characters": "Vous n'avez pas encore de personnages !"
+            }
+        },
         "ffg-sw": {
             "pages": {
                 "edit": {
@@ -298,7 +271,14 @@
                     "Maneuver": "Manoeuvre",
                     "Action": "Action"
                 },
+                "character-activation-type-abbr": {
+                    "Passive": "P",
+                    "Incidental": "B",
+                    "Maneuver": "M",
+                    "Action": "A"
+                },
                 "character-type": {
+                    "Player": "Joueur",
                     "nemesis": "Nemesis",
                     "rival": "Rival",
                     "minion": "Sbire"
@@ -438,6 +418,15 @@
                     "xp": "XP",
                     "combine": "Combiner"
                 },
+                "force-table": {
+                    "force-table": "Pouvoir de la Force",
+                    "name": "Nom",
+                    "description": "Description",
+                    "activation": "Activation",
+                    "ranks": "Rangs",
+                    "cost": "Coût",
+                    "add-force-power": "Ajouter un pouvoir de la Force"
+                },
                 "hide-toggle": {
                     "hide": "Masquer"
                 },
@@ -511,6 +500,15 @@
                     "ranks": "Rangs",
                     "ranked": "Rangs",
                     "xp": "XP"
+                },
+                "talent-table": {
+                    "talent-table": "Talents",
+                    "name": "Nom",
+                    "description": "Description",
+                    "activation": "Activation",
+                    "ranks": "Rangs",
+                    "cost": "Coût",
+                    "add-talent": "Ajouter un talent"
                 },
                 "weapons": {
                     "weapon": "Arme",
@@ -608,6 +606,7 @@
                     "placeholder-name": "Nom",
                     "placeholder-activation-type": "Activation",
                     "placeholder-ranked": "Rangs",
+                    "placeholder-ranks": "Rangs",
                     "placeholder-xp-cost": "Coût XP",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
@@ -663,6 +662,7 @@
                     "placeholder-is-force-talent": "Talent de la Force",
                     "placeholder-is-conflict-talent": "Talent de Conflit",
                     "placeholder-xp-cost": "Coût XP",
+                    "placeholder-ranks": "Rangs",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateur",
                     "add-modifier": "Ajouter un modificateur",
@@ -739,7 +739,8 @@
                     "warning-duty": "Désactiver cette fonctionnalité va supprimer tous les Devoirs. Une fois sauvegardé, aucun retour en arrière possible.",
                     "warning-morality": "Désactiver cette fonctionnalité va supprimer la Moralité. Une fois sauvegardé, aucun retour en arrière possible.",
                     "action-cancel": "Annuler",
-                    "action-save-customizations": "Sauvegarder"
+                    "action-save-customizations": "Sauvegarder",
+                    "action-create-character": "Créer un personnage"
                 }
             },
             "skills": {
@@ -844,6 +845,7 @@
                     "Action": "Action"
                 },
                 "character-type": {
+                    "Player": "Joueur",
                     "nemesis": "Nemesis",
                     "rival": "Rival",
                     "minion": "Sbire"
@@ -1304,7 +1306,8 @@
                     "warning-aember": "Désactiver cette fonctionnalité va supprimer toutes les données d'Æmber. Une fois sauvegardé, aucun retour en arrière possible.",
                     "warning-favors": "Désactiver cette fonctionnalité va supprimer toutes les faveurs. Une fois sauvegardé, aucun retour en arrière possible.",
                     "action-cancel": "Annuler",
-                    "action-save-customizations": "Sauvegarder"
+                    "action-save-customizations": "Sauvegarder",
+                    "action-create-character": "Créer un personnage"
                 },
                 "edit-favor": {
                     "placeholder-favor-size": "Taille de la faveur",
@@ -1365,6 +1368,53 @@
                 "Vigilance": "Vigilance",
                 "Warfare": "Stratégie",
                 "Xenology": "Xénologie"
+            }
+        },
+        "overlays": {
+            "import-overlay": {
+                "title-oggdude": "Importateur OggDude",
+                "title-oggdude-custom": "Importateur de données personnalisées OggDude ",
+                "title-emporium": "Importateur Genesys Emporium",
+                "monthly-imports-label": "Imports mensuels:",
+                "non-patron-custom-data-warning": "Attention: L'importateur OggDude ne supporte présentement pas les données personnalisées pour les usagers qui ne sont pas des membres patron.",
+                "create-import-file-instructions": "Pour créer le fichier à importer, rendez-vous à l'éditeur de données et appuyez sur Sauvegarde, puis sélectionner seulement les Données Personnalisées puis appuyez sur Sauvegarde.",
+                "import-data-button-text": "Importer données",
+                "import-character-button-text": "Importer personnage",
+                "custom-oggdude-data-not-imported": "Attention: Vous n'avez pas de données personnalisées importées. Les données personnaliséees dans la feuille de personnage vont être ignorées.",
+                "custom-oggdude-data-already-imported": "Bonne nouvelle! Vous avez importé des données personnalisées. Ces données se retrouveront dans votre feuille de personnage.",
+                "custom-oggdude-data-confirm-delete": "Êtes-vous certain de vouloir effacer vos données personnalisées OggDude?",
+                "oggdude-delete-cancel-button-text": "Annuler",
+                "oggdude-delete-confirm-button-text": "Effacer",
+                "overwrite-ignored-label": "Lorsque vous écrasez un personnage, toutes les informations seront remplacées à l'exception des suivantes:",
+                "oggdude-import-wont-overwrite": [
+                    "Nom",
+                    "Blessures actuelles",
+                    "Stress actuel",
+                    "Blessures critiques",
+                    "Espèce",
+                    "Carrière",
+                    "Âge",
+                    "Motivation",
+                    "Poids",
+                    "Grandeur",
+                    "Détails",
+                    "Histoire"
+                ],
+                "import-limit-greeting": "Oh non!",
+                "import-limit-description": "Il semble que vous avez atteint votre limite d'importation pour ce mois.",
+                "import-limit-patreon-tier-error": "Afin d'importer davantage de personnages ce mois-ci, envisagez d'augmenter votre niveau de <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a >.",
+                "import-limit-no-patreon-error": "Afin d'importer davanage de personanges ce mois-ci, envisager de devenir un <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a>.",
+                "import-limit-linking-instructions": "Si vous êtes déja un membre Patron, assurez-vous d'associer votre compte dans vos <a href=\"/user/profile\">paramètres de compte.</a>",
+                "patreon-only-error-warning": "Cette fonctionnalité est présentement exclusive à nos membres Patron. Si vous voulez joindre notre Patreon pour utiliser cette fonctionnalité, rendez-vous <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >sur notre page Patreon.com.</a>",
+                "patreon-only-error-call-to-action": "Si vous êtes déja un membre Patron, assurez-vous d'associer votre compte dans vos <a href=\"/user/profile\">paramètres de compte.</a>",
+                "dialog-cancel-button": "Annuler",
+                "drop-file-prompt": "Déposez votre {{ fileType }} fichier ici ou cliquer sur télécharger",
+                "overwrite-character": "Ecraser le personnage",
+                "title-swrpg": "Importer PNJ Star Wars RPG",
+                "title-genesys": "Importer PNJ Genesys",
+                "import-npc-button-text": "Importer PNJ",
+                "title-stoogoff": "Importer PNJ SWRPG de [StooGoff.com](http://swa.stoogoff.com/)",
+                "title-dylan": "Importer PNJ Genesys de [DylanPetrumsa.com](http://genesysadversaries.dylanpetrusma.com)"
             }
         }
     },
@@ -1545,29 +1595,139 @@
                 "link-copied-confir": "Lien copié!"
             },
             "view": {
-                "no-game-found-error": "Aucune Partie trouvée!",
-                "game-update-successful-message": "Partie mise à jour avec succès !",
+                "header": "Paramètres de jeu",
+                "server-management": "Gestion du serveur",
+                "back-to-list": "Retourer à la liste",
+                "general": "Géneral",
+                "character": "Personnage",
+                "vehicle": "Véhicule",
+                "crit-tables": "Tables de Critiques",
                 "game-name-placeholder": "Nom de la Partie",
                 "game-type-placeholder": "Type de Jeu",
                 "dice-size-placeholder": "Taille des Dés",
-                "character-placeholder": "Personnage",
-                "character-crit-table-placeholder": "Table des Critiques - Personnage",
-                "vehicle-crit-table-placeholder": "Table des Critiques - Véhicules",
-                "party-vehicle-placeholder": "Véhicule de la Partie",
-                "personal-vehicle-placeholder": "Véhicule personnel",
-                "save-changes-button-text": "Sauvegarder les changements",
-                "back-to-list": "Retourner à la liste",
-                "server-management": "Gestion du serveur",
-                "dice-sizes": {
-                    "Regular": "Normal",
-                    "Large": "Large"
-                },
                 "gm-story-point-style": "Style des Points narratifs MJ",
                 "pc-story-point-style": "Style des Points narratifs PJ",
-                "patron-only-story-point-warning": "Vous devez être un Patron pour changer le style des Points narratifs."
+                "patron-only-story-point-warning": "Vous devez être un Patron pour changer le style des Points narratifs.",
+                "save-changes": "Sauvegarder les changements",
+                "game-update-successful-message": "Jeu mis à jour avec succès !",
+                "character-placeholder": "Personnage",
+                "character-crit-table-placeholder": "Table de Critiques - Personnage",
+                "vehicle-crit-table-placeholder": "Table de Critiques - Véhicules",
+                "party-vehicle-placeholder": "Véhicule de la Partie",
+                "personal-vehicle-placeholder": "Véhicule personnel",
+                "game-type-change-warning": "WARNING: Changing the Game Type will force all players to choose new characters and vehicles that are compatible with the newly selected Game Type." 
             }
         }
     },
+    "game-table": {
+        "available-tabs": {
+            "Characters": "Personnages",
+            "Vehicles": "Véhicules",
+            "Initiative": "Initiative",
+            "History": "Historique",
+            "Messages": "Messages",
+            "Weapons": "Armes",
+            "Talents": "Talents",
+            "Notes": "Notes"
+        },
+        "components": {
+            "action-bar": {
+                "link-copied": "Lien copié !"
+            },
+            "ffg-sw": {
+                "character-hud": {
+                    "Wounds": "Blessures",
+                    "Strain": "Stress",
+                    "Soak": "Encaissement",
+                    "Defense": "Def",
+                    "DefenseMelee": "CaC",
+                    "DefenseRanged": "D",
+                    "Encumbrance": "Enc",
+                    "no-character": "Aucun personnage selectionné"
+                },
+                "panel-character-list": {
+                    "characters": "Personnages",
+                    "no-selected-character": "Aucun personnage selectionné",
+                    "select-character-button-text": "Sélectionner un personnage",
+                    "character-placeholder-text": "Personnage",
+                    "Wounds": "B",
+                    "Strain": "S",
+                    "Crits": "Critiques"
+                },
+                "dice-roller": {
+                    "roll-crit-this-pc-button-text": "Lancer le critique pour ce PJ",
+                    "plus-10-to-crit-button-text": "+10",
+                    "minus-10-to-crit-button-text": "-10",
+                    "roll-dice-button": "Lancer le dé",
+                    "description-placeholder": "Description",
+                    "skill-placeholder": "Choisir une compétence",
+                    "no-dice-channel-selected-error": "Aucun canal de selectionnez - Les lancers ne seront pas transmis sur Discord. Selectionnez un canal dans les paramètres de jeu",
+                    "rolled-from-game-table": "Lancer via la Table de Jeu"
+                },
+                "panel-adversaries": {
+                    "Adversaries": "Adversaires",
+                    "coming-soon": "A venir bientôt !"
+                }
+            },
+            "panel-history": {
+                "History": "Historique",
+                "no-history": "Aucun historique !"
+            },
+            "panel-initiative": {
+                "Initiative": "Initiative",
+                "no-initiative": "Pas  d'initiative",
+                "initiative-round-abbreviation": "T{{ round }}",
+                "previous-slot-button-text": "Créneau précédent",
+                "next-slot-button-text": "Créneau suivant",
+                "convert-button-text.comment": "The below text is shown as button text that allows users to convert initiative slots between NPC and PC slots",
+                "convert-button-text": "Convertir en {{ oppositeType }}",
+                "remove-slot-button-text.comment": "The below text is shown as a button users can click on to remove a slot from initiative",
+                "remove-slot-button-text": "Supprimer créneau",
+                "reset-initiative-button-text.comment": "The below text is used on the button that lets a user RESET initiative - that is, keep all of the slots the same, the round just goes back to 1",
+                "reset-initiative-button-text": " Recommencer",
+                "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
+                "clear-initiative-button-text": "Supprimer"
+            },
+            "panel-messages": {
+                "Messages": "Messages",
+                "no-messages": "Pas de Messages!",
+                "updated": "Mis à jour !",
+                "updated-count-times": "Mis à jour {{ count }} fois !",
+                "history-tab-text": "Historique",
+                "notes-tab-text": "Messages",
+                "comment-placeholder": "Ecrivez un message...",
+                "no-patron-warning": "Vous devez être au tier \"The Duece\" sur Patreon ou plus pour charger des images",
+                "send-button-text": "Envoyer",
+                "file-limit-error": "Les fichiers importés doivent faire moins de 10 Mo.",
+                "file-type-error": "Les fichiers importés doivent être des images."
+            },
+            "panel-vehicle-list": {
+                "Vehicles": "Véhicules",
+                "coming-soon": "A venir bientôt !"
+            },
+            "panel-notes": {
+                "Notes": "Notes",
+                "coming-soon": "A venir bientôt !"
+            },
+            "panel-talents": {
+                "Talents": "Talents",
+                "coming-soon": "A venir bientôt !"
+            },
+            "panel-weapons": {
+                "Weapons": "Armes",
+                "coming-soon": "A venir bientôt!"
+            }
+        },
+        "pages": {
+            "table": {
+                "page-title": "{{ gameName }} Table de Jeu",
+                "page-description": "Table de Jeu fournis par RPG Sessions",
+                "no-connection-error-message": "Pas de connexion",
+                "connecting-info-message": "Connexion en cours ...",
+                "reconnect-button-text": "Reconnexion"
+            }
+        }
+    },  
     "vehicle": {
         "components": {
             "detail-component": {
