@@ -1191,6 +1191,7 @@
                     "placeholder-name": "Name",
                     "placeholder-cost": "Ability Point Cost",
                     "placeholder-ranks": "Ranks",
+                    "placeholder-description": "Description",
                     "action-cancel": "Cancel",
                     "action-delete": "Delete",
                     "action-add-upgrade": "Add Upgrade",
