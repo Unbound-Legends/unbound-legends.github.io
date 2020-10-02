@@ -185,7 +185,7 @@
                 "theme-placeholder": "Thème",
                 "update-user-settings-button-text": "Mettre à jour les paramètres d'utilisateur",
                 "badges-header": "Badges",
-                "badges-coming-soon": "Bientôt disponible!",
+                "badges-coming-soon": "Bientôt disponible !",
                 "linked-accounts-header": "Comptes associés",
                 "linked-account-description": "Associer votre profile RPGSessions pour dévérouiller des fonctionnalités impressionnantes!",
                 "link-text": "Associer",
@@ -259,7 +259,7 @@
                     "PR": "Pré"
                 },
                 "character-range-band": {
-                    "Engaged": "Au contact",
+                    "Engaged": "Contact",
                     "Short": "Courte",
                     "Medium": "Moyenne",
                     "Long": "Longue",
@@ -653,7 +653,7 @@
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
                     "action-add-skill": "Ajouter une compétence",
-                    "action-save-skill": "sauvegarder la compétence"
+                    "action-save-skill": "Sauvegarder la compétence"
                 },
                 "edit-talent": {
                     "placeholder-name": "Nom",
@@ -832,7 +832,7 @@
                     "PR": "Pré"
                 },
                 "character-range-band": {
-                    "Engaged": "Au contact",
+                    "Engaged": "Contact",
                     "Short": "Courte",
                     "Medium": "Moyenne",
                     "Long": "Longue",
@@ -1226,7 +1226,7 @@
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
                     "action-add-skill": "Ajouter une compétence",
-                    "action-save-skill": "sauvegarder la compétence"
+                    "action-save-skill": "Sauvegarder la compétence"
                 },
                 "edit-talent": {
                     "placeholder-name": "Nom",
@@ -1715,7 +1715,7 @@
             },
             "panel-weapons": {
                 "Weapons": "Armes",
-                "coming-soon": "A venir bientôt!"
+                "coming-soon": "A venir bientôt !"
             }
         },
         "pages": {
