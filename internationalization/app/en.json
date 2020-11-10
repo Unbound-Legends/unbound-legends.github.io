@@ -195,7 +195,9 @@
                     "honorary-titles": "Honorary Titles"
                 },
                 "update-user-patreon-features-button-text": "Update Patreon Features",
-                "patreon-features-updated-successfully": "Patreon features updated successfully!"
+                "patreon-features-updated-successfully": "Patreon features updated successfully!",
+                "enable-password-header": "Enable Password Login",
+                "enable-password-button-text": "Enable Password"
             }
         }
     },
@@ -614,7 +616,9 @@
                     "action-cancel": "Cancel",
                     "action-delete": "Delete",
                     "action-add-force-power": "Add Force Power",
-                    "action-save-force-power": "Save Force Power"
+                    "action-save-force-power": "Save Force Power",
+                    "action-add-ability": "Add Ability",
+                    "action-save-ability": "Save Ability"
                 },
                 "edit-force-tree": {
                     "placeholder-name": "Force Power Tree Name",
@@ -1050,7 +1054,8 @@
                 },
                 "talents": {
                     "talents": "Talents",
-                    "add-talent-tree": "Add New Talent Tree"
+                    "add-talent-tree": "Add New Talent Tree",
+                    "tier": "Tier"
                 },
                 "talent-slot": {
                     "ranks": "Ranks",
@@ -1242,7 +1247,9 @@
                     "action-cancel": "Cancel",
                     "action-delete": "Delete",
                     "action-add-talent": "Add Talent",
-                    "action-save-talent": "Save Talent"
+                    "action-save-talent": "Save Talent",
+                    "action-add-ability": "Add Ability",
+                    "action-save-ability": "Save Ability"
                 },
                 "edit-talent-tree": {
                     "placeholder-name": "Talent Tree Name",
@@ -1321,6 +1328,9 @@
                 }
             },
             "skills": {
+                "Æmber": "Æmber",
+                "Æmbercraft": "Æmbercraft",
+                "Adventuring": "Adventuring",
                 "Alchemy": "Alchemy",
                 "Arcana": "Arcana",
                 "Astrocartography": "Astrocartography",
@@ -1330,14 +1340,20 @@
                 "Charm": "Charm",
                 "Coercion": "Coercion",
                 "Computers": "Computers",
+                "Comp (Hacking)": "Comp (Hacking)",
+                "Comp (SysOps)": "Comp (SysOps)",
                 "Cool": "Cool",
                 "Coordination": "Coordination",
                 "Core Worlds": "Core Worlds",
+                "Crucible": "Crucible",
+                "Culture": "Culture",
                 "Deception": "Deception",
                 "Discipline": "Discipline",
                 "Divine": "Divine",
                 "Driving": "Driving",
                 "Education": "Education",
+                "Forbidden": "Forbidden",
+                "Geography": "Geography",
                 "Gunnery": "Gunnery",
                 "Knowledge": "Knowledge",
                 "Leadership": "Leadership",
@@ -1361,11 +1377,16 @@
                 "Ranged-Light": "Ranged-Light",
                 "Resilience": "Resilience",
                 "Riding": "Riding",
+                "Runes": "Runes",
+                "Science": "Science",
                 "Skulduggery": "Skulduggery",
+                "Society": "Society",
                 "Stealth": "Stealth",
                 "Streetwise": "Streetwise",
                 "Survival": "Survival",
+                "The Net": "The Net",
                 "Underworld": "Underworld",
+                "Verse": "Verse",
                 "Vigilance": "Vigilance",
                 "Warfare": "Warfare",
                 "Xenology": "Xenology"
@@ -1603,6 +1624,8 @@
                 "character": "Character",
                 "vehicle": "Vehicle",
                 "crit-tables": "Crit Tables",
+                "game-master": "Game Masters",
+                "game-master-placeholder": "Add Game Master",
                 "game-name-placeholder": "Game Name",
                 "game-type-placeholder": "Game Type",
                 "dice-size-placeholder": "Dice Size",
@@ -1633,9 +1656,10 @@
         },
         "components": {
             "action-bar": {
-                "link-copied": "Link copied!"
+                "link-copied": "Link copied!",
+                "settings-updated-confirmation": "Settings updated!"
             },
-            "ffg-sw": {
+            "ffg-gen": {
                 "character-hud": {
                     "Wounds": "Wounds",
                     "Strain": "Strain",
@@ -1670,6 +1694,54 @@
                     "coming-soon": "Coming Soon!"
                 }
             },
+            "ffg-sw": {
+                "character-hud": {
+                    "Wounds": "Wounds",
+                    "Strain": "Strain",
+                    "Soak": "Soak",
+                    "Defense": "Def",
+                    "DefenseMelee": "M",
+                    "DefenseRanged": "R",
+                    "Encumbrance": "Encum",
+                    "no-character": "No Character Selected",
+                    "adversary": "Adversary"
+                },
+                "panel-character-list": {
+                    "characters": "Characters",
+                    "no-selected-character": "No Character Selected",
+                    "select-character-button-text": "Select Character",
+                    "character-placeholder-text": "Character",
+                    "Wounds": "W",
+                    "Strain": "S",
+                    "Crits": "Crits",
+                    "Defense": "D",
+                    "defense-melee": "M",
+                    "defense-ranged": "R",
+                    "adversary": "Adversary"
+                },
+                "dice-roller": {
+                    "roll-crit-this-pc-button-text": "Roll Crit for this PC",
+                    "plus-10-to-crit-button-text": "+10",
+                    "minus-10-to-crit-button-text": "-10",
+                    "roll-dice-button": "Roll Dice",
+                    "description-placeholder": "Description",
+                    "skill-placeholder": "Choose a Skill",
+                    "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings",
+                    "rolled-from-game-table": "Rolled from Game Table"
+                },
+                "panel-adversaries": {
+                    "Adversaries": "Adversaries",
+                    "coming-soon": "Coming Soon!",
+                    "add-new-adversary": "Add New Adversary",
+                    "remove-npc": "Remove NPC",
+                    "show-npc": "Show NPC",
+                    "show-name": "Show Name",
+                    "show-image": "Show Image",
+                    "show-stats": "Show Stats",
+                    "show-crits": "Show Defense/Crits",
+                    "show-adversary": "Show Adversary"
+                }
+            },
             "panel-history": {
                 "History": "History",
                 "no-history": "No History!"
@@ -1687,7 +1759,8 @@
                 "reset-initiative-button-text.comment": "The below text is used on the button that lets a user RESET initiative - that is, keep all of the slots the same, the round just goes back to 1",
                 "reset-initiative-button-text": "Reset Initiative",
                 "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
-                "clear-initiative-button-text": "Clear Initiative"
+                "clear-initiative-button-text": "Clear Initiative",
+                "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings"
             },
             "panel-messages": {
                 "Messages": "Messages",
