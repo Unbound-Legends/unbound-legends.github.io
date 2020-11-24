@@ -1595,7 +1595,7 @@
                 "leave-confirmation-title": "Leave {{ name }}?",
                 "leave-confirmation-description": "To join this game again, you'll need a link to it. If you are the last person to leave it, the game will be deleted. Are you sure you want to leave?",
                 "game-left": "You have left the game successfully!",
-                "leave-confirmation-discord-description": "To leave a Discord-based game, you must leave the server manually. You can click on the Discord icon in the game list to get taken to the server and leave it from there.",
+                "game.pages.list.leave-confirmation-discord-description-join-info": "To join this game again, you'll need to run the .join command in the server or leave it and join it again. Are you sure you want to leave?",
                 "okay-button-text": "Okay",
                 "leave-button-text": "Leave"
             },
