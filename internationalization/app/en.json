@@ -1639,7 +1639,8 @@
                 "vehicle-crit-table-placeholder": "Vehicle Crit Table",
                 "party-vehicle-placeholder": "Party Vehicle",
                 "personal-vehicle-placeholder": "Personal Vehicle",
-                "game-type-change-warning": "WARNING: Changing the Game Type will force all players to choose new characters and vehicles that are compatible with the newly selected Game Type."
+                "game-type-change-warning": "WARNING: Changing the Game Type will force all players to choose new characters and vehicles that are compatible with the newly selected Game Type.",
+                "allow-gm-control": "Allow GM Control"
             }
         }
     },
