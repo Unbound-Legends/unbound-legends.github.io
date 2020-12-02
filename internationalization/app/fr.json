@@ -187,7 +187,7 @@
                 "badges-header": "Badges",
                 "badges-coming-soon": "Bientôt disponible !",
                 "linked-accounts-header": "Comptes associés",
-                "linked-account-description": "Associer votre profile RPGSessions pour dévérouiller des fonctionnalités impressionnantes!",
+                "linked-account-description": "Associer votre profil RPG Sessions pour dévérouiller des fonctionnalités impressionnantes !",
                 "link-text": "Associer",
                 "unlink-text": "Dissocier",
                 "patreon-features-header": "Fonctionnalités Patreon",
@@ -195,7 +195,9 @@
                     "honorary-titles": "Titres honorifiques"
                 },
                 "update-user-patreon-features-button-text": "Mise à jour des Fonctionnalités Patreon",
-                "patreon-features-updated-successfully": "Fonctionnalités Patreon mises à jour avec succès !"
+                "patreon-features-updated-successfully": "Fonctionnalités Patreon mises à jour avec succès !",
+                "enable-password-header": "Enable Password Login",
+                "enable-password-button-text": "Enable Password"
             }
         }
     },  
@@ -614,7 +616,9 @@
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
                     "action-add-force-power": "Ajouter un pouvoir",
-                    "action-save-force-power": "Sauvegarder le pouvoir"
+                    "action-save-force-power": "Sauvegarder le pouvoir",
+                    "action-add-ability": "Ajouter une aptitude",
+                    "action-save-ability": "Sauvegarder l'aptitude"
                 },
                 "edit-force-tree": {
                     "placeholder-name": "Nom de l'arborescence de pouvoir de la Force",
@@ -1050,7 +1054,8 @@
                 },
                 "talents": {
                     "talents": "Talents",
-                    "add-talent-tree": "Ajouter un nouvel Arbre de Talent"
+                    "add-talent-tree": "Ajouter un nouvel Arbre de Talent",
+                    "tier": "Tier"
                 },
                 "talent-slot": {
                     "ranks": "Rangs",
@@ -1191,6 +1196,7 @@
                     "placeholder-name": "Nom",
                     "placeholder-cost": "Coût en point d'aptitude",
                     "placeholder-ranks": "Rangs",
+                    "placeholder-description": "Description",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
                     "action-add-upgrade": "Ajouter une amélioration",
@@ -1241,7 +1247,9 @@
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
                     "action-add-talent": "Ajouter un talent",
-                    "action-save-talent": "Sauvegarde le talent"
+                    "action-save-talent": "Sauvegarde le talent",
+                    "action-add-ability": "Ajouter une aptitude",
+                    "action-save-ability": "Sauvegarder l'aptitude"
                 },
                 "edit-talent-tree": {
                     "placeholder-name": "Nom Arborescence de talent",
@@ -1320,6 +1328,9 @@
                 }
             },
             "skills": {
+                "Æmber": "Æmbre",
+                "Æmbercraft": "ArtisÆmbre",
+                "Adventuring": "Aventurier",
                 "Alchemy": "Alchimie;",
                 "Arcana": "Arcanes",
                 "Astrocartography": "Astrocartographie",
@@ -1329,14 +1340,20 @@
                 "Charm": "Charme",
                 "Coercion": "Coercition",
                 "Computers": "Informatique",
+                "Comp (Hacking)": "Info (Hacking)",
+                "Comp (SysOps)": "Info (SysOps)",
                 "Cool": "Calme",
                 "Coordination": "Coordination",
                 "Core Worlds": "Mondes du noyau",
+                "Crucible": "Crucible",
+                "Culture": "Culture",
                 "Deception": "Tromperie",
                 "Discipline": "Sang-Froid",
                 "Divine": "Divine",
                 "Driving": "Conduite",
                 "Education": "Education",
+                "Forbidden": "Interdit",
+                "Geography": "Géographie",
                 "Gunnery": "Artillerie",
                 "Knowledge": "Connaissance",
                 "Leadership": "Commandement",
@@ -1360,11 +1377,16 @@
                 "Ranged-Light": "Distance - Armes légères",
                 "Resilience": "Résistance",
                 "Riding": "Equitation",
+                "Runes": "Runes",
+                "Science": "Science",
                 "Skulduggery": "Magouilles",
+                "Society": "Société",
                 "Stealth": "Discrétion",
                 "Streetwise": "Système D",
                 "Survival": "Survie",
+                "The Net": "Le Net",
                 "Underworld": "Pègre",
+                "Verse": "Vers",
                 "Vigilance": "Vigilance",
                 "Warfare": "Stratégie",
                 "Xenology": "Xénologie"
@@ -1602,6 +1624,8 @@
                 "character": "Personnage",
                 "vehicle": "Véhicule",
                 "crit-tables": "Tables de Critiques",
+                "game-master": "Maîtres de Jeu",
+                "game-master-placeholder": "Ajouter un Maître de Jeu",
                 "game-name-placeholder": "Nom de la Partie",
                 "game-type-placeholder": "Type de Jeu",
                 "dice-size-placeholder": "Taille des Dés",
@@ -1615,7 +1639,8 @@
                 "vehicle-crit-table-placeholder": "Table de Critiques - Véhicules",
                 "party-vehicle-placeholder": "Véhicule de la Partie",
                 "personal-vehicle-placeholder": "Véhicule personnel",
-                "game-type-change-warning": "WARNING: Changing the Game Type will force all players to choose new characters and vehicles that are compatible with the newly selected Game Type." 
+                "game-type-change-warning": "WARNING: Changing the Game Type will force all players to choose new characters and vehicles that are compatible with the newly selected Game Type.",
+                "allow-gm-control": "Autoriser contrôle par MJ"
             }
         }
     },
@@ -1632,9 +1657,10 @@
         },
         "components": {
             "action-bar": {
-                "link-copied": "Lien copié !"
+                "link-copied": "Lien copié !",
+                "settings-updated-confirmation": "Paramètres mis à jour !"
             },
-            "ffg-sw": {
+            "ffg-gen": {
                 "character-hud": {
                     "Wounds": "Blessures",
                     "Strain": "Stress",
