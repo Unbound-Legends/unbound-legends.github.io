@@ -68,8 +68,8 @@
                     "[Initiative Type] NPC": "PNJ"
                 },
                 "plural": {
-                    "[Initiative Type] PC": "PJs",
-                    "[Initiative Type] NPC": "PNJs"
+                    "[Initiative Type] PC": "PJ",
+                    "[Initiative Type] NPC": "PNJ"
                 }
             },
             "dice-names": {
@@ -127,9 +127,9 @@
                     "Strain": "Stress",
                     "Defense": "Défense",
                     "Current Wounds": "Blessures actuelles",
-                    "Wound Threshold": "Seuil de blessures",
+                    "Wound Threshold": "Seuil de Blessures",
                     "Current Strain": "Stress actuel",
-                    "Strain Threshold": "Seuil de stress",
+                    "Strain Threshold": "Seuil de Stress",
                     "Ranged Defense": "Défense - Distance",
                     "Melee Defense": "Défense - Corps à Corps",
                     "Available XP": "XP disponibles",
@@ -187,7 +187,7 @@
                 "badges-header": "Badges",
                 "badges-coming-soon": "Bientôt disponible !",
                 "linked-accounts-header": "Comptes associés",
-                "linked-account-description": "Associer votre profile RPGSessions pour dévérouiller des fonctionnalités impressionnantes!",
+                "linked-account-description": "Associer votre profil RPG Sessions pour déverouiller des fonctionnalités impressionnantes !",
                 "link-text": "Associer",
                 "unlink-text": "Dissocier",
                 "patreon-features-header": "Fonctionnalités Patreon",
@@ -195,7 +195,9 @@
                     "honorary-titles": "Titres honorifiques"
                 },
                 "update-user-patreon-features-button-text": "Mise à jour des Fonctionnalités Patreon",
-                "patreon-features-updated-successfully": "Fonctionnalités Patreon mises à jour avec succès !"
+                "patreon-features-updated-successfully": "Fonctionnalités Patreon mises à jour avec succès !",
+                "enable-password-header": "Enable Password Login",
+                "enable-password-button-text": "Enable Password"
             }
         }
     },  
@@ -332,8 +334,8 @@
                     "equipped": "Equipé",
                     "custom-name": "Nom personnalisé",
                     "qualities": "Attributs",
-                    "add-quality": "Ajouter un attribut",
-                    "add-armor": "Ajouter une armure"
+                    "add-quality": "Ajouter un Attribut",
+                    "add-armor": "Ajouter armure"
                 },
                 "armor-attachments": {
                     "attachments": "Kits",
@@ -343,18 +345,18 @@
                     "base-modifier": "Modificateur",
                     "no-modifier": "Aucun",
                     "modifications": "Mods",
-                    "add-attachment": "Ajouter un kit"
+                    "add-attachment": "Ajouter un Kit"
                 },
                 "attributes-top": {
                     "minions": "Sbires"
                 },
                 "critical-injury": {
-                    "critical-injury": "Blessures critiques",
+                    "critical-injury": "Blessures Critiques",
                     "difficulty": "Difficulté",
                     "name": "Nom",
                     "severity": "Gravité",
                     "description": "Description",
-                    "add-critical-injury": "Ajouter une blessure critique"
+                    "add-critical-injury": "Ajouter Blessure Critique"
                 },
                 "current-games": {
                     "current-games": "Parties en cours"
@@ -374,27 +376,27 @@
                     "motivation": "Motivations"
                 },
                 "details-obligation": {
-                    "obligation-name": "Nom de l'obligation",
-                    "obligation-amount": "Montant de l'obligation",
+                    "obligation-name": "Nom de l'Obligation",
+                    "obligation-amount": "Montant de l'Obligation",
                     "triggered": "Déclenché",
                     "description": "Description",
-                    "add-obligation": "Ajouter une obligation"
+                    "add-obligation": "Ajouter Obligation"
                 },
                 "details-duty": {
                     "group-contribution-ranks": "Rangs de la contribution de groupe",
-                    "duty-name": "Nom du devoir",
-                    "duty-amount": "Valeur du devoir",
+                    "duty-name": "Nom du Devoir",
+                    "duty-amount": "Valeur du Devoir",
                     "triggered": "Déclenché",
                     "description": "Description",
-                    "add-duty": "Ajouter un devoir"
+                    "add-duty": "Ajouter un Devoir"
                 },
                 "details-morality": {
-                    "morality-score": "Score de moralité",
+                    "morality-score": "Score de Moralité",
                     "session-conflict": "Conflit de la session",
                     "emotional-strength": "Force émotionnelle",
                     "emotional-weakness": "Faiblesse émotionnelle",
                     "description": "Description",
-                    "add-morality": "Ajouter une moralité"
+                    "add-morality": "Ajouter Moralité"
                 },
                 "equipment": {
                     "equipment-and-gear": "Equipement et Matériel",
@@ -406,8 +408,8 @@
                     "custom-name": "Nom personnalisé",
                     "notes": "Notes",
                     "qualities": "Attributs",
-                    "add-quality": "Ajouter un attribut",
-                    "add-equipment": "Ajouter un équipement"
+                    "add-quality": "Ajouter un Attribut",
+                    "add-equipment": "Ajouter un Equipement"
                 },
                 "force-powers": {
                     "force-powers": "Pouvoir de la Force",
@@ -445,7 +447,7 @@
                     "talents": "Talents",
                     "add-talent": "Ajouter un Talent",
                     "abilities": "Aptitudes",
-                    "add-ability": "Ajouter une Aptitude",
+                    "add-ability": "Ajouter Aptitude",
                     "equipment-and-gear": "Equipement et Matériel",
                     "add-equipment": "Ajouter un Equipement",
                     "desire": "Ambition",
@@ -455,13 +457,13 @@
                 },
                 "npc-header": {
                     "placeholder-name": "Nom",
-                    "placeholder-image-url": "URL Image",
+                    "placeholder-image-url": "Image URL",
                     "placeholder-adversary-level": "Niveau Adversaire",
                     "placeholder-description": "Description"
                 },
                 "player-header": {
                     "placeholder-name": "Nom",
-                    "placeholder-image-url": "URL image",
+                    "placeholder-image-url": "Image URL",
                     "placeholder-species": "Espèce",
                     "placeholder-career": "Carrière",
                     "placeholder-specialization": "Spécialités",
@@ -477,17 +479,17 @@
                     "label-height": "Taille",
                     "label-notable-features": "Signes Particuliers",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur"
+                    "add-modifier": "Ajouter un Modificateur"
                 },
                 "skills": {
-                    "add-skill": "Ajouter une Compétence"
+                    "add-skill": "Ajouter Compétence"
                 },  
                 "skills-table": {
                     "general-skills": "Compétences générales",
                     "combat-skills": "Compétences de combat",
                     "social-skills": "Compétences sociales",
                     "knowledge-skills": "Compétences de connaissance",
-                    "other-skills": "Autres compétences",
+                    "other-skills": "Autres Compétences",
                     "career": "Carrière",
                     "group-skill": "Compétence de Groupe",
                     "rank": "Rang"
@@ -508,7 +510,7 @@
                     "activation": "Activation",
                     "ranks": "Rangs",
                     "cost": "Coût",
-                    "add-talent": "Ajouter un talent"
+                    "add-talent": "Ajouter un Talent"
                 },
                 "weapons": {
                     "weapon": "Arme",
@@ -526,8 +528,8 @@
                     "equipped": "Equipé",
                     "custom-name": "Nom personnalisé",
                     "qualities": "Attributs",
-                    "add-quality": "Ajouter un attribut",
-                    "add-weapon": "Ajouter une arme"
+                    "add-quality": "Ajouter un Attribut",
+                    "add-weapon": "Ajouter Arme"
                 },
                 "weapons-attachments": {
                     "attachments": "Kits",
@@ -537,7 +539,7 @@
                     "base-modifier": "Modificateur",
                     "no-modifier": "Aucun",
                     "modifications": "Mods",
-                    "add-attachment": "Ajouter un kit"
+                    "add-attachment": "Ajouter un Kit"
                 }
             },
             "overlays": {
@@ -552,7 +554,7 @@
                     "placeholder-cost": "Coût",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-armor": "Ajouter une armure",
+                    "action-add-armor": "Ajouter armure",
                     "action-save-armor": "Sauvegarder l'armure"
                 },
                 "edit-armor-attachment": {
@@ -563,21 +565,21 @@
                     "placeholder-cost": "Coût",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-attachment": "Ajouter un kit",
-                    "action-save-attachment": "Sauvegarder le kit"
+                    "action-add-attachment": "Ajouter un Kit",
+                    "action-save-attachment": "Sauvegarder le Kit"
                 },
                 "edit-armor-attachment-modification": {
                     "placeholder-name": "Nom",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-mod": "Ajouter un mods",
-                    "action-save-mod": "Sauvegarder le mods"
+                    "action-add-mod": "Ajouter un Mods",
+                    "action-save-mod": "Sauvegarder le Mods"
                 },
                 "edit-critical-injury": {
                     "placeholder-name": "Nom",
@@ -586,8 +588,8 @@
                     "placeholder-description": "Description",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-crit": "Ajouter un critique",
-                    "action-save-crit": "Sauvegarder le critique"
+                    "action-add-crit": "Ajouter un Critique",
+                    "action-save-crit": "Sauvegarder le Critique"
                 },
                 "edit-equipment": {
                     "placeholder-name": "Nom",
@@ -599,8 +601,8 @@
                     "placeholder-description": "Description",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-equipment": "Ajouter un équipement",
-                    "action-save-equipment": "Sauvegarder l'équipement"
+                    "action-add-equipment": "Ajouter un Equipement",
+                    "action-save-equipment": "Sauvegarder l'Equipement"
                 },
                 "edit-force-power": {
                     "placeholder-name": "Nom",
@@ -610,17 +612,19 @@
                     "placeholder-xp-cost": "Coût XP",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
                     "action-add-force-power": "Ajouter un pouvoir",
-                    "action-save-force-power": "Sauvegarder le pouvoir"
+                    "action-save-force-power": "Sauvegarder le pouvoir",
+                    "action-add-ability": "Ajouter Aptitude",
+                    "action-save-ability": "Sauvegarder l'Aptitude"
                 },
                 "edit-force-tree": {
                     "placeholder-name": "Nom de l'arborescence de pouvoir de la Force",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-force-tree": "Ajouter une arborescence",
+                    "action-add-force-tree": "Ajouter arborescence",
                     "action-save-force-tree": "Sauvegarder l'arborescence"
                 },
                 "edit-modifier": {
@@ -643,17 +647,17 @@
                     "placeholder-extra-dice": "Dé supplémentaire",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-modifier": "Ajouter un modificateur",
-                    "action-save-modifier": "Sauvegarder le modificateur"
+                    "action-add-modifier": "Ajouter un Modificateur",
+                    "action-save-modifier": "Sauvegarder le Modificateur"
                 },
                 "edit-skill": {
                     "placeholder-name": "Nom",
                     "placeholder-characteristic": "Caractéristique liée",
-                    "placeholder-skill-type": "Type de compétence",
+                    "placeholder-skill-type": "Type de Compétence",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-skill": "Ajouter une compétence",
-                    "action-save-skill": "Sauvegarder la compétence"
+                    "action-add-skill": "Ajouter Compétence",
+                    "action-save-skill": "Sauvegarder la Compétence"
                 },
                 "edit-talent": {
                     "placeholder-name": "Nom",
@@ -665,18 +669,18 @@
                     "placeholder-ranks": "Rangs",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateur",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-talent": "Ajouter un talent",
-                    "action-save-talent": "Sauvegarde le talent"
+                    "action-add-talent": "Ajouter un Talent",
+                    "action-save-talent": "Sauvegarde le Talent"
                 },
                 "edit-talent-tree": {
-                    "placeholder-name": "Nom Arborescence de talent",
+                    "placeholder-name": "Nom Arborescence de Talent",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-talent-tree": "Ajouter un arbre de talent",
-                    "action-save-talent-tree": "Sauvegarder l'arborescence de talent"
+                    "action-add-talent-tree": "Ajouter un arbre de Talent",
+                    "action-save-talent-tree": "Sauvegarder l'arborescence de Talent"
                 },
                 "edit-weapon": {
                     "placeholder-name": "Nom",
@@ -692,8 +696,8 @@
                     "placeholder-cost": "Coût",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-weapon": "Ajouter l'arme",
-                    "action-save-weapon": "Sauvegarder l'arme"
+                    "action-add-weapon": "Ajouter l'Arme",
+                    "action-save-weapon": "Sauvegarder l'Arme"
                 },
                 "edit-weapon-attachment": {
                     "placeholder-name": "Nom",
@@ -703,35 +707,35 @@
                     "placeholder-cost": "Coût",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-attachment": "Ajouter un kit",
-                    "action-save-attachment": "Sauvegarder le kit"
+                    "action-add-attachment": "Ajouter un Kit",
+                    "action-save-attachment": "Sauvegarder le Kit"
                 },
                 "edit-weapon-attachment-modification": {
                     "placeholder-name": "Nom",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-mod": "Ajouter un mods",
-                    "action-save-mod": "Sauvegarder le mods"
+                    "action-add-mod": "Ajouter un Mods",
+                    "action-save-mod": "Sauvegarder le Mods"
                 },
                 "sheet-customizations": {
                     "title": "Personnalisation de la feuille",
                     "presets": "Presets",
                     "customize": "Personnaliser",
                     "placeholder-sheet-theme": "Thème de la feuille",
-                    "placeholder-talent-tree-layout": "Mise en page de l'arborescence de talents",
+                    "placeholder-talent-tree-layout": "Mise en page de l'arborescence de Talents",
                     "placeholder-force-enabled": "Valeur de Force / Arborescence de pouvoir de la Force",
                     "placeholder-npc-force-enabled": "Valeur de Force",
-                    "placeholder-force-tree-layout": "Mise en page de l'arborescence de talents",
+                    "placeholder-force-tree-layout": "Mise en page de l'arborescence de Talents",
                     "placeholder-obligation-enabled": "Obligation",
                     "placeholder-duty-enabled": "Devoir",
                     "placeholder-morality-enabled": "Moralité",
-                    "warning-talent-tree": "Changer la mise en page de l'arborescence va supprimer tous les talents associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-talent-tree": "Changer la mise en page de l'arborescence va supprimer tous les Talents associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
                     "warning-force-tree": "Changer la mise en page de l'arborescence va supprimer tous les pouvoirs de la Force associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
                     "warning-force": "Désactiver cette fonctionnalité va supprimer tous les pouvoirs et la Valeur de Force. Une fois sauvegardé, aucun retour en arrière possible.",
                     "warning-npc-force": "Désactiver cette fonctionnalité va supprimer tous les pouvoirs et la Valeur de Force. Une fois sauvegardé, aucun retour en arrière possible.",
@@ -747,7 +751,7 @@
                 "Astrogation": "Astrogation",
                 "Athletics": "Athlétisme",
                 "Brawl": "Pugilat",
-                "Charm": "Charme",
+                "Charm": "ChArme",
                 "Coercion": "Coercition",
                 "Computers": "Informatique",
                 "Cool": "Calme",
@@ -903,8 +907,8 @@
                     "equipped": "Equipé",
                     "custom-name": "Nom personnalisé",
                     "qualities": "Attributs",
-                    "add-quality": "Ajouter un attribut",
-                    "add-armor": "Ajouter une armure"
+                    "add-quality": "Ajouter un Attribut",
+                    "add-armor": "Ajouter armure"
                 },
                 "armor-attachments": {
                     "attachments": "Kits",
@@ -914,7 +918,7 @@
                     "base-modifier": "Modificateur",
                     "no-modifier": "Aucun",
                     "modifications": "Mods",
-                    "add-attachment": "Ajouter un kit"
+                    "add-attachment": "Ajouter un Kit"
                 },
                 "attributes-top": {
                     "minions": "Sbires"
@@ -923,12 +927,12 @@
                     "super": "SUPER"
                 },
                 "critical-injury": {
-                    "critical-injury": "Blessures critiques",
+                    "critical-injury": "Blessures Critiques",
                     "difficulty": "Difficulté",
                     "name": "Nom",
                     "severity": "Gravité",
                     "description": "Description",
-                    "add-critical-injury": "Ajouter une blessure critique"
+                    "add-critical-injury": "Ajouter Blessure Critique"
                 },
                 "current-games": {
                     "current-games": "Parties en cours"
@@ -964,14 +968,14 @@
                     "custom-name": "Nom personnalisé",
                     "notes": "Notes",
                     "qualities": "Attributs",
-                    "add-quality": "Ajouter un attribut",
-                    "add-equipment": "Ajouter un équipement"
+                    "add-quality": "Ajouter un Attribut",
+                    "add-equipment": "Ajouter un Equipement"
                 },
                 "heroic-abilities": {
                     "heroic-ability": "Aptitude Héroïque",
                     "description": "Description",
                     "origins": "Origines",
-                    "add-ability": "Ajouter une aptitude héroïque",
+                    "add-ability": "Ajouter Aptitude héroïque",
                     "base": "Base",
                     "improved": "Amélioré",
                     "supreme": "Suprême"
@@ -980,7 +984,7 @@
                     "upgrades": "Améliorations",
                     "ability-point-cost": "Coût Points d'Aptitude ",
                     "ranks": "Rangs",
-                    "add-upgrade": "Ajouter une amélioration"
+                    "add-upgrade": "Ajouter Amélioration"
                 },
                 "notes": {
                     "notes": "Notes"
@@ -995,11 +999,11 @@
                 "npc-character-info": {
                     "character-info": "Infos du Personnage",
                     "talents": "Talents",
-                    "add-talent": "Ajouter un talent",
+                    "add-talent": "Ajouter un Talent",
                     "abilities": "Aptitudes",
-                    "add-ability": "Ajouter une aptitude",
+                    "add-ability": "Ajouter Aptitude",
                     "equipment-and-gear": "Equipement et Matériel",
-                    "add-equipment": "Ajouter un équipement",
+                    "add-equipment": "Ajouter un Equipement",
                     "desire": "Désir",
                     "fear": "Peur",
                     "strength": "Force",
@@ -1008,15 +1012,15 @@
                 "npc-header": {
                     "placeholder-name": "Nom",
                     "placeholder-image-url": "Image URL",
-                    "placeholder-adversary-level": "Adversary Level",
-                    "placeholder-combat-power-level": "Combat Power Level",
-                    "placeholder-social-power-level": "Social Power Level",
-                    "placeholder-general-power-level": "General Power Level",
+                    "placeholder-adversary-level": "Niveau d'Adversité",
+                    "placeholder-combat-power-level": "Niveau de puissance Combat",
+                    "placeholder-social-power-level": "Niveau de puissance Social",
+                    "placeholder-general-power-level": "Niveau de puissance Général",
                     "placeholder-description": "Description"
                 },
                 "player-header": {
                     "placeholder-name": "Name",
-                    "placeholder-image-url": "URL Image",
+                    "placeholder-image-url": "Image URL",
                     "placeholder-archetype": "Archétype",
                     "placeholder-career": "Carrière",
                     "placeholder-specialization": "Specialisation",
@@ -1032,10 +1036,10 @@
                     "label-height": "Taille",
                     "label-notable-features": "Signes particuliers",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur"
+                    "add-modifier": "Ajouter un Modificateur"
                 },
                 "skills": {
-                    "add-skill": "Ajouter une compétence"
+                    "add-skill": "Ajouter Compétence"
                 },
                 "skills-table": {
                     "general-skills": "Compétences générales",
@@ -1043,14 +1047,15 @@
                     "combat-skills": "Compétences de combat",
                     "social-skills": "Compétences sociales",
                     "knowledge-skills": "Compétences de connaisance",
-                    "other-skills": "Autres compétences",
+                    "other-skills": "Autres Compétences",
                     "career": "Carrière",
                     "group-skill": "Compétences de groupe",
                     "rank": "Rang"
                 },
                 "talents": {
                     "talents": "Talents",
-                    "add-talent-tree": "Ajouter un nouvel Arbre de Talent"
+                    "add-talent-tree": "Ajouter un nouvel Arbre de Talent",
+                    "tier": "Tier"
                 },
                 "talent-slot": {
                     "ranks": "Rangs",
@@ -1073,8 +1078,8 @@
                     "equipped": "Equipé",
                     "custom-name": "Nom personnalisé",
                     "qualities": "Attributs",
-                    "add-quality": "Ajouter un attribut",
-                    "add-weapon": "Ajouter une arme"
+                    "add-quality": "Ajouter un Attribut",
+                    "add-weapon": "Ajouter Arme"
                 },
                 "weapons-attachments": {
                     "attachments": "Kits",
@@ -1084,16 +1089,16 @@
                     "base-modifier": "Modificateurs",
                     "no-modifier": "Aucun",
                     "modifications": "Mods",
-                    "add-attachment": "Ajouter un kit"
+                    "add-attachment": "Ajouter un Kit"
                 },
                 "favors": {
                     "favor": "Faveur",
                     "favors": "Faveurs",
-                    "size": "Taille de la faveur",
+                    "size": "Taille de la Faveur",
                     "faction": "Faction",
                     "details": "Détails",
                     "resolved": "Résolu",
-                    "add-favor": "Ajouter une faveur"
+                    "add-favor": "Ajouter Faveur"
                 }
             },
             "overlays": {
@@ -1108,7 +1113,7 @@
                     "placeholder-cost": "Coût",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-armor": "Ajouter une armure",
+                    "action-add-armor": "Ajouter armure",
                     "action-save-armor": "Sauvegarder l'armure"
                 },
                 "edit-armor-attachment": {
@@ -1119,21 +1124,21 @@
                     "placeholder-cost": "Coût",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-attachment": "Ajouter un kit",
-                    "action-save-attachment": "Sauvegarder le kit"
+                    "action-add-attachment": "Ajouter un Kit",
+                    "action-save-attachment": "Sauvegarder le Kit"
                 },
                 "edit-armor-attachment-modification": {
                     "placeholder-name": "Nom",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-mod": "Ajouter un mods",
-                    "action-save-mod": "Sauvegarder le mods"
+                    "action-add-mod": "Ajouter un Mods",
+                    "action-save-mod": "Sauvegarder le Mods"
                 },
                 "edit-critical-injury": {
                     "placeholder-name": "Nom",
@@ -1142,8 +1147,8 @@
                     "placeholder-description": "Description",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-crit": "Ajouter un critique",
-                    "action-save-crit": "Sauvegarder le critique"
+                    "action-add-crit": "Ajouter un Critique",
+                    "action-save-crit": "Sauvegarder le Critique"
                 },
                 "edit-equipment": {
                     "placeholder-name": "Nom",
@@ -1155,8 +1160,8 @@
                     "placeholder-description": "Description",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-equipment": "Ajouter un équipement",
-                    "action-save-equipment": "Sauvegarder l'équipement"
+                    "action-add-equipment": "Ajouter un Equipement",
+                    "action-save-equipment": "Sauvegarder l'Equipement"
                 },
                 "edit-force-power": {
                     "Faiblesseceholder-name": "Nom",
@@ -1165,7 +1170,7 @@
                     "placeholder-xp-cost": "Coût XP",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
                     "action-add-force-power": "Ajouter un pouvoir",
@@ -1175,7 +1180,7 @@
                     "placeholder-name": "Nom de l'arborescence de pouvoir de la Force",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-force-tree": "Ajouter une arborescence",
+                    "action-add-force-tree": "Ajouter arborescence",
                     "action-save-force-tree": "Sauvegarder l'arborescence"
                 },
                 "edit-heroic-ability": {
@@ -1184,17 +1189,18 @@
                     "placeholder-origins": "Origines",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-ability": "Ajouter une aptitude",
-                    "action-save-ability": "Sauvegarder l'aptitude"
+                    "action-add-ability": "Ajouter Aptitude",
+                    "action-save-ability": "Sauvegarder l'Aptitude"
                 },
                 "edit-heroic-ability-upgrade": {
                     "placeholder-name": "Nom",
-                    "placeholder-cost": "Coût en point d'aptitude",
+                    "placeholder-cost": "Coût en point d'Aptitude",
                     "placeholder-ranks": "Rangs",
+                    "placeholder-description": "Description",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-upgrade": "Ajouter une amélioration",
-                    "action-save-upgrade": "Sauvegarder l'amélioration"
+                    "action-add-upgrade": "Ajouter Amélioration",
+                    "action-save-upgrade": "Sauvegarder l'Amélioration"
                 },
                 "edit-modifier": {
                     "placeholder-name": "Nom",
@@ -1216,17 +1222,17 @@
                     "placeholder-extra-dice": "Dé supplémentaire",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-modifier": "Ajouter un modificateur",
-                    "action-save-modifier": "Sauvegarder le modificateur"
+                    "action-add-modifier": "Ajouter un Modificateur",
+                    "action-save-modifier": "Sauvegarder le Modificateur"
                 },
                 "edit-skill": {
                     "placeholder-name": "Nom",
                     "placeholder-characteristic": "Caractéristique liée",
-                    "placeholder-skill-type": "Type de compétence",
+                    "placeholder-skill-type": "Type de Compétence",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-skill": "Ajouter une compétence",
-                    "action-save-skill": "Sauvegarder la compétence"
+                    "action-add-skill": "Ajouter Compétence",
+                    "action-save-skill": "Sauvegarder la Compétence"
                 },
                 "edit-talent": {
                     "placeholder-name": "Nom",
@@ -1237,18 +1243,20 @@
                     "placeholder-xp-cost": "Coût XP",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateur",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-talent": "Ajouter un talent",
-                    "action-save-talent": "Sauvegarde le talent"
+                    "action-add-talent": "Ajouter un Talent",
+                    "action-save-talent": "Sauvegarde le Talent",
+                    "action-add-ability": "Ajouter Aptitude",
+                    "action-save-ability": "Sauvegarder l'Aptitude"
                 },
                 "edit-talent-tree": {
-                    "placeholder-name": "Nom Arborescence de talent",
+                    "placeholder-name": "Nom Arborescence de Talent",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-talent-tree": "Ajouter un arbre de talent",
-                    "action-save-talent-tree": "Sauvegarder l'arborescence de talent"
+                    "action-add-talent-tree": "Ajouter un arbre de Talent",
+                    "action-save-talent-tree": "Sauvegarder l'arborescence de Talent"
                 },
                 "edit-weapon": {
                     "placeholder-name": "Nom",
@@ -1264,8 +1272,8 @@
                     "placeholder-cost": "Coût",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-weapon": "Ajouter l'arme",
-                    "action-save-weapon": "Sauvegarder l'arme"
+                    "action-add-weapon": "Ajouter l'Arme",
+                    "action-save-weapon": "Sauvegarder l'Arme"
                 },
                 "edit-weapon-attachment": {
                     "placeholder-name": "Nom",
@@ -1275,68 +1283,77 @@
                     "placeholder-cost": "Coût",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-attachment": "Ajouter un kit",
-                    "action-save-attachment": "Sauvegarder le kit"
+                    "action-add-attachment": "Ajouter un Kit",
+                    "action-save-attachment": "Sauvegarder le Kit"
                 },
                 "edit-weapon-attachment-modification": {
                     "placeholder-name": "Nom",
                     "placeholder-description": "Description",
                     "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un modificateur",
+                    "add-modifier": "Ajouter un Modificateur",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-add-mod": "Ajouter un mods",
-                    "action-save-mod": "Sauvegarder le mods"
+                    "action-add-mod": "Ajouter un Mods",
+                    "action-save-mod": "Sauvegarder le Mods"
                 },
                 "sheet-customizations": {
                     "title": "Personnalisation de la feuille",
                     "presets": "Presets",
                     "customize": "Personnaliser",
                     "placeholder-sheet-theme": "Thème de la feuille",
-                    "placeholder-talent-tree-layout": "Mise en page de l'arborescence de talents",
+                    "placeholder-talent-tree-layout": "Mise en page de l'arborescence de Talents",
                     "placeholder-super-characteristics-enabled": "Caractéristique Super",
                     "placeholder-heroic-abilities-enabled": "Aptitude Héroique",
                     "placeholder-aember-enabled": "Æmber",
                     "placeholder-favors-enabled": "Faveurs",
-                    "warning-talent-tree": "Changer la mise en page de l'arborescence va supprimer tous les talents associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-heroic-abilities": "Désactiver cette fonctionnalité va supprimer toutes les données d'aptitudes Héroique (Aptitudes et points suivis). Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-talent-tree": "Changer la mise en page de l'arborescence va supprimer tous les Talents associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-heroic-abilities": "Désactiver cette fonctionnalité va supprimer toutes les données d'Aptitudes Héroique (Aptitudes et points suivis). Une fois sauvegardé, aucun retour en arrière possible.",
                     "warning-aember": "Désactiver cette fonctionnalité va supprimer toutes les données d'Æmber. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-favors": "Désactiver cette fonctionnalité va supprimer toutes les faveurs. Une fois sauvegardé, aucun retour en arrière possible.",
+                    "warning-favors": "Désactiver cette fonctionnalité va supprimer toutes les Faveurs. Une fois sauvegardé, aucun retour en arrière possible.",
                     "action-cancel": "Annuler",
                     "action-save-customizations": "Sauvegarder",
                     "action-create-character": "Créer un personnage"
                 },
                 "edit-favor": {
-                    "placeholder-favor-size": "Taille de la faveur",
+                    "placeholder-favor-size": "Taille de la Faveur",
                     "placeholder-faction": "Faction",
                     "placeholder-details": "Détails",
                     "action-cancel": "Annuler",
                     "action-delete": "Supprimer",
-                    "action-save-favor": "Sauvegarder la faveur",
-                    "action-add-favor": "Ajouter une faveur"
+                    "action-save-favor": "Sauvegarder la Faveur",
+                    "action-add-favor": "Ajouter Faveur"
                 }
             },
             "skills": {
+                "Æmber": "Æmbre",
+                "Æmbercraft": "ArtisÆmbre",
+                "Adventuring": "Aventurier",
                 "Alchemy": "Alchimie;",
                 "Arcana": "Arcanes",
                 "Astrocartography": "Astrocartographie",
                 "Astrogation": "Astrogation",
                 "Athletics": "Athlétisme",
                 "Brawl": "Pugilat",
-                "Charm": "Charme",
+                "Charm": "ChArme",
                 "Coercion": "Coercition",
                 "Computers": "Informatique",
+                "Comp (Hacking)": "Info (Hacking)",
+                "Comp (SysOps)": "Info (SysOps)",
                 "Cool": "Calme",
                 "Coordination": "Coordination",
                 "Core Worlds": "Mondes du noyau",
+                "Crucible": "Crucible",
+                "Culture": "Culture",
                 "Deception": "Tromperie",
                 "Discipline": "Sang-Froid",
                 "Divine": "Divine",
                 "Driving": "Conduite",
                 "Education": "Education",
+                "Forbidden": "Interdit",
+                "Geography": "Géographie",
                 "Gunnery": "Artillerie",
                 "Knowledge": "Connaissance",
                 "Leadership": "Commandement",
@@ -1360,11 +1377,16 @@
                 "Ranged-Light": "Distance - Armes légères",
                 "Resilience": "Résistance",
                 "Riding": "Equitation",
+                "Runes": "Runes",
+                "Science": "Science",
                 "Skulduggery": "Magouilles",
+                "Society": "Société",
                 "Stealth": "Discrétion",
                 "Streetwise": "Système D",
                 "Survival": "Survie",
+                "The Net": "Le Net",
                 "Underworld": "Pègre",
+                "Verse": "Vers",
                 "Vigilance": "Vigilance",
                 "Warfare": "Stratégie",
                 "Xenology": "Xénologie"
@@ -1390,7 +1412,7 @@
                     "Nom",
                     "Blessures actuelles",
                     "Stress actuel",
-                    "Blessures critiques",
+                    "Blessures Critiques",
                     "Espèce",
                     "Carrière",
                     "Âge",
@@ -1519,7 +1541,7 @@
                 "roll-dice-button-text": "Lancer les dés",
                 "roll-initiative-pc": "Lancer initiative (PJ)",
                 "roll-initiative-npc": "Lancer initiative (PNJ)",
-                "roll-crit-this-pc-button-text": "Jet de blessure critique (PJ)",
+                "roll-crit-this-pc-button-text": "Jet de Blessure Critique (PJ)",
                 "plus-10-to-crit-button-text": "+10",
                 "minus-10-to-crit-button-text": "-10",
                 "no-dice-channel-selected-error": "Aucun canal sélectionné pour les dés - Les lancer ne seront pas transmis à Discord. Choisissez un canal dans les paramètres de la partie"
@@ -1545,7 +1567,7 @@
         "overlays": {
             "new-game-prompt": {
                 "prompt-title": "Choisissez une plateforme pour votre nouvelle partie",
-                "create-discord-game-title": "Ajouter une partie Discord",
+                "create-discord-game-title": "Ajouter partie Discord",
                 "create-sessions-game-title": "Nommez votre partie et sélectionnez le type de jeu",
                 "create-discord-game-link-instruction-text.comment": "The below link instructions are shown when you try to create a discord game but do not have discord linked to your RPG Sessions account. Their intent is to tell you how to link your Discord account to RPG Sessions.",
                 "create-discord-game-link-instruction-text-part-1": "Avant de créer une partie Discord, vous devez associer votre compte RPG Sessions avec Discord.",
@@ -1573,7 +1595,7 @@
                 "leave-confirmation-title": "Quitter {{ name }}?",
                 "leave-confirmation-description": "Pour rejoindre à nouveau cette partie, vous aurez besoin d'un lien.Si vous êtes la dernière personne à quitter la partie, elle sera supprimée. Etes cous sûr de vouloir quitter ?",
                 "game-left": "Vous avez quitté la partie avec succès !",
-                "leave-confirmation-discord-description": "Pour quitter une partie Discord, vous devez quitter un serveur manuellement. Vous pouvez cliquer sur l'icône Discord dans la liste des parties pour aller directement sur le serveur et le quitter de là-bas.",
+                "game.pages.list.leave-confirmation-discord-description-join-info": "Pour rejoindre cette partie à nouveau, Vous allez Devoir utiliser la commande .join dans ce serveur ou le quitter  or leave it and join it again. Are you sure you want to leave?",
                 "okay-button-text": "D'accord",
                 "leave-button-text": "Quitter"
             },
@@ -1602,6 +1624,8 @@
                 "character": "Personnage",
                 "vehicle": "Véhicule",
                 "crit-tables": "Tables de Critiques",
+                "game-master": "Maîtres de Jeu",
+                "game-master-placeholder": "Ajouter un Maître de Jeu",
                 "game-name-placeholder": "Nom de la Partie",
                 "game-type-placeholder": "Type de Jeu",
                 "dice-size-placeholder": "Taille des Dés",
@@ -1615,7 +1639,8 @@
                 "vehicle-crit-table-placeholder": "Table de Critiques - Véhicules",
                 "party-vehicle-placeholder": "Véhicule de la Partie",
                 "personal-vehicle-placeholder": "Véhicule personnel",
-                "game-type-change-warning": "WARNING: Changing the Game Type will force all players to choose new characters and vehicles that are compatible with the newly selected Game Type." 
+                "game-type-change-warning": "ATTENTION : Changer le type de partie va forcer tous les joueurs à choisir de nouveaux personnages et véhicules compatible avec le nouveau Type de partie.",
+                "allow-gm-control": "Autoriser contrôle par MJ"
             }
         }
     },
@@ -1632,9 +1657,10 @@
         },
         "components": {
             "action-bar": {
-                "link-copied": "Lien copié !"
+                "link-copied": "Lien copié !",
+                "settings-updated-confirmation": "Paramètres mis à jour !"
             },
-            "ffg-sw": {
+            "ffg-gen": {
                 "character-hud": {
                     "Wounds": "Blessures",
                     "Strain": "Stress",
@@ -1655,18 +1681,66 @@
                     "Crits": "Critiques"
                 },
                 "dice-roller": {
-                    "roll-crit-this-pc-button-text": "Lancer le critique pour ce PJ",
+                    "roll-crit-this-pc-button-text": "Lancer le Critique pour ce PJ",
                     "plus-10-to-crit-button-text": "+10",
                     "minus-10-to-crit-button-text": "-10",
                     "roll-dice-button": "Lancer le dé",
                     "description-placeholder": "Description",
-                    "skill-placeholder": "Choisir une compétence",
+                    "skill-placeholder": "Choisir une Compétence",
                     "no-dice-channel-selected-error": "Aucun canal de selectionnez - Les lancers ne seront pas transmis sur Discord. Selectionnez un canal dans les paramètres de jeu",
                     "rolled-from-game-table": "Lancer via la Table de Jeu"
                 },
                 "panel-adversaries": {
                     "Adversaries": "Adversaires",
                     "coming-soon": "A venir bientôt !"
+                }
+            },
+            "ffg-sw": {
+                "character-hud": {
+                    "Wounds": "Blessures",
+                    "Strain": "Stress",
+                    "Soak": "Encaissement",
+                    "Defense": "Def",
+                    "DefenseMelee": "CaC",
+                    "DefenseRanged": "D",
+                    "Encumbrance": "Enc",
+                    "no-character": "Aucun personnage selectionné",
+                    "adversary": "Adversité"
+                },
+                "panel-character-list": {
+                    "characters": "Personnages",
+                    "no-selected-character": "Aucun personnage selectionné",
+                    "select-character-button-text": "Sélectionner un personnage",
+                    "character-placeholder-text": "Personnage",
+                    "Wounds": "B",
+                    "Strain": "S",
+                    "Crits": "Critiques",
+                    "Defense": "D",
+                    "defense-melee": "CaC",
+                    "defense-ranged": "D",
+                    "adversary": "Adversité"
+                },
+                "dice-roller": {
+                    "roll-crit-this-pc-button-text": "Lancer le Critique pour ce PJ",
+                    "plus-10-to-crit-button-text": "+10",
+                    "minus-10-to-crit-button-text": "-10",
+                    "roll-dice-button": "Lancer le dé",
+                    "description-placeholder": "Description",
+                    "skill-placeholder": "Choisir une Compétence",
+                    "no-dice-channel-selected-error": "Aucun canal de selectionnez - Les lancers ne seront pas transmis sur Discord. Selectionnez un canal dans les paramètres de jeu",
+                    "rolled-from-game-table": "Lancer via la Table de Jeu"
+                },
+                "panel-adversaries": {
+                    "Adversaries": "Adversaires",
+                    "coming-soon": "A venir bientôt !",
+                    "add-new-adversary": "Ajouter Nouvel Adversaire",
+                    "remove-npc": "Retirer PNJ",
+                    "show-npc": "Montrer PNJ",
+                    "show-name": "Montrer Nom",
+                    "show-image": "Montrer Image",
+                    "show-stats": "Montrer Stats",
+                    "show-crits": "Montrer Défense/Crits",
+                    "show-adversary": "Montrer Adversité"
                 }
             },
             "panel-history": {
@@ -1686,7 +1760,8 @@
                 "reset-initiative-button-text.comment": "The below text is used on the button that lets a user RESET initiative - that is, keep all of the slots the same, the round just goes back to 1",
                 "reset-initiative-button-text": " Recommencer",
                 "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
-                "clear-initiative-button-text": "Supprimer"
+                "clear-initiative-button-text": "Supprimer",
+                "no-dice-channel-selected-error": "Aucun canal de dé selectionné - Les jets ne seront pas copiés sur Discord. Veuillez choisir un canal dans les paramètres de jeu."
             },
             "panel-messages": {
                 "Messages": "Messages",
@@ -1746,7 +1821,7 @@
             },
             "name-image": {
                 "vehicle-name-placeholder": "Nom",
-                "image-url-placeholder": "URL Image",
+                "image-url-placeholder": "Image URL",
                 "has-clones-singular": "A {{ count }} clone",
                 "has-clones-plural": "A {{ count }} clones"
             }
