@@ -1542,6 +1542,7 @@
                 "roll-initiative-pc": "Roll Initiative (PC)",
                 "roll-initiative-npc": "Roll Initiative (NPC)",
                 "roll-crit-this-pc-button-text": "Roll Crit for this PC",
+                "roll-crit-text": "Roll Crit",
                 "plus-10-to-crit-button-text": "+10",
                 "minus-10-to-crit-button-text": "-10",
                 "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings"
@@ -1595,7 +1596,7 @@
                 "leave-confirmation-title": "Leave {{ name }}?",
                 "leave-confirmation-description": "To join this game again, you'll need a link to it. If you are the last person to leave it, the game will be deleted. Are you sure you want to leave?",
                 "game-left": "You have left the game successfully!",
-                "game.pages.list.leave-confirmation-discord-description-join-info": "To join this game again, you'll need to run the .join command in the server or leave it and join it again. Are you sure you want to leave?",
+                "leave-confirmation-discord-description-join-info": "To join this game again, you'll need to run the .join command in the server or leave it and join it again. Are you sure you want to leave?",
                 "okay-button-text": "Okay",
                 "leave-button-text": "Leave"
             },
@@ -1682,13 +1683,15 @@
                 },
                 "dice-roller": {
                     "roll-crit-this-pc-button-text": "Roll Crit for this PC",
+                    "roll-crit-text": "Roll Crit",
                     "plus-10-to-crit-button-text": "+10",
                     "minus-10-to-crit-button-text": "-10",
                     "roll-dice-button": "Roll Dice",
                     "description-placeholder": "Description",
                     "skill-placeholder": "Choose a Skill",
                     "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings",
-                    "rolled-from-game-table": "Rolled from Game Table"
+                    "rolled-from-game-table": "Rolled from Game Table",
+                    "initiative": "Initiative"
                 },
                 "panel-adversaries": {
                     "Adversaries": "Adversaries",
@@ -1722,13 +1725,15 @@
                 },
                 "dice-roller": {
                     "roll-crit-this-pc-button-text": "Roll Crit for this PC",
+                    "roll-crit-text": "Roll Crit",
                     "plus-10-to-crit-button-text": "+10",
                     "minus-10-to-crit-button-text": "-10",
                     "roll-dice-button": "Roll Dice",
                     "description-placeholder": "Description",
                     "skill-placeholder": "Choose a Skill",
                     "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings",
-                    "rolled-from-game-table": "Rolled from Game Table"
+                    "rolled-from-game-table": "Rolled from Game Table",
+                    "initiative": "Initiative"
                 },
                 "panel-adversaries": {
                     "Adversaries": "Adversaries",
@@ -1761,7 +1766,9 @@
                 "reset-initiative-button-text": "Reset Initiative",
                 "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
                 "clear-initiative-button-text": "Clear Initiative",
-                "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings"
+                "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings",
+                "activate-initiative-rolls": "Start Initiative Rolls",
+                "deactivate-initiative-rolls": "Stop Initiative Rolls"
             },
             "panel-messages": {
                 "Messages": "Messages",
