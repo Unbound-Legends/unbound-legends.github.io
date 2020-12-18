@@ -1586,6 +1586,17 @@
                 "add-note-label": "Note (optional)",
                 "upload-button-text": "Upload",
                 "cancel-button-text": "Cancel"
+            },
+            "discord-channel-refresh": {
+                "overlay-title": "Refresh Discord Channel List",
+                "last-refresh-label": "Last Channel Refresh",
+                "no-previous-refresh": "Never",
+                "refresh-warning": "Please be aware that you can only refresh the channel list for a server once every 10 minutes. It is best to ensure you have all channels already created before refreshing your channel list here.",
+                "refresh-not-available": "Refresh is not currently available. A refresh can only be triggered once every 10 minutes.",
+                "checking-availability": "Checking Refresh Availability...",
+                "refreshing-list": "Refreshing Channel List...",
+                "cancel": "Cancel",
+                "refresh": "Refresh"
             }
         },
         "pages": {
