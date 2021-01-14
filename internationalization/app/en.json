@@ -43,8 +43,8 @@
                 "Star Wars": "Star Wars"
             },
             "game-type": {
-                "FFG Star Wars": "FFG Star Wars",
-                "FFG Genesys": "FFG Genesys"
+                "FFG Star Wars": "Star Wars",
+                "FFG Genesys": "Genesys"
             },
             "game-dice-size": {
                 "Regular": "Regular",
@@ -57,10 +57,10 @@
                 "[game theme] genesys android": "Genesys Android"
             },
             "crit-tables": {
-                "Genesys FFG Crit Table": "Genesys FFG Crit Table",
-                "Genesys FFG Vehicle Crit Table": "Genesys FFG Vehicle Crit Table",
-                "Star Wars FFG Eote Crit Table": "Star Wars FFG Eote Crit Table",
-                "Star Wars FFG Eote Vehicle Crit Table": "Star Wars FFG Eote Vehicle Crit Table"
+                "Genesys FFG Crit Table": "Genesys Crit Table",
+                "Genesys FFG Vehicle Crit Table": "Genesys Vehicle Crit Table",
+                "Star Wars FFG Eote Crit Table": "Star Wars Eote Crit Table",
+                "Star Wars FFG Eote Vehicle Crit Table": "Star Wars Eote Vehicle Crit Table"
             },
             "initiative-types": {
                 "singular": {
