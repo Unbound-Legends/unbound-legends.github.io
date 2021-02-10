@@ -43,8 +43,8 @@
                 "Star Wars": "Star Wars"
             },
             "game-type": {
-                "FFG Star Wars": "FFG Star Wars",
-                "FFG Genesys": "FFG Genesys"
+                "FFG Star Wars": "Star Wars",
+                "FFG Genesys": "Genesys"
             },
             "game-dice-size": {
                 "Regular": "Normal",
@@ -57,10 +57,10 @@
                 "[game theme] genesys android": "Genesys Android"
             },
             "crit-tables": {
-                "Genesys FFG Crit Table": "Genesys FFG",
-                "Genesys FFG Vehicle Crit Table": "Genesys FFG - Véhicules",
-                "Star Wars FFG Eote Crit Table": "Star Wars FFG ACdE",
-                "Star Wars FFG Eote Vehicle Crit Table": "Star Wars FFG ACdE - Véhicules"
+                "Genesys FFG Crit Table": "Table de Critiques Genesys",
+                "Genesys FFG Vehicle Crit Table": "Table de Critiques Genesys - Véhicules",
+                "Star Wars FFG Eote Crit Table": "Table de Critiques Star Wars ACdE",
+                "Star Wars FFG Eote Vehicle Crit Table": "Table de Critiques Star Wars ACdE - Véhicules"
             },
             "initiative-types": {
                 "singular": {
@@ -1542,6 +1542,7 @@
                 "roll-initiative-pc": "Lancer initiative (PJ)",
                 "roll-initiative-npc": "Lancer initiative (PNJ)",
                 "roll-crit-this-pc-button-text": "Jet de Blessure Critique (PJ)",
+                "roll-crit-text": "Lancer Critique",
                 "plus-10-to-crit-button-text": "+10",
                 "minus-10-to-crit-button-text": "-10",
                 "no-dice-channel-selected-error": "Aucun canal sélectionné pour les dés - Les lancer ne seront pas transmis à Discord. Choisissez un canal dans les paramètres de la partie"
@@ -1585,6 +1586,17 @@
                 "add-note-label": "Note (facultatif)",
                 "upload-button-text": "Importer",
                 "cancel-button-text": "Annuler"
+            },
+            "discord-channel-refresh": {
+                "overlay-title": "Liste des canaux Discord à jour",
+                "last-refresh-label": "Dernier canal à jour",
+                "no-previous-refresh": "Jamais",
+                "refresh-warning": "Attention : Vous ne pouvez actualiser la liste des canaux qu'une fois toutes les 10 minutes par serveur. Vérifiez bien que vous avez déjà créé tous les canaux dont vous aurez besoin avant d'actualiser la liste.",
+                "refresh-not-available": "L'actualisation n'est actuellement pas disponible. Vous ne pouvez actualiser qu'une fois toutes les 10 minutes.",
+                "checking-availability": "Vérification Disponibilité Actualisation...",
+                "refreshing-list": "Actualisation de la liste des canaux...",
+                "cancel": "Annuler",
+                "refresh": "Actualiser"
             }
         },
         "pages": {
@@ -1682,13 +1694,15 @@
                 },
                 "dice-roller": {
                     "roll-crit-this-pc-button-text": "Lancer le Critique pour ce PJ",
+                    "roll-crit-text": "Lancer Critique",
                     "plus-10-to-crit-button-text": "+10",
                     "minus-10-to-crit-button-text": "-10",
                     "roll-dice-button": "Lancer le dé",
                     "description-placeholder": "Description",
                     "skill-placeholder": "Choisir une Compétence",
                     "no-dice-channel-selected-error": "Aucun canal de selectionnez - Les lancers ne seront pas transmis sur Discord. Selectionnez un canal dans les paramètres de jeu",
-                    "rolled-from-game-table": "Lancer via la Table de Jeu"
+                    "rolled-from-game-table": "Lancer via la Table de Jeu",
+                    "initiative": "Initiative"
                 },
                 "panel-adversaries": {
                     "Adversaries": "Adversaires",
@@ -1722,13 +1736,15 @@
                 },
                 "dice-roller": {
                     "roll-crit-this-pc-button-text": "Lancer le Critique pour ce PJ",
+                    "roll-crit-text": "Lancer Critique",
                     "plus-10-to-crit-button-text": "+10",
                     "minus-10-to-crit-button-text": "-10",
                     "roll-dice-button": "Lancer le dé",
                     "description-placeholder": "Description",
                     "skill-placeholder": "Choisir une Compétence",
                     "no-dice-channel-selected-error": "Aucun canal de selectionnez - Les lancers ne seront pas transmis sur Discord. Selectionnez un canal dans les paramètres de jeu",
-                    "rolled-from-game-table": "Lancer via la Table de Jeu"
+                    "rolled-from-game-table": "Lancer via la Table de Jeu",
+                    "initiative": "Initiative"
                 },
                 "panel-adversaries": {
                     "Adversaries": "Adversaires",
@@ -1761,7 +1777,9 @@
                 "reset-initiative-button-text": " Recommencer",
                 "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
                 "clear-initiative-button-text": "Supprimer",
-                "no-dice-channel-selected-error": "Aucun canal de dé selectionné - Les jets ne seront pas copiés sur Discord. Veuillez choisir un canal dans les paramètres de jeu."
+                "no-dice-channel-selected-error": "Aucun canal de dé selectionné - Les jets ne seront pas copiés sur Discord. Veuillez choisir un canal dans les paramètres de jeu.",
+                "activate-initiative-rolls": "Départ Jets Initiative",
+                "deactivate-initiative-rolls": "Arrêt Jets Initiative"
             },
             "panel-messages": {
                 "Messages": "Messages",
