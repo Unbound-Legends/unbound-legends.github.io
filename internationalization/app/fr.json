@@ -458,7 +458,7 @@
                 "npc-header": {
                     "placeholder-name": "Nom",
                     "placeholder-image-url": "Image URL",
-                    "placeholder-adversary-level": "Niveau Adversaire",
+                    "placeholder-adversary-level": "Rang Adversité",
                     "placeholder-description": "Description"
                 },
                 "player-header": {
@@ -1012,7 +1012,7 @@
                 "npc-header": {
                     "placeholder-name": "Nom",
                     "placeholder-image-url": "Image URL",
-                    "placeholder-adversary-level": "Niveau d'Adversité",
+                    "placeholder-adversary-level": "Rang Adversité",
                     "placeholder-combat-power-level": "Niveau de puissance Combat",
                     "placeholder-social-power-level": "Niveau de puissance Social",
                     "placeholder-general-power-level": "Niveau de puissance Général",
