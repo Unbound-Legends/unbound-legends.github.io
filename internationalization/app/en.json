@@ -1945,7 +1945,8 @@
                 "add-channel-button-text": "Add Channel",
                 "choose-channel-placeholder": "Choose Channel",
                 "delete-table-button-text": "Delete Game Table",
-                "discord-game-only-error": "This view can only be used with Discord-based games"
+                "discord-game-only-error": "This view can only be used with Discord-based games",
+                "add-member-instruction-text": "To add a new member to this table, have them use the .join command in one of the channels you've linked to this table"
             }
         }
     },
