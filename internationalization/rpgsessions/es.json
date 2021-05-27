@@ -7,5 +7,9 @@
         "previous-page": "Página anterior",
         "items-left-display-when-no-other-pages": "0 de {{ length }}",
         "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} de {{ length }}"
+    },
+    "enums.theme-option": {
+        "[theme option] light": "Tema Claro",
+        "[theme option] dark": "Tema Oscuro"
     }
 }
