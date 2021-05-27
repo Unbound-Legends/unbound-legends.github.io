@@ -1,3 +1,3 @@
 files:
-  - source: /internationalization/rpgsessions
-    translation: '%two_letters_code%.json'
+  - source: /internationalization/rpgsessions/source.json
+    translation: /internationalization/rpgsessions/%two_letters_code%.json
