@@ -1,0 +1,17 @@
+{
+  "paginator": {
+    "items-per-page": "Objets par page",
+    "next-page": "Page Suivante",
+    "last-page": "Dernière page",
+    "first-page": "Première page",
+    "previous-page": "Page précédente",
+    "items-left-display-when-no-other-pages": "0 de {{ length }}",
+    "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} de {{ length }}"
+  },
+  "enums": {
+    "theme-option": {
+      "[theme option] light": "Clair",
+      "[theme option] dark": "Sombre"
+    }
+  }
+}
