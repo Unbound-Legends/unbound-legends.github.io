@@ -1,1 +1,15 @@
-{}
+{
+    "paginator": {
+        "items-per-page": "Elementos por página",
+        "next-page": "Página siguiente",
+        "last-page": "Última página",
+        "first-page": "Primera página",
+        "previous-page": "Página anterior"
+    },
+    "paginator - This is displayed when there's either no items on the page or there's only one page": {
+        "items-left-display-when-no-other-pages": "0 de {{ length }}"
+    },
+    "paginator - This is displayed when there are other pages to explore. It'll show you the range of items you're on and how many there are left": {
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} de {{ length }}"
+    }
+}
