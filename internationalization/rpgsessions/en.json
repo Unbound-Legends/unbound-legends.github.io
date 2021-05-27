@@ -1,11 +1,15 @@
 {
-  "paginator": {
-    "items-per-page": "Items per page",
-    "next-page": "Next page",
-    "last-page": "Last page",
-    "first-page": "First page",
-    "previous-page": "Previous page",
-    "items-left-display-when-no-other-pages": "0 of {{ length }}",
-    "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} of {{ length}}"
-  }
+    "paginator": {
+        "items-per-page": "Items per page",
+        "next-page": "Next page",
+        "last-page": "Last page",
+        "first-page": "First page",
+        "previous-page": "Previous Page"
+    },
+    "paginator - This is displayed when there's either no items on the page or there's only one page": {
+        "items-left-display-when-no-other-pages": "0 of {{ length }}"
+    },
+    "paginator - This is displayed when there are other pages to explore. It'll show you the range of items you're on and how many there are left": {
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} of {{ length }}"
+    }
 }
