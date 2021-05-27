@@ -1,17 +1,22 @@
 {
-  "paginator": {
-    "items-per-page": "Items per page",
-    "next-page": "Next page",
-    "last-page": "Last page",
-    "first-page": "First page",
-    "previous-page": "Previous page",
-    "items-left-display-when-no-other-pages": "0 of {{ length }}",
-    "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} of {{ length }}"
-  },
-  "enums": {
-    "theme-option": {
-      "[theme option] light": "Light Theme",
-      "[theme option] dark": "Dark Theme"
+    "paginator": {
+        "Items per page": "Items per page",
+        "next-page": "Next page",
+        "last-page": "Last page",
+        "first-page": "First page",
+        "previous-page": "Previous Page",
+        "items-left-display-when-no-other-pages": "0 of {{ length }}",
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} of {{ length }}"
+    },
+    "enums": {
+        "theme-option": {
+            "[theme option] light": "Light Theme",
+            "[theme option] dark": "Dark Theme"
+        },
+        "language-option": {
+            "en": "",
+            "es": "",
+            "fr": ""
+        }
     }
-  }
 }
