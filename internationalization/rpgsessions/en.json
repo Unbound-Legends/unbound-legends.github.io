@@ -4,7 +4,7 @@
     "next-page": "Next page",
     "last-page": "Last page",
     "first-page": "First page",
-    "previous-page": "Previous Page",
+    "previous-page": "Previous page",
     "items-left-display-when-no-other-pages": "0 of {{ length }}",
     "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} of {{ length }}"
   },
