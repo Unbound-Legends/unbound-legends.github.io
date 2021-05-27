@@ -1,0 +1,3 @@
+files:
+  - source: /internationalization/rpgsessions
+    translation: '%two_letters_code%'
