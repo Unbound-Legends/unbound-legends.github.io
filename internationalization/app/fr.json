@@ -1,1881 +1,941 @@
 {
-    "paginator": {
+    "material": {
+      "paginator": {
         "items-per-page": "Objets par page",
-        "next-page": "Page Suivante",
+        "next-page": "Page suivante",
         "last-page": "Dernière page",
         "first-page": "Première page",
         "previous-page": "Page précédente",
-        "items-left-display-when-no-other-pages.comment": "This is displayed when there's either no items on the page or there's only one page",
         "items-left-display-when-no-other-pages": "0 de {{ length }}",
-        "items-left-when-other-pages-exist.comment": "This is displayed when there are other pages to explore. It'll show you the range of items you're on and how many there are left",
-        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} de {{ length}}"
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} de {{ length }}"
+      }
     },
-    "generic": {
-        "enums": {
-            "dice-styles": {
-                "Name": "Nom",
-                "Color-Based": "Colorés"
-            },
-            "themes": {
-                "Dark Theme": "Sombre",
-                "Light Theme": "Clair"
-            },
-            "dice-types": {
-                "Numbered": "Numériques",
-                "Star Wars": "Star Wars",
-                "Genesys": "Genesys"
-            },
-            "languages": {
-                "Auto-Detect": "Détection automatique",
-                "English": "Anglais",
-                "Spanish": "Espagnol",
-                "French": "Français"
-            },
-            "sort-by": {
-                "Name": "Nom",
-                "Newest": "Le plus récent",
-                "Oldest": "Le plus ancien",
-                "Modified": "Modifié",
-                "Favorite": "Favoris"
-            },
-            "game-types": {
-                "Genesys": "Genesys",
-                "Star Wars": "Star Wars"
-            },
-            "game-type": {
-                "FFG Star Wars": "Star Wars",
-                "FFG Genesys": "Genesys"
-            },
-            "game-dice-size": {
-                "Regular": "Normal",
-                "Large": "Large"
-            },
-            "game-themes": {
-                "[game theme] eote core": "Aux Confins de l'Empire",
-                "[game theme] genesys core": "Genesys",
-                "[game theme] genesys terrinoth": "Genesys Terrinoth",
-                "[game theme] genesys android": "Genesys Android"
-            },
-            "crit-tables": {
-                "Genesys FFG Crit Table": "Table de Critiques Genesys",
-                "Genesys FFG Vehicle Crit Table": "Table de Critiques Genesys - Véhicules",
-                "Star Wars FFG Eote Crit Table": "Table de Critiques Star Wars ACdE",
-                "Star Wars FFG Eote Vehicle Crit Table": "Table de Critiques Star Wars ACdE - Véhicules"
-            },
-            "initiative-types": {
-                "singular": {
-                    "[Initiative Type] PC": "PJ",
-                    "[Initiative Type] NPC": "PNJ"
-                },
-                "plural": {
-                    "[Initiative Type] PC": "PJ",
-                    "[Initiative Type] NPC": "PNJ"
-                }
-            },
-            "dice-names": {
-                "Proficiency": "Aptitude",
-                "Ability": "Maîtrise",
-                "Boost": "Fortune",
-                "Challenge": "Défi",
-                "Difficulty": "Difficulté",
-                "Setback": "Infortune",
-                "Force": "Force",
-                "Triumph": "Triomphe",
-                "Success": "Succès",
-                "Advantage": "Avantage",
-                "Despair": "Désastre",
-                "Failure": "Echec",
-                "Threat": "Menace",
-                "Lightside": "Côté Lumineux",
-                "Darkside": "Côté Obscur",
-                "Light/Dark": "Lumineux/Obscur",
-                "D4": "D4",
-                "D6": "D6",
-                "D8": "D8",
-                "D10": "D10",
-                "D12": "D12",
-                "D20": "D20",
-                "D100": "D100",
-                "Polyhedral": "Polyhédrale",
-                "Modifier": "Modifier"
-            },
-            "character-attributes": {
-                "starwars": {
-                    "Soak": "Encaissement",
-                    "Wounds": "Blessures",
-                    "Strain": "Stress",
-                    "Defense": "Défense",
-                    "Current Wounds": "Blessures Actuelles",
-                    "Wound Threshold": "Seuil de Blessures",
-                    "Current Strain": "Stress Actuel",
-                    "Strain Threshold": "Seuil de Stress",
-                    "Ranged Defense": "Défense - Distance",
-                    "Melee Defense": "Défense - Corps à corps",
-                    "Available XP": "XP disponibles",
-                    "Total XP": "Total en XP",
-                    "Money": "Crédits",
-                    "Encumbrance": "Encombrement",
-                    "Current Encumbrance": "Encombrement actuel",
-                    "Total Encumbrance": "Encombrement total",
-                    "Force Rating": "Valeur de Force",
-                    "Current Rating": "Valeur actuelle",
-                    "Committed": "Engagé"
-                },
-                "genesys": {
-                    "Soak": "Encaissement",
-                    "Wounds": "Blessures",
-                    "Strain": "Stress",
-                    "Defense": "Défense",
-                    "Current Wounds": "Blessures actuelles",
-                    "Wound Threshold": "Seuil de Blessures",
-                    "Current Strain": "Stress actuel",
-                    "Strain Threshold": "Seuil de Stress",
-                    "Ranged Defense": "Défense - Distance",
-                    "Melee Defense": "Défense - Corps à Corps",
-                    "Available XP": "XP disponibles",
-                    "Total XP": "Total en XP",
-                    "Money": "Argent",
-                    "Encumbrance": "Encombrement",
-                    "Current Encumbrance": "Encombrement actuel",
-                    "Total Encumbrance": "Encombrement total",
-                    "Heroic Ability Points": "Points de Capacité Héroique"
-                }
-            }
-        },
-        "labels": {
-            "language": "Langue",
-            "link-copied.comment": "The link-copied value will pop up usually after a user hits a button that's puts a URL into a user's clipboard. This message lets the user know the URL was copied successfully",
-            "copy-link": "Copier lien",
-            "link-copied": "Lien copié!",
-            "roll-history": "Historique des jets",
-            "new-roll": "Nouveau jet",
-            "sort-by": "Trier par",
-            "new-button-text": "Nouveau",
-            "rpg-sessions-mark-alt-text.comment": "Alt-text shows up whenever an image fails to load, this alt-text will be used for the Sessions logo in mark form (the circle version)",
-            "rpg-sessions-mark-alt-text": "Symbole RPG Sessions",
-            "select-list-none.comment": "The none key below is used in select lists to indicate that the user doesn't want to select any of the options in the list.",
-            "select-list-none": "Aucun",
-            "cancel-button-text.comment": "The following will be used on cancel buttons throughout the app",
-            "cancel-button-text": "Annuler",
-            "view-button-text": "Voir",
-            "share-button-text": "Partager",
-            "delete-button-text": "Supprimer"
-        }
+    "seo": {
+      "game-list": {
+        "title": "Liste des parties"
+      },
+      "game-settings": {
+        "title": "Paramètres de la partie"
+      },
+      "game-table": {
+        "title": "Table de jeu {{ gameName }}",
+        "description": "Table de Jeu fournie par RPG Sessions"
+      }
     },
-    "user": {
-        "pages": {
-            "profile": {
-                "profile-header": "Informations du profil",
-                "username-placeholder": "Nom d'utilisateur",
-                "email-placeholder": "Courriel",
-                "update-user-profile-button-text": "Mettre à jour le profil d'utilisateur",
-                "security-header": "Sécurité",
-                "facebook-login-enabled": "Connexion via Facebook activée",
-                "google-login-enabled": "Connexion via Google activée",
-                "current-password-placeholder": "Mot de passe actuel",
-                "new-password-placeholder": "Nouveau mot de passe",
-                "confirm-new-password-placeholder": "Confirmer le nouveau mot de passe",
-                "update-password-button-text": "Mettre à jour le mot de passe",
-                "user-settings-header": "Paramètres d'utilisateur",
-                "selected-dice-type-alt": "Type de dés sélectionné",
-                "selected-dice-scheme-alt": "Type de dés sélectionné",
-                "selected-site-theme-alt": "Thème du site sélectionné",
-                "dice-type-placeholder": "Type de dés par défaut",
-                "dice-input-style-placeholder": "Style d'entrées de Dés",
-                "theme-placeholder": "Thème",
-                "update-user-settings-button-text": "Mettre à jour les paramètres d'utilisateur",
-                "badges-header": "Badges",
-                "badges-coming-soon": "Bientôt disponible !",
-                "linked-accounts-header": "Comptes associés",
-                "linked-account-description": "Associer votre profil RPG Sessions pour déverouiller des fonctionnalités impressionnantes !",
-                "link-text": "Associer",
-                "unlink-text": "Dissocier",
-                "patreon-features-header": "Fonctionnalités Patreon",
-                "patreon-features": {
-                    "honorary-titles": "Titres honorifiques"
-                },
-                "update-user-patreon-features-button-text": "Mise à jour des Fonctionnalités Patreon",
-                "patreon-features-updated-successfully": "Fonctionnalités Patreon mises à jour avec succès !",
-                "enable-password-header": "Enable Password Login",
-                "enable-password-button-text": "Enable Password"
-            }
+    "enums": {
+      "core": {
+        "data-type": {
+          "[dataType] character": "Personnage",
+          "[dataType] folder": "Dossier",
+          "[dataType] game": "Partie",
+          "[dataType] vehicle": "Véhicule"
+        },
+        "game-theme": {
+          "[game theme] generic": "Générique",
+          "[game theme] star wars eote": "Aux Confins de l'Empire",
+          "[game theme] star wars aor": "L'Ere de la Rébellion",
+          "[game theme] star wars fad": "Force et Destinée",
+          "[game theme] genesys core": "Genesys Core",
+          "[game theme] genesys terrinoth": "Royaumes de Terrinoth",
+          "[game theme] genesys android": "Shadow of the Beanstalk",
+          "[game theme] genesys keyforge": "Keyforge",
+          "[game theme] genesys twilight imperium": "Twilight Imperium"
+        },
+        "rules-system": {
+          "[rules] nds": "Narrative Dice System",
+          "[rules] age": "Adventure Game Engine",
+          "[rules] generic": "Générique"
         }
-    },  
-    "character2": {
-        "pages": {
-            "list": {
-                "title": "Mes personnages",
-                "sort-by": "Trier par",
-                "import": "Importer",
-                "new": "Nouveau",
-                "no-characters": "Vous n'avez pas encore de personnages !"
-            }
+      },
+      "character": {
+        "character-type": {
+          "[character type] player": "Joueur",
+          "[character type] npc": "PNJ"
         },
-        "ffg-sw": {
-            "pages": {
-                "edit": {
-                    "saving": "Sauvegarde",
-                    "create-success": "Personnage créé avec succès !",
-                    "edit-success": "Personnage mis à jour avec succès !"
-                }
-            },
-            "enums": {
-                "character-attribute": {
-                    "Soak": "Encaissement",
-                    "Wounds": "Blessures",
-                    "Wound Threshold": "Seuil Blessure",
-                    "Current Wounds": "Blessures Actuelles",
-                    "Strain": "Stress",
-                    "Strain Threshold": "Seuil Stress",
-                    "Current Strain": "Stress Actuel",
-                    "Defense": "Défense",
-                    "Ranged Defense": "Defense Distance",
-                    "Melee Defense": "Defense CaC",
-                    "Force Rating": "Valeur de Force",
-                    "Current Rating": "Valeur Actuelle",
-                    "Force Committed": "Force Engagée",
-                    "Threshold": "Seuil",
-                    "Current": "Actuel",
-                    "Melee": "CaC",
-                    "Ranged": "Distance",
-                    "Committed": "Engagé",
-                    "Available XP": "XP disponibles",
-                    "Total XP": "Total en XP",
-                    "Credits": "Crédits",
-                    "Encumbrance": "Encombrement",
-                    "Encumbrance Threshold": "Seuil Encombrement",
-                    "Current Encumbrance": "Encombrement Actuel"
-                },
-                "character-characteristic": {
-                    "Brawn": "Vigueur",
-                    "Agility": "Agilité",
-                    "Intellect": "Intelligence",
-                    "Cunning": "Ruse",
-                    "Willpower": "Volonté",
-                    "Presence": "Présence",
-                    "BR": "Vig",
-                    "AG": "Ag",
-                    "INT": "Int",
-                    "CUN": "Ru",
-                    "WILL": "Vol",
-                    "PR": "Pré"
-                },
-                "character-range-band": {
-                    "Engaged": "Contact",
-                    "Short": "Courte",
-                    "Medium": "Moyenne",
-                    "Long": "Longue",
-                    "Extreme": "Extrême"
-                },
-                "character-activation-type": {
-                    "Passive": "Passif",
-                    "Incidental": "Broutille",
-                    "Maneuver": "Manoeuvre",
-                    "Action": "Action"
-                },
-                "character-activation-type-abbr": {
-                    "Passive": "P",
-                    "Incidental": "B",
-                    "Maneuver": "M",
-                    "Action": "A"
-                },
-                "character-type": {
-                    "Player": "Joueur",
-                    "nemesis": "Nemesis",
-                    "rival": "Rival",
-                    "minion": "Sbire"
-                },
-                "force-display-type": {
-                    "Tree": "Arborescence",
-                    "Table": "Table"
-                },
-                "game-theme": {
-                    "Edge of the Empire": "Aux Confins de l'Empire",
-                    "Age of Rebellion": "L'Ere de la Rébellion",
-                    "Force and Destiny": "Force et Destinée"
-                },
-                "modifier-type": {
-                    "Armor": "Armure",
-                    "Attribute": "Trait",
-                    "Characteristic": "Caractéristique",
-                    "Narrative": "Narratif",
-                    "Skill": "Compétence",
-                    "Weapon": "Arme"
-                },
-                "skill-type": {
-                    "General": "Général",
-                    "Combat": "Combat",
-                    "Social": "Social",
-                    "Knowledge": "Connaissance",
-                    "Other": "Autre"
-                },
-                "talent-display-type": {
-                    "Tree": "Arborescence",
-                    "Table": "Table"
-                }
-            },
-            "components": {
-                "action-bar": {
-                    "edit": "Modifier",
-                    "clone": "Dupliquer",
-                    "back-to-list": "Retourner à la liste",
-                    "save": "Sauvegarder",
-                    "cancel": "Annuler"
-                },
-                "armor": {
-                    "armor": "Armure",
-                    "soak": "Encaissement",
-                    "defense": "Défense",
-                    "encumbrance": "Encombrement",
-                    "hard-points": "Emp",
-                    "rarity": "Rareté",
-                    "price": "Prix",
-                    "carrying": "Emplacements",
-                    "equipped": "Equipé",
-                    "custom-name": "Nom personnalisé",
-                    "qualities": "Attributs",
-                    "add-quality": "Ajouter un Attribut",
-                    "add-armor": "Ajouter armure"
-                },
-                "armor-attachments": {
-                    "attachments": "Kits",
-                    "cost": "Coût",
-                    "rarity": "Rareté",
-                    "required-hp": "Emplacements nécessaires",
-                    "base-modifier": "Modificateur",
-                    "no-modifier": "Aucun",
-                    "modifications": "Mods",
-                    "add-attachment": "Ajouter un Kit"
-                },
-                "attributes-top": {
-                    "minions": "Sbires"
-                },
-                "critical-injury": {
-                    "critical-injury": "Blessures Critiques",
-                    "difficulty": "Difficulté",
-                    "name": "Nom",
-                    "severity": "Gravité",
-                    "description": "Description",
-                    "add-critical-injury": "Ajouter Blessure Critique"
-                },
-                "current-games": {
-                    "current-games": "Parties en cours"
-                },
-                "details": {
-                    "character-details": "Détails du personnage",
-                    "background": "Histoire",
-                    "obligation": "Obligation",
-                    "duty": "Devoir",
-                    "morality": "Moralité",
-                    "motivation": "Motivations"
-                },
-                "details-background": {
-                    "background": "Histoire"
-                },
-                "details-motivation": {
-                    "motivation": "Motivations"
-                },
-                "details-obligation": {
-                    "obligation-name": "Nom de l'Obligation",
-                    "obligation-amount": "Montant de l'Obligation",
-                    "triggered": "Déclenché",
-                    "description": "Description",
-                    "add-obligation": "Ajouter Obligation"
-                },
-                "details-duty": {
-                    "group-contribution-ranks": "Rangs de la contribution de groupe",
-                    "duty-name": "Nom du Devoir",
-                    "duty-amount": "Valeur du Devoir",
-                    "triggered": "Déclenché",
-                    "description": "Description",
-                    "add-duty": "Ajouter un Devoir"
-                },
-                "details-morality": {
-                    "morality-score": "Score de Moralité",
-                    "session-conflict": "Conflit de la session",
-                    "emotional-strength": "Force émotionnelle",
-                    "emotional-weakness": "Faiblesse émotionnelle",
-                    "description": "Description",
-                    "add-morality": "Ajouter Moralité"
-                },
-                "equipment": {
-                    "equipment-and-gear": "Equipement et Matériel",
-                    "quantity": "Quantité",
-                    "encumbrance": "Encombrement",
-                    "rarity": "Rareté",
-                    "price": "Prix",
-                    "carrying": "Porté",
-                    "custom-name": "Nom personnalisé",
-                    "notes": "Notes",
-                    "qualities": "Attributs",
-                    "add-quality": "Ajouter un Attribut",
-                    "add-equipment": "Ajouter un Equipement"
-                },
-                "force-powers": {
-                    "force-powers": "Pouvoir de la Force",
-                    "add-force-tree": "Ajouter un Pouvoir de la Force"
-                },
-                "force-slot": {
-                    "ranks": "Rangs",
-                    "xp": "XP",
-                    "combine": "Combiner"
-                },
-                "force-table": {
-                    "force-table": "Pouvoir de la Force",
-                    "name": "Nom",
-                    "description": "Description",
-                    "activation": "Activation",
-                    "ranks": "Rangs",
-                    "cost": "Coût",
-                    "add-force-power": "Ajouter un pouvoir de la Force"
-                },
-                "hide-toggle": {
-                    "hide": "Masquer"
-                },
-                "notes": {
-                    "notes": "Notes"
-                },
-                "notes-private": {
-                    "notes-private": "Notes privées",
-                    "these-are-private": "Ces notes sont uniquement visibles par vous et par personne d'autre"
-                },
-                "npc-adversary-level": {
-                    "adversary": "Adversité"
-                },
-                "npc-character-info": {
-                    "character-info": "Infos du Personnage",
-                    "talents": "Talents",
-                    "add-talent": "Ajouter un Talent",
-                    "abilities": "Aptitudes",
-                    "add-ability": "Ajouter Aptitude",
-                    "equipment-and-gear": "Equipement et Matériel",
-                    "add-equipment": "Ajouter un Equipement",
-                    "desire": "Ambition",
-                    "fear": "Peur",
-                    "strength": "Force",
-                    "flaw": "Faiblesse"
-                },
-                "npc-header": {
-                    "placeholder-name": "Nom",
-                    "placeholder-image-url": "Image URL",
-                    "placeholder-adversary-level": "Rang Adversité",
-                    "placeholder-description": "Description"
-                },
-                "player-header": {
-                    "placeholder-name": "Nom",
-                    "placeholder-image-url": "Image URL",
-                    "placeholder-species": "Espèce",
-                    "placeholder-career": "Carrière",
-                    "placeholder-specialization": "Spécialités",
-                    "placeholder-age": "Age",
-                    "placeholder-weight": "Poids",
-                    "placeholder-height": "Taille",
-                    "placeholder-notable-features": "Signes particuliers",
-                    "label-species": "Espèce",
-                    "label-career": "Carrière",
-                    "label-specialization": "Spécialités",
-                    "label-age": "Age",
-                    "label-weight": "Poids",
-                    "label-height": "Taille",
-                    "label-notable-features": "Signes Particuliers",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur"
-                },
-                "skills": {
-                    "add-skill": "Ajouter Compétence"
-                },  
-                "skills-table": {
-                    "general-skills": "Compétences générales",
-                    "combat-skills": "Compétences de combat",
-                    "social-skills": "Compétences sociales",
-                    "knowledge-skills": "Compétences de connaissance",
-                    "other-skills": "Autres Compétences",
-                    "career": "Carrière",
-                    "group-skill": "Compétence de Groupe",
-                    "rank": "Rang"
-                },
-                "talents": {
-                    "talents": "Talents",
-                    "add-talent-tree": "Ajouter un nouvel Arbre de Talent"
-                },
-                "talent-slot": {
-                    "ranks": "Rangs",
-                    "ranked": "Rangs",
-                    "xp": "XP"
-                },
-                "talent-table": {
-                    "talent-table": "Talents",
-                    "name": "Nom",
-                    "description": "Description",
-                    "activation": "Activation",
-                    "ranks": "Rangs",
-                    "cost": "Coût",
-                    "add-talent": "Ajouter un Talent"
-                },
-                "weapons": {
-                    "weapon": "Arme",
-                    "weapons": "Armes",
-                    "name": "Nom",
-                    "skill": "Compétence",
-                    "damage": "Dégâts",
-                    "crit": "Critique",
-                    "range": "Portée",
-                    "encumbrance": "Enc",
-                    "hard-points": "Emp",
-                    "rarity": "Rareté",
-                    "cost": "Coût",
-                    "carrying": "Porté",
-                    "equipped": "Equipé",
-                    "custom-name": "Nom personnalisé",
-                    "qualities": "Attributs",
-                    "add-quality": "Ajouter un Attribut",
-                    "add-weapon": "Ajouter Arme"
-                },
-                "weapons-attachments": {
-                    "attachments": "Kits",
-                    "cost": "Coût",
-                    "rarity": "Rareté",
-                    "required-hp": "Emplacements nécessaires",
-                    "base-modifier": "Modificateur",
-                    "no-modifier": "Aucun",
-                    "modifications": "Mods",
-                    "add-attachment": "Ajouter un Kit"
-                }
-            },
-            "overlays": {
-                "edit-armor": {
-                    "placeholder-name": "Nom",
-                    "placeholder-soak": "Encaissement",
-                    "placeholder-defense": "Défense",
-                    "placeholder-encumbrance": "Encombrement",
-                    "placeholder-hard-points": "Emplacements",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-armor": "Ajouter armure",
-                    "action-save-armor": "Sauvegarder l'armure"
-                },
-                "edit-armor-attachment": {
-                    "placeholder-name": "Nom",
-                    "placeholder-hard-points-cost": "Nombre d'emplacements",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-attachment": "Ajouter un Kit",
-                    "action-save-attachment": "Sauvegarder le Kit"
-                },
-                "edit-armor-attachment-modification": {
-                    "placeholder-name": "Nom",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-mod": "Ajouter un Mods",
-                    "action-save-mod": "Sauvegarder le Mods"
-                },
-                "edit-critical-injury": {
-                    "placeholder-name": "Nom",
-                    "placeholder-severity": "Gravité (1-999)",
-                    "placeholder-difficulty": "Difficulté (1-5)",
-                    "placeholder-description": "Description",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-crit": "Ajouter un Critique",
-                    "action-save-crit": "Sauvegarder le Critique"
-                },
-                "edit-equipment": {
-                    "placeholder-name": "Nom",
-                    "placeholder-quantity": "Quantité",
-                    "placeholder-encumbrance": "Encombrement",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "placeholder-description": "Description",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-equipment": "Ajouter un Equipement",
-                    "action-save-equipment": "Sauvegarder l'Equipement"
-                },
-                "edit-force-power": {
-                    "placeholder-name": "Nom",
-                    "placeholder-activation-type": "Activation",
-                    "placeholder-ranked": "Rangs",
-                    "placeholder-ranks": "Rangs",
-                    "placeholder-xp-cost": "Coût XP",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-force-power": "Ajouter un pouvoir",
-                    "action-save-force-power": "Sauvegarder le pouvoir",
-                    "action-add-ability": "Ajouter Aptitude",
-                    "action-save-ability": "Sauvegarder l'Aptitude"
-                },
-                "edit-force-tree": {
-                    "placeholder-name": "Nom de l'arborescence de pouvoir de la Force",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-force-tree": "Ajouter arborescence",
-                    "action-save-force-tree": "Sauvegarder l'arborescence"
-                },
-                "edit-modifier": {
-                    "placeholder-name": "Nom",
-                    "placeholder-description": "Description",
-                    "placeholder-type": "Type d'effet",
-                    "placeholder-linked-armor": "Armure liée",
-                    "placeholder-soak-modifier": "Modificateur Encaissement",
-                    "placeholder-defense-modifier": "Modificateur Défense",
-                    "placeholder-encumbrance-modifier": "Modificateur Encombrement",
-                    "placeholder-attribute": "Trait",
-                    "placeholder-characteristic": "Caractéristique",
-                    "placeholder-modifier-amount": "Modificateur Valeur",
-                    "placeholder-linked-skill": "Compétence liée",
-                    "placeholder-career-modifier": "Compétence de carrière",
-                    "placeholder-rank-modifier": "Modificateur Rangs",
-                    "placeholder-linked-weapon": "Arme liée",
-                    "placeholder-damage-modifier": "Modificateur Dégâts",
-                    "placeholder-crit-modifier": "Modificateur Critique",
-                    "placeholder-extra-dice": "Dé supplémentaire",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-modifier": "Ajouter un Modificateur",
-                    "action-save-modifier": "Sauvegarder le Modificateur"
-                },
-                "edit-skill": {
-                    "placeholder-name": "Nom",
-                    "placeholder-characteristic": "Caractéristique liée",
-                    "placeholder-skill-type": "Type de Compétence",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-skill": "Ajouter Compétence",
-                    "action-save-skill": "Sauvegarder la Compétence"
-                },
-                "edit-talent": {
-                    "placeholder-name": "Nom",
-                    "placeholder-activation-type": "Type d'activation",
-                    "placeholder-ranked": "Rangs",
-                    "placeholder-is-force-talent": "Talent de la Force",
-                    "placeholder-is-conflict-talent": "Talent de Conflit",
-                    "placeholder-xp-cost": "Coût XP",
-                    "placeholder-ranks": "Rangs",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateur",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-talent": "Ajouter un Talent",
-                    "action-save-talent": "Sauvegarde le Talent"
-                },
-                "edit-talent-tree": {
-                    "placeholder-name": "Nom Arborescence de Talent",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-talent-tree": "Ajouter un arbre de Talent",
-                    "action-save-talent-tree": "Sauvegarder l'arborescence de Talent"
-                },
-                "edit-weapon": {
-                    "placeholder-name": "Nom",
-                    "placeholder-linked-skill": "Compétence liée",
-                    "placeholder-base-damage": "Dégâts",
-                    "placeholder-damage-adds-brawn": "Vigueur + Dégâts",
-                    "placeholder-crit": "Critique",
-                    "placeholder-range": "Portée",
-                    "placeholder-encumbrance": "Encombrement",
-                    "placeholder-hard-points": "Emplacements",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-weapon": "Ajouter l'Arme",
-                    "action-save-weapon": "Sauvegarder l'Arme"
-                },
-                "edit-weapon-attachment": {
-                    "placeholder-name": "Nom",
-                    "placeholder-hard-points-cost": "Nombre d'emplacements",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-attachment": "Ajouter un Kit",
-                    "action-save-attachment": "Sauvegarder le Kit"
-                },
-                "edit-weapon-attachment-modification": {
-                    "placeholder-name": "Nom",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-mod": "Ajouter un Mods",
-                    "action-save-mod": "Sauvegarder le Mods"
-                },
-                "sheet-customizations": {
-                    "title": "Personnalisation de la feuille",
-                    "presets": "Presets",
-                    "customize": "Personnaliser",
-                    "placeholder-sheet-theme": "Thème de la feuille",
-                    "placeholder-talent-tree-layout": "Mise en page de l'arborescence de Talents",
-                    "placeholder-force-enabled": "Valeur de Force / Arborescence de pouvoir de la Force",
-                    "placeholder-npc-force-enabled": "Valeur de Force",
-                    "placeholder-force-tree-layout": "Mise en page de l'arborescence de Talents",
-                    "placeholder-obligation-enabled": "Obligation",
-                    "placeholder-duty-enabled": "Devoir",
-                    "placeholder-morality-enabled": "Moralité",
-                    "warning-talent-tree": "Changer la mise en page de l'arborescence va supprimer tous les Talents associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-force-tree": "Changer la mise en page de l'arborescence va supprimer tous les pouvoirs de la Force associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-force": "Désactiver cette fonctionnalité va supprimer tous les pouvoirs et la Valeur de Force. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-npc-force": "Désactiver cette fonctionnalité va supprimer tous les pouvoirs et la Valeur de Force. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-obligation": "Désactiver cette fonctionnalité va supprimer toutes les Obligations. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-duty": "Désactiver cette fonctionnalité va supprimer tous les Devoirs. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-morality": "Désactiver cette fonctionnalité va supprimer la Moralité. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "action-cancel": "Annuler",
-                    "action-save-customizations": "Sauvegarder",
-                    "action-create-character": "Créer un personnage"
-                }
-            },
-            "skills": {
-                "Astrogation": "Astrogation",
-                "Athletics": "Athlétisme",
-                "Brawl": "Pugilat",
-                "Charm": "Charme",
-                "Coercion": "Coercition",
-                "Computers": "Informatique",
-                "Cool": "Calme",
-                "Coordination": "Coordination",
-                "Core Worlds": "Mondes du Noyau",
-                "Deception": "Tromperie",
-                "Discipline": "Sang-Froid",
-                "Education": "Education",
-                "Gunnery": "Artillerie",
-                "Leadership": "Commandement",
-                "Lightsaber": "Sabre laser",
-                "Lore": "Culture",
-                "Mechanics": "Mécanique",
-                "Medicine": "Médecine",
-                "Melee": "Corps à corps",
-                "Negotiation": "Négociation",
-                "Outer Rim": "Bordure extérieure",
-                "Perception": "Perception",
-                "Piloting Planetary": "Pilotage (Planétaire)",
-                "Piloting Space": "Pilotage (Espace)",
-                "Ranged Heavy": "Distance - Armes lourdes",
-                "Ranged Light": "Distance - Armes légères",
-                "Resilience": "Résistance",
-                "Skulduggery": "Magouilles",
-                "Stealth": "Discrétion",
-                "Streetwise": "Système D",
-                "Survival": "Survie",
-                "Underworld": "Pègre",
-                "Vigilance": "Vigilance",
-                "Warfare": "Stratégie",
-                "Xenology": "Xénologie"
-            }
-        },
-        "ffg-gen": {
-            "pages": {
-                "edit": {
-                    "saving": "Sauvegarde",
-                    "create-success": "Personnage créé avec succès !",
-                    "edit-success": "Personnage mis à jour avec succès !"
-                }
-            },
-            "enums": {
-                "character-attribute": {
-                    "Soak": "Encaissement",
-                    "Wounds": "Blessures",
-                    "Wound Threshold": "Seuil de Blessures",
-                    "Current Wounds": "Blessures Actuelles",
-                    "Strain": "Stress",
-                    "Strain Threshold": "Seuil de Stress",
-                    "Current Strain": "Stress Actuel",
-                    "Defense": "Défense",
-                    "Ranged Defense": "Défense - Distance",
-                    "Melee Defense": "Défense - Corps à Corps",
-                    "Threshold": "Seuil",
-                    "Current": "Actuel",
-                    "Melee": "Corps à Corps",
-                    "Ranged": "Distance",
-                    "Available XP": "XP disponibles",
-                    "Total XP": "Total en XP",
-                    "Experience": "Expérience",
-                    "Money": "Argent",
-                    "Encumbrance": "Encombrement",
-                    "Encumbrance Threshold": "Seuil Encombrement",
-                    "Current Encumbrance": "Encombrement Actuel",
-                    "Available": "Disponible",
-                    "Total": "Total",
-                    "Ability Points": "Points d'Aptitude",
-                    "AEmber": "Aombre"
-                },
-                "character-characteristic": {
-                    "Brawn": "Vigueur",
-                    "Agility": "Agilité",
-                    "Intellect": "Intelligence",
-                    "Cunning": "Ruse",
-                    "Willpower": "Volonté",
-                    "Presence": "Présence",
-                    "BR": "Vig",
-                    "AG": "Ag",
-                    "INT": "Int",
-                    "CUN": "Ru",
-                    "WILL": "Vol",
-                    "PR": "Pré"
-                },
-                "character-range-band": {
-                    "Engaged": "Contact",
-                    "Short": "Courte",
-                    "Medium": "Moyenne",
-                    "Long": "Longue",
-                    "Extreme": "Extrême"
-                },
-                "character-activation-type": {
-                    "Passive": "Passif",
-                    "Incidental": "Broutille",
-                    "Maneuver": "Manoeuvre",
-                    "Action": "Action"
-                },
-                "character-type": {
-                    "Player": "Joueur",
-                    "nemesis": "Nemesis",
-                    "rival": "Rival",
-                    "minion": "Sbire"
-                },
-                "favor-size": {
-                    "Small": "Petit",
-                    "Regular": "Moyen",
-                    "Big": "Gros"
-                },
-                "game-theme": {
-                    "Genesys Core": "Genesys Core",
-                    "Terrinoth": "Realms of Terrinoth",
-                    "Android": "Shadow of the Beanstalk",
-                    "Keyforge": "Secrets of the Crucible"
-                },
-                "modifier-type": {
-                    "Armor": "Armure",
-                    "Attribute": "Trait",
-                    "Characteristic": "Caractéristique",
-                    "Narrative": "Narratif",
-                    "Skill": "Compétence",
-                    "Weapon": "Arme"
-                },
-                "skill-type": {
-                    "General": "Général",
-                    "Magic": "Magie",
-                    "Combat": "Combat",
-                    "Social": "Social",
-                    "Knowledge": "Connaissance",
-                    "Other": "Autre"
-                },
-                "talent-display-type": {
-                    "Pyramid": "Pyramide",
-                    "Tree": "Arborescence",
-                    "Table": "Table"
-                }
-            },
-            "components": {
-                "action-bar": {
-                    "edit": "Modifer",
-                    "clone": "Dupliquer",
-                    "back-to-list": "Retourner à la liste",
-                    "save": "Sauvegarder",
-                    "cancel": "Annuler"
-                },
-                "armor": {
-                    "armor": "Armure",
-                    "soak": "Encaissement",
-                    "defense": "Défense",
-                    "encumbrance": "Encombrement",
-                    "hard-points": "Emplacement",
-                    "rarity": "Rareté",
-                    "price": "Prix",
-                    "carrying": "Porté",
-                    "equipped": "Equipé",
-                    "custom-name": "Nom personnalisé",
-                    "qualities": "Attributs",
-                    "add-quality": "Ajouter un Attribut",
-                    "add-armor": "Ajouter armure"
-                },
-                "armor-attachments": {
-                    "attachments": "Kits",
-                    "cost": "Coût",
-                    "rarity": "Rareté",
-                    "required-hp": "Emplacements nécessaires",
-                    "base-modifier": "Modificateur",
-                    "no-modifier": "Aucun",
-                    "modifications": "Mods",
-                    "add-attachment": "Ajouter un Kit"
-                },
-                "attributes-top": {
-                    "minions": "Sbires"
-                },
-                "characteristic-single": {
-                    "super": "SUPER"
-                },
-                "critical-injury": {
-                    "critical-injury": "Blessures Critiques",
-                    "difficulty": "Difficulté",
-                    "name": "Nom",
-                    "severity": "Gravité",
-                    "description": "Description",
-                    "add-critical-injury": "Ajouter Blessure Critique"
-                },
-                "current-games": {
-                    "current-games": "Parties en cours"
-                },
-                "details": {
-                    "character-details": "Détails du personnage",
-                    "background": "Histoire",
-                    "obligation": "Obligation",
-                    "duty": "Devoir",
-                    "morality": "Moralité",
-                    "motivation": "Motivations",
-                    "desire-panel": "Désir, Peur, Force, Faiblesse"
-                },
-                "details-background": {
-                    "background": "Histoire"
-                },
-                "details-desire": {
-                    "desire": "Désir",
-                    "fear": "Peur",
-                    "strength": "Force",
-                    "flaw": "Faiblesse"
-                },
-                "details-motivation": {
-                    "motivation": "Motivation"
-                },
-                "equipment": {
-                    "equipment-and-gear": "Equipement et Matériel",
-                    "quantity": "Quantité",
-                    "encumbrance": "Encombrement",
-                    "rarity": "Rareté",
-                    "price": "Prix",
-                    "carrying": "Porté",
-                    "custom-name": "Nom personnalisé",
-                    "notes": "Notes",
-                    "qualities": "Attributs",
-                    "add-quality": "Ajouter un Attribut",
-                    "add-equipment": "Ajouter un Equipement"
-                },
-                "heroic-abilities": {
-                    "heroic-ability": "Aptitude Héroïque",
-                    "description": "Description",
-                    "origins": "Origines",
-                    "add-ability": "Ajouter Aptitude héroïque",
-                    "base": "Base",
-                    "improved": "Amélioré",
-                    "supreme": "Suprême"
-                },
-                "heroic-abilities-upgrades": {
-                    "upgrades": "Améliorations",
-                    "ability-point-cost": "Coût Points d'Aptitude ",
-                    "ranks": "Rangs",
-                    "add-upgrade": "Ajouter Amélioration"
-                },
-                "notes": {
-                    "notes": "Notes"
-                },
-                "notes-private": {
-                    "notes-private": "Notes Privées",
-                    "these-are-private": "Ces notes sont uniquement visibles par vous et ne seront visibles par personne d'autre"
-                },
-                "npc-adversary-level": {
-                    "adversary": "Adversité"
-                },
-                "npc-character-info": {
-                    "character-info": "Infos du Personnage",
-                    "talents": "Talents",
-                    "add-talent": "Ajouter un Talent",
-                    "abilities": "Aptitudes",
-                    "add-ability": "Ajouter Aptitude",
-                    "equipment-and-gear": "Equipement et Matériel",
-                    "add-equipment": "Ajouter un Equipement",
-                    "desire": "Désir",
-                    "fear": "Peur",
-                    "strength": "Force",
-                    "flaw": "Faiblesse"
-                },
-                "npc-header": {
-                    "placeholder-name": "Nom",
-                    "placeholder-image-url": "Image URL",
-                    "placeholder-adversary-level": "Rang Adversité",
-                    "placeholder-combat-power-level": "Niveau de puissance Combat",
-                    "placeholder-social-power-level": "Niveau de puissance Social",
-                    "placeholder-general-power-level": "Niveau de puissance Général",
-                    "placeholder-description": "Description"
-                },
-                "player-header": {
-                    "placeholder-name": "Name",
-                    "placeholder-image-url": "Image URL",
-                    "placeholder-archetype": "Archétype",
-                    "placeholder-career": "Carrière",
-                    "placeholder-specialization": "Specialisation",
-                    "placeholder-age": "Age",
-                    "placeholder-weight": "Poids",
-                    "placeholder-height": "Taille",
-                    "placeholder-notable-features": "Signes particuliers",
-                    "label-archetype": "Archétype",
-                    "label-career": "Carrière",
-                    "label-specialization": "Specialisation",
-                    "label-age": "Age",
-                    "label-weight": "Poids",
-                    "label-height": "Taille",
-                    "label-notable-features": "Signes particuliers",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur"
-                },
-                "skills": {
-                    "add-skill": "Ajouter Compétence"
-                },
-                "skills-table": {
-                    "general-skills": "Compétences générales",
-                    "magic-skills": "Compétences magiques",
-                    "combat-skills": "Compétences de combat",
-                    "social-skills": "Compétences sociales",
-                    "knowledge-skills": "Compétences de connaisance",
-                    "other-skills": "Autres Compétences",
-                    "career": "Carrière",
-                    "group-skill": "Compétences de groupe",
-                    "rank": "Rang"
-                },
-                "talents": {
-                    "talents": "Talents",
-                    "add-talent-tree": "Ajouter un nouvel Arbre de Talent",
-                    "tier": "Tier"
-                },
-                "talent-slot": {
-                    "ranks": "Rangs",
-                    "ranked": "Rangs",
-                    "xp": "XP"
-                },
-                "weapons": {
-                    "weapon": "Arme",
-                    "weapons": "Armes",
-                    "name": "Nom",
-                    "skill": "Compétence",
-                    "damage": "Dégâts",
-                    "crit": "Critique",
-                    "range": "Portée",
-                    "encumbrance": "Enc",
-                    "hard-points": "Emp",
-                    "rarity": "Rareté",
-                    "cost": "Coût",
-                    "carrying": "Porté",
-                    "equipped": "Equipé",
-                    "custom-name": "Nom personnalisé",
-                    "qualities": "Attributs",
-                    "add-quality": "Ajouter un Attribut",
-                    "add-weapon": "Ajouter Arme"
-                },
-                "weapons-attachments": {
-                    "attachments": "Kits",
-                    "cost": "Coût",
-                    "rarity": "Rareté",
-                    "required-hp": "Emplacements nécessaires",
-                    "base-modifier": "Modificateurs",
-                    "no-modifier": "Aucun",
-                    "modifications": "Mods",
-                    "add-attachment": "Ajouter un Kit"
-                },
-                "favors": {
-                    "favor": "Faveur",
-                    "favors": "Faveurs",
-                    "size": "Taille de la Faveur",
-                    "faction": "Faction",
-                    "details": "Détails",
-                    "resolved": "Résolu",
-                    "add-favor": "Ajouter Faveur"
-                }
-            },
-            "overlays": {
-                "edit-armor": {
-                    "placeholder-name": "Nom",
-                    "placeholder-soak": "Encaissement",
-                    "placeholder-defense": "Défense",
-                    "placeholder-encumbrance": "Encombrement",
-                    "placeholder-hard-points": "Emplacements",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-armor": "Ajouter armure",
-                    "action-save-armor": "Sauvegarder l'armure"
-                },
-                "edit-armor-attachment": {
-                    "placeholder-name": "Nom",
-                    "placeholder-hard-points-cost": "Nombre d'emplacements",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-attachment": "Ajouter un Kit",
-                    "action-save-attachment": "Sauvegarder le Kit"
-                },
-                "edit-armor-attachment-modification": {
-                    "placeholder-name": "Nom",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-mod": "Ajouter un Mods",
-                    "action-save-mod": "Sauvegarder le Mods"
-                },
-                "edit-critical-injury": {
-                    "placeholder-name": "Nom",
-                    "placeholder-severity": "Gravité (1-999)",
-                    "placeholder-difficulty": "Difficulté (1-5)",
-                    "placeholder-description": "Description",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-crit": "Ajouter un Critique",
-                    "action-save-crit": "Sauvegarder le Critique"
-                },
-                "edit-equipment": {
-                    "placeholder-name": "Nom",
-                    "placeholder-quantity": "Quantité",
-                    "placeholder-encumbrance": "Encombrement",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "placeholder-description": "Description",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-equipment": "Ajouter un Equipement",
-                    "action-save-equipment": "Sauvegarder l'Equipement"
-                },
-                "edit-force-power": {
-                    "Faiblesseceholder-name": "Nom",
-                    "placeholder-activation-type": "Activation",
-                    "placeholder-ranked": "Rangs",
-                    "placeholder-xp-cost": "Coût XP",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-force-power": "Ajouter un pouvoir",
-                    "action-save-force-power": "Sauvegarder le pouvoir"
-                },
-                "edit-force-tree": {
-                    "placeholder-name": "Nom de l'arborescence de pouvoir de la Force",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-force-tree": "Ajouter arborescence",
-                    "action-save-force-tree": "Sauvegarder l'arborescence"
-                },
-                "edit-heroic-ability": {
-                    "placeholder-name": "Nom",
-                    "placeholder-description": "Description",
-                    "placeholder-origins": "Origines",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-ability": "Ajouter Aptitude",
-                    "action-save-ability": "Sauvegarder l'Aptitude"
-                },
-                "edit-heroic-ability-upgrade": {
-                    "placeholder-name": "Nom",
-                    "placeholder-cost": "Coût en point d'Aptitude",
-                    "placeholder-ranks": "Rangs",
-                    "placeholder-description": "Description",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-upgrade": "Ajouter Amélioration",
-                    "action-save-upgrade": "Sauvegarder l'Amélioration"
-                },
-                "edit-modifier": {
-                    "placeholder-name": "Nom",
-                    "placeholder-description": "Description",
-                    "placeholder-type": "Type d'effet",
-                    "placeholder-linked-armor": "Armure liée",
-                    "placeholder-soak-modifier": "Modificateur Encaissement",
-                    "placeholder-defense-modifier": "Modificateur Défense",
-                    "placeholder-encumbrance-modifier": "Modificateur Encombrement",
-                    "placeholder-attribute": "Trait",
-                    "placeholder-characteristic": "Caractéristique",
-                    "placeholder-modifier-amount": "Modificateur Valeur",
-                    "placeholder-linked-skill": "Compétence liée",
-                    "placeholder-career-modifier": "Compétence de carrière",
-                    "placeholder-rank-modifier": "Modificateur Rangs",
-                    "placeholder-linked-weapon": "Arme liée",
-                    "placeholder-damage-modifier": "Modificateur Dégâts",
-                    "placeholder-crit-modifier": "Modificateur Critique",
-                    "placeholder-extra-dice": "Dé supplémentaire",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-modifier": "Ajouter un Modificateur",
-                    "action-save-modifier": "Sauvegarder le Modificateur"
-                },
-                "edit-skill": {
-                    "placeholder-name": "Nom",
-                    "placeholder-characteristic": "Caractéristique liée",
-                    "placeholder-skill-type": "Type de Compétence",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-skill": "Ajouter Compétence",
-                    "action-save-skill": "Sauvegarder la Compétence"
-                },
-                "edit-talent": {
-                    "placeholder-name": "Nom",
-                    "placeholder-activation-type": "Type d'activation",
-                    "placeholder-ranked": "Rangs",
-                    "placeholder-is-force-talent": "Talent de la Force",
-                    "placeholder-is-conflict-talent": "Talent de Conflit",
-                    "placeholder-xp-cost": "Coût XP",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateur",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-talent": "Ajouter un Talent",
-                    "action-save-talent": "Sauvegarde le Talent",
-                    "action-add-ability": "Ajouter Aptitude",
-                    "action-save-ability": "Sauvegarder l'Aptitude"
-                },
-                "edit-talent-tree": {
-                    "placeholder-name": "Nom Arborescence de Talent",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-talent-tree": "Ajouter un arbre de Talent",
-                    "action-save-talent-tree": "Sauvegarder l'arborescence de Talent"
-                },
-                "edit-weapon": {
-                    "placeholder-name": "Nom",
-                    "placeholder-linked-skill": "Compétence liée",
-                    "placeholder-base-damage": "Dégâts",
-                    "placeholder-damage-adds-brawn": "Vigueur + Dégâts",
-                    "placeholder-crit": "Critique",
-                    "placeholder-range": "Portée",
-                    "placeholder-encumbrance": "Encombrement",
-                    "placeholder-hard-points": "Emplacements",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-weapon": "Ajouter l'Arme",
-                    "action-save-weapon": "Sauvegarder l'Arme"
-                },
-                "edit-weapon-attachment": {
-                    "placeholder-name": "Nom",
-                    "placeholder-hard-points-cost": "Nombre d'emplacements",
-                    "placeholder-rarity": "Rareté",
-                    "placeholder-restricted": "Illégal",
-                    "placeholder-cost": "Coût",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-attachment": "Ajouter un Kit",
-                    "action-save-attachment": "Sauvegarder le Kit"
-                },
-                "edit-weapon-attachment-modification": {
-                    "placeholder-name": "Nom",
-                    "placeholder-description": "Description",
-                    "modifiers": "Modificateurs",
-                    "add-modifier": "Ajouter un Modificateur",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-add-mod": "Ajouter un Mods",
-                    "action-save-mod": "Sauvegarder le Mods"
-                },
-                "sheet-customizations": {
-                    "title": "Personnalisation de la feuille",
-                    "presets": "Presets",
-                    "customize": "Personnaliser",
-                    "placeholder-sheet-theme": "Thème de la feuille",
-                    "placeholder-talent-tree-layout": "Mise en page de l'arborescence de Talents",
-                    "placeholder-super-characteristics-enabled": "Caractéristique Super",
-                    "placeholder-heroic-abilities-enabled": "Aptitude Héroique",
-                    "placeholder-aember-enabled": "Aombre",
-                    "placeholder-favors-enabled": "Faveurs",
-                    "warning-talent-tree": "Changer la mise en page de l'arborescence va supprimer tous les Talents associés à ce personnage. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-heroic-abilities": "Désactiver cette fonctionnalité va supprimer toutes les données d'Aptitudes Héroique (Aptitudes et points suivis). Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-aember": "Désactiver cette fonctionnalité va supprimer toutes les données d'Aombre. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "warning-favors": "Désactiver cette fonctionnalité va supprimer toutes les Faveurs. Une fois sauvegardé, aucun retour en arrière possible.",
-                    "action-cancel": "Annuler",
-                    "action-save-customizations": "Sauvegarder",
-                    "action-create-character": "Créer un personnage"
-                },
-                "edit-favor": {
-                    "placeholder-favor-size": "Taille de la Faveur",
-                    "placeholder-faction": "Faction",
-                    "placeholder-details": "Détails",
-                    "action-cancel": "Annuler",
-                    "action-delete": "Supprimer",
-                    "action-save-favor": "Sauvegarder la Faveur",
-                    "action-add-favor": "Ajouter Faveur"
-                }
-            },
-            "skills": {
-                "Æmber": "Aombre",
-                "Æmbercraft": "Artisaombre",
-                "Adventuring": "Aventurier",
-                "Alchemy": "Alchimie;",
-                "Arcana": "Arcanes",
-                "Astrocartography": "Astrocartographie",
-                "Astrogation": "Astrogation",
-                "Athletics": "Athlétisme",
-                "Brawl": "Pugilat",
-                "Charm": "Charme",
-                "Coercion": "Coercition",
-                "Computers": "Informatique",
-                "Comp (Hacking)": "Info (Hacking)",
-                "Comp (SysOps)": "Info (SysOps)",
-                "Cool": "Calme",
-                "Coordination": "Coordination",
-                "Core Worlds": "Mondes du noyau",
-                "Crucible": "Creuset",
-                "Culture": "Culture",
-                "Deception": "Tromperie",
-                "Discipline": "Sang-Froid",
-                "Divine": "Divine",
-                "Driving": "Conduite",
-                "Education": "Education",
-                "Forbidden": "Interdit",
-                "Geography": "Géographie",
-                "Gunnery": "Artillerie",
-                "Knowledge": "Connaissance",
-                "Leadership": "Commandement",
-                "Lightsaber": "Sabre laser",
-                "Lore": "Culture",
-                "Mechanics": "Mécanique",
-                "Medicine": "Médecine",
-                "Melee": "Corps à corps",
-                "Melee-Heavy": "Corps à corps (Armes lourdes)",
-                "Melee-Light": "Corps à corps (Armes légères)",
-                "Negotiation": "Négociation",
-                "Operating": "Navigation",
-                "Outer Rim": "Bordure extérieure",
-                "Perception": "Perception",
-                "Piloting": "Pilotage",
-                "Piloting Planetary": "Pilotage (Planétaire)",
-                "Piloting Space": "Pilotage (Espace)",
-                "Primal": "Primitive",
-                "Ranged": "Distance",
-                "Ranged-Heavy": "Distance - Armes lourdes",
-                "Ranged-Light": "Distance - Armes légères",
-                "Resilience": "Résistance",
-                "Riding": "Equitation",
-                "Runes": "Runes",
-                "Science": "Science",
-                "Skulduggery": "Magouilles",
-                "Society": "Société",
-                "Stealth": "Discrétion",
-                "Streetwise": "Système D",
-                "Survival": "Survie",
-                "The Net": "Le Net",
-                "Underworld": "Pègre",
-                "Verse": "Vers",
-                "Vigilance": "Vigilance",
-                "Warfare": "Stratégie",
-                "Xenology": "Xénologie"
-            }
-        },
-        "overlays": {
-            "import-overlay": {
-                "title-oggdude": "Importateur OggDude",
-                "title-oggdude-custom": "Importateur de données personnalisées OggDude ",
-                "title-emporium": "Importateur Genesys Emporium",
-                "monthly-imports-label": "Imports mensuels:",
-                "non-patron-custom-data-warning": "Attention: L'importateur OggDude ne supporte présentement pas les données personnalisées pour les usagers qui ne sont pas des membres patron.",
-                "create-import-file-instructions": "Pour créer le fichier à importer, rendez-vous à l'éditeur de données et appuyez sur Sauvegarde, puis sélectionner seulement les Données Personnalisées puis appuyez sur Sauvegarde.",
-                "import-data-button-text": "Importer données",
-                "import-character-button-text": "Importer personnage",
-                "custom-oggdude-data-not-imported": "Attention: Vous n'avez pas de données personnalisées importées. Les données personnaliséees dans la feuille de personnage vont être ignorées.",
-                "custom-oggdude-data-already-imported": "Bonne nouvelle! Vous avez importé des données personnalisées. Ces données se retrouveront dans votre feuille de personnage.",
-                "custom-oggdude-data-confirm-delete": "Êtes-vous certain de vouloir effacer vos données personnalisées OggDude?",
-                "oggdude-delete-cancel-button-text": "Annuler",
-                "oggdude-delete-confirm-button-text": "Effacer",
-                "overwrite-ignored-label": "Lorsque vous écrasez un personnage, toutes les informations seront remplacées à l'exception des suivantes:",
-                "oggdude-import-wont-overwrite": [
-                    "Nom",
-                    "Blessures actuelles",
-                    "Stress actuel",
-                    "Blessures Critiques",
-                    "Espèce",
-                    "Carrière",
-                    "Âge",
-                    "Motivation",
-                    "Poids",
-                    "Grandeur",
-                    "Détails",
-                    "Histoire"
-                ],
-                "import-limit-greeting": "Oh non!",
-                "import-limit-description": "Il semble que vous avez atteint votre limite d'importation pour ce mois.",
-                "import-limit-patreon-tier-error": "Afin d'importer davantage de personnages ce mois-ci, envisagez d'augmenter votre niveau de <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a >.",
-                "import-limit-no-patreon-error": "Afin d'importer davanage de personanges ce mois-ci, envisager de devenir un <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a>.",
-                "import-limit-linking-instructions": "Si vous êtes déja un membre Patron, assurez-vous d'associer votre compte dans vos <a href=\"/user/profile\">paramètres de compte.</a>",
-                "patreon-only-error-warning": "Cette fonctionnalité est présentement exclusive à nos membres Patron. Si vous voulez joindre notre Patreon pour utiliser cette fonctionnalité, rendez-vous <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >sur notre page Patreon.com.</a>",
-                "patreon-only-error-call-to-action": "Si vous êtes déja un membre Patron, assurez-vous d'associer votre compte dans vos <a href=\"/user/profile\">paramètres de compte.</a>",
-                "dialog-cancel-button": "Annuler",
-                "drop-file-prompt": "Déposez votre {{ fileType }} fichier ici ou cliquer sur télécharger",
-                "overwrite-character": "Ecraser le personnage",
-                "title-swrpg": "Importer PNJ Star Wars RPG",
-                "title-genesys": "Importer PNJ Genesys",
-                "import-npc-button-text": "Importer PNJ",
-                "title-stoogoff": "Importer PNJ SWRPG de [StooGoff.com](http://swa.stoogoff.com/)",
-                "title-dylan": "Importer PNJ Genesys de [DylanPetrumsa.com](http://genesysadversaries.dylanpetrusma.com)"
-            }
+        "nds": {
+          "activation-type": {
+            "[nds character activation type] passive": "Passif",
+            "[nds character activation type] incidental": "Broutille",
+            "[nds character activation type] maneuver": "Manoeuvre",
+            "[nds character activation type] action": "Action"
+          },
+          "activation-type-abbreviation": {
+            "[nds character activation type] passive": "P",
+            "[nds character activation type] incidental": "B",
+            "[nds character activation type] maneuver": "M",
+            "[nds character activation type] action": "A"
+          },
+          "attribute": {
+            "[nds character attribute] soak": "Encaissement",
+            "[nds character attribute] wounds current": "Blessures actuel",
+            "[nds character attribute] wounds threshold": "Blessures seuil",
+            "[nds character attribute] strain current": "Stress actuel",
+            "[nds character attribute] strain threshold": "Stress seuil",
+            "[nds character attribute] defense ranged": "Défense distance",
+            "[nds character attribute] defense melee": "Défense CàC",
+            "[nds character attribute] available xp": "XP disponibles",
+            "[nds character attribute] total xp": "Total en XP",
+            "[nds character attribute] money": "Argent",
+            "[nds character attribute] encumbrance current": "Encombrement actuel",
+            "[nds character attribute] encumbrance threshold": "Encombrement seuil",
+            "[nds character attribute] force rating current": "Valeur de Force actuel",
+            "[nds character attribute] force rating committed": "Valeur de Force engagé",
+            "[nds character attribute] available heroic ability points": "Points d'Aptitude Héroïque disponible",
+            "[nds character attribute] total heroic ability points": "Points d'Aptitude Héroïque total",
+            "[nds character attribute] character count": "Character Count",
+            "[nds character attribute] current minion count": "Minion Count",
+            "[nds character attribute] adversary level": "Niveau Adversité",
+            "[nds character attribute] combat power level": "Niveau Puissance de combat",
+            "[nds character attribute] social power level": "Niveau de Puissance Sociale",
+            "[nds character attribute] general power level": "Niveau de Puissance Générale",
+            "[nds character attribute] available aember": "Æmber disponible",
+            "[nds character attribute] total aember": "Æmber total"
+          },
+          "characteristic": {
+            "[nds character characteristic] none": "Aucun",
+            "[nds character characteristic] brawn": "Vigueur",
+            "[nds character characteristic] agility": "Agilité",
+            "[nds character characteristic] intellect": "Intelligence",
+            "[nds character characteristic] cunning": "Ruse",
+            "[nds character characteristic] willpower": "Volonté",
+            "[nds character characteristic] presence": "Présence"
+          },
+          "characteristic-abreviated": {
+            "[nds character characteristic] none": "-",
+            "[nds character characteristic] brawn": "VI",
+            "[nds character characteristic] agility": "AG",
+            "[nds character characteristic] intellect": "INT",
+            "[nds character characteristic] cunning": "RUS",
+            "[nds character characteristic] willpower": "VOL",
+            "[nds character characteristic] presence": "PR"
+          },
+          "character-type": {
+            "[nds character type] player": "Personnage Joueur",
+            "[nds character type] nemesis": "Nemesis",
+            "[nds character type] rival": "Rival",
+            "[nds character type] minion": "Sbire"
+          },
+          "detail": {
+            "[nds character detail] archetype": "Archétype",
+            "[nds character detail] species": "Espèces",
+            "[nds character detail] career": "Carrière",
+            "[nds character detail] specialization": "Spécialisation",
+            "[nds character detail] age": "Âge",
+            "[nds character detail] weight": "Poids",
+            "[nds character detail] height": "Taille",
+            "[nds character detail] notable features": "Signes particuliers",
+            "[nds character detail] background": "Histoire",
+            "[nds character detail] motivation": "Motivation",
+            "[nds character detail] desire": "Désir",
+            "[nds character detail] fear": "Peur",
+            "[nds character detail] strength": "Force",
+            "[nds character detail] flaw": "Faiblesse"
+          },
+          "favor-size": {
+            "[nds character favor size] small": "Petit",
+            "[nds character favor size] regular": "Moyen",
+            "[nds character favor size] big": "Grand"
+          },
+          "modifier-type": {
+            "[nds character modifier type] armor": "Armure",
+            "[nds character modifier type] attribute": "Trait",
+            "[nds character modifier type] characteristic": "Caractéristique",
+            "[nds character modifier type] narrative": "Narratif",
+            "[nds character modifier type] skill": "Compétence",
+            "[nds character modifier type] weapon": "Arme"
+          },
+          "skill-type": {
+            "[nds character skill type] general": "Compétences Générales",
+            "[nds character skill type] magic": "Compétences de Magie",
+            "[nds character skill type] combat": "Compétence de Combat",
+            "[nds character skill type] social": "Compétences de Social",
+            "[nds character skill type] knowledge": "Compétences de Connaissance",
+            "[nds character skill type] other": "Autres Compétences"
+          },
+          "talent-display-type": {
+            "[nds character talent display type] pyramid": "Pyramide",
+            "[nds character talent display type] tree": "Arbre",
+            "[nds character talent display type] list group": "Liste"
+          },
+          "range-band": {
+            "[nds character range band] engaged": "Au Contact",
+            "[nds character range band] short": "Courte",
+            "[nds character range band] medium": "Moyenne",
+            "[nds character range band] long": "Longue",
+            "[nds character range band] extreme": "Extrême"
+          }
         }
+      },
+      "dice": {
+        "dice-short-hand-style": {
+          "[DiceShortHandStyle] standard": "Nom",
+          "[DiceShortHandStyle] color based": "Couleur"
+        },
+        "dice-theme": {
+          "[dice theme] generic": "Générique",
+          "[dice theme] genesys": "Genesys",
+          "[dice theme] star wars": "Star Wars"
+        },
+        "dice-meta-type": {
+          "character": "Personnage",
+          "force": "Force",
+          "info": "Info",
+          "skill": "Skill",
+          "weapon": "Weapon"
+        }
+      },
+      "discord": {
+        "discord-dice-size": {
+          "[game dice size] regular": "Regular",
+          "[game dice size] large": "Large"
+        }
+      },
+      "game": {
+        "sort": {
+          "name": "Name",
+          "new": "Newest",
+          "old": "Oldest",
+          "modified": "Recently Modified"
+        }
+      },
+      "imports": {
+        "import-source": {
+          "[import source] oggdude": "Oggdude Character",
+          "[import source] oggdude custom data": "Oggdude Custom Data",
+          "[import source] genesys emporium": "Genesys Emporium",
+          "[import source] stoogoff npc": "NPC (StooGoff.com)",
+          "[import source] dylan petrumsa npc": "NPC (DylanPetrumsa.com)"
+        }
+      },
+      "patreon": {
+        "patreon-tier": {
+          "[patreon tier] none": "Aucun",
+          "[patreon tier] the fan": "The Fan",
+          "[patreon tier] the deuce": "The Deuce",
+          "[patreon tier] high fiver": "High Fiver",
+          "[patreon tier] scout": "Scout",
+          "[patreon tier] explorer": "Explorer",
+          "[patreon tier] adventurer": "Adventurer",
+          "[patreon tier] champion": "Champion"
+        }
+      },
+      "table-token": {
+        "game-token-type": {
+          "[game token type] Explorer": "Explorer",
+          "[game token type] Adventurer": "Adventurer",
+          "[game token type] Champion": "Champion"
+        }
+      },
+      "user": {
+        "language-option": {
+          "en": "Anglais",
+          "es": "Espagnol",
+          "fr": "Français"
+        },
+        "theme-option": {
+          "[theme option] light": "Clair",
+          "[theme option] dark": "Sombre"
+        }
+      },
+      "vehicle": {
+        "nds": {
+          "attribute": {
+            "[nds vehicle attribute] defense": "Défense",
+            "[nds vehicle attribute] defense fore": "Défense Avant",
+            "[nds vehicle attribute] defense port": "Défense Babord",
+            "[nds vehicle attribute] defense starboard": "Défense Tribord",
+            "[nds vehicle attribute] defense aft": "Défense Arrière",
+            "[nds vehicle attribute] armor": "Blindage",
+            "[nds vehicle attribute] hull trauma": "Dégâts de Coque",
+            "[nds vehicle attribute] hull trauma current": "Dégâts de Coque actuels",
+            "[nds vehicle attribute] hull trauma threshold": "Seuil Dégâts de Coque",
+            "[nds vehicle attribute] system strain": "Stress Mécanique",
+            "[nds vehicle attribute] system strain current": "Stress Mécanique actuel",
+            "[nds vehicle attribute] system strain threshold": "Seuil Stress Mécanique",
+            "[nds vehicle attribute] hard points": "Emplacements",
+            "[nds vehicle attribute] hard points capacity": "Capacité d'Emplacements",
+            "[nds vehicle attribute] hard points used": "Emplacements utilisés",
+            "[nds vehicle attribute] encumbrance": "Encombrement",
+            "[nds vehicle attribute] price": "Prix",
+            "[nds vehicle attribute] rarity": "Rareté"
+          },
+          "characteristic": {
+            "[nds vehicle characteristic] silhouette": "Gabarit",
+            "[nds vehicle characteristic] max speed": "Vitesse maximum",
+            "[nds vehicle characteristic] current speed": "Vitesse actuelle",
+            "[nds vehicle characteristic] handling": "Maniabilité"
+          },
+          "defense-zone": {
+            "[nds vehicle defense zone] fore": "Avant",
+            "[nds vehicle defense zone] port": "Babord",
+            "[nds vehicle defense zone] starboard": "Tribord",
+            "[nds vehicle defense zone] aft": "Arrière"
+          },
+          "fire-arc": {
+            "[nds fire arc] forward": "Avant",
+            "[nds fire arc] aft": "Arrière",
+            "[nds fire arc] port": "Babord",
+            "[nds fire arc] starboard": "Tribord",
+            "[nds fire arc] dorsal": "Dorsal",
+            "[nds fire arc] ventral": "Ventral",
+            "[nds fire arc] all": "Tous"
+          },
+          "modifier-type": {
+            "[nds vehicle modifier type] action": "Action",
+            "[nds vehicle modifier type] attribute": "Trait",
+            "[nds vehicle modifier type] characteristic": "Caractéristique",
+            "[nds vehicle modifier type] narrative": "Narratif",
+            "[nds vehicle modifier type] weapon": "Arme"
+          },
+          "range-band": {
+            "[nds vehicle range band] close": "Au contact",
+            "[nds vehicle range band] short": "Courte",
+            "[nds vehicle range band] medium": "Moyenne",
+            "[nds vehicle range band] long": "Longue",
+            "[nds vehicle range band] extreme": "Extrême",
+            "[nds vehicle range band] strategic": "Stratégique"
+          }
+        }
+      }
+    },
+    "words": {
+      "Activation": "Activation",
+      "Active": "Active",
+      "Adversaries": "Adversaries",
+      "Aember": "Æmber",
+      "Admin": "Admin",
+      "Adversary": "Adversary",
+      "Aft": "Arrière",
+      "Agendas": "Agendas",
+      "Amount": "Amount",
+      "Armor": "Armor",
+      "Attachment": "Attachment",
+      "Attachments": "Attachments",
+      "Attribute": "Attribute",
+      "Available": "Available",
+      "Back": "Back",
+      "Background": "Background",
+      "Ban": "Ban",
+      "Base": "Base",
+      "Cancel": "Cancel",
+      "Capacity": "Capacity",
+      "Career": "Career",
+      "Carrying": "Carrying",
+      "Channel": "Channel",
+      "Channels": "Channels",
+      "Character": "Character",
+      "Characters": "Characters",
+      "Characteristic": "Characteristic",
+      "Clone": "Clone",
+      "Combine": "Combine",
+      "Comment": "Comment",
+      "Committed": "Committed",
+      "Confirm": "Confirm",
+      "Cost": "Cost",
+      "Create": "Create",
+      "Crit": "Crit",
+      "Crits": "Critiques",
+      "Current": "Actuel",
+      "Damage": "Dégâts",
+      "Defense": "Défense",
+      "Delete": "Supprimer",
+      "Description": "Description ",
+      "Desire": "Désir",
+      "Details": "Détails",
+      "Dice": "Dés",
+      "Difficulty": "Difficulté",
+      "Discard": "Annuler les modifications",
+      "Discord": "Discord",
+      "Duty": "Devoir",
+      "Edit": "Modifier",
+      "Email": "E-mail",
+      "Enable": "Activer",
+      "Enabled": "Activé",
+      "Encumbrance": "Encombrement",
+      "Equipment": "Équipement",
+      "Equipped": "Équipé",
+      "Error": "Erreur",
+      "Experience": "Expérience",
+      "Faction": "Faction",
+      "Favor": "Faveur",
+      "Favors": "Faveurs",
+      "Fear": "Peur",
+      "Flaw": "Faiblesse",
+      "Folder": "Dossier",
+      "Fore": "Avant",
+      "Games": "Parties",
+      "GM": "MJ",
+      "Handling": "Maniabilité",
+      "History": "Historique",
+      "Hull": "Coque",
+      "Image": "Image",
+      "Import": "Importer",
+      "Improved": "Amélioré",
+      "Initiative": "Initiative",
+      "Invalid": "Invalide",
+      "Kick": "Expulser",
+      "Language": "Langue",
+      "Leave": "Quitter",
+      "Library": "Bibliothèque",
+      "Link": "Lien",
+      "Login": "Connexion",
+      "Logout": "Déconnexion",
+      "Melee": "Corps-à-corps",
+      "Members": "Membres",
+      "Messages": "Messages",
+      "Modification": "Modification",
+      "Modifications": "Modifications",
+      "Modifier": "Modificateur",
+      "Modifiers": "Modificateurs",
+      "Morality": "Moralité",
+      "Motivation": "Motivation",
+      "Name": "Nom",
+      "New": "Nouveau",
+      "None": "Aucun",
+      "Notes": "Notes",
+      "NPC": "PNJ",
+      "NPCs": "PNJ",
+      "Obligation": "Obligation",
+      "Origin": "Origine",
+      "Origins": "Origines",
+      "Original": "Original",
+      "Patreon": "Patreon",
+      "PC": "PJ",
+      "PCs": "PJ",
+      "Port": "Babord",
+      "Price": "Prix",
+      "Profile": "Profil",
+      "Qualities": "Attributs",
+      "Quality": "Attribut",
+      "Quantity": "Quantity",
+      "Range": "Portée",
+      "Ranged": "Ranged",
+      "Rank": "Rank",
+      "Ranked": "Ranked",
+      "Ranks": "Ranks",
+      "Rarity": "Rareté",
+      "Refresh": "Refresh",
+      "Remove": "Retirer",
+      "Rename": "Renommer",
+      "Resolved": "Resolved",
+      "Restricted": "Restricted",
+      "Save": "Sauvegarder",
+      "Saved": "Sauvegardé",
+      "Saving": "Sauvegarde en cours",
+      "Send": "Send",
+      "Settings": "Settings",
+      "Severity": "Gravité",
+      "Silhouette": "Gabarit",
+      "Size": "Size",
+      "Skill": "Compétence",
+      "Soak": "Soak",
+      "Speed": "Speed",
+      "Starboard": "Tribord",
+      "Strain": "Strain",
+      "Strength": "Strength",
+      "Super": "Super",
+      "Supreme": "Supreme",
+      "Talent": "Talent",
+      "Talents": "Talents",
+      "Theme": "Thème",
+      "Threshold": "Seuil",
+      "Tier": "Tier",
+      "Total": "Total",
+      "Triggered": "Triggered",
+      "Type": "Type",
+      "Unlink": "Délier",
+      "Update": "Mettre à jour",
+      "Upgrade": "Upgrade",
+      "Upgrades": "Upgrades",
+      "Used": "Utilisé pour",
+      "User": "Utilisateur",
+      "Username": "Identifiant",
+      "Vehicle": "Véhicule",
+      "Vehicles": "Véhicules",
+      "Weapon": "Arme",
+      "Weapons": "Armes",
+      "Wounds": "Wounds",
+      "XP": "XP"
+    },
+    "phrases": {
+      "Ability Points": "Ability Points",
+      "Advanced Options": "Advanced Options",
+      "Ban Character": "Ban Character",
+      "Base Damage": "Base Damage",
+      "Base Modifier": "Modificateur de base",
+      "Character ID": "Identifiant personnage",
+      "Character Type": "Character Type",
+      "Click To Edit": "Click To Edit",
+      "Coming Soon": "A venir",
+      "Copy Link": "Copier lien",
+      "Create Game": "Create Game",
+      "Critical Injury": "Critical Injury",
+      "Custom Name": "Custom Name",
+      "Dice Size": "Dice Size",
+      "Dice Theme": "Dice Theme",
+      "Discard Changes": "Discard Changes",
+      "Discord ID": "Discord ID",
+      "Discord Settings": "Discord Settings",
+      "Equipment and Gear": "Equipment and Gear",
+      "Extra Dice": "Extra Dice",
+      "Extra Mechanics": "Extra Mechanics",
+      "Folder Name": "Folder Name",
+      "Force Dice": "Force Dice",
+      "Force Options": "Force Options",
+      "Force Power": "Force Power",
+      "Force Powers": "Force Powers",
+      "Force Power Name": "Force Power Name",
+      "Force Rating": "Valeur de Force",
+      "Game Master": "Maître de Jeu",
+      "Game Masters": "Maîtres de Jeu",
+      "Game Name": "Nom de la partie",
+      "Game Settings": "Paramètres de la partie",
+      "Game Table": "Table de Jeu",
+      "Game Tokens": "Jetons de Partie",
+      "Game Theme": "Theme de la Partie",
+      "Go Back": "Retour",
+      "Group Skill": "Compétence de Groupe",
+      "Hard Points": "Emplacements",
+      "Heroic Ability": "Capacité Héroïque",
+      "Heroic Abilities": "Capacités Héroïques",
+      "Hull Trauma": "Dégâts de Coque",
+      "Image URL": "Lien image",
+      "Kick Character": "Expulser le personnage",
+      "Link Copied": "Lien Copié",
+      "Manage Server": "Gérer le serveur",
+      "Max Speed": "Vitesse Max",
+      "Minion Count": "Minion Count",
+      "Modifier Type": "Type Modificateur",
+      "Party Vehicle": "Véhicule de la Partie",
+      "Pass Dice": "Transfert Dés",
+      "Personal Vehicle": "Véhicule Personnel",
+      "Private Notes": "Notes personnelles",
+      "Required HP": "Emplacements nécessaires",
+      "Roll History": "Roll History",
+      "RPG Sessions": "RPG Sessions",
+      "Rules System": "Système de Jeu",
+      "Sheet Customization Options": "Personnalisation de la Fiche",
+      "Signature Talent": "Capacité emblématique",
+      "Sort By": "Trier par",
+      "System Strain": "Stress Mécanique",
+      "Talent Name": "Nom du Talent",
+      "Talent Trees": "Arbre de Talents",
+      "XP Cost": "Coût en XP",
+      "add-button-text": "Ajouter {{ type }}",
+      "edit-button-text": "Modifier {{ type }}",
+      "delete-button-text": "Supprimer {{ type }}",
+      "cancel-confirm-message": "Êtes-vous sûr de vouloir annuler ? Toutes les modifications que vous avez faites seront perdues.",
+      "confirm-action-message": "Voulez-vous vraiment continuer ?",
+      "item-in-use": "Supprimer tous les Modificateurs affectant cet élément avant de le supprimer"
+    },
+    "alt-text": {
+      "character-image": "Image du personnage",
+      "party-vehicle-image": "Image du Véhicule de la Partie",
+      "personal-vehicle-image": "Image du Véhicul personnel",
+      "rpgsessions-mark": "Logo RPG Sessions"
+    },
+    "abbreviations": {
+      "Aft": "Arr",
+      "Defense": "Def",
+      "Encumbrance": "Enc",
+      "Fore": "Av",
+      "Melee": "M",
+      "Port": "P",
+      "Ranged": "R",
+      "Round": "R",
+      "Starboard": "S",
+      "Strain": "S",
+      "System Strain Long": "Sys Strain",
+      "System Strain Short": "SS",
+      "Triumph": "T",
+      "Wounds": "W"
+    },
+    "character": {
+      "phrases": {
+        "Activation Type": "Activation Type",
+        "Armor Attachment": "Armor Attachment",
+        "Character Details": "Character Details",
+        "Damage Adds Brawn": "Damage Adds Brawn",
+        "Emotional Strength": "Emotional Strength",
+        "Emotional Weakness": "Emotional Weakness",
+        "Group Contribution Ranks": "Group Contribution Ranks",
+        "Morality Score": "Morality Score",
+        "Session Conflict": "Sessions Conflict",
+        "Skill Type": "Skill Type",
+        "Weapon Attachment": "Weapon Attachment",
+        "carrying-description": "The item is on you",
+        "equipped-description": "The item is in your hand or worn",
+        "restricted-designation": "R",
+        "signature-talent-shortened": "Sig. Talents"
+      },
+      "nds": {
+        "configuration": {
+          "Character Sheet Customization Options": "Character Sheet Customization Options",
+          "Automations": "Automations (Auto-calculate Soak, Defense, and Encumbrance)",
+          "Super Characteristics": "Super Characteristics (Genesys CRB pg 251)"
+        }
+      }
+    },
+    "content-library": {
+      "confirm-folder-deletion": {
+        "title": "Delete Folder",
+        "message": "Are you sure you want to delete this folder? This folder and any items inside will be removed."
+      },
+      "create-content-overlay": {
+        "create-content-prompt": "Choose what you would like to create",
+        "enter-a-folder-name": "Name your folder"
+      },
+      "explorer": {
+        "folder-name": "Folder Name",
+        "header-title": "My Library",
+        "empty-folder": "This folder is empty, why not add something new?"
+      },
+      "errors": {
+        "sub-folders-patreon-requirement": "Nested folders are only available to Adventurer Patreon members"
+      }
     },
     "dice": {
-        "overlays": {
-            "help.comment": "This help section text shows up in the help dialog on the dice roller. It's broken into two sections for each question: category title and category description. The title is the question and the description is the answer",
-            "help": {
-                "categoryDescriptions": [
-                    {
-                        "category-title": "Comment ajouter des dés:",
-                        "category-description": "Cliquer sur les dés que vous voulez ajouter à la réserve à partir de la collection de dés."
-                    },
-                    {
-                        "category-title": "Comment retirer des dés:",
-                        "category-description": "Cliquer sur les dés que vous voulez retirer dans la réserve."
-                    },
-                    {
-                        "category-title": "Comment utiliser une réserve de dés partagée:",
-                        "category-description": "Sélectionner les dés que vous voulez ajouter à la réserve partagée, ajoutez une description et cliquez sur \"Créer une réserve partagée.\" Dans la nouvelle fenêtre, cliquez sur \"Copier lien\" et envoyez le lien à la personne à qui vous voulez partager la réserve."
-                    },
-                    {
-                        "category-title": "Comment lancer les dés à partir d'une réserve partagée:",
-                        "category-description": "Cliquer sur le lien de la réserve partagée. Ajoutez vos dés et cliquez sur \"Lancer les dés.\""
-                    }
-                ],
-                "close-dialog-button-text": "D'accord, compris!"
-            }
-        },
-        "pages": {
-            "chain": {
-                "page-title": "Réserve partagée",
-                "add-button-text": "Ajouter",
-                "roll-dice-button-text": "Lancer les dés",
-                "update-roll-chain-button-text": "Mettre à jour la réserve partagée",
-                "dice-chain-updated-toaster-message": "Réserve partagée à jour!"
-            },
-            "history": {
-                "page-title": "Historique des jets",
-                "page-title-for-user": "{{ name }} Historique des jets"
-            },
-            "roller": {
-                "dice-roller-title": "Lanceur de dés",
-                "test-tab-label": "Test",
-                "live-tab-label": "En direct",
-                "dice-description-placeholder": "Description",
-                "roll-dice-button-text": "Lancer les dés",
-                "create-roll-chain-button-text": "Créer une réserve partagée",
-                "full-history-button-label": "Voir l'historique complet",
-                "dice-chain-created": "Réserve partagée créée!"
-            },
-            "result": {
-                "page-title": "{{ name }} Résultats",
-                "full-history-button-text": "Voir l'historique complet"
-            }
-        }
+      "phrases": {
+        "Force Dice": "Force Dice",
+        "Genesys Dice": "Genesys Dice",
+        "Pass Dice": "Pass Dice",
+        "Passed Dice": "Passed Dice",
+        "Roll Dice": "Roll Dice",
+        "Star Wars Dice": "Star Wars Dice",
+        "full-history-button-label": "See Full History",
+        "new-roll": "New Roll"
+      },
+      "help": {
+        "categoryDescriptions": [
+          {
+            "category-title": "How to add dice:",
+            "category-description": "Click on the dice you would like to add to the tray from a dice collection."
+          },
+          {
+            "category-title": "How to remove dice:",
+            "category-description": "Click on the dice in the tray you would like to remove."
+          }
+        ],
+        "close-dialog-button-text": "OK, compris !"
+      },
+      "roller": {
+        "page-title": "Lanceur de Dés",
+        "test-tab-label": "TEST",
+        "live-tab-label": "EN DIRECT",
+        "dice-description-placeholder": "Description ",
+        "roll-dice-button-text": "Lancer Dés"
+      },
+      "result": {
+        "page-title": "Résultat du lancer"
+      },
+      "history": {
+        "page-title": "Historique de {{ username }}"
+      }
+    },
+    "discord": {
+      "phrases": {
+        "Dice Channel": "Salon Dés",
+        "Initiative Channel": "Salon Initiative",
+        "Story Points Channel": "Salon Points Narratifs",
+        "Destiny Points Channel": "Salon Points de Destin",
+        "Refresh Channels": "Actualiser la liste des salons"
+      },
+      "refresh-channels-overlay": {
+        "title": "Actualiser la liste des salons Discord",
+        "refresh-warning": "Please be aware that you can only refresh the channel list for a server once every 10 minutes. It is best to ensure you have all channels already created before refreshing your channel list here.",
+        "last-refresh-label": "Dernier salon actualisé",
+        "refresh-not-available": "Refresh is not currently available. A refresh can only be triggered once every 10 minutes.",
+        "checking-availability": "Checking Refresh Availability...",
+        "refreshing-list": "Actualisation de la liste des salons...",
+        "no-previous-refresh": "Jamais"
+      }
     },
     "game": {
-        "components": {
-            "game-list-card": {
-                "settings-button-text": "Paramètres",
-                "game-table-view-button-text": "Table de Jeu",
-                "leave-game-button-text": "Quitter"
-            },
-            "table-initiative": {
-                "initiative-component-title": "Initiative",
-                "initiative-round-abbreviation": "R{{ round }}",
-                "previous-slot-button-text": "Créneau précédent",
-                "next-slot-button-text": "Créneau suivant",
-                "convert-button-text.comment": "The below text is shown as button text that allows users to convert initiative slots between NPC and PC slots",
-                "convert-button-text": "Convertir en {{ oppositeType }}",
-                "remove-slot-button-text.comment": "The below text is shown as a button users can click on to remove a slot from initiative",
-                "remove-slot-button-text": "Retirer le créneau",
-                "reset-initiative-button-text.comment": "The below text is used on the button that lets a user RESET initiative - that is, keep all of the slots the same, the round just goes back to 1",
-                "reset-initiative-button-text": "Recommencer l'initiative",
-                "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
-                "clear-initiative-button-text": "Supprimer l'initiative"
-            },
-            "table-characters-list": {
-                "characters-tab-text": "Personnages",
-                "vehicles-tab-text": "Véhicules",
-                "NPCs-tab-text": "PNJs",
-                "coming-soon-text": "A venir",
-                "no-selected-character-warning": "Aucune personnage sélectionné !",
-                "select-character-button-text": "Sélectionner un personnage",
-                "character-image-alt-text": "Image personnage",
-                "wound-abbreviation-text": "B",
-                "strain-abbreviation-text": "S",
-                "character-placeholder-text": "Personnage"
-            },
-            "table-character-hud": {
-                "no-character-selected-warning": "Aucun personnage sélectionner",
-                "wounds-label": "Blessures",
-                "strain-label": "Stress",
-                "soak-label": "Encaissement",
-                "defense-label": "Défense",
-                "melee-abbreviation": "CaC",
-                "ranged-abbreviation": "D"
-            },
-            "table-dice-roller": {
-                "character-skill-placeholder": "Compétences du personnage",
-                "description-placeholder": "Description",
-                "roll-dice-button-text": "Lancer les dés",
-                "roll-initiative-pc": "Lancer initiative (PJ)",
-                "roll-initiative-npc": "Lancer initiative (PNJ)",
-                "roll-crit-this-pc-button-text": "Jet de Blessure Critique (PJ)",
-                "roll-crit-text": "Lancer Critique",
-                "plus-10-to-crit-button-text": "+10",
-                "minus-10-to-crit-button-text": "-10",
-                "no-dice-channel-selected-error": "Aucun canal sélectionné pour les dés - Les lancer ne seront pas transmis à Discord. Choisissez un canal dans les paramètres de la partie"
-            },
-            "table-destiny": {
-                "no-points.comment": "The below text is shown when there are no destiny/story points on the current game table",
-                "no-points": "Aucun point disponible"
-            },
-            "table-messages": {
-                "no-messages": "Aucun historique !",
-                "no-notes": "Aucun message !",
-                "updated": "Mis à jour !",
-                "updated-count-times": "Mis à jour {{ count }} fois !",
-                "history-tab-text": "Historique",
-                "notes-tab-text": "Messages",
-                "comment-placeholder": "Ecrivez un message...",
-                "no-patron-warning": "Vous devez être Patron au tier \"The Duece\" ou plus pour importer des images",
-                "send-button-text": "Envoyer",
-                "file-limit-error": "Le fichier importé doit faire moins de 10 Mo.",
-                "file-type-error": "Le fichier importé doit être une image."
-            }
-        },
-        "overlays": {
-            "new-game-prompt": {
-                "prompt-title": "Choisissez une plateforme pour votre nouvelle partie",
-                "create-discord-game-title": "Ajouter partie Discord",
-                "create-sessions-game-title": "Nommez votre partie et sélectionnez le type de jeu",
-                "create-discord-game-link-instruction-text.comment": "The below link instructions are shown when you try to create a discord game but do not have discord linked to your RPG Sessions account. Their intent is to tell you how to link your Discord account to RPG Sessions.",
-                "create-discord-game-link-instruction-text-part-1": "Avant de créer une partie Discord, vous devez associer votre compte RPG Sessions avec Discord.",
-                "create-discord-game-link-instruction-text-part-2": "Cela ne prendra que quelques secondes à partir de votre profil.",
-                "user-profile-button-text": "Profil utilisateur",
-                "create-discord-game-instruction-text.comment": "The below instruction text is shown when you go to create a Discord game and your account is successfully linked to Discord already",
-                "create-discord-game-instruction-text": "Invitez le bot sur votre serveur et une partie sera automatiquement créée ici ! (Vous pourriez avoir besoin de rafraîchier la page pour voir votre nouvelle partie)",
-                "invite-bot-button-text.comment": "The following button is how users invite the discord bot to their server",
-                "invite-bot-button-text": "Inviter le bot",
-                "game-name-placeholder-text": "Nom de la Partie",
-                "game-type-placeholder-text": "Type de la Partie",
-                "create-game-button-text": "Créer la Partie"
-            },
-            "upload-image-overlay": {
-                "add-note-label": "Note (facultatif)",
-                "upload-button-text": "Importer",
-                "cancel-button-text": "Annuler"
-            },
-            "discord-channel-refresh": {
-                "overlay-title": "Liste des canaux Discord à jour",
-                "last-refresh-label": "Dernier canal à jour",
-                "no-previous-refresh": "Jamais",
-                "refresh-warning": "Attention : Vous ne pouvez actualiser la liste des canaux qu'une fois toutes les 10 minutes par serveur. Vérifiez bien que vous avez déjà créé tous les canaux dont vous aurez besoin avant d'actualiser la liste.",
-                "refresh-not-available": "L'actualisation n'est actuellement pas disponible. Vous ne pouvez actualiser qu'une fois toutes les 10 minutes.",
-                "checking-availability": "Vérification Disponibilité Actualisation...",
-                "refreshing-list": "Actualisation de la liste des canaux...",
-                "cancel": "Annuler",
-                "refresh": "Actualiser"
-            }
-        },
-        "pages": {
-            "list": {
-                "page-title": "Liste des Parties",
-                "header": "Mes Parties",
-                "no-games-warning": "Vous n'avez aucune partie pour le moment !",
-                "leave-confirmation-title": "Quitter {{ name }}?",
-                "leave-confirmation-description": "Pour rejoindre à nouveau cette partie, vous aurez besoin d'un lien.Si vous êtes la dernière personne à quitter la partie, elle sera supprimée. Etes cous sûr de vouloir quitter ?",
-                "game-left": "Vous avez quitté la partie avec succès !",
-                "game.pages.list.leave-confirmation-discord-description-join-info": "Pour rejoindre cette partie à nouveau, Vous allez Devoir utiliser la commande .join dans ce serveur ou le quitter  or leave it and join it again. Are you sure you want to leave?",
-                "okay-button-text": "D'accord",
-                "leave-button-text": "Quitter"
-            },
-            "table": {
-                "page-title": "{{ gameName }} Table de jeu",
-                "page-description": "Table de jeu fournie par RPG Sessions",
-                "no-connection-error-message": "Pas de connexion",
-                "connecting-info-message": "Connexion...",
-                "reconnect-button-text": "Reconnexion",
-                "non-member-warning": "Il semblerait que vous ne soyez pas un membre de cette partie !",
-                "join-game-button-text": "Rejoindre la Partie",
-                "join-game-instructions": "Pour rejoindre cette partie, vérifiez que votre compte RPG Sessions est associé à votre compte Discord et rejoignez le serveur Discord correspondant. Vous serez automatiquement ajouté en tant que membre à cette partie !",
-                "table-not-found": "Aucune Table de Jeu trouvée",
-                "game-not-loaded": "Partie non chargée",
-                "settings-updated-confirmation.comment": "The below is shown when the settings of a game table are successfully updated",
-                "settings-updated-confirmation": "Paramètres mis à jour!",
-                "game-joined-confirmation.comment": "The below is shown when a user successfully joins an RPG Sessions-based game through the Game Table",
-                "game-joined-confirmation": "Partie rejointe !",
-                "link-copied-confir": "Lien copié!"
-            },
-            "view": {
-                "header": "Paramètres de jeu",
-                "server-management": "Gestion du serveur",
-                "back-to-list": "Retourer à la liste",
-                "general": "Géneral",
-                "character": "Personnage",
-                "vehicle": "Véhicule",
-                "crit-tables": "Tables de Critiques",
-                "game-master": "Maîtres de Jeu",
-                "game-master-placeholder": "Ajouter un Maître de Jeu",
-                "game-name-placeholder": "Nom de la Partie",
-                "game-type-placeholder": "Type de Jeu",
-                "dice-size-placeholder": "Taille des Dés",
-                "gm-story-point-style": "Style des Points narratifs MJ",
-                "pc-story-point-style": "Style des Points narratifs PJ",
-                "patron-only-story-point-warning": "Vous devez être un Patron pour changer le style des Points narratifs.",
-                "save-changes": "Sauvegarder les changements",
-                "game-update-successful-message": "Jeu mis à jour avec succès !",
-                "character-placeholder": "Personnage",
-                "character-crit-table-placeholder": "Table de Critiques - Personnage",
-                "vehicle-crit-table-placeholder": "Table de Critiques - Véhicules",
-                "party-vehicle-placeholder": "Véhicule de la Partie",
-                "personal-vehicle-placeholder": "Véhicule personnel",
-                "game-type-change-warning": "ATTENTION : Changer le type de partie va forcer tous les joueurs à choisir de nouveaux personnages et véhicules compatible avec le nouveau Type de partie.",
-                "allow-gm-control": "Autoriser contrôle par MJ"
-            }
-        }
+      "list-page": {
+        "header": "Mes parties",
+        "no-games-warning": "Vous n'avez aucune Partie en cours pour le moment ! Pourquoi ne pas en créer ou rejoindre une ?"
+      },
+      "leave-game-overlay": {
+        "confirmation-title": "Quitter {{ name }} ?",
+        "leave-confirmation-description": "To join this game again, you'll need a link to it. If you are the last person to leave it, the game will be deleted. Are you sure you want to leave?",
+        "leave-confirmation-discord-description-join-info": "To join this game again, you'll need to run the .join command in the server linked for this game. Are you sure you want to leave?",
+        "game-left": "You have left the game successfully"
+      },
+      "settings-player-options-component": {
+        "header": "Options Joueur",
+        "allow-gm-control-checkbox-label": "Autoriser contrôle par MJ",
+        "active-character-description": "The character marked \"Active\" is the one the bot uses for commands by default."
+      },
+      "settings-general-component": {
+        "allow-new-players": "Allow New Players",
+        "gm-destiny-point-style-placeholder": "Darkside Style",
+        "gm-story-point-style-placeholder": "GM Point Style",
+        "pc-destiny-point-style-placeholder": "Lightside Style",
+        "pc-story-point-style-placeholder": "PC Point Style",
+        "must-be-gm-role": "Why are these disabled?",
+        "game-table-token-required": "Why are some options unavailable?",
+        "gm-role-required-text-no-existing-gm": "Only a GM can modify these fields. Add yourself as the GM to be able to update these fields.",
+        "gm-role-required-text-existing-gms": "Only a GM can modify these fields. Ask them to add you as a GM or make any changes themselves.",
+        "table-token-required-text": "These values require your table to have a Game Token associated with it before you can access them."
+      },
+      "settings-game-tokens-component": {
+        "available-tokens-label": "Your Available Tokens",
+        "no-tokens-available-label": "No Tokens Available",
+        "attach-token-button-text": "Attach Token to this Game",
+        "attached-tokens-label": "Attached Tokens",
+        "confirm-token-removal-title": "Remove Token from Game Table",
+        "confirm-token-removal-message": "Are you sure you want to remove your token from this table? All features unlocked by this token will no longer be available if you do. Do you still want to remove your token?"
+      },
+      "attach-token-prompt": {
+        "overlay-title": "Attach Token",
+        "token-select-message": "Choose which of your tokens you would like to attach to this table"
+      },
+      "new-game-prompt": {
+        "title": "Choose the platform for your new game",
+        "discord-title": "Add a Discord Game",
+        "rpgsessions-title": "Name and select the Rules System for your Game",
+        "discord-not-linked-1": "Before you can create a Discord game, you need to link your RPG Sessions account with Discord.",
+        "discord-not-linked-2": "It only takes a second and is done from your account profile.",
+        "invite-bot-information": "Invite the bot to your server and a game will be automatically created here! (You might need to refresh this list to see your new game)",
+        "invite-bot-button-text": "Invite the Bot",
+        "user-profile-button-text": "User Profile"
+      },
+      "server-management": {
+        "title": "Server Management",
+        "discord-only-error": "This view can only be used with Discord-based games",
+        "no-assigned-channels": "No Assigned Channels",
+        "remove-all-members": "Remove All Members",
+        "no-user-data": "NO_USER_DATA",
+        "remove-member-title": "Remove Member",
+        "remove-member-confirm-message": "Are you sure you want to remove this member?",
+        "remove-all-members-title": "Remove All Members",
+        "remove-all-members-confirm-message": "Are you sure you want to remove all members from this game? This will also remove all GMs from this table as well.",
+        "remove-channel-title": "Remove Channel",
+        "remove-channel-confirm-message": "Are you sure you want to remove this channel?",
+        "delete-game-table-title": "Delete Game Table",
+        "delete-game-table-confirm-message": "Are you sure you want to delete this table?",
+        "add-member-instructions": "To add a new member to this table, have them use the .join command in one of the channels you've linked to this table. Alternatively, you can send the the link to the table and they can join there."
+      },
+      "upload-image-overlay": {
+        "add-note-label": "Image Comment",
+        "upload-image-button-text": "Upload Image"
+      }
     },
     "game-table": {
-        "available-tabs": {
-            "Characters": "Personnages",
-            "Vehicles": "Véhicules",
-            "Initiative": "Initiative",
-            "History": "Historique",
-            "Messages": "Messages",
-            "Weapons": "Armes",
-            "Talents": "Talents",
-            "Notes": "Notes"
-        },
-        "components": {
-            "action-bar": {
-                "link-copied": "Lien copié !",
-                "settings-updated-confirmation": "Paramètres mis à jour !"
-            },
-            "ffg-gen": {
-                "character-hud": {
-                    "Wounds": "Blessures",
-                    "Strain": "Stress",
-                    "Soak": "Encaissement",
-                    "Defense": "Def",
-                    "DefenseMelee": "CaC",
-                    "DefenseRanged": "D",
-                    "Encumbrance": "Enc",
-                    "no-character": "Aucun personnage selectionné"
-                },
-                "panel-character-list": {
-                    "characters": "Personnages",
-                    "no-selected-character": "Aucun personnage selectionné",
-                    "select-character-button-text": "Sélectionner un personnage",
-                    "character-placeholder-text": "Personnage",
-                    "Wounds": "B",
-                    "Strain": "S",
-                    "Crits": "Critiques"
-                },
-                "dice-roller": {
-                    "roll-crit-this-pc-button-text": "Lancer le Critique pour ce PJ",
-                    "roll-crit-text": "Lancer Critique",
-                    "plus-10-to-crit-button-text": "+10",
-                    "minus-10-to-crit-button-text": "-10",
-                    "roll-dice-button": "Lancer le dé",
-                    "description-placeholder": "Description",
-                    "skill-placeholder": "Choisir une Compétence",
-                    "no-dice-channel-selected-error": "Aucun canal de selectionnez - Les lancers ne seront pas transmis sur Discord. Selectionnez un canal dans les paramètres de jeu",
-                    "rolled-from-game-table": "Lancer via la Table de Jeu",
-                    "initiative": "Initiative"
-                },
-                "panel-adversaries": {
-                    "Adversaries": "Adversaires",
-                    "coming-soon": "A venir bientôt !"
-                }
-            },
-            "ffg-sw": {
-                "character-hud": {
-                    "Wounds": "Blessures",
-                    "Strain": "Stress",
-                    "Soak": "Encaissement",
-                    "Defense": "Def",
-                    "DefenseMelee": "CaC",
-                    "DefenseRanged": "D",
-                    "Encumbrance": "Enc",
-                    "no-character": "Aucun personnage selectionné",
-                    "adversary": "Adversité"
-                },
-                "panel-character-list": {
-                    "characters": "Personnages",
-                    "no-selected-character": "Aucun personnage selectionné",
-                    "select-character-button-text": "Sélectionner un personnage",
-                    "character-placeholder-text": "Personnage",
-                    "Wounds": "B",
-                    "Strain": "S",
-                    "Crits": "Critiques",
-                    "Defense": "D",
-                    "defense-melee": "CaC",
-                    "defense-ranged": "D",
-                    "adversary": "Adversité"
-                },
-                "dice-roller": {
-                    "roll-crit-this-pc-button-text": "Lancer le Critique pour ce PJ",
-                    "roll-crit-text": "Lancer Critique",
-                    "plus-10-to-crit-button-text": "+10",
-                    "minus-10-to-crit-button-text": "-10",
-                    "roll-dice-button": "Lancer le dé",
-                    "description-placeholder": "Description",
-                    "skill-placeholder": "Choisir une Compétence",
-                    "no-dice-channel-selected-error": "Aucun canal de selectionnez - Les lancers ne seront pas transmis sur Discord. Selectionnez un canal dans les paramètres de jeu",
-                    "rolled-from-game-table": "Lancer via la Table de Jeu",
-                    "initiative": "Initiative"
-                },
-                "panel-adversaries": {
-                    "Adversaries": "Adversaires",
-                    "coming-soon": "A venir bientôt !",
-                    "add-new-adversary": "Ajouter Nouvel Adversaire",
-                    "remove-npc": "Retirer PNJ",
-                    "show-npc": "Montrer PNJ",
-                    "show-name": "Montrer Nom",
-                    "show-image": "Montrer Image",
-                    "show-stats": "Montrer Stats",
-                    "show-crits": "Montrer Défense/Crits",
-                    "show-adversary": "Montrer Adversité"
-                }
-            },
-            "panel-history": {
-                "History": "Historique",
-                "no-history": "Aucun historique !"
-            },
-            "panel-initiative": {
-                "Initiative": "Initiative",
-                "no-initiative": "Pas  d'initiative",
-                "initiative-round-abbreviation": "T{{ round }}",
-                "previous-slot-button-text": "Créneau précédent",
-                "next-slot-button-text": "Créneau suivant",
-                "convert-button-text.comment": "The below text is shown as button text that allows users to convert initiative slots between NPC and PC slots",
-                "convert-button-text": "Convertir en {{ oppositeType }}",
-                "remove-slot-button-text.comment": "The below text is shown as a button users can click on to remove a slot from initiative",
-                "remove-slot-button-text": "Supprimer créneau",
-                "reset-initiative-button-text.comment": "The below text is used on the button that lets a user RESET initiative - that is, keep all of the slots the same, the round just goes back to 1",
-                "reset-initiative-button-text": " Recommencer",
-                "clear-initiative-button-text.comment": "The below text is used on the button that lets a user CLEAR initiative - all slots are removed and the round is set back to 1",
-                "clear-initiative-button-text": "Supprimer",
-                "no-dice-channel-selected-error": "Aucun canal de dé selectionné - Les jets ne seront pas copiés sur Discord. Veuillez choisir un canal dans les paramètres de jeu.",
-                "activate-initiative-rolls": "Départ Jets Initiative",
-                "deactivate-initiative-rolls": "Arrêt Jets Initiative"
-            },
-            "panel-messages": {
-                "Messages": "Messages",
-                "no-messages": "Pas de Messages!",
-                "updated": "Mis à jour !",
-                "updated-count-times": "Mis à jour {{ count }} fois !",
-                "history-tab-text": "Historique",
-                "notes-tab-text": "Messages",
-                "comment-placeholder": "Ecrivez un message...",
-                "no-patron-warning": "Vous devez être au tier \"The Duece\" sur Patreon ou plus pour charger des images",
-                "send-button-text": "Envoyer",
-                "file-limit-error": "Les fichiers importés doivent faire moins de 10 Mo.",
-                "file-type-error": "Les fichiers importés doivent être des images."
-            },
-            "panel-vehicle-list": {
-                "Vehicles": "Véhicules",
-                "coming-soon": "A venir bientôt !"
-            },
-            "panel-notes": {
-                "Notes": "Notes",
-                "coming-soon": "A venir bientôt !"
-            },
-            "panel-talents": {
-                "Talents": "Talents",
-                "coming-soon": "A venir bientôt !"
-            },
-            "panel-weapons": {
-                "Weapons": "Armes",
-                "coming-soon": "A venir bientôt !"
-            }
-        },
-        "pages": {
-            "table": {
-                "page-title": "{{ gameName }} Table de Jeu",
-                "page-description": "Table de Jeu fournis par RPG Sessions",
-                "no-connection-error-message": "Pas de connexion",
-                "connecting-info-message": "Connexion en cours ...",
-                "reconnect-button-text": "Reconnexion"
-            }
-        }
-    },  
+      "websockets": {
+        "no-connection-error": "No Connection",
+        "connecting-info": "Connecting...",
+        "reconnect-button": "Reconnect"
+      },
+      "character-list": {
+        "select-character": "Select Character",
+        "no-selected-character": "No Selected Character"
+      },
+      "kick-player": {
+        "overlay-title": "Kick {{ displayName }}",
+        "message": "Are you sure you want to kick {{ displayName }} from this game?"
+      },
+      "ban-player": {
+        "overlay-title": "Ban {{ displayName }}",
+        "message": "Are you sure you want to ban {{ displayName }} from this game?"
+      },
+      "adversaries": {
+        "add-new-adversary": "Add New Adversary",
+        "show-npc": "Show NPC",
+        "show-name": "Show Name",
+        "show-image": "Show Image",
+        "show-stats": "Show Stats",
+        "show-adversary": "Show Adversary",
+        "show-crits": "Show Crits",
+        "show-npc-full": "Show Full NPC",
+        "remove-npc": "Remove NPC"
+      },
+      "initiative": {
+        "start-initiative": "Start Initiative",
+        "stop-initiative": "Stop Initiative",
+        "convert-to-type": "Convert to {{ type }}˚",
+        "remove-slot": "Remove Slot",
+        "reset-initiative": "Reset Initiative",
+        "clear-initiative": "Clear Initiative"
+      },
+      "dice": {
+        "Roll Crit": "Roll Crit",
+        "Roll Crit for this PC": "Roll Crit for this PC",
+        "rolled-from-game-table": "Rolled from Game Table",
+        "no-dice-channel-selected-error": "No Dice Channel Selected - Roll will not be mirrored to Discord. Select a channel in the game settings"
+      },
+      "history": {
+        "no-history": "No History",
+        "character-updated": "{{ characterName }} updated!",
+        "character-updated-with-count": "{{ characterName }} updated {{ count }} times!"
+      },
+      "messages": {
+        "image-upload-patreon-requirement": "You must be an \"Explorer\" tier patron or higher to use this feature",
+        "no-messages": "No Messages",
+        "file-limit-error": "Import file must be under 10 MB.",
+        "file-type-error": "Import file must be an image."
+      },
+      "talents": {
+        "no-talents": "No Talents"
+      },
+      "weapons": {
+        "weapons-hidden": "Weapons Hidden",
+        "no-selected-character": "No Selected Character",
+        "dual-wield": "Dual Wield",
+        "remove-dual-wield": "Remove Dual Wield",
+        "build-pool": "Build Pool"
+      }
+    },
+    "user": {
+      "phrases": {
+        "account-unlinked-successfully": "User account unlinked",
+        "already-taken": "Already Taken"
+      },
+      "discord-link": {
+        "honorary-titles-label": "Honorary Titles",
+        "unlink-confirmation-title": "Unlink Discord",
+        "unlink-confirmation-message": "Are you sure you want to unlink your Discord account? This action will remove Discord linked games from your profile.",
+        "unlink-confirmation-confirm-button-text": "Unlink",
+        "unlink-confirmation-cancel-button-text": "Cancel"
+      },
+      "name-and-password": {
+        "card-title": "Name and Password",
+        "facebook-login-enabled": "Facebook Login Enabled",
+        "google-login-enabled": "Google Login Enabled",
+        "password-enabled": "Password Enabled",
+        "no-password-enabled": "No Password Enabled",
+        "enable-password-button-text": "Enable Password",
+        "change-password-button-text": "Change Password"
+      },
+      "patreon-link": {
+        "your-token-label": "Your Token",
+        "attached-game-label": "Attached Game",
+        "token-not-linked": "Not Assigned",
+        "remaining-cooldown": "Cooldown Remaining",
+        "unlink-confirmation-title": "Unlink Patreon",
+        "unlink-confirmation-message": "Are you sure you want to unlink your Patreon account? This action will remove all patreon benefits from your account.",
+        "unlink-confirmation-confirm-button-text": "Unlink",
+        "unlink-confirmation-cancel-button-text": "Cancel"
+      },
+      "settings": {
+        "card-title": "User Settings",
+        "dice-type-select-placeholder": "Default Dice Type",
+        "dice-input-style-select-placeholder": "Dice Input Style",
+        "selected-dice-type-alt": "Selected Dice Type",
+        "selected-dice-scheme-alt": "Selected Dice Scheme",
+        "selected-site-theme-alt": "Selected Site Theme",
+        "theme-select-placeholder": "Site Theme",
+        "language-select-placeholder": "Language"
+      },
+      "profile": {
+        "header": "Profile Information"
+      },
+      "update-email": {
+        "modal-title": "Update Email"
+      },
+      "update-password": {
+        "modal-title-update": "Update Password",
+        "modal-title-enable": "Enable Password",
+        "input-current-password-placeholder": "Current Password",
+        "input-new-password-placeholder": "New Password",
+        "input-confirm-password-placeholder": "Confirm Password"
+      },
+      "update-username": {
+        "modal-title": "Update Username"
+      },
+      "social-register": {
+        "invalid-link-data": "Invalid Link Data",
+        "account-linked-successfully": "Account Linked Successfully!",
+        "unable-to-complete-link": "Unable to complete link",
+        "verifying-information": "Verifying Informarion",
+        "unable-to-verify-information": "Unable to verify information",
+        "this-may-take-a-moment": "This may take a moment",
+        "support-help-text": "If this keeps occuring, let us know on Discord in our #rpg-support channel",
+        "join-us-on-discord": "Join us on Discord",
+        "back-to-profile-button-text": "Back to Profile"
+      }
+    },
     "vehicle": {
-        "components": {
-            "detail-component": {
-                "Vehicle Type/Model": "Type de véhicule/Modèle",
-                "Manufacturer": "Constructeur",
-                "Crew": "Equipage",
-                "Passengers": "Passagers",
-                "Consumables": "Provisions",
-                "Hyperdrive": "Hyperdrive",
-                "Sensor Range": "Portée des senseurs",
-                "Background": "Histoire",
-                "Cargo Hold": "Charge utile"
-            },
-            "vehicle-card": {
-                "game-type-label": "Type de jeu:"
-            },
-            "name-image": {
-                "vehicle-name-placeholder": "Nom",
-                "image-url-placeholder": "Image URL",
-                "has-clones-singular": "A {{ count }} clone",
-                "has-clones-plural": "A {{ count }} clones"
-            }
-        },
-        "pages": {
-            "create": {
-                "page-title": "Créer un véhicule",
-                "vehicle-image-alt-text": "Image Véhicule"
-            },
-            "list": {
-                "page-title": "Liste des véhicules",
-                "vehicle-deleted": "Le véhicule a bien été supprimé",
-                "page-header": "Mes véhicules",
-                "no-vehicles": "Vous n'avez aucun véhicule pour le moment !"
-            }
+      "phrases": {
+        "Cargo Hold": "Cargo Hold",
+        "Deck Plan": "Deck Plan",
+        "Defense Zones": "Defense Zones",
+        "Fire Arc": "Fire Arc",
+        "Vehicle Action": "Vehicle Action",
+        "Vehicle Actions": "Vehicle Actions",
+        "Vehicle Attachment": "Vehicle Attachment",
+        "Vehicle Attachments": "Vehicle Attachments",
+        "Vehicle Details": "Vehicle Details",
+        "Vehicle Image": "Vehicle Image"
+      },
+      "form-labels": {
+        "model": "Vehicle Type/Model",
+        "manufacturer": "Manufacturer",
+        "crew": "Crew",
+        "passengers": "Passengers",
+        "consumables": "Consumables",
+        "engine": "Engine",
+        "sensors": "Sensors",
+        "notable-features": "Notable Features"
+      },
+      "nds": {
+        "configuration": {
+          "Vehicle Sheet Customization Options": "Vehicle Sheet Customization Options"
         }
+      }
     },
     "shared": {
-        "containers": {
-            "secured-container": {
-                "menu-items": {
-                    "Characters": "Personnages",
-                    "Vehicles": "Véhicules",
-                    "Dice": "Dés",
-                    "Games": "Parties",
-                    "Profile": "Profil",
-                    "Logout": "Déconnexion",
-                    "Login": "Connexion"
-                },
-                "footer-items": {
-                    "bot-help.comment": "The bot-help key is used to link the user to the help PDF for bot commands",
-                    "bot-help": "Aide du bot",
-                    "build.comment": "The build is the version number for the application, the user can check it to make sure they're on the newest version number and it's useful for seeing what features are available to the version the user has. This will typically have a value next to it like v0.11.12.0 or something.",
-                    "build": "Version"
-                }
-            }
+      "footer": {
+        "bot-help": "Bot Help",
+        "build-version": "Build - {{ version }}"
+      },
+      "import-overlay": {
+        "import-overlay": {
+          "title-oggdude": "OggDude Importer",
+          "title-oggdude-custom": "OggDude Custom Data Importer",
+          "title-emporium": "Genesys Emporium Importer",
+          "monthly-imports-label": "Monthly Imports:",
+          "non-patron-custom-data-warning": "Warning: The OggDude importer does not currently support custom data for non-patron members.",
+          "create-import-file-instructions": "To create the import file to upload, go to the data editor and hit \"Back Up\", then select only Data Custom and press back up.",
+          "import-data-button-text": "Import Data",
+          "import-character-button-text": "Import Character",
+          "custom-oggdude-data-not-imported": "Warning: You have no custom data imported, custom data in your character sheet will be ignored.",
+          "custom-oggdude-data-already-imported": "Good news! You have custom data imported. Custom data in your character sheet<br />will be loaded.",
+          "custom-oggdude-data-confirm-delete": "Are you sure you want to delete your custom OggDude data?",
+          "oggdude-delete-cancel-button-text": "Cancel",
+          "oggdude-delete-confirm-button-text": "Delete",
+          "overwrite-ignored-label": "When you overwrite a character, all but the following will be replaced:",
+          "oggdude-import-wont-overwrite": [
+            "Name",
+            "Current Wounds",
+            "Current Strain",
+            "Crits",
+            "Species",
+            "Career",
+            "Age",
+            "Motivation",
+            "Weight",
+            "Height",
+            "Features",
+            "Background"
+          ],
+          "import-limit-greeting": "Oh no!",
+          "import-limit-description": "It appears you've hit your import limit for the month.",
+          "import-limit-patreon-tier-error": "In order to import more characters this month, you'll need to consider increasing your <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a > tier.",
+          "import-limit-no-patreon-error": "In order to import more characters this month, you'll need to consider becoming a <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a>.",
+          "import-limit-linking-instructions": "If you're already a Patron of ours, make sure you link your account on your <a href=\"/user/profile\">account settings page.</a>",
+          "patreon-only-error-warning": "This feature is currently available only to our Patron members. If you'd like to join our Patreon to use this feature, check <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >out our page on Patreon.com.</a>",
+          "patreon-only-error-call-to-action": "If you're already a Patron of ours, make sure you link your account on your <a href=\"/user/profile\">account settings page.</a>",
+          "dialog-cancel-button": "Cancel",
+          "drop-file-prompt": "Drop {{ fileType }} file here or click to upload",
+          "overwrite-character": "Overwrite Character",
+          "title-swrpg": "Import Star Wars RPG NPC",
+          "title-genesys": "Import Genesys NPC",
+          "import-npc-button-text": "Import NPC",
+          "title-stoogoff": "Import SWRPG NPC from [StooGoff.com](http://swa.stoogoff.com/)",
+          "title-dylan": "Import Genesys NPC from [DylanPetrumsa.com](http://genesysadversaries.dylanpetrusma.com)"
         }
+      }
     }
-}
+  }
+  

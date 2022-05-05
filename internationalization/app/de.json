@@ -1,0 +1,941 @@
+{
+    "material": {
+      "paginator": {
+        "items-per-page": "Einträge pro Seite",
+        "next-page": "Nächste Seite",
+        "last-page": "Letzte Seite",
+        "first-page": "Erste Seite",
+        "previous-page": "Vorherige Seite",
+        "items-left-display-when-no-other-pages": "0 von {{ length }}",
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} von {{ length }}"
+      }
+    },
+    "seo": {
+      "game-list": {
+        "title": "Spielliste"
+      },
+      "game-settings": {
+        "title": "Spieleinstellungen"
+      },
+      "game-table": {
+        "title": "Spieltisch von {{ gameName }}",
+        "description": "Spieltisch wird von RPG Sessions bereitgestellt"
+      }
+    },
+    "enums": {
+      "core": {
+        "data-type": {
+          "[dataType] character": "Charakter",
+          "[dataType] folder": "Ordner",
+          "[dataType] game": "Spiel",
+          "[dataType] vehicle": "Fahrzeug"
+        },
+        "game-theme": {
+          "[game theme] generic": "Generisch",
+          "[game theme] star wars eote": "Am Rande des Imperiums",
+          "[game theme] star wars aor": "Zeitalter der Rebellion",
+          "[game theme] star wars fad": "Macht und Schicksal",
+          "[game theme] genesys core": "Genesys Core",
+          "[game theme] genesys terrinoth": "Realms of Terrinoth",
+          "[game theme] genesys android": "Shadow of the Beanstalk",
+          "[game theme] genesys keyforge": "Keyforge",
+          "[game theme] genesys twilight imperium": "Twilight Imperium"
+        },
+        "rules-system": {
+          "[rules] nds": "Narratives Würfelsystem",
+          "[rules] age": "Adventure Game Engine",
+          "[rules] generic": "Generisch"
+        }
+      },
+      "character": {
+        "character-type": {
+          "[character type] player": "Spieler",
+          "[character type] npc": "NSC"
+        },
+        "nds": {
+          "activation-type": {
+            "[nds character activation type] passive": "Passiv",
+            "[nds character activation type] incidental": "Nebenaktion",
+            "[nds character activation type] maneuver": "Manöver",
+            "[nds character activation type] action": "Aktion"
+          },
+          "activation-type-abbreviation": {
+            "[nds character activation type] passive": "P",
+            "[nds character activation type] incidental": "N",
+            "[nds character activation type] maneuver": "M",
+            "[nds character activation type] action": "A"
+          },
+          "attribute": {
+            "[nds character attribute] soak": "Absorption",
+            "[nds character attribute] wounds current": "Aktuelle Wunden",
+            "[nds character attribute] wounds threshold": "Wundenlimit",
+            "[nds character attribute] strain current": "Aktuelle Erschöpfung",
+            "[nds character attribute] strain threshold": "Erschöpfungslimit",
+            "[nds character attribute] defense ranged": "Fernkampfverteidigung",
+            "[nds character attribute] defense melee": "Nahkampfverteidigung",
+            "[nds character attribute] available xp": "Verfügbare EP",
+            "[nds character attribute] total xp": "EP gesamt",
+            "[nds character attribute] money": "Geld",
+            "[nds character attribute] encumbrance current": "Aktuelle Belastung",
+            "[nds character attribute] encumbrance threshold": "Belastungslimit",
+            "[nds character attribute] force rating current": "Aktueller Machtwert",
+            "[nds character attribute] force rating committed": "Machtwerte in Benutzung",
+            "[nds character attribute] available heroic ability points": "Verfügbare Heldenfähigkeitenpunkte",
+            "[nds character attribute] total heroic ability points": "Heldenfähigkeitenpunkte gesamt",
+            "[nds character attribute] character count": "Charakteranzahl",
+            "[nds character attribute] current minion count": "Handlangeranzahl",
+            "[nds character attribute] adversary level": "Antagonistenstufe",
+            "[nds character attribute] combat power level": "Kampfkraftlevel",
+            "[nds character attribute] social power level": "Soziales Kraftlevel",
+            "[nds character attribute] general power level": "Generelles Kraftlevel",
+            "[nds character attribute] available aember": "Verfügbarer Æmber",
+            "[nds character attribute] total aember": "Æmber gesamt"
+          },
+          "characteristic": {
+            "[nds character characteristic] none": "Nichts",
+            "[nds character characteristic] brawn": "Stärke",
+            "[nds character characteristic] agility": "Geschicklichkeit",
+            "[nds character characteristic] intellect": "Intelligenz",
+            "[nds character characteristic] cunning": "List",
+            "[nds character characteristic] willpower": "Willenskraft",
+            "[nds character characteristic] presence": "Charisma"
+          },
+          "characteristic-abreviated": {
+            "[nds character characteristic] none": "-",
+            "[nds character characteristic] brawn": "ST",
+            "[nds character characteristic] agility": "GE",
+            "[nds character characteristic] intellect": "IN",
+            "[nds character characteristic] cunning": "LI",
+            "[nds character characteristic] willpower": "WI",
+            "[nds character characteristic] presence": "CH"
+          },
+          "character-type": {
+            "[nds character type] player": "Spielercharakter",
+            "[nds character type] nemesis": "Erzfeind",
+            "[nds character type] rival": "Rivale",
+            "[nds character type] minion": "Handlanger"
+          },
+          "detail": {
+            "[nds character detail] archetype": "Archetyp",
+            "[nds character detail] species": "Spezies",
+            "[nds character detail] career": "Karriere",
+            "[nds character detail] specialization": "Spezialisierung",
+            "[nds character detail] age": "Alter",
+            "[nds character detail] weight": "Gewicht",
+            "[nds character detail] height": "Größe",
+            "[nds character detail] notable features": "Besondere Merkmale",
+            "[nds character detail] background": "Hintergrund",
+            "[nds character detail] motivation": "Motivation",
+            "[nds character detail] desire": "Verlangen",
+            "[nds character detail] fear": "Furcht",
+            "[nds character detail] strength": "Stärke",
+            "[nds character detail] flaw": "Makel"
+          },
+          "favor-size": {
+            "[nds character favor size] small": "Klein",
+            "[nds character favor size] regular": "Regulär",
+            "[nds character favor size] big": "Groß"
+          },
+          "modifier-type": {
+            "[nds character modifier type] armor": "Rüstung",
+            "[nds character modifier type] attribute": "Attribut",
+            "[nds character modifier type] characteristic": "Charakteristik",
+            "[nds character modifier type] narrative": "Narrativ",
+            "[nds character modifier type] skill": "Fertigkeit",
+            "[nds character modifier type] weapon": "Waffe"
+          },
+          "skill-type": {
+            "[nds character skill type] general": "Generelle Fertigkeiten",
+            "[nds character skill type] magic": "Magische Fertigkeiten",
+            "[nds character skill type] combat": "Kampffertigkeiten",
+            "[nds character skill type] social": "Soziale Fertigkeiten",
+            "[nds character skill type] knowledge": "Wissensfertigkeiten",
+            "[nds character skill type] other": "Weitere Fertigkeiten"
+          },
+          "talent-display-type": {
+            "[nds character talent display type] pyramid": "Pyramide",
+            "[nds character talent display type] tree": "Baum",
+            "[nds character talent display type] list group": "Liste"
+          },
+          "range-band": {
+            "[nds character range band] engaged": "Nahkampf",
+            "[nds character range band] short": "Kurz",
+            "[nds character range band] medium": "Mittel",
+            "[nds character range band] long": "Lang",
+            "[nds character range band] extreme": "Extrem"
+          }
+        }
+      },
+      "dice": {
+        "dice-short-hand-style": {
+          "[DiceShortHandStyle] standard": "Name",
+          "[DiceShortHandStyle] color based": "Farbe"
+        },
+        "dice-theme": {
+          "[dice theme] generic": "Generisch",
+          "[dice theme] genesys": "Genesys",
+          "[dice theme] star wars": "Star Wars"
+        },
+        "dice-meta-type": {
+          "character": "Charakter",
+          "force": "Macht",
+          "info": "Info",
+          "skill": "Fertigkeit",
+          "weapon": "Waffe"
+        }
+      },
+      "discord": {
+        "discord-dice-size": {
+          "[game dice size] regular": "Regulär",
+          "[game dice size] large": "Groß"
+        }
+      },
+      "game": {
+        "sort": {
+          "name": "Name",
+          "new": "Neuestes",
+          "old": "Ältestes",
+          "modified": "Kürzlich bearbeitet"
+        }
+      },
+      "imports": {
+        "import-source": {
+          "[import source] oggdude": "Oggdude Charakter",
+          "[import source] oggdude custom data": "Oggdude Benutzerdefinierte Daten",
+          "[import source] genesys emporium": "Genesys Emporium",
+          "[import source] stoogoff npc": "NSC (StooGoff.com)",
+          "[import source] dylan petrumsa npc": "NSC (DylanPetrumsa.com)"
+        }
+      },
+      "patreon": {
+        "patreon-tier": {
+          "[patreon tier] none": "Nichts",
+          "[patreon tier] the fan": "The Fan",
+          "[patreon tier] the deuce": "The Deuce",
+          "[patreon tier] high fiver": "High Fiver",
+          "[patreon tier] scout": "Scout",
+          "[patreon tier] explorer": "Explorer",
+          "[patreon tier] adventurer": "Adventurer",
+          "[patreon tier] champion": "Champion"
+        }
+      },
+      "table-token": {
+        "game-token-type": {
+          "[game token type] Explorer": "Explorer",
+          "[game token type] Adventurer": "Adventurer",
+          "[game token type] Champion": "Champion"
+        }
+      },
+      "user": {
+        "language-option": {
+          "en": "Englisch",
+          "es": "Spanisch",
+          "fr": "Französisch"
+        },
+        "theme-option": {
+          "[theme option] light": "Hell",
+          "[theme option] dark": "Dunkel"
+        }
+      },
+      "vehicle": {
+        "nds": {
+          "attribute": {
+            "[nds vehicle attribute] defense": "Verteidigung",
+            "[nds vehicle attribute] defense fore": "Verteidigung Bug",
+            "[nds vehicle attribute] defense port": "Verteidigung Backbord",
+            "[nds vehicle attribute] defense starboard": "Verteidigung Steuerbord",
+            "[nds vehicle attribute] defense aft": "Verteidigung Heck",
+            "[nds vehicle attribute] armor": "Rüstung",
+            "[nds vehicle attribute] hull trauma": "Hüllentrauma",
+            "[nds vehicle attribute] hull trauma current": "Aktuelles Hüllentrauma",
+            "[nds vehicle attribute] hull trauma threshold": "Hüllentraumalimit",
+            "[nds vehicle attribute] system strain": "Systembelastung",
+            "[nds vehicle attribute] system strain current": "Aktuelle Systembelastung",
+            "[nds vehicle attribute] system strain threshold": "Systembelastungslimit",
+            "[nds vehicle attribute] hard points": "Aufrüstungspunkte",
+            "[nds vehicle attribute] hard points capacity": "Aufrüstungspunkteanzahl",
+            "[nds vehicle attribute] hard points used": "Aufrüstungspunkte benutzt",
+            "[nds vehicle attribute] encumbrance": "Belastung",
+            "[nds vehicle attribute] price": "Preis",
+            "[nds vehicle attribute] rarity": "Rarität"
+          },
+          "characteristic": {
+            "[nds vehicle characteristic] silhouette": "Silhouette",
+            "[nds vehicle characteristic] max speed": "Maximale Geschwindigkeit",
+            "[nds vehicle characteristic] current speed": "Aktuelle Geschwindigkeit",
+            "[nds vehicle characteristic] handling": "Wendigkeit"
+          },
+          "defense-zone": {
+            "[nds vehicle defense zone] fore": "Bug",
+            "[nds vehicle defense zone] port": "Backbord",
+            "[nds vehicle defense zone] starboard": "Steuerbord",
+            "[nds vehicle defense zone] aft": "Heck"
+          },
+          "fire-arc": {
+            "[nds fire arc] forward": "Bug",
+            "[nds fire arc] aft": "Heck",
+            "[nds fire arc] port": "Backbord",
+            "[nds fire arc] starboard": "Steuerbord",
+            "[nds fire arc] dorsal": "Dorsal",
+            "[nds fire arc] ventral": "Ventral",
+            "[nds fire arc] all": "Alle"
+          },
+          "modifier-type": {
+            "[nds vehicle modifier type] action": "Aktion",
+            "[nds vehicle modifier type] attribute": "Attribut",
+            "[nds vehicle modifier type] characteristic": "Charakteristik",
+            "[nds vehicle modifier type] narrative": "Narrativ",
+            "[nds vehicle modifier type] weapon": "Waffe"
+          },
+          "range-band": {
+            "[nds vehicle range band] close": "Kürzeste",
+            "[nds vehicle range band] short": "Kurz",
+            "[nds vehicle range band] medium": "Mittel",
+            "[nds vehicle range band] long": "Lang",
+            "[nds vehicle range band] extreme": "Extrem",
+            "[nds vehicle range band] strategic": "Strategisch"
+          }
+        }
+      }
+    },
+    "words": {
+      "Activation": "Aktivierung",
+      "Active": "Aktiv",
+      "Adversaries": "Antagonist",
+      "Aember": "Æmber",
+      "Admin": "Admin",
+      "Adversary": "Antagonist",
+      "Aft": "Heck",
+      "Agendas": "Agenden",
+      "Amount": "Menge",
+      "Armor": "Rüstung",
+      "Attachment": "Zubehör",
+      "Attachments": "Zubehöre",
+      "Attribute": "Attribut",
+      "Available": "Verfügbar",
+      "Back": "Zurück",
+      "Background": "Hintergrund",
+      "Ban": "Bann",
+      "Base": "Basis",
+      "Cancel": "Abbrechen",
+      "Capacity": "Kapazität",
+      "Career": "Karriere",
+      "Carrying": "Tragend",
+      "Channel": "Kanal",
+      "Channels": "Kanäle",
+      "Character": "Charakter",
+      "Characters": "Charaktere",
+      "Characteristic": "Charakteristik",
+      "Clone": "Klonen",
+      "Combine": "Verbinden",
+      "Comment": "Kommentieren",
+      "Committed": "In Benutzung",
+      "Confirm": "Bestätigen",
+      "Cost": "Kosten",
+      "Create": "Erstellen",
+      "Crit": "Krit",
+      "Crits": "Krits",
+      "Current": "Aktuell",
+      "Damage": "Schaden",
+      "Defense": "Verteidigung",
+      "Delete": "Löschen",
+      "Description": "Beschreibung",
+      "Desire": "Verlangen",
+      "Details": "Details",
+      "Dice": "Würfel",
+      "Difficulty": "Schwierigkeit",
+      "Discard": "Verwerfen",
+      "Discord": "Discord",
+      "Duty": "Verpflichtung",
+      "Edit": "Bearbeiten",
+      "Email": "E-Mail",
+      "Enable": "Aktivieren",
+      "Enabled": "Aktiviert",
+      "Encumbrance": "Belastung",
+      "Equipment": "Ausrüstung",
+      "Equipped": "Ausgerüstet",
+      "Error": "Fehler",
+      "Experience": "Erfahrung",
+      "Faction": "Fraktion",
+      "Favor": "Gefallen",
+      "Favors": "Gefallen",
+      "Fear": "Furcht",
+      "Flaw": "Makel",
+      "Folder": "Ordner",
+      "Fore": "Bug",
+      "Games": "Spiele",
+      "GM": "SL",
+      "Handling": "Wendigkeit",
+      "History": "Verlauf",
+      "Hull": "Hülle",
+      "Image": "Bild",
+      "Import": "Importieren",
+      "Improved": "Improvisiert",
+      "Initiative": "Initiative",
+      "Invalid": "Ungültig",
+      "Kick": "Rauswerfen",
+      "Language": "Sprache",
+      "Leave": "Verlassen",
+      "Library": "Bibliothek",
+      "Link": "Verknüpfung",
+      "Login": "Login",
+      "Logout": "Logout",
+      "Melee": "Nahkampf",
+      "Members": "Teilnehmende",
+      "Messages": "Nachrichten",
+      "Modification": "Modifikation",
+      "Modifications": "Modifikationen",
+      "Modifier": "Modifikator",
+      "Modifiers": "Modifikatoren",
+      "Morality": "Moral",
+      "Motivation": "Motivation",
+      "Name": "Name",
+      "New": "Neu",
+      "None": "Nichts",
+      "Notes": "Notizen",
+      "NPC": "NSC",
+      "NPCs": "NSCs",
+      "Obligation": "Verpflichtung",
+      "Origin": "Ursprung",
+      "Origins": "Ursprünge",
+      "Original": "Original",
+      "Patreon": "Patreon",
+      "PC": "SC",
+      "PCs": "SCs",
+      "Port": "Backbord",
+      "Price": "Preis",
+      "Profile": "Profil",
+      "Qualities": "Qualitäten",
+      "Quality": "Qualität",
+      "Quantity": "Quantitäten",
+      "Range": "Reichweite",
+      "Ranged": "Fern",
+      "Rank": "Rang",
+      "Ranked": "Pro Rang",
+      "Ranks": "Ränge",
+      "Rarity": "Rarität",
+      "Refresh": "Aktualisieren",
+      "Remove": "Entfernen",
+      "Rename": "Umbenennen",
+      "Resolved": "Entschlossen",
+      "Restricted": "Restriktiert",
+      "Save": "Speichern",
+      "Saved": "Gespeichert",
+      "Saving": "Speichern",
+      "Send": "Abschicken",
+      "Settings": "Einstellungen",
+      "Severity": "Schweregrad",
+      "Silhouette": "Silhouette",
+      "Size": "Größe",
+      "Skill": "Fertigkeit",
+      "Soak": "Absorption",
+      "Speed": "Geschwindigkeit",
+      "Starboard": "Steuerbord",
+      "Strain": "Erschöpfung",
+      "Strength": "Stärke",
+      "Super": "Super",
+      "Supreme": "Größte",
+      "Talent": "Talent",
+      "Talents": "Talente",
+      "Theme": "Thema",
+      "Threshold": "Limit",
+      "Tier": "Stufe",
+      "Total": "Total",
+      "Triggered": "Ausgelöst",
+      "Type": "Typ",
+      "Unlink": "Trennen",
+      "Update": "Aktualisieren",
+      "Upgrade": "Verbesserung",
+      "Upgrades": "Verbesserungen",
+      "Used": "Benutzt",
+      "User": "Benutzer",
+      "Username": "Benutzername",
+      "Vehicle": "Fahrzeug",
+      "Vehicles": "Fahrzeuge",
+      "Weapon": "Waffe",
+      "Weapons": "Waffen",
+      "Wounds": "Wunden",
+      "XP": "EP"
+    },
+    "phrases": {
+      "Ability Points": "Fähigkeitenpunkte",
+      "Advanced Options": "Erweiterte Optionen",
+      "Ban Character": "Charakter bannen",
+      "Base Damage": "Basisschaden",
+      "Base Modifier": "Basismodifikator",
+      "Character ID": "Charakter-ID",
+      "Character Type": "Charaktertyp",
+      "Click To Edit": "Klicken zum Bearbeiten",
+      "Coming Soon": "Bald verfügbar",
+      "Copy Link": "Verknüpfung kopieren",
+      "Create Game": "Spiel erstellen",
+      "Critical Injury": "Kritische Wunde",
+      "Custom Name": "Eigener Name",
+      "Dice Size": "Würfelgröße",
+      "Dice Theme": "Würfelthema",
+      "Discard Changes": "Änderungen verwerfen",
+      "Discord ID": "Discord-ID",
+      "Discord Settings": "Discord-Einstellung",
+      "Equipment and Gear": "Ausrüstung",
+      "Extra Dice": "Extrawürfel",
+      "Extra Mechanics": "Extramechaniken",
+      "Folder Name": "Ordnername",
+      "Force Dice": "Machtwürfel",
+      "Force Options": "Machtoptionen",
+      "Force Power": "Machtfähigkeit",
+      "Force Powers": "Machtfähigkeiten",
+      "Force Power Name": "Machtfähigkeitenname",
+      "Force Rating": "Machtwert",
+      "Game Master": "Spielleitende",
+      "Game Masters": "Spielleitende",
+      "Game Name": "Spielname",
+      "Game Settings": "Spieleinstellung",
+      "Game Table": "Spieltisch",
+      "Game Tokens": "Spieltoken",
+      "Game Theme": "Spielthema",
+      "Go Back": "Zurück",
+      "Group Skill": "Gruppenfertigkeit",
+      "Hard Points": "Aufrüstungspunkte",
+      "Heroic Ability": "Heldenfähigkeit",
+      "Heroic Abilities": "Heldenfähigkeiten",
+      "Hull Trauma": "Hüllentrauma",
+      "Image URL": "Bild-URL",
+      "Kick Character": "Charakter kicken",
+      "Link Copied": "Verknüpfung kopiert",
+      "Manage Server": "Server verwalten",
+      "Max Speed": "Maximale Geschwindigkeit",
+      "Minion Count": "Handlangeranzahl",
+      "Modifier Type": "Modifikatortyp",
+      "Party Vehicle": "Gruppenfahrzeug",
+      "Pass Dice": "Wurf weitergeben",
+      "Personal Vehicle": "Persönliches Fahrzeug",
+      "Private Notes": "Private Notizen",
+      "Required HP": "Erforderliche AP",
+      "Roll History": "Würfelhistorie",
+      "RPG Sessions": "RPG Sessions",
+      "Rules System": "Regelsystem",
+      "Sheet Customization Options": "Einstellungen für Bogenanpassungen",
+      "Signature Talent": "Signaturtalent",
+      "Sort By": "Sortieren nach",
+      "System Strain": "Systembelastung",
+      "Talent Name": "Talentname",
+      "Talent Trees": "Talentbäume",
+      "XP Cost": "EP-Kosten",
+      "add-button-text": "{{ type }} hinzufügen",
+      "edit-button-text": "{{ type }} editieren",
+      "delete-button-text": "{{ type }} löschen",
+      "cancel-confirm-message": "Bist du sicher, dass du abbrechen willst? Sämtliche Änderungen werden verloren gehen.",
+      "confirm-action-message": "Bist du sicher, dass du fortfahren willst?",
+      "item-in-use": "Entfernt alle Modifikatoren, die diesen Gegenstand beeinflussen, bevor es gelöscht wird"
+    },
+    "alt-text": {
+      "character-image": "Charakterbild",
+      "party-vehicle-image": "Gruppenfahrzeugbild",
+      "personal-vehicle-image": "Persönliches Fahrzeugsbild",
+      "rpgsessions-mark": "RPG Sessions-Zeichen"
+    },
+    "abbreviations": {
+      "Aft": "H",
+      "Defense": "Vert",
+      "Encumbrance": "Bel",
+      "Fore": "B",
+      "Melee": "N",
+      "Port": "BB",
+      "Ranged": "F",
+      "Round": "R",
+      "Starboard": "S",
+      "Strain": "E",
+      "System Strain Long": "Sys-Bel",
+      "System Strain Short": "SB",
+      "Triumph": "T",
+      "Wounds": "W"
+    },
+    "character": {
+      "phrases": {
+        "Activation Type": "Aktivierungstyp",
+        "Armor Attachment": "Rüstungszubehör",
+        "Character Details": "Charakterdetails",
+        "Damage Adds Brawn": "Stärke zum Schaden hinzufügen",
+        "Emotional Strength": "Emotionale Stärke",
+        "Emotional Weakness": "Emotionale Schwäche",
+        "Group Contribution Ranks": "Gruppenbeitragsrang",
+        "Morality Score": "Mortalwert",
+        "Session Conflict": "Sitzungskonflikt",
+        "Skill Type": "Fertigkeitentyp",
+        "Weapon Attachment": "Waffenzubehör",
+        "carrying-description": "Du trägst den Gegenstand",
+        "equipped-description": "Du trägst oder hältst diesen Gegenstand",
+        "restricted-designation": "R",
+        "signature-talent-shortened": "Sig.-Talente"
+      },
+      "nds": {
+        "configuration": {
+          "Character Sheet Customization Options": "Einstellungen für Charakterbogenanpassungen",
+          "Automations": "Automatisierung (Automatische Berechnung Absorption, Verteidigung und Belastung)",
+          "Super Characteristics": "Supercharakteristiken (Genesys Core Rule Book [englisch], Seite 251)"
+        }
+      }
+    },
+    "content-library": {
+      "confirm-folder-deletion": {
+        "title": "Ordner löschen",
+        "message": "Bist du sicher, dass du diesen Ordner löschen willst? Dieser Ordner und alle beinhaltete Items werden entfernt."
+      },
+      "create-content-overlay": {
+        "create-content-prompt": "Wähle aus, was du erstellen möchtest",
+        "enter-a-folder-name": "Benenne deinen Ordner"
+      },
+      "explorer": {
+        "folder-name": "Ordnername",
+        "header-title": "Meine Bibliothek",
+        "empty-folder": "Der Ordner ist leer, wieso fügst du nichts neues hinzu?"
+      },
+      "errors": {
+        "sub-folders-patreon-requirement": "Unterordner sind nur für Adventurer Patreon Mitglieder verfügbar"
+      }
+    },
+    "dice": {
+      "phrases": {
+        "Force Dice": "Machtwürfel",
+        "Genesys Dice": "Genesys-Würfel",
+        "Pass Dice": "Wurf weitergeben",
+        "Passed Dice": "Weitergegebener Wurf",
+        "Roll Dice": "Würfel würfeln",
+        "Star Wars Dice": "Star Wars-Würfel",
+        "full-history-button-label": "Komplette Historie anzeigen",
+        "new-roll": "Neuer Wurf"
+      },
+      "help": {
+        "categoryDescriptions": [
+          {
+            "category-title": "Wie man Würfel hinzufügt:",
+            "category-description": "Klicke auf dem Würfel, den du aus der Würfelsammlung ins Würfeltablett hinzufügen willst."
+          },
+          {
+            "category-title": "Wie entfernt man einen Würfel:",
+            "category-description": "Klicke auf dem Würfel, den du aus Würfeltablett entfernen willst."
+          }
+        ],
+        "close-dialog-button-text": "Okay, geht klar!"
+      },
+      "roller": {
+        "page-title": "Würfelfunktion",
+        "test-tab-label": "TEST",
+        "live-tab-label": "LIVE",
+        "dice-description-placeholder": "Beschreibung",
+        "roll-dice-button-text": "Würfel würfeln"
+      },
+      "result": {
+        "page-title": "Würfelresultat"
+      },
+      "history": {
+        "page-title": "Historie von {{ username }}"
+      }
+    },
+    "discord": {
+      "phrases": {
+        "Dice Channel": "Würfelkanal",
+        "Initiative Channel": "Initiativekanal",
+        "Story Points Channel": "Geschichtspunktekanal",
+        "Destiny Points Channel": "Schicksalspunktekanal",
+        "Refresh Channels": "Aktualisiere Kanäle"
+      },
+      "refresh-channels-overlay": {
+        "title": "Aktualisiere Discordkanalliste",
+        "refresh-warning": "Please be aware that you can only refresh the channel list for a server once every 10 minutes. It is best to ensure you have all channels already created before refreshing your channel list here.",
+        "last-refresh-label": "Letzte Kanalaktualisierung",
+        "refresh-not-available": "Refresh is not currently available. A refresh can only be triggered once every 10 minutes.",
+        "checking-availability": "Überprüfe Aktualisierungsverfügbarkeit...",
+        "refreshing-list": "Kanalliste wird aktualisiert...",
+        "no-previous-refresh": "Nie"
+      }
+    },
+    "game": {
+      "list-page": {
+        "header": "Meine Spiele",
+        "no-games-warning": "Du hast noch keine Spiele! Warum nicht beitreten oder eines erstellen?"
+      },
+      "leave-game-overlay": {
+        "confirmation-title": "{{ name }} verlassen?",
+        "leave-confirmation-description": "To join this game again, you'll need a link to it. If you are the last person to leave it, the game will be deleted. Are you sure you want to leave?",
+        "leave-confirmation-discord-description-join-info": "To join this game again, you'll need to run the .join command in the server linked for this game. Are you sure you want to leave?",
+        "game-left": "Du hast das Spiel erfolgreich verlassen"
+      },
+      "settings-player-options-component": {
+        "header": "Spieleroptionen",
+        "allow-gm-control-checkbox-label": "Erlaube SL-Kontrolle",
+        "active-character-description": "Der als \"Aktiv\" markierte Charakter ist derjenige, der den Bot als Standard für Kommandos nutzt."
+      },
+      "settings-general-component": {
+        "allow-new-players": "Neue Spieler erlauben",
+        "gm-destiny-point-style-placeholder": "Dunke Seite-Stil",
+        "gm-story-point-style-placeholder": "SL-Punkte-Stil",
+        "pc-destiny-point-style-placeholder": "Helle Seite-Stil",
+        "pc-story-point-style-placeholder": "SC-Punkte-Stil",
+        "must-be-gm-role": "Warum ist dies deaktiviert?",
+        "game-table-token-required": "Warum sind einige Optionen nicht verfügbar?",
+        "gm-role-required-text-no-existing-gm": "Nur ein SL kann diese Felder ändern. Fügen Sie sich als SL hinzu, um diese Felder aktualisieren zu können.",
+        "gm-role-required-text-existing-gms": "Nur ein SL kann diese Felder modifizieren. Werde als SL hinzugefügt oder lass die Änderungen vornehmen.",
+        "table-token-required-text": "These values require your table to have a Game Token associated with it before you can access them."
+      },
+      "settings-game-tokens-component": {
+        "available-tokens-label": "Verfügbare Tokens",
+        "no-tokens-available-label": "Keine Token vorhanden",
+        "attach-token-button-text": "Token an dieses Spiel anhängen",
+        "attached-tokens-label": "Angehängte Tokens",
+        "confirm-token-removal-title": "Token vom Spieltisch entfernen",
+        "confirm-token-removal-message": "Are you sure you want to remove your token from this table? All features unlocked by this token will no longer be available if you do. Do you still want to remove your token?"
+      },
+      "attach-token-prompt": {
+        "overlay-title": "Token anhängen",
+        "token-select-message": "Choose which of your tokens you would like to attach to this table"
+      },
+      "new-game-prompt": {
+        "title": "Wähle die Plattform für dein neues Spiel",
+        "discord-title": "Füge ein Discord-Spiel hinzu",
+        "rpgsessions-title": "Benenne und wähle das Regelsystem für dein Spiel",
+        "discord-not-linked-1": "Bevor du ein Discord-Spiel erstellen kannst, musst du deinen RPG Sessions-Account mit Discord verknüpfen.",
+        "discord-not-linked-2": "Es dauert nur eine Sekunde und wird in deinem Benutzerprofil gemacht.",
+        "invite-bot-information": "Lade den Bot auf deinen Server ein und ein Spiel wird hier automatisch erstellt! (Möglicherweise musst du diese Liste aktualisieren, um dein neues Spiel zu sehen)",
+        "invite-bot-button-text": "Bot einladen",
+        "user-profile-button-text": "Benutzerprofil"
+      },
+      "server-management": {
+        "title": "Servermanagement",
+        "discord-only-error": "Diese Ansicht kann nur mit Discord-basierten Spielen verwendet werden",
+        "no-assigned-channels": "Keine zugewiesenen Kanäle",
+        "remove-all-members": "Alle Mitglieder entfernen",
+        "no-user-data": "Keine Benutzerdaten",
+        "remove-member-title": "Mitglied entfernen",
+        "remove-member-confirm-message": "Bist du sicher, dass du dieses Mitglied entfernen möchtest?",
+        "remove-all-members-title": "Alle Mitglieder entfernen",
+        "remove-all-members-confirm-message": "Bist du sicher, dass du alle Mitglieder aus diesem Spiel entfernen möchtest? Dadurch werden auch alle SLs von diesem Spieltisch entfernt.",
+        "remove-channel-title": "Kanal entfernen",
+        "remove-channel-confirm-message": "Möchtest du diesen Kanal wirklich entfernen?",
+        "delete-game-table-title": "Spieltisch löschen",
+        "delete-game-table-confirm-message": "Möchtest du diesen Spieltisch wirklich löschen?",
+        "add-member-instructions": "To add a new member to this table, have them use the .join command in one of the channels you've linked to this table. Alternatively, you can send the the link to the table and they can join there."
+      },
+      "upload-image-overlay": {
+        "add-note-label": "Bildkommentar",
+        "upload-image-button-text": "Bild hochladen"
+      }
+    },
+    "game-table": {
+      "websockets": {
+        "no-connection-error": "Keine Verbindung",
+        "connecting-info": "Verbinde...",
+        "reconnect-button": "Wiederverbinden"
+      },
+      "character-list": {
+        "select-character": "Charakter auswählen",
+        "no-selected-character": "Keinen ausgewählten Charakter"
+      },
+      "kick-player": {
+        "overlay-title": "{{ displayName }} kicken",
+        "message": "Bist du sicher, dass du {{ displayName }} aus diesem Spiel werfen möchtest?"
+      },
+      "ban-player": {
+        "overlay-title": "{{ displayName }} bannen",
+        "message": "Bist du sicher, dass du {{ displayName }} von diesem Spiel bannen möchtest?"
+      },
+      "adversaries": {
+        "add-new-adversary": "Neuen Antagonisten hinzufügen",
+        "show-npc": "NSC anzeigen",
+        "show-name": "Namen anzeigen",
+        "show-image": "Bild anzeigen",
+        "show-stats": "Werte anzeigen",
+        "show-adversary": "Antagonisten anzeigen",
+        "show-crits": "Kritische Treffer anzeigen",
+        "show-npc-full": "NSC vollständig anzeigen",
+        "remove-npc": "NSC entfernen"
+      },
+      "initiative": {
+        "start-initiative": "Initiative starten",
+        "stop-initiative": "Initiative stoppen",
+        "convert-to-type": "In {{ type }} umwandeln",
+        "remove-slot": "Platz entfernen",
+        "reset-initiative": "Initiative zurücksetzen",
+        "clear-initiative": "Initiative leeren"
+      },
+      "dice": {
+        "Roll Crit": "Krit auswürfeln",
+        "Roll Crit for this PC": "Krit für diesen SC auswürfeln",
+        "rolled-from-game-table": "Vom Spieltisch gerollt",
+        "no-dice-channel-selected-error": "Kein Würfelkanal ausgewählt - Der Wurf wird nicht Discord in sichtbar sein. Wähle einen Kanal in den Spieleinstellungen"
+      },
+      "history": {
+        "no-history": "Kein Verlauf",
+        "character-updated": "{{ characterName }} aktualisiert!",
+        "character-updated-with-count": "{{ characterName }} wurde {{ count }} mal aktualisiert!"
+      },
+      "messages": {
+        "image-upload-patreon-requirement": "Du musst ein \"Explorer\" oder höher sein, um diese Funktion nutzen zu können",
+        "no-messages": "Keine Nachrichten",
+        "file-limit-error": "Importdatei muss kleiner als 10 MB sein.",
+        "file-type-error": "Die Datei muss ein Bild sein."
+      },
+      "talents": {
+        "no-talents": "Keine Talente"
+      },
+      "weapons": {
+        "weapons-hidden": "Versteckte Waffen",
+        "no-selected-character": "Keinen Charakter ausgewählt",
+        "dual-wield": "Beidhändig",
+        "remove-dual-wield": "Entferne Beidhändig",
+        "build-pool": "Pool erstellen"
+      }
+    },
+    "user": {
+      "phrases": {
+        "account-unlinked-successfully": "Benutzeraccount wurde getrennt",
+        "already-taken": "Bereits in Benutzung"
+      },
+      "discord-link": {
+        "honorary-titles-label": "Ehrentitel",
+        "unlink-confirmation-title": "Von Discord trennen",
+        "unlink-confirmation-message": "Bist du sicher, dass du deinen Discord-Account trennen möchtest? Alle mit Discord verknüpften Spiele werden aus deinem Profil entfernt.",
+        "unlink-confirmation-confirm-button-text": "Trennen",
+        "unlink-confirmation-cancel-button-text": "Abbrechen"
+      },
+      "name-and-password": {
+        "card-title": "Name und Passwort",
+        "facebook-login-enabled": "Facebook-Login aktiviert",
+        "google-login-enabled": "Google-Login aktiviert",
+        "password-enabled": "Password aktiviert",
+        "no-password-enabled": "Kein Passwort aktiviert",
+        "enable-password-button-text": "Passwort aktivieren",
+        "change-password-button-text": "Password ändern"
+      },
+      "patreon-link": {
+        "your-token-label": "Dein Token",
+        "attached-game-label": "Verknüpftes Spiel",
+        "token-not-linked": "Nicht verknüpft",
+        "remaining-cooldown": "Abklingzeit übrig",
+        "unlink-confirmation-title": "Von Patreon trennen",
+        "unlink-confirmation-message": "Bist du sicher, dass du deinen Patreon-Account trennen möchtest? Du wirst alle Vorteile von Patreon verlieren.",
+        "unlink-confirmation-confirm-button-text": "Trennen",
+        "unlink-confirmation-cancel-button-text": "Abbrechen"
+      },
+      "settings": {
+        "card-title": "Benutzereinstellungen",
+        "dice-type-select-placeholder": "Standardwürfeltyp",
+        "dice-input-style-select-placeholder": "Standardeingabestil",
+        "selected-dice-type-alt": "Ausgewählter Würfeltyp",
+        "selected-dice-scheme-alt": "Ausgewähltes Würfelschema",
+        "selected-site-theme-alt": "Ausgewähltes Seitenthema",
+        "theme-select-placeholder": "Seitenthema",
+        "language-select-placeholder": "Sprache"
+      },
+      "profile": {
+        "header": "Profilinformation"
+      },
+      "update-email": {
+        "modal-title": "E-Mailadresse aktualisieren"
+      },
+      "update-password": {
+        "modal-title-update": "Passwort aktualisieren",
+        "modal-title-enable": "Passwort aktivieren",
+        "input-current-password-placeholder": "Aktuelles Passwort",
+        "input-new-password-placeholder": "Neues Passwort",
+        "input-confirm-password-placeholder": "Passwort bestätigen"
+      },
+      "update-username": {
+        "modal-title": "Benutzername ändern"
+      },
+      "social-register": {
+        "invalid-link-data": "Ungültige Verknüpfungsdaten",
+        "account-linked-successfully": "Account erfolgreich verknüpft!",
+        "unable-to-complete-link": "Verknüpfung war nicht komplett erfolgreich",
+        "verifying-information": "Verifiziere Information",
+        "unable-to-verify-information": "Verifizierung von Informationen war nicht erfolgreich",
+        "this-may-take-a-moment": "Das wird ein wenig dauern",
+        "support-help-text": "Wenn dies weiterhin auftritt, informiere uns im Discordkanal #rpg-support",
+        "join-us-on-discord": "Tritt dem Discord bei",
+        "back-to-profile-button-text": "Zurück zum Profil"
+      }
+    },
+    "vehicle": {
+      "phrases": {
+        "Cargo Hold": "Frachtraum",
+        "Deck Plan": "Deckplan",
+        "Defense Zones": "Verteidigungszonen",
+        "Fire Arc": "Feuerbereich",
+        "Vehicle Action": "Fahrzeugaktion",
+        "Vehicle Actions": "Fahrzeugaktionen",
+        "Vehicle Attachment": "Fahrzeugzubehör",
+        "Vehicle Attachments": "Fahrzeugzubehöre",
+        "Vehicle Details": "Fahrzeugdetails",
+        "Vehicle Image": "Fahrzeugbild"
+      },
+      "form-labels": {
+        "model": "Fahrzeugtyp/-modell",
+        "manufacturer": "Hersteller",
+        "crew": "Besatzung",
+        "passengers": "Passagiere",
+        "consumables": "Autonomie",
+        "engine": "Hyperantrieb",
+        "sensors": "Sensoren",
+        "notable-features": "Besondere Merkmale"
+      },
+      "nds": {
+        "configuration": {
+          "Vehicle Sheet Customization Options": "Einstellungen für Fahrzeugbogenanpassungen"
+        }
+      }
+    },
+    "shared": {
+      "footer": {
+        "bot-help": "Bothilfe",
+        "build-version": "Build - {{ version }}"
+      },
+      "import-overlay": {
+        "import-overlay": {
+          "title-oggdude": "OggDude Importierer",
+          "title-oggdude-custom": "OggDude Benutzerdefinierte Datenimportierer",
+          "title-emporium": "Genesys Emporium Importierer",
+          "monthly-imports-label": "Monatliche Importe:",
+          "non-patron-custom-data-warning": "Warnung: Der OggDude-Importierer unterstützt derzeit keine benutzerdefinierten Daten für Nichtpatron-Mitglieder.",
+          "create-import-file-instructions": "To create the import file to upload, go to the data editor and hit \"Back Up\", then select only Data Custom and press back up.",
+          "import-data-button-text": "Daten importieren",
+          "import-character-button-text": "Charakter importieren",
+          "custom-oggdude-data-not-imported": "Warnung: Du hast keine benutzerdefinierten Daten importierst, benutzerdefinierte Daten auf deinem Charakterbogen werden ignoriert.",
+          "custom-oggdude-data-already-imported": "Gute Nachricht! Du hast benutzerdefinierte Daten importierst. Benutzerdefinierte Daten<br />in deinem Charakterbogen werden geladen.",
+          "custom-oggdude-data-confirm-delete": "Bist du dir sicher, dass du deine benutzerdefinierten OggDude-Daten löschen willst?",
+          "oggdude-delete-cancel-button-text": "Abbrechen",
+          "oggdude-delete-confirm-button-text": "Löschen",
+          "overwrite-ignored-label": "Wenn du einen Charakter überschreibst, wird alles ausser Folgendes ersetzt:",
+          "oggdude-import-wont-overwrite": [
+            "Name",
+            "Aktuelle Wunden",
+            "Aktuelle Erschöpfung",
+            "Krits",
+            "Spezies",
+            "Karriere",
+            "Alter",
+            "Motivation",
+            "Gewicht",
+            "Größe",
+            "Merkmale",
+            "Hintergrund"
+          ],
+          "import-limit-greeting": "Oh nein!",
+          "import-limit-description": "Es scheint, dass du dein Importlimit für den Monat erreicht hast.",
+          "import-limit-patreon-tier-error": "Um in diesem Monat mehr Charaktere zu importieren, musst du in Erwägung ziehen, deinen <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a > zu erhöhen.",
+          "import-limit-no-patreon-error": "Um in diesem Monat mehr Charaktere zu importieren, musst du in Erwägung ziehen, ein <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >Patreon</a > zu werden.",
+          "import-limit-linking-instructions": "Wenn du bereits ein Patron von uns bist, stelle sicher, dass dein Konto auf der <a href=\"/user/profile\">Benutzereinstellungsseite</a> verknüpft ist.",
+          "patreon-only-error-warning": "This feature is currently available only to our Patron members. If you'd like to join our Patreon to use this feature, check <a href=\"https://www.patreon.com/rpgsessions\" rel=\"noopener\" target=\"_blank\" >out our page on Patreon.com.</a>",
+          "patreon-only-error-call-to-action": "Wenn du bereits ein Patron von uns bist, stelle sicher, dass dein Konto auf der <a href=\"/user/profile\">Benutzereinstellungsseite</a> verknüpft ist.",
+          "dialog-cancel-button": "Abbrechen",
+          "drop-file-prompt": "{{ fileType }} hier ablegen oder zum Hochladen klicken",
+          "overwrite-character": "Charakter überschreiben",
+          "title-swrpg": "Star Wars RPG NSC importieren",
+          "title-genesys": "Genesys NSC importieren",
+          "import-npc-button-text": "NSC importieren",
+          "title-stoogoff": "SWRPG NSC von [StooGoff.com](http://swa.stoogoff.com/) importieren",
+          "title-dylan": "Genesys NSC von [DylanPetrumsa.com](http://genesysadversaries.dylanpetrusma.com) importieren"
+        }
+      }
+    }
+  }
+  

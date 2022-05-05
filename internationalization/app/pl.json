@@ -2,12 +2,12 @@
     "material": {
       "paginator": {
         "items-per-page": "Items per page",
-        "next-page": "Next page",
-        "last-page": "Last page",
-        "first-page": "First page",
-        "previous-page": "Previous Page",
-        "items-left-display-when-no-other-pages": "0 of {{ length }}",
-        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} of {{ length }}"
+        "next-page": "Następna strona",
+        "last-page": "Ostatnia strona",
+        "first-page": "Pierwsza strona",
+        "previous-page": "Poprzednia strona",
+        "items-left-display-when-no-other-pages": "0 z {{ length }}",
+        "items-left-when-other-pages-exist": "{{ startIndex }} - {{ endIndex }} z {{ length }}"
       }
     },
     "seo": {
@@ -25,10 +25,10 @@
     "enums": {
       "core": {
         "data-type": {
-          "[dataType] character": "Character",
+          "[dataType] character": "Postać",
           "[dataType] folder": "Folder",
           "[dataType] game": "Game",
-          "[dataType] vehicle": "Vehicle"
+          "[dataType] vehicle": "Pojazd"
         },
         "game-theme": {
           "[game theme] generic": "Generic",
@@ -36,21 +36,21 @@
           "[game theme] star wars aor": "Age of Rebellion",
           "[game theme] star wars fad": "Force and Destiny",
           "[game theme] genesys core": "Genesys Core",
-          "[game theme] genesys terrinoth": "Realms of Terrinoth",
-          "[game theme] genesys android": "Shadow of the Beanstalk",
+          "[game theme] genesys terrinoth": "Krainy Terrinoth",
+          "[game theme] genesys android": "Cienie New Angeles",
           "[game theme] genesys keyforge": "Keyforge",
           "[game theme] genesys twilight imperium": "Twilight Imperium"
         },
         "rules-system": {
-          "[rules] nds": "Narrative Dice System",
+          "[rules] nds": "Kostkowy System Narracyjny",
           "[rules] age": "Adventure Game Engine",
           "[rules] generic": "Generic"
         }
       },
       "character": {
         "character-type": {
-          "[character type] player": "Player",
-          "[character type] npc": "NPC"
+          "[character type] player": "Gracz",
+          "[character type] npc": "PN"
         },
         "nds": {
           "activation-type": {
@@ -66,18 +66,18 @@
             "[nds character activation type] action": "A"
           },
           "attribute": {
-            "[nds character attribute] soak": "Soak",
-            "[nds character attribute] wounds current": "Current Wounds",
-            "[nds character attribute] wounds threshold": "Wound Threshold",
-            "[nds character attribute] strain current": "Current Strain",
-            "[nds character attribute] strain threshold": "Strain Threshold",
-            "[nds character attribute] defense ranged": "Ranged Defense",
-            "[nds character attribute] defense melee": "Melee Defense",
-            "[nds character attribute] available xp": "Available XP",
-            "[nds character attribute] total xp": "Total XP",
-            "[nds character attribute] money": "Money",
-            "[nds character attribute] encumbrance current": "Current Encumbrance",
-            "[nds character attribute] encumbrance threshold": "Encumbrance Threshold",
+            "[nds character attribute] soak": "Redukcja",
+            "[nds character attribute] wounds current": "Aktualna liczba ran",
+            "[nds character attribute] wounds threshold": "Próg ran",
+            "[nds character attribute] strain current": "Aktualne zmęczenie",
+            "[nds character attribute] strain threshold": "Próg zmęczenia",
+            "[nds character attribute] defense ranged": "Obrona na dystans",
+            "[nds character attribute] defense melee": "Obrona w zwarciu",
+            "[nds character attribute] available xp": "Dostępne PD",
+            "[nds character attribute] total xp": "Łączne PD",
+            "[nds character attribute] money": "Pieniądze",
+            "[nds character attribute] encumbrance current": "Aktualne obciążenie",
+            "[nds character attribute] encumbrance threshold": "Próg obciążenia",
             "[nds character attribute] force rating current": "Current Force Rating",
             "[nds character attribute] force rating committed": "Force Rating Committed",
             "[nds character attribute] available heroic ability points": "Available Heroic Ability Points",
@@ -93,43 +93,43 @@
           },
           "characteristic": {
             "[nds character characteristic] none": "None",
-            "[nds character characteristic] brawn": "Brawn",
-            "[nds character characteristic] agility": "Agility",
-            "[nds character characteristic] intellect": "Intellect",
-            "[nds character characteristic] cunning": "Cunning",
-            "[nds character characteristic] willpower": "Willpower",
-            "[nds character characteristic] presence": "Presence"
+            "[nds character characteristic] brawn": "Krzepa",
+            "[nds character characteristic] agility": "Zwinność",
+            "[nds character characteristic] intellect": "Intelekt",
+            "[nds character characteristic] cunning": "Spryt",
+            "[nds character characteristic] willpower": "Wola",
+            "[nds character characteristic] presence": "Prezencja"
           },
           "characteristic-abreviated": {
             "[nds character characteristic] none": "-",
-            "[nds character characteristic] brawn": "BR",
-            "[nds character characteristic] agility": "AG",
+            "[nds character characteristic] brawn": "KRZ",
+            "[nds character characteristic] agility": "ZW",
             "[nds character characteristic] intellect": "INT",
-            "[nds character characteristic] cunning": "CUN",
-            "[nds character characteristic] willpower": "WILL",
-            "[nds character characteristic] presence": "PR"
+            "[nds character characteristic] cunning": "SPR",
+            "[nds character characteristic] willpower": "W",
+            "[nds character characteristic] presence": "PREZ"
           },
           "character-type": {
-            "[nds character type] player": "Player Character",
-            "[nds character type] nemesis": "Nemesis",
-            "[nds character type] rival": "Rival",
-            "[nds character type] minion": "Minion"
+            "[nds character type] player": "Postać Gracza",
+            "[nds character type] nemesis": "Nemezis",
+            "[nds character type] rival": "Rywal",
+            "[nds character type] minion": "Pachołek"
           },
           "detail": {
-            "[nds character detail] archetype": "Archetype",
-            "[nds character detail] species": "Species",
-            "[nds character detail] career": "Career",
-            "[nds character detail] specialization": "Specialization",
-            "[nds character detail] age": "Age",
-            "[nds character detail] weight": "Weight",
-            "[nds character detail] height": "Height",
-            "[nds character detail] notable features": "Notable Features",
-            "[nds character detail] background": "Background",
-            "[nds character detail] motivation": "Motivation",
-            "[nds character detail] desire": "Desire",
-            "[nds character detail] fear": "Fear",
-            "[nds character detail] strength": "Strength",
-            "[nds character detail] flaw": "Flaw"
+            "[nds character detail] archetype": "Archetyp",
+            "[nds character detail] species": "Gatunki",
+            "[nds character detail] career": "Profesja",
+            "[nds character detail] specialization": "Specjalizacja",
+            "[nds character detail] age": "Wiek",
+            "[nds character detail] weight": "Waga",
+            "[nds character detail] height": "Wzrost",
+            "[nds character detail] notable features": "Znaki szczególne",
+            "[nds character detail] background": "Pochodzenie",
+            "[nds character detail] motivation": "Motywacje",
+            "[nds character detail] desire": "Pragnienie",
+            "[nds character detail] fear": "Lęk",
+            "[nds character detail] strength": "Zaleta",
+            "[nds character detail] flaw": "Wada"
           },
           "favor-size": {
             "[nds character favor size] small": "Small",
@@ -228,13 +228,13 @@
       },
       "user": {
         "language-option": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French"
+          "en": "Angelski",
+          "es": "Hiszpański",
+          "fr": "Francuski"
         },
         "theme-option": {
-          "[theme option] light": "Light Theme",
-          "[theme option] dark": "Dark Theme"
+          "[theme option] light": "Jasny motyw",
+          "[theme option] dark": "Ciemny motyw"
         }
       },
       "vehicle": {
@@ -255,9 +255,9 @@
             "[nds vehicle attribute] hard points": "Hard Points",
             "[nds vehicle attribute] hard points capacity": "Hard Points Capacity",
             "[nds vehicle attribute] hard points used": "Hard Points Used",
-            "[nds vehicle attribute] encumbrance": "Encumbrance",
-            "[nds vehicle attribute] price": "Price",
-            "[nds vehicle attribute] rarity": "Rarity"
+            "[nds vehicle attribute] encumbrance": "Obciążenie",
+            "[nds vehicle attribute] price": "Cena",
+            "[nds vehicle attribute] rarity": "Niedostępność"
           },
           "characteristic": {
             "[nds vehicle characteristic] silhouette": "Silhouette",
@@ -351,7 +351,7 @@
       "Email": "Email",
       "Enable": "Enable",
       "Enabled": "Enabled",
-      "Encumbrance": "Encumbrance",
+      "Encumbrance": "Obciążenie",
       "Equipment": "Equipment",
       "Equipped": "Equipped",
       "Error": "Error",
@@ -359,8 +359,8 @@
       "Faction": "Faction",
       "Favor": "Favor",
       "Favors": "Favors",
-      "Fear": "Fear",
-      "Flaw": "Flaw",
+      "Fear": "Lęk",
+      "Flaw": "Wada",
       "Folder": "Folder",
       "Fore": "Fore",
       "Games": "Games",
@@ -388,8 +388,8 @@
       "Modifier": "Modifier",
       "Modifiers": "Modifiers",
       "Morality": "Morality",
-      "Motivation": "Motivation",
-      "Name": "Name",
+      "Motivation": "Motywacje",
+      "Name": "Imię",
       "New": "New",
       "None": "None",
       "Notes": "Notes",
