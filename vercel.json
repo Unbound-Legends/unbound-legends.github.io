@@ -1,7 +1,7 @@
 {
     "headers": [
       {
-        "source": "/internationalization/*",
+        "source": "/internationalization/app/en.json",
         "headers": [
           { "key": "Access-Control-Allow-Credentials", "value": "true" },
           { "key": "Access-Control-Allow-Origin", "value": "*" },
