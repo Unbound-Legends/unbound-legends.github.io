@@ -696,7 +696,7 @@
         "rpgsessions-title": "Name and select the Rules System for your Game",
         "discord-not-linked-1": "Before you can create a Discord game, you need to link your RPG Sessions account with Discord.",
         "discord-not-linked-2": "It only takes a second and is done from your account profile.",
-        "invite-bot-information": "Invite the bot to your server and a game will be automatically created here! (You might need to refresh this list to see your new game)",
+        "invite-bot-information": "Invite the bot to your server and a game will be automatically created here! (You might need to refresh this list to see your new game). Wanting an additional table for your server? Use the Server Management button in your game settings.",
         "invite-bot-button-text": "Invite the Bot",
         "user-profile-button-text": "User Profile"
       },
