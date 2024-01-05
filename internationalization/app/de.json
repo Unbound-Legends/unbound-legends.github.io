@@ -204,7 +204,7 @@
           "[import source] oggdude custom data": "Oggdude Benutzerdefinierte Daten",
           "[import source] genesys emporium": "Genesys Emporium",
           "[import source] stoogoff npc": "NSC (StooGoff.com)",
-          "[import source] dylan petrumsa npc": "NSC (DylanPetrumsa.com)"
+          "[import source] dylan petrumsa npc": "NSC (DylanPetrusma.com)"
         }
       },
       "patreon": {
@@ -933,7 +933,7 @@
           "title-genesys": "Genesys NSC importieren",
           "import-npc-button-text": "NSC importieren",
           "title-stoogoff": "SWRPG NSC von [StooGoff.com](http://swa.stoogoff.com/) importieren",
-          "title-dylan": "Genesys NSC von [DylanPetrumsa.com](http://genesysadversaries.dylanpetrusma.com) importieren"
+          "title-dylan": "Genesys NSC von [DylanPetrusma.com](http://genesysadversaries.dylanpetrusma.com) importieren"
         }
       }
     }

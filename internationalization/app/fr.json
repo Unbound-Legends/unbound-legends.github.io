@@ -204,7 +204,7 @@
           "[import source] oggdude custom data": "Oggdude Custom Data",
           "[import source] genesys emporium": "Genesys Emporium",
           "[import source] stoogoff npc": "NPC (StooGoff.com)",
-          "[import source] dylan petrumsa npc": "NPC (DylanPetrumsa.com)"
+          "[import source] dylan petrumsa npc": "NPC (DylanPetrusma.com)"
         }
       },
       "patreon": {
@@ -933,7 +933,7 @@
           "title-genesys": "Import Genesys NPC",
           "import-npc-button-text": "Import NPC",
           "title-stoogoff": "Import SWRPG NPC from [StooGoff.com](http://swa.stoogoff.com/)",
-          "title-dylan": "Import Genesys NPC from [DylanPetrumsa.com](http://genesysadversaries.dylanpetrusma.com)"
+          "title-dylan": "Import Genesys NPC from [DylanPetrusma.com](http://genesysadversaries.dylanpetrusma.com)"
         }
       }
     }
