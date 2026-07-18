@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "note": "Reviewed setup inventory, not a native Weblate import file",
+  "project": {
+    "slug": "rpgsessions",
+    "sourceLanguage": "en",
+    "targetLanguages": ["fr", "es"],
+    "reviewsEnabled": true,
+    "commitPolicy": "approved-only",
+    "automaticTranslation": false,
+    "sourceEditing": false
+  },
+  "repository": {
+    "url": "https://github.com/Unbound-Legends/unbound-legends.github.io",
+    "branch": "master",
+    "translationBranch": "weblate/translations",
+    "primaryComponent": "settings",
+    "linkedRepository": "weblate://rpgsessions/settings"
+  },
+  "components": [
+    {
+      "slug": "settings",
+      "format": "i18nextv4",
+      "fileMask": "internationalization/rpgsessions/translations/*/settings.json",
+      "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/settings.json",
+      "templateForNewTranslations": null,
+      "repositoryOwner": true
+    },
+    {
+      "slug": "common",
+      "format": "i18nextv4",
+      "fileMask": "internationalization/rpgsessions/translations/*/common.json",
+      "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/common.json",
+      "templateForNewTranslations": null,
+      "repositoryOwner": false,
+      "activation": "defer-while-source-empty"
+    },
+    {
+      "slug": "discord",
+      "format": "i18nextv4",
+      "fileMask": "internationalization/rpgsessions/translations/*/discord.json",
+      "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/discord.json",
+      "templateForNewTranslations": null,
+      "repositoryOwner": false
+    },
+    {
+      "slug": "email",
+      "format": "i18nextv4",
+      "fileMask": "internationalization/rpgsessions/translations/*/email.json",
+      "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/email.json",
+      "templateForNewTranslations": null,
+      "repositoryOwner": false,
+      "activation": "defer-while-source-empty"
+    },
+    {
+      "slug": "enums",
+      "format": "i18nextv4",
+      "fileMask": "internationalization/rpgsessions/translations/*/enums.json",
+      "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/enums.json",
+      "templateForNewTranslations": null,
+      "repositoryOwner": false
+    },
+    {
+      "slug": "game-table",
+      "format": "i18nextv4",
+      "fileMask": "internationalization/rpgsessions/translations/*/game-table.json",
+      "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/game-table.json",
+      "templateForNewTranslations": null,
+      "repositoryOwner": false
+    },
+    {
+      "slug": "maps",
+      "format": "po",
+      "fileMask": "internationalization/rpgsessions/translations/*/maps.po",
+      "monolingualBaseLanguageFile": null,
+      "templateForNewTranslations": "internationalization/rpgsessions/source/maps/messages.pot",
+      "repositoryOwner": false,
+      "addons": ["weblate.gettext.msgmerge"],
+      "fileFormatParameters": {
+        "po_remove_obsolete": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "0e1c441d7ee3f6797e9152382d70051856309ee1",
+  "status": "frozen-recovery-only",
+  "files": [
+    {
+      "compatibilityPath": "internationalization/app/de.json",
+      "archivePath": "internationalization/legacy/app-catalog/de.json",
+      "sha256": "92839f90d971074815fb322f01eef2d405c634d5574c022688bd19fee30d3b6b"
+    },
+    {
+      "compatibilityPath": "internationalization/app/en.json",
+      "archivePath": "internationalization/legacy/app-catalog/en.json",
+      "sha256": "4644184a770e6a5e5a4973b8c97231d22558aa4bc3cd4ae0ca993db80572ee2f"
+    },
+    {
+      "compatibilityPath": "internationalization/app/es.json",
+      "archivePath": "internationalization/legacy/app-catalog/es.json",
+      "sha256": "95e2eb8005e08d3abd6b9b49160efe8486fa5c6c036ed6d7cfe9d9342b9e1ac1"
+    },
+    {
+      "compatibilityPath": "internationalization/app/fr.json",
+      "archivePath": "internationalization/legacy/app-catalog/fr.json",
+      "sha256": "795aa52f3dc376445bf846cf8d58b923b8810f9c761d4191dc2cd3f4bc1fd64a"
+    },
+    {
+      "compatibilityPath": "internationalization/app/pl.json",
+      "archivePath": "internationalization/legacy/app-catalog/pl.json",
+      "sha256": "724f52a8325602e180bf3a67b3064fd42cb55a66b0dd313b4aad872bfa3bbbf0"
+    },
+    {
+      "compatibilityPath": "internationalization/rpgsessions/en.json",
+      "archivePath": "internationalization/legacy/rpgsessions-pilot/en.json",
+      "sha256": "ac15d5ff40051feff4af966df9c8e3617f116475cf4a9ed75737b038a26905ab"
+    },
+    {
+      "compatibilityPath": "internationalization/rpgsessions/es.json",
+      "archivePath": "internationalization/legacy/rpgsessions-pilot/es.json",
+      "sha256": "5559cdf0e24c3d75dd28890ded7bdfe18c323554ba00b954df26416cf09119a3"
+    },
+    {
+      "compatibilityPath": "internationalization/rpgsessions/fr.json",
+      "archivePath": "internationalization/legacy/rpgsessions-pilot/fr.json",
+      "sha256": "9bdcb8a0521f1d87e41900eb9c04185bdd6442dcc82c8351ef2317904c0a5a54"
+    }
+  ]
+}

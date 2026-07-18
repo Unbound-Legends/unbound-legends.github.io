@@ -1,0 +1,15 @@
+{
+  "name": "@unbound-legends/translation-bridge",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Public RPGSessions source, translator context, and reviewed translations",
+  "scripts": {
+    "test": "node --test internationalization/legacy/verify.test.mjs integrations/weblate/validate-translation-changes.test.mjs && npm run i18n:check",
+    "i18n:check": "node internationalization/legacy/verify.mjs && node internationalization/rpgsessions/tools/i18n.mjs validate --bridge internationalization/rpgsessions --mode draft",
+    "i18n:check:release": "node internationalization/rpgsessions/tools/i18n.mjs validate --bridge internationalization/rpgsessions --mode release",
+    "i18n:seal": "node internationalization/rpgsessions/tools/i18n.mjs seal --bridge internationalization/rpgsessions"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

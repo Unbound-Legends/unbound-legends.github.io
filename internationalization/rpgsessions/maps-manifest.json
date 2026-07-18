@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "catalogs@2026-07-16.i18n-foundation-2",
+  "catalogRevision": {
+    "schemaVersion": 1,
+    "revision": "catalogs@2026-07-16.i18n-foundation-2",
+    "sourceDigest": "sha256:d50f33526842ca0c8e7c608935161cb8509d625618bcd38e18c3d3e9d29e9395"
+  },
+  "sourceDigest": "sha256:d50f33526842ca0c8e7c608935161cb8509d625618bcd38e18c3d3e9d29e9395",
+  "format": "gettext-po",
+  "sourcePath": "source/maps/messages.pot",
+  "contextPath": "context/maps.json",
+  "stringCount": 19,
+  "keys": [
+    "maps:toolbar.actors.tooltip",
+    "maps:toolbar.assets.tooltip",
+    "maps:toolbar.brush.tooltip",
+    "maps:toolbar.clocks.tooltip",
+    "maps:toolbar.eraser.tooltip",
+    "maps:toolbar.fog.tooltip",
+    "maps:toolbar.hand.tooltip",
+    "maps:toolbar.lasso.tooltip",
+    "maps:toolbar.layers.tooltip",
+    "maps:toolbar.note.tooltip",
+    "maps:toolbar.ping.tooltip",
+    "maps:toolbar.pointer.tooltip",
+    "maps:toolbar.wall.tooltip",
+    "maps:wall-mode.add.button",
+    "maps:wall-mode.add.tooltip",
+    "maps:wall-mode.remove.button",
+    "maps:wall-mode.remove.tooltip",
+    "maps:wall-mode.trace.button",
+    "maps:wall-mode.trace.tooltip"
+  ]
+}
