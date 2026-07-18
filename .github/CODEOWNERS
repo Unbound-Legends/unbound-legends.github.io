@@ -1,0 +1,15 @@
+* @ShaneK
+
+/.github/ @ShaneK
+/integrations/ @ShaneK
+/internationalization/legacy/ @ShaneK
+/internationalization/rpgsessions/source/ @ShaneK
+/internationalization/rpgsessions/context/ @ShaneK
+/internationalization/rpgsessions/screenshots/ @ShaneK
+/internationalization/rpgsessions/manifest.json @ShaneK
+/internationalization/rpgsessions/maps-manifest.json @ShaneK
+/internationalization/rpgsessions/screenshots.json @ShaneK
+/internationalization/rpgsessions/tools/ @ShaneK
+/internationalization/rpgsessions/TRANSLATION_POLICY.md @ShaneK
+/internationalization/rpgsessions/translations/*/_provenance.json @ShaneK
+/internationalization/rpgsessions/translations/*/_maps-provenance.json @ShaneK

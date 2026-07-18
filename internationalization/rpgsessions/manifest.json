@@ -1,0 +1,1557 @@
+{
+  "schemaVersion": 1,
+  "sourceLocale": "en",
+  "revision": "catalogs@2026-07-16.i18n-foundation-2",
+  "sourceDigest": "sha256:2100df7cd6a8bce5baa0ac23670ec5747f9d1fb876e490ab18fc78ba7b3bd227",
+  "files": [
+    {
+      "namespace": "common",
+      "path": "source/en/common.json",
+      "messages": {},
+      "context": {
+        "description": "English source strings for the common namespace.",
+        "surfaces": [],
+        "audiences": []
+      }
+    },
+    {
+      "namespace": "discord",
+      "path": "source/en/discord.json",
+      "messages": {
+        "destiny.point-type.private.dark-side": "dark side",
+        "destiny.point-type.private.gm": "GM",
+        "destiny.point-type.private.light-side": "light side",
+        "destiny.point-type.private.player": "player",
+        "destiny.point-type.shared.dark-side": "dark side",
+        "destiny.point-type.shared.gm": "GM",
+        "destiny.point-type.shared.light-side": "light side",
+        "destiny.point-type.shared.player": "player",
+        "destiny.use.error.amount-range": "You can only use between {{minimum}} and {{maximum}} points at a time.",
+        "destiny.use.error.not-enough-points_one": "There aren't enough {{pointType}} points to use. You asked for {{requested}}, but there's only {{available}}.",
+        "destiny.use.error.not-enough-points_other": "There aren't enough {{pointType}} points to use. You asked for {{requested}}, but there are only {{available}}.",
+        "destiny.use.success_one": "Used {{count}} {{pointType}} point!",
+        "destiny.use.success_other": "Used {{count}} {{pointType}} points!"
+      },
+      "context": {
+        "description": "English source strings for the discord namespace.",
+        "surfaces": [
+          "discord"
+        ],
+        "audiences": [
+          "game-shared",
+          "personal"
+        ]
+      }
+    },
+    {
+      "namespace": "email",
+      "path": "source/en/email.json",
+      "messages": {},
+      "context": {
+        "description": "English source strings for the email namespace.",
+        "surfaces": [],
+        "audiences": []
+      }
+    },
+    {
+      "namespace": "enums",
+      "path": "source/en/enums.json",
+      "messages": {
+        "character.nds.skill-function.initiative-proactive": "Proactive",
+        "character.nds.skill-function.initiative-reactive": "Reactive",
+        "user.language.en": "English",
+        "user.language.es": "Spanish",
+        "user.language.fr": "French"
+      },
+      "context": {
+        "description": "English source strings for the enums namespace.",
+        "surfaces": [
+          "web"
+        ],
+        "audiences": [
+          "personal"
+        ]
+      }
+    },
+    {
+      "namespace": "game-table",
+      "path": "source/en/game-table.json",
+      "messages": {
+        "initiative.label": "Initiative",
+        "notifications.story-point-flipped": "{{authorName}} flipped a story point",
+        "story-point.flipped_one": "Flipped {{count}} {{pointLabel}} point from {{fromLabel}} to {{toLabel}}!",
+        "story-point.flipped_other": "Flipped {{count}} {{pointLabel}} points from {{fromLabel}} to {{toLabel}}!"
+      },
+      "context": {
+        "description": "English source strings for the game-table namespace.",
+        "surfaces": [
+          "generated-game-output",
+          "push",
+          "web"
+        ],
+        "audiences": [
+          "game-shared",
+          "personal"
+        ]
+      }
+    },
+    {
+      "namespace": "settings",
+      "path": "source/en/settings.json",
+      "messages": {
+        "game-language.description": "Sets the language for newly generated shared game output. Existing game history is not changed.",
+        "game-language.label": "Game Language",
+        "game-language.placeholder": "Select a language",
+        "language.description": "Language for app labels. Your characters keep their own skill names.",
+        "language.label": "Language",
+        "language.preview-option": "{{languageName}} (Preview)"
+      },
+      "context": {
+        "description": "English source strings for the settings namespace.",
+        "surfaces": [
+          "web"
+        ],
+        "audiences": [
+          "personal"
+        ]
+      }
+    }
+  ],
+  "strings": [
+    {
+      "id": "discord:destiny.point-type.private.dark-side",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.point-type.private.dark-side",
+      "source": "dark side",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Account-localized label for the dark-side destiny-point pool inside a private Discord validation reply.",
+        "surface": "discord",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "Discord slash command /destiny use",
+        "state": "The invoking account selected the dark-side pool but the private command validation failed.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This label uses the invoking account or Discord locale.",
+          "Use the established Star Wars rules term in the target language."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/utils/get-point-type-label.ts",
+            "line": 37,
+            "anchor": "translate(getPointTypeTranslationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 5
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.error.not-enough-points_one",
+          "discord:destiny.use.error.not-enough-points_other",
+          "discord:destiny.point-type.shared.dark-side"
+        ],
+        "tone": "Concise rules vocabulary"
+      }
+    },
+    {
+      "id": "discord:destiny.point-type.private.gm",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.point-type.private.gm",
+      "source": "GM",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Account-localized label for the game-master-controlled story-point pool inside a private Discord validation reply.",
+        "surface": "discord",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "Discord slash command /story use",
+        "state": "The invoking account selected the GM pool but the private command validation failed.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This label uses the invoking account or Discord locale.",
+          "Use the conventional local abbreviation for game master."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/utils/get-point-type-label.ts",
+            "line": 37,
+            "anchor": "translate(getPointTypeTranslationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.error.not-enough-points_one",
+          "discord:destiny.use.error.not-enough-points_other",
+          "discord:destiny.point-type.shared.gm"
+        ],
+        "tone": "Concise rules vocabulary"
+      }
+    },
+    {
+      "id": "discord:destiny.point-type.private.light-side",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.point-type.private.light-side",
+      "source": "light side",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Account-localized label for the light-side destiny-point pool inside a private Discord validation reply.",
+        "surface": "discord",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "Discord slash command /destiny use",
+        "state": "The invoking account selected the light-side pool but the private command validation failed.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This label uses the invoking account or Discord locale.",
+          "Use the established Star Wars rules term in the target language."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/utils/get-point-type-label.ts",
+            "line": 37,
+            "anchor": "translate(getPointTypeTranslationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 4
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.error.not-enough-points_one",
+          "discord:destiny.use.error.not-enough-points_other",
+          "discord:destiny.point-type.shared.light-side"
+        ],
+        "tone": "Concise rules vocabulary"
+      }
+    },
+    {
+      "id": "discord:destiny.point-type.private.player",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.point-type.private.player",
+      "source": "player",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Account-localized label for the player-controlled story-point pool inside a private Discord validation reply.",
+        "surface": "discord",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "Discord slash command /story use",
+        "state": "The invoking account selected the player pool but the private command validation failed.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This label uses the invoking account or Discord locale.",
+          "Use a noun phrase that reads naturally inside the private insufficient-points sentence."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/utils/get-point-type-label.ts",
+            "line": 37,
+            "anchor": "translate(getPointTypeTranslationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.error.not-enough-points_one",
+          "discord:destiny.use.error.not-enough-points_other",
+          "discord:destiny.point-type.shared.player"
+        ],
+        "tone": "Concise rules vocabulary"
+      }
+    },
+    {
+      "id": "discord:destiny.point-type.shared.dark-side",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.point-type.shared.dark-side",
+      "source": "dark side",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Game-localized label for the dark-side destiny-point pool inside a shared Discord confirmation.",
+        "surface": "discord",
+        "audience": "game-shared",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "Discord slash command /destiny use",
+        "state": "The dark-side pool was changed successfully and the channel receives the shared confirmation.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This label uses the game's language, not the invoking account's language.",
+          "Use the established Star Wars rules term in the target language."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/utils/get-point-type-label.ts",
+            "line": 37,
+            "anchor": "translate(getPointTypeTranslationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 9
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.success_one",
+          "discord:destiny.use.success_other",
+          "discord:destiny.point-type.private.dark-side"
+        ],
+        "tone": "Concise rules vocabulary"
+      }
+    },
+    {
+      "id": "discord:destiny.point-type.shared.gm",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.point-type.shared.gm",
+      "source": "GM",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Game-localized label for the game-master-controlled story-point pool inside a shared Discord confirmation.",
+        "surface": "discord",
+        "audience": "game-shared",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "Discord slash command /story use",
+        "state": "The GM pool was changed successfully and the channel receives the shared confirmation.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This label uses the game's language, not the invoking account's language.",
+          "Use the conventional local abbreviation for game master."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/utils/get-point-type-label.ts",
+            "line": 37,
+            "anchor": "translate(getPointTypeTranslationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 7
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.success_one",
+          "discord:destiny.use.success_other",
+          "discord:destiny.point-type.private.gm"
+        ],
+        "tone": "Concise rules vocabulary"
+      }
+    },
+    {
+      "id": "discord:destiny.point-type.shared.light-side",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.point-type.shared.light-side",
+      "source": "light side",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Game-localized label for the light-side destiny-point pool inside a shared Discord confirmation.",
+        "surface": "discord",
+        "audience": "game-shared",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "Discord slash command /destiny use",
+        "state": "The light-side pool was changed successfully and the channel receives the shared confirmation.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This label uses the game's language, not the invoking account's language.",
+          "Use the established Star Wars rules term in the target language."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/utils/get-point-type-label.ts",
+            "line": 37,
+            "anchor": "translate(getPointTypeTranslationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 8
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.success_one",
+          "discord:destiny.use.success_other",
+          "discord:destiny.point-type.private.light-side"
+        ],
+        "tone": "Concise rules vocabulary"
+      }
+    },
+    {
+      "id": "discord:destiny.point-type.shared.player",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.point-type.shared.player",
+      "source": "player",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Game-localized label for the player-controlled story-point pool inside a shared Discord confirmation.",
+        "surface": "discord",
+        "audience": "game-shared",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "Discord slash command /story use",
+        "state": "The player pool was changed successfully and the channel receives the shared confirmation.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This label uses the game's language, not the invoking account's language.",
+          "Use a noun phrase that reads naturally after the shared confirmation count."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/utils/get-point-type-label.ts",
+            "line": 37,
+            "anchor": "translate(getPointTypeTranslationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 6
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.success_one",
+          "discord:destiny.use.success_other",
+          "discord:destiny.point-type.private.player"
+        ],
+        "tone": "Concise rules vocabulary"
+      }
+    },
+    {
+      "id": "discord:destiny.use.error.amount-range",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.use.error.amount-range",
+      "source": "You can only use between {{minimum}} and {{maximum}} points at a time.",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Private Discord validation reply shown when an account requests an unsupported number of story or destiny points.",
+        "surface": "discord",
+        "audience": "personal",
+        "uiRole": "validation",
+        "placeholders": {
+          "maximum": {
+            "type": "number",
+            "meaning": "Largest number of points allowed in one use command.",
+            "example": 10,
+            "userAuthored": false
+          },
+          "minimum": {
+            "type": "number",
+            "meaning": "Smallest number of points allowed in one use command.",
+            "example": 1,
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 100,
+        "route": "Discord slash commands /story use and /destiny use",
+        "state": "The invoking account supplied an amount below the minimum or above the maximum, before any game state changed.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This reply is ephemeral and only the invoking account can see it.",
+          "Keep both numeric placeholders and make the inclusive range clear."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/use.command.ts",
+            "line": 41,
+            "anchor": "discord:destiny.use.error.amount-range"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 10
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.error.not-enough-points_one",
+          "discord:destiny.use.error.not-enough-points_other"
+        ],
+        "tone": "Direct and helpful"
+      }
+    },
+    {
+      "id": "discord:destiny.use.error.not-enough-points_one",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.use.error.not-enough-points_one",
+      "source": "There aren't enough {{pointType}} points to use. You asked for {{requested}}, but there's only {{available}}.",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Private Discord error explaining that the selected game pool contains fewer points than the account requested, when exactly one point remains.",
+        "surface": "discord",
+        "audience": "personal",
+        "uiRole": "validation",
+        "placeholders": {
+          "available": {
+            "type": "number",
+            "meaning": "Number of matching points currently available in the shared game pool.",
+            "example": 1,
+            "userAuthored": false
+          },
+          "pointType": {
+            "type": "enum",
+            "meaning": "Prelocalized app-owned point-pool label rendered with the same account translator as this private reply.",
+            "example": "light side",
+            "userAuthored": false
+          },
+          "requested": {
+            "type": "number",
+            "meaning": "Number of points the invoking account asked to use.",
+            "example": 2,
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "Discord slash commands /story use and /destiny use",
+        "state": "The selected shared pool has exactly one point, fewer than the requested amount, and no points were changed.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This reply is ephemeral and uses the invoking account's language, not the game's language.",
+          "The pointType value is already localized by a discord:destiny.point-type key and is not user-authored text.",
+          "Keep the distinction between requested and available counts."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/use.command.ts",
+            "line": 57,
+            "anchor": "discord:destiny.use.error.not-enough-points"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 11
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.error.not-enough-points_other",
+          "discord:destiny.use.error.amount-range"
+        ],
+        "tone": "Clear and non-accusatory"
+      }
+    },
+    {
+      "id": "discord:destiny.use.error.not-enough-points_other",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.use.error.not-enough-points_other",
+      "source": "There aren't enough {{pointType}} points to use. You asked for {{requested}}, but there are only {{available}}.",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Private Discord error explaining that the selected game pool contains fewer points than the account requested, when zero or multiple points remain.",
+        "surface": "discord",
+        "audience": "personal",
+        "uiRole": "validation",
+        "placeholders": {
+          "available": {
+            "type": "number",
+            "meaning": "Number of matching points currently available in the shared game pool.",
+            "example": 0,
+            "userAuthored": false
+          },
+          "pointType": {
+            "type": "enum",
+            "meaning": "Prelocalized app-owned point-pool label rendered with the same account translator as this private reply.",
+            "example": "light side",
+            "userAuthored": false
+          },
+          "requested": {
+            "type": "number",
+            "meaning": "Number of points the invoking account asked to use.",
+            "example": 3,
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "Discord slash commands /story use and /destiny use",
+        "state": "The selected shared pool has zero or multiple points, fewer than the requested amount, and no points were changed.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This reply is ephemeral and uses the invoking account's language, not the game's language.",
+          "The pointType value is already localized by a discord:destiny.point-type key and is not user-authored text.",
+          "Keep the distinction between requested and available counts."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/use.command.ts",
+            "line": 57,
+            "anchor": "discord:destiny.use.error.not-enough-points"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 12
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.error.not-enough-points_one",
+          "discord:destiny.use.error.amount-range"
+        ],
+        "tone": "Clear and non-accusatory"
+      }
+    },
+    {
+      "id": "discord:destiny.use.success_one",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.use.success_one",
+      "source": "Used {{count}} {{pointType}} point!",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Discord embed heading confirming that one story or destiny point was used in the shared game.",
+        "surface": "discord",
+        "audience": "game-shared",
+        "uiRole": "notification",
+        "placeholders": {
+          "count": {
+            "type": "number",
+            "meaning": "Number of points used by the command.",
+            "example": 1,
+            "userAuthored": false
+          },
+          "pointType": {
+            "type": "enum",
+            "meaning": "Prelocalized app-owned point-pool label rendered with the same game translator as this shared Discord heading.",
+            "example": "player",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 256,
+        "route": "Discord slash commands /story use and /destiny use",
+        "state": "Exactly one point changed pools and the bot is showing the updated shared game state.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This heading is visible to the Discord channel and therefore uses the game's language.",
+          "The pointType value is already localized by a discord:destiny.point-type key and is not user-authored text.",
+          "Keep the confirmation concise because Discord embed author names allow at most 256 characters."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/use.command.ts",
+            "line": 160,
+            "anchor": "discord:destiny.use.success"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 13
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.success_other",
+          "game-table:story-point.flipped_one"
+        ],
+        "tone": "Concise and affirmative"
+      }
+    },
+    {
+      "id": "discord:destiny.use.success_other",
+      "namespace": "discord",
+      "file": "source/en/discord.json",
+      "key": "destiny.use.success_other",
+      "source": "Used {{count}} {{pointType}} points!",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Discord embed heading confirming that multiple story or destiny points were used in the shared game.",
+        "surface": "discord",
+        "audience": "game-shared",
+        "uiRole": "notification",
+        "placeholders": {
+          "count": {
+            "type": "number",
+            "meaning": "Number of points used by the command.",
+            "example": 2,
+            "userAuthored": false
+          },
+          "pointType": {
+            "type": "enum",
+            "meaning": "Prelocalized app-owned point-pool label rendered with the same game translator as this shared Discord heading.",
+            "example": "player",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 256,
+        "route": "Discord slash commands /story use and /destiny use",
+        "state": "Two or more points changed pools and the bot is showing the updated shared game state.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This heading is visible to the Discord channel and therefore uses the game's language.",
+          "The pointType value is already localized by a discord:destiny.point-type key and is not user-authored text.",
+          "Keep the confirmation concise because Discord embed author names allow at most 256 characters."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/discord-bot/src/interactions/destiny/use.command.ts",
+            "line": 160,
+            "anchor": "discord:destiny.use.success"
+          },
+          {
+            "path": "packages/i18n/locales/en/discord.json",
+            "line": 14
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "discord:destiny.use.success_one",
+          "game-table:story-point.flipped_other"
+        ],
+        "tone": "Concise and affirmative"
+      }
+    },
+    {
+      "id": "enums:character.nds.skill-function.initiative-proactive",
+      "namespace": "enums",
+      "file": "source/en/enums.json",
+      "key": "character.nds.skill-function.initiative-proactive",
+      "source": "Proactive",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Label for the proactive initiative skill function in NDS character rules.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "/char/nds/:characterId",
+        "state": "The initiative skill function selector is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Proactive describes initiative taken while the character is prepared and acting deliberately."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/char/legacy/skills/skill-modal.tsx",
+            "line": 380,
+            "anchor": "NdsSkillFunction.translationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "enums:character.nds.skill-function.initiative-reactive"
+        ]
+      }
+    },
+    {
+      "id": "enums:character.nds.skill-function.initiative-reactive",
+      "namespace": "enums",
+      "file": "source/en/enums.json",
+      "key": "character.nds.skill-function.initiative-reactive",
+      "source": "Reactive",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Label for the reactive initiative skill function in NDS character rules.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "/char/nds/:characterId",
+        "state": "The initiative skill function selector is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Reactive describes initiative taken in response to an unexpected event."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/char/legacy/skills/skill-modal.tsx",
+            "line": 380,
+            "anchor": "NdsSkillFunction.translationKey"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "enums:character.nds.skill-function.initiative-proactive"
+        ]
+      }
+    },
+    {
+      "id": "enums:user.language.en",
+      "namespace": "enums",
+      "file": "source/en/enums.json",
+      "key": "user.language.en",
+      "source": "English",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Name of English in account and game language pickers.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "/user/profile, /game/:gameId/settings",
+        "state": "An account or game language picker is open.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Use the language name as normally written in the current interface language."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 315,
+            "anchor": "LanguageOption.translationKey(language)"
+          },
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 317,
+            "anchor": "LanguageOption.translationKey(language)"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 201,
+            "anchor": "LanguageOption.translationKey(LanguageOption.English)"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 211,
+            "anchor": "LanguageOption.translationKey(locale)"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 4
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "settings:language.label",
+          "settings:game-language.label"
+        ]
+      }
+    },
+    {
+      "id": "enums:user.language.es",
+      "namespace": "enums",
+      "file": "source/en/enums.json",
+      "key": "user.language.es",
+      "source": "Spanish",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Name of Spanish in account and game language pickers.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "/user/profile, /game/:gameId/settings",
+        "state": "An account or game language picker is open. Spanish is currently a preview language.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Use the language name as normally written in the current interface language."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 315,
+            "anchor": "LanguageOption.translationKey(language)"
+          },
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 317,
+            "anchor": "LanguageOption.translationKey(language)"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 211,
+            "anchor": "LanguageOption.translationKey(locale)"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 5
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "settings:language.label",
+          "settings:language.preview-option",
+          "settings:game-language.label"
+        ]
+      }
+    },
+    {
+      "id": "enums:user.language.fr",
+      "namespace": "enums",
+      "file": "source/en/enums.json",
+      "key": "user.language.fr",
+      "source": "French",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Name of French in account and game language pickers.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "/user/profile, /game/:gameId/settings",
+        "state": "An account or game language picker is open. French is currently a preview language.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Use the language name as normally written in the current interface language."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 315,
+            "anchor": "LanguageOption.translationKey(language)"
+          },
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 317,
+            "anchor": "LanguageOption.translationKey(language)"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 211,
+            "anchor": "LanguageOption.translationKey(locale)"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 6
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "settings:language.label",
+          "settings:language.preview-option",
+          "settings:game-language.label"
+        ]
+      }
+    },
+    {
+      "id": "game-table:initiative.label",
+      "namespace": "game-table",
+      "file": "source/en/game-table.json",
+      "key": "initiative.label",
+      "source": "Initiative",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Section label for choosing whether an NDS character skill is used for proactive or reactive initiative.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 28,
+        "route": "/char/nds/:characterId skill editor",
+        "state": "The skill modal is open for a skill that can be assigned an initiative function.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Initiative is the encounter turn-order mechanic.",
+          "This label introduces the Proactive and Reactive choices for one character skill; it is not a tracker heading."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/char/legacy/skills/skill-modal.tsx",
+            "line": 358,
+            "anchor": "ui.initiative.label"
+          },
+          {
+            "path": "packages/i18n/locales/en/game-table.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "game-table:notifications.story-point-flipped",
+      "namespace": "game-table",
+      "file": "source/en/game-table.json",
+      "key": "notifications.story-point-flipped",
+      "source": "{{authorName}} flipped a story point",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Recipient-personal browser push framing that summarizes who flipped a story point in the game.",
+        "surface": "push",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {
+          "authorName": {
+            "type": "string",
+            "meaning": "Display name of the person who flipped the story point.",
+            "example": "Bree",
+            "userAuthored": true
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 120,
+        "route": "Browser push payloads built by the web app and import server",
+        "state": "A game member flips a story point and each recipient receives notification framing in their account locale.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Translate only the personal notification framing. The stored shared event text remains in the game's language.",
+          "Keep the author name placeholder unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/import-server/src/push-notifications/build-push-delivery-groups.ts",
+            "line": 55,
+            "anchor": "game-table:notifications.story-point-flipped"
+          },
+          {
+            "path": "apps/web-ui/src/features/game-table/components/chat/chat-notifiers.tsx",
+            "line": 217,
+            "anchor": "buildNotificationPayload"
+          },
+          {
+            "path": "apps/web-ui/src/features/game-table/utils/build-notification-payload.ts",
+            "line": 57,
+            "anchor": "game-table:notifications.story-point-flipped"
+          },
+          {
+            "path": "packages/i18n/locales/en/game-table.json",
+            "line": 5
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "game-table:story-point.flipped_one",
+          "game-table:story-point.flipped_other"
+        ]
+      }
+    },
+    {
+      "id": "game-table:story-point.flipped_one",
+      "namespace": "game-table",
+      "file": "source/en/game-table.json",
+      "key": "story-point.flipped_one",
+      "source": "Flipped {{count}} {{pointLabel}} point from {{fromLabel}} to {{toLabel}}!",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Shared game output announcing that one story point moved between the configured pools.",
+        "surface": "generated-game-output",
+        "audience": "game-shared",
+        "uiRole": "generated-sentence",
+        "placeholders": {
+          "count": {
+            "type": "number",
+            "meaning": "Number of story points moved between pools.",
+            "example": 1,
+            "userAuthored": false
+          },
+          "fromLabel": {
+            "type": "string",
+            "meaning": "Game theme label for the pool the point moved from.",
+            "example": "Light",
+            "userAuthored": true
+          },
+          "pointLabel": {
+            "type": "string",
+            "meaning": "Game theme label for a story point.",
+            "example": "Destiny",
+            "userAuthored": true
+          },
+          "toLabel": {
+            "type": "string",
+            "meaning": "Game theme label for the pool the point moved to.",
+            "example": "Dark",
+            "userAuthored": true
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": null,
+        "route": "Story-point pool update",
+        "state": "Exactly one story point is flipped between the game's configured pools.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Keep all placeholders unchanged.",
+          "The three label placeholders are configured by the game and must not be translated."
+        ],
+        "sourceLocations": [
+          {
+            "path": "packages/core/src/game/functions/generate-story-point-flip-message.ts",
+            "line": 43,
+            "anchor": "STORY_POINT_FLIP_TRANSLATION_KEY"
+          },
+          {
+            "path": "packages/i18n/locales/en/game-table.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "game-table:story-point.flipped_other",
+          "game-table:notifications.story-point-flipped"
+        ]
+      }
+    },
+    {
+      "id": "game-table:story-point.flipped_other",
+      "namespace": "game-table",
+      "file": "source/en/game-table.json",
+      "key": "story-point.flipped_other",
+      "source": "Flipped {{count}} {{pointLabel}} points from {{fromLabel}} to {{toLabel}}!",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Shared game output announcing that multiple story points moved between the configured pools.",
+        "surface": "generated-game-output",
+        "audience": "game-shared",
+        "uiRole": "generated-sentence",
+        "placeholders": {
+          "count": {
+            "type": "number",
+            "meaning": "Number of story points moved between pools.",
+            "example": 2,
+            "userAuthored": false
+          },
+          "fromLabel": {
+            "type": "string",
+            "meaning": "Game theme label for the pool the points moved from.",
+            "example": "Light",
+            "userAuthored": true
+          },
+          "pointLabel": {
+            "type": "string",
+            "meaning": "Game theme label for a story point.",
+            "example": "Destiny",
+            "userAuthored": true
+          },
+          "toLabel": {
+            "type": "string",
+            "meaning": "Game theme label for the pool the points moved to.",
+            "example": "Dark",
+            "userAuthored": true
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": null,
+        "route": "Story-point pool update",
+        "state": "Two or more story points are flipped between the game's configured pools.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Keep all placeholders unchanged.",
+          "The three label placeholders are configured by the game and must not be translated."
+        ],
+        "sourceLocations": [
+          {
+            "path": "packages/core/src/game/functions/generate-story-point-flip-message.ts",
+            "line": 43,
+            "anchor": "STORY_POINT_FLIP_TRANSLATION_KEY"
+          },
+          {
+            "path": "packages/i18n/locales/en/game-table.json",
+            "line": 4
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "game-table:story-point.flipped_one",
+          "game-table:notifications.story-point-flipped"
+        ]
+      }
+    },
+    {
+      "id": "settings:game-language.description",
+      "namespace": "settings",
+      "file": "source/en/settings.json",
+      "key": "game-language.description",
+      "source": "Sets the language for newly generated shared game output. Existing game history is not changed.",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Explains that the selected game language affects only shared game output generated after the setting is saved.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 150,
+        "route": "/game/:gameId/settings",
+        "state": "Game settings are open and the game language picker is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Newly generated shared game output includes persisted system-authored chat messages and notifications created for the game after this setting is saved.",
+          "Existing game history keeps the rendered text that was stored when each entry was created.",
+          "Do not imply that user-authored character, item, or chat text will be translated."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 324,
+            "anchor": "settings:game-language.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 7
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "settings:game-language.label",
+          "settings:game-language.placeholder"
+        ],
+        "tone": "Clear and explicit"
+      }
+    },
+    {
+      "id": "settings:game-language.label",
+      "namespace": "settings",
+      "file": "source/en/settings.json",
+      "key": "game-language.label",
+      "source": "Game Language",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Label for the GM-controlled language picker in game settings.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 32,
+        "route": "/game/:gameId/settings",
+        "state": "Game settings are open. The control is editable by a GM and read-only for other game members.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This is one language shared by the game, not the signed-in user's personal interface language.",
+          "Keep Game distinct from Account Language."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 303,
+            "anchor": "settings:game-language.label"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 5
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "settings:game-language.placeholder",
+          "settings:game-language.description"
+        ],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "settings:game-language.placeholder",
+      "namespace": "settings",
+      "file": "source/en/settings.json",
+      "key": "game-language.placeholder",
+      "source": "Select a language",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Placeholder shown by the game language picker when it has no visible selection.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/game/:gameId/settings",
+        "state": "Game settings are open and the game language control has no visible selection.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Use an instruction that asks the GM to choose one language for the game."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 307,
+            "anchor": "settings:game-language.placeholder"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 6
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "settings:game-language.label",
+          "settings:game-language.description"
+        ],
+        "tone": "Brief and instructive"
+      }
+    },
+    {
+      "id": "settings:language.description",
+      "namespace": "settings",
+      "file": "source/en/settings.json",
+      "key": "language.description",
+      "source": "Language for app labels. Your characters keep their own skill names.",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Supporting copy below the account language picker. Clarifies that user-authored skill names are not renamed.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 140,
+        "route": "/user/profile",
+        "state": "The Language section is visible.",
+        "screenshot": {
+          "id": "account-language-settings",
+          "publicPath": "screenshots/web-ui/account-language-settings.png",
+          "caption": "Account language field with the French preview selected and English fallback copy visible.",
+          "anchor": "language-description"
+        },
+        "translatorNotes": [
+          "Skill names means names entered or customized by players, not built-in app labels."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 228,
+            "anchor": "settings:language.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "settings:language.label",
+          "settings:language.preview-option"
+        ],
+        "tone": "Direct and reassuring"
+      }
+    },
+    {
+      "id": "settings:language.label",
+      "namespace": "settings",
+      "file": "source/en/settings.json",
+      "key": "language.label",
+      "source": "Language",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Label for the account language picker.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 24,
+        "route": "/user/profile",
+        "state": "The Language section is visible.",
+        "screenshot": {
+          "id": "account-language-settings",
+          "publicPath": "screenshots/web-ui/account-language-settings.png",
+          "caption": "Account language field with the French preview selected and English fallback copy visible.",
+          "anchor": "language-label"
+        },
+        "translatorNotes": [
+          "Use the standard term for the language selected for the application interface."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 195,
+            "anchor": "settings:language.label"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "settings:language.description",
+          "settings:language.preview-option"
+        ],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "settings:language.preview-option",
+      "namespace": "settings",
+      "file": "source/en/settings.json",
+      "key": "language.preview-option",
+      "source": "{{languageName}} (Preview)",
+      "revision": "catalogs@2026-07-16.i18n-foundation-2",
+      "context": {
+        "description": "Formats a preview-stage language name in account and game language pickers so users know that its catalog is incomplete.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {
+          "languageName": {
+            "type": "string",
+            "meaning": "The localized display name of the language offered by this option.",
+            "example": "French",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile and /game/:gameId/settings",
+        "state": "An account or game language picker is open and the option is available for preview before its catalog is complete.",
+        "screenshot": {
+          "id": "account-language-settings",
+          "publicPath": "screenshots/web-ui/account-language-settings.png",
+          "caption": "Account language field with the French preview selected and English fallback copy visible.",
+          "anchor": "preview-selected-value"
+        },
+        "translatorNotes": [
+          "Keep the preview status visibly attached to the language name.",
+          "The placeholder is another translated interface label, not user-authored text.",
+          "Reorder the placeholder and preview status if that reads more naturally in the target language."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
+            "line": 314,
+            "anchor": "settings:language.preview-option"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 215,
+            "anchor": "settings:language.preview-option"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 4
+          }
+        ],
+        "doNotTranslate": [
+          "{{languageName}}"
+        ],
+        "relatedKeys": [
+          "settings:language.label",
+          "settings:language.description"
+        ],
+        "tone": "Concise and transparent"
+      }
+    }
+  ]
+}

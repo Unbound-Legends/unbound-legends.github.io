@@ -1,0 +1,6 @@
+{
+  "initiative.label": "Initiative",
+  "notifications.story-point-flipped": "{{authorName}} flipped a story point",
+  "story-point.flipped_one": "Flipped {{count}} {{pointLabel}} point from {{fromLabel}} to {{toLabel}}!",
+  "story-point.flipped_other": "Flipped {{count}} {{pointLabel}} points from {{fromLabel}} to {{toLabel}}!"
+}

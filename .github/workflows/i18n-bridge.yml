@@ -1,0 +1,48 @@
+name: Validate translation bridge
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+  pull_request_target:
+
+permissions:
+  contents: read
+
+jobs:
+  guard-weblate:
+    if: github.event_name == 'pull_request_target' && github.event.pull_request.head.ref == 'weblate/translations'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Restrict Weblate pull request paths using trusted base code
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          git fetch --no-tags origin "$HEAD_SHA"
+          guard="$RUNNER_TEMP/weblate-translation-change-guard.mjs"
+          git show "$BASE_SHA:integrations/weblate/validate-translation-changes.mjs" > "$guard"
+          node "$guard" "$BASE_SHA" "$HEAD_SHA"
+
+  validate:
+    if: github.event_name != 'pull_request_target'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - run: npm test

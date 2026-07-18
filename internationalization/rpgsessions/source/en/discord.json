@@ -1,0 +1,15 @@
+{
+  "destiny.point-type.private.dark-side": "dark side",
+  "destiny.point-type.private.gm": "GM",
+  "destiny.point-type.private.light-side": "light side",
+  "destiny.point-type.private.player": "player",
+  "destiny.point-type.shared.dark-side": "dark side",
+  "destiny.point-type.shared.gm": "GM",
+  "destiny.point-type.shared.light-side": "light side",
+  "destiny.point-type.shared.player": "player",
+  "destiny.use.error.amount-range": "You can only use between {{minimum}} and {{maximum}} points at a time.",
+  "destiny.use.error.not-enough-points_one": "There aren't enough {{pointType}} points to use. You asked for {{requested}}, but there's only {{available}}.",
+  "destiny.use.error.not-enough-points_other": "There aren't enough {{pointType}} points to use. You asked for {{requested}}, but there are only {{available}}.",
+  "destiny.use.success_one": "Used {{count}} {{pointType}} point!",
+  "destiny.use.success_other": "Used {{count}} {{pointType}} points!"
+}

@@ -1,0 +1,8 @@
+{
+  "game-language.description": "Sets the language for newly generated shared game output. Existing game history is not changed.",
+  "game-language.label": "Game Language",
+  "game-language.placeholder": "Select a language",
+  "language.description": "Language for app labels. Your characters keep their own skill names.",
+  "language.label": "Language",
+  "language.preview-option": "{{languageName}} (Preview)"
+}

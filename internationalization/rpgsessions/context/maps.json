@@ -1,0 +1,691 @@
+{
+  "schemaVersion": 1,
+  "revision": "catalogs@2026-07-16.i18n-foundation-2",
+  "sourceDigest": "sha256:d50f33526842ca0c8e7c608935161cb8509d625618bcd38e18c3d3e9d29e9395",
+  "strings": [
+    {
+      "id": "maps:toolbar.actors.tooltip",
+      "source": "Actors\nOpen character and vehicle quick sheets, including actors without map tokens",
+      "context": {
+        "description": "Tooltip for opening quick character and vehicle sheets, including sheets for actors that have no token on the map.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": true
+        },
+        "maxLength": 160,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the actors icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Actor is the shared term for a character or vehicle represented in the game.",
+          "Token means a placed map object, not an authentication token.",
+          "Keep the panel title and purpose on separate lines."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 909,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:toolbar.assets.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:toolbar.assets.tooltip",
+      "source": "Map Assets\nList, filter, and jump to every named token; manage players",
+      "context": {
+        "description": "Tooltip for opening the panel that lists named map tokens, supports filtering and navigation, and manages players.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": true
+        },
+        "maxLength": 140,
+        "route": "Sessions Maps embedded game table",
+        "state": "The game master hovers the map-assets icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Asset means an image or token placed on the map.",
+          "Token means a placed map object, not an authentication token.",
+          "Keep the panel title and purpose on separate lines."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 894,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:toolbar.layers.tooltip",
+          "maps:toolbar.actors.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:toolbar.brush.tooltip",
+      "source": "Brush Tool (B)",
+      "context": {
+        "description": "Tooltip for the freehand brush used to draw annotations directly on the map.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 36,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the brush icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Brush means the freehand drawing tool, not an object in the game world."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 769,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [
+          "B"
+        ],
+        "relatedKeys": [
+          "maps:toolbar.eraser.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:toolbar.clocks.tooltip",
+      "source": "Progress Clocks\nPie clocks and counters for tracking pressure",
+      "context": {
+        "description": "Tooltip for opening progress clocks and counters used to track mounting pressure or progress in a tabletop game.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": true
+        },
+        "maxLength": 110,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the progress-clock icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Progress clock is a tabletop roleplaying-game term for a segmented circle that tracks progress or danger.",
+          "Keep the panel title and purpose on separate lines."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 879,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:toolbar.eraser.tooltip",
+      "source": "Eraser Tool (E)",
+      "context": {
+        "description": "Tooltip for the tool that erases freehand drawings from the map.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 36,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the eraser icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Eraser removes map drawings, not placed assets or walls."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 784,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [
+          "E"
+        ],
+        "relatedKeys": [
+          "maps:toolbar.brush.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:toolbar.fog.tooltip",
+      "source": "Fog of war editor",
+      "context": {
+        "description": "Tooltip for opening the game master's fog-of-war editor, which hides or reveals map regions for players.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 48,
+        "route": "Sessions Maps embedded game table",
+        "state": "The game master hovers the fog icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Fog of war is the tabletop-map mechanic that controls what players can see."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 816,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:toolbar.wall.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:toolbar.hand.tooltip",
+      "source": "Hand Tool (H, or hold space for temporary hand tool)",
+      "context": {
+        "description": "Tooltip for the hand tool used to pan the map without moving assets.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 90,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the hand icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Hand tool is the standard graphics-editor term for panning the viewport."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 754,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [
+          "H",
+          "space"
+        ],
+        "relatedKeys": [
+          "maps:toolbar.pointer.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:toolbar.lasso.tooltip",
+      "source": "Lasso Selection Tool (L)\nDrag to draw selection area\nSelect multiple assets at once",
+      "context": {
+        "description": "Tooltip for drawing a selection region around several map assets so they can be manipulated together.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": true
+        },
+        "maxLength": 130,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the lasso icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Lasso is the graphics-editor selection tool, not an in-world rope.",
+          "Keep the tool name, gesture, and result on separate lines."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 799,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [
+          "L"
+        ],
+        "relatedKeys": [
+          "maps:toolbar.pointer.tooltip"
+        ],
+        "tone": "Instructional"
+      }
+    },
+    {
+      "id": "maps:toolbar.layers.tooltip",
+      "source": "Layers Panel\nOrganize assets and drawings into layers",
+      "context": {
+        "description": "Tooltip for opening the panel that organizes map assets and freehand drawings into visual layers.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": true
+        },
+        "maxLength": 100,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the layers icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Layers has the same meaning as layers in an image editor.",
+          "Keep the panel title and purpose on separate lines."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 864,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:toolbar.assets.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:toolbar.note.tooltip",
+      "source": "Note Tool (N)\nClick on map to place a sticky note",
+      "context": {
+        "description": "Tooltip for placing a sticky note containing text at a point on the map.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": true
+        },
+        "maxLength": 90,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the note icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Sticky note is a text annotation placed on the map.",
+          "Keep the tool name and action on separate lines."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 848,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [
+          "N"
+        ],
+        "relatedKeys": [],
+        "tone": "Instructional"
+      }
+    },
+    {
+      "id": "maps:toolbar.ping.tooltip",
+      "source": "Ping Tool\nClick the map once to ping a location\nShortcuts: P at cursor, Alt-click to ping, Alt-drag to trace",
+      "context": {
+        "description": "Tooltip for the tool that briefly marks a map location or traces a visible path for other players.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": true
+        },
+        "maxLength": 180,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the ping icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Ping means a temporary attention marker visible to the table.",
+          "Keep the tool name, basic action, and shortcuts on separate lines."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 737,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [
+          "P",
+          "Alt-click",
+          "Alt-drag"
+        ],
+        "relatedKeys": [
+          "maps:toolbar.pointer.tooltip"
+        ],
+        "tone": "Instructional"
+      }
+    },
+    {
+      "id": "maps:toolbar.pointer.tooltip",
+      "source": "Pointer Tool (V)",
+      "context": {
+        "description": "Tooltip for the default pointer tool used to select and manipulate map assets.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 36,
+        "route": "Sessions Maps embedded game table",
+        "state": "The user hovers the pointer icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Pointer is the default selection and manipulation tool, not the mouse cursor itself."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 721,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [
+          "V"
+        ],
+        "relatedKeys": [
+          "maps:toolbar.hand.tooltip",
+          "maps:toolbar.lasso.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:toolbar.wall.tooltip",
+      "source": "Wall tool (W)\nClick to place wall start, click again to place end\nWalls block light in the lighting system",
+      "context": {
+        "description": "Tooltip for drawing wall segments that block light in the map lighting system.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": true
+        },
+        "maxLength": 150,
+        "route": "Sessions Maps embedded game table",
+        "state": "The game master hovers the wall icon in the left map toolbar.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Wall means a segment in the lighting system.",
+          "Keep the tool name, placement instructions, and lighting effect on separate lines."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 831,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [
+          "W"
+        ],
+        "relatedKeys": [
+          "maps:wall-mode.add.tooltip",
+          "maps:toolbar.fog.tooltip"
+        ],
+        "tone": "Instructional"
+      }
+    },
+    {
+      "id": "maps:wall-mode.add.button",
+      "source": "Add",
+      "context": {
+        "description": "Compact button label that selects the mode for creating new light-blocking wall segments.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 12,
+        "route": "Sessions Maps embedded game table",
+        "state": "The game master has opened the wall tool and chooses a wall editing mode.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Use a short imperative verb because this button is only 50 pixels wide."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 660,
+            "anchor": "text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:wall-mode.add.tooltip",
+          "maps:wall-mode.remove.button",
+          "maps:wall-mode.trace.button"
+        ],
+        "tone": "Action-oriented"
+      }
+    },
+    {
+      "id": "maps:wall-mode.add.tooltip",
+      "source": "Add Wall Mode",
+      "context": {
+        "description": "Tooltip for switching the wall editor into the mode that creates new light-blocking wall segments.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 48,
+        "route": "Sessions Maps embedded game table",
+        "state": "The game master has opened the wall tool and the wall-mode controls are visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Wall means a segment that blocks light in the map lighting system."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 654,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:wall-mode.add.button",
+          "maps:wall-mode.remove.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:wall-mode.remove.button",
+      "source": "Remove",
+      "context": {
+        "description": "Compact button label that selects the mode for removing existing light-blocking wall segments.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 12,
+        "route": "Sessions Maps embedded game table",
+        "state": "The game master has opened the wall tool and chooses a wall editing mode.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Use a short imperative verb because this button is only 50 pixels wide."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 670,
+            "anchor": "text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:wall-mode.remove.tooltip",
+          "maps:wall-mode.add.button",
+          "maps:wall-mode.trace.button"
+        ],
+        "tone": "Action-oriented"
+      }
+    },
+    {
+      "id": "maps:wall-mode.remove.tooltip",
+      "source": "Remove Wall Mode",
+      "context": {
+        "description": "Tooltip for switching the wall editor into the mode that removes existing light-blocking wall segments.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 48,
+        "route": "Sessions Maps embedded game table",
+        "state": "The game master has opened the wall tool and the wall-mode controls are visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Wall means a segment that blocks light in the map lighting system."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 665,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:wall-mode.remove.button",
+          "maps:wall-mode.add.tooltip"
+        ],
+        "tone": "Concise"
+      }
+    },
+    {
+      "id": "maps:wall-mode.trace.button",
+      "source": "Trace",
+      "context": {
+        "description": "Compact button label that selects the mode for tracing a map asset outline into wall segments.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 12,
+        "route": "Sessions Maps embedded game table",
+        "state": "The game master has opened the wall tool and chooses a wall editing mode.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Use a short imperative verb because this button is only 50 pixels wide."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 681,
+            "anchor": "text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:wall-mode.trace.tooltip",
+          "maps:wall-mode.add.button",
+          "maps:wall-mode.remove.button"
+        ],
+        "tone": "Action-oriented"
+      }
+    },
+    {
+      "id": "maps:wall-mode.trace.tooltip",
+      "source": "Trace Asset Shape\nClick an asset to auto-generate walls around it",
+      "context": {
+        "description": "Tooltip for the mode that generates wall segments around the visible outline of a selected map asset.",
+        "surface": "maps",
+        "audience": "personal",
+        "uiRole": "tooltip",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": true
+        },
+        "maxLength": 100,
+        "route": "Sessions Maps embedded game table",
+        "state": "The game master has opened the wall tool and the wall-mode controls are visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Asset means an image or token placed on the map.",
+          "Keep the title on the first line and the instruction on the second line."
+        ],
+        "sourceLocations": [
+          {
+            "path": "scenes/ToolContainer/tool_container.tscn",
+            "line": 675,
+            "anchor": "tooltip_text"
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [
+          "maps:wall-mode.trace.button",
+          "maps:toolbar.wall.tooltip"
+        ],
+        "tone": "Instructional"
+      }
+    }
+  ]
+}

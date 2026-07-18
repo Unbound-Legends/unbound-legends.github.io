@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "revision": "catalogs@2026-07-16.i18n-foundation-2",
+  "sourceDigest": "sha256:2100df7cd6a8bce5baa0ac23670ec5747f9d1fb876e490ab18fc78ba7b3bd227",
+  "screenshots": [
+    {
+      "id": "account-language-settings",
+      "publicPath": "screenshots/web-ui/account-language-settings.png",
+      "caption": "Account language field with the French preview selected and English fallback copy visible.",
+      "anchors": [
+        {
+          "anchor": "language-description",
+          "keys": [
+            "settings:language.description"
+          ]
+        },
+        {
+          "anchor": "language-label",
+          "keys": [
+            "settings:language.label"
+          ]
+        },
+        {
+          "anchor": "preview-selected-value",
+          "keys": [
+            "settings:language.preview-option"
+          ]
+        }
+      ],
+      "sha256": "3b44b48272a54f8b25b413a10a827d4c5778554c84b984f044e3863b94464b08"
+    }
+  ]
+}
