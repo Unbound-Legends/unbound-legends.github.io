@@ -13,7 +13,7 @@
   "repository": {
     "url": "https://github.com/Unbound-Legends/unbound-legends.github.io",
     "branch": "master",
-    "translationBranch": "weblate/translations",
+    "translationBranch": "weblate-rpgsessions-settings",
     "primaryComponent": "settings",
     "linkedRepository": "weblate://rpgsessions/settings"
   },

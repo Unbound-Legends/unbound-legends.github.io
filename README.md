@@ -35,7 +35,3 @@ npm run i18n:seal -- --locale fr --apply
 ```
 
 The first command is a dry run. The second writes the review evidence. Git history and protected branch review record who approved it.
-
-## Before volunteer launch
-
-Maintainers still need to deploy Weblate, complete the pilot in the setup guide, protect `master`, and publish translation contribution terms. This repository currently has no license, so contribution licensing must be decided before inviting volunteers.

@@ -16,7 +16,7 @@ Keep production secrets in the deployment environment. Do not add them to this r
 2. Register Weblate's GitHub App under the workspace.
 3. Install it for the `Unbound-Legends` organization with access only to `unbound-legends.github.io`.
 4. Import the repository through that connection.
-5. Use `master` as the repository branch and `weblate/translations` as the push branch.
+5. Use `master` as the repository branch. In Weblate 2026.7.1, the GitHub App backend manages and locks the push-branch field. The primary `rpgsessions/settings` component generates `weblate-rpgsessions-settings`; do not try to override it.
 6. Configure Weblate to open or update a pull request. Never push translations directly to `master`.
 7. Protect `master`, require both the `validate` and base-trusted `guard-weblate` checks, and require CODEOWNER review for protected artifacts. The guard uses `pull_request_target` only to inspect the name-status diff with code loaded from the base revision; it never executes files from the pull request.
 
