@@ -2,32 +2,39 @@ import { randomUUID } from 'node:crypto';
 import { rename, rm, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
-import { inspectPublicBridge, PUBLIC_LOCALES } from './validation.mjs';
+import { inspectPublicBridge, PUBLIC_LOCALES, PUBLIC_SURFACES } from './validation.mjs';
 
-export async function sealPublicBridge({ bridge, locale, apply = false }) {
+export async function sealPublicBridge({ bridge, locale, mode = 'release', surface = 'all', apply = false }) {
   if (!PUBLIC_LOCALES.includes(locale)) throw new TypeError('locale must be fr or es');
+  if (!['preview', 'release'].includes(mode)) throw new TypeError('seal mode must be preview or release');
+  if (!PUBLIC_SURFACES.includes(surface)) throw new TypeError('surface must be app, maps, or all');
   const details = await inspectPublicBridge({
     bridge,
-    mode: 'release',
+    mode,
     locale,
+    surface,
     requireSeals: false,
     validateExistingSeals: false,
   });
-  const catalogSha256 = details.locales[locale].catalogSha256;
-  const provenance = {
-    schemaVersion: 2,
-    locale,
-    sourceRevision: details.manifest.revision,
-    sourceDigest: details.manifest.sourceDigest,
-    catalogSha256,
-    provenance: 'human',
-    reviewStatus: 'reviewed',
-  };
-  const relativePath = `translations/${locale}/_provenance.json`;
-  const seals = [{ path: relativePath, catalogSha256 }];
-  const files = [{ path: join(bridge, relativePath), value: provenance }];
+  const seals = [];
+  const files = [];
+  if (surface === 'app' || surface === 'all') {
+    const catalogSha256 = details.locales[locale].catalogSha256;
+    const provenance = {
+      schemaVersion: 2,
+      locale,
+      sourceRevision: details.manifest.revision,
+      sourceDigest: details.manifest.sourceDigest,
+      catalogSha256,
+      provenance: 'human',
+      reviewStatus: 'reviewed',
+    };
+    const relativePath = `translations/${locale}/_provenance.json`;
+    seals.push({ path: relativePath, catalogSha256 });
+    files.push({ path: join(bridge, relativePath), value: provenance });
+  }
   const mapsTranslation = details.locales[locale].maps;
-  if (details.maps) {
+  if ((surface === 'maps' || surface === 'all') && details.maps) {
     const mapsRelativePath = `translations/${locale}/_maps-provenance.json`;
     const mapsProvenance = {
       schemaVersion: 2,
@@ -44,7 +51,7 @@ export async function sealPublicBridge({ bridge, locale, apply = false }) {
   if (apply) {
     for (const file of files) await writeJsonAtomic(file.path, file.value);
   }
-  return { command: 'seal', locale, applied: apply, seals };
+  return { command: 'seal', locale, mode, surface, applied: apply, seals };
 }
 
 async function writeJsonAtomic(path, value) {

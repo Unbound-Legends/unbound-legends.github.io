@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { isDeepStrictEqual } from 'node:util';
 
 export const PUBLIC_LOCALES = ['fr', 'es'];
+export const PUBLIC_SURFACES = ['app', 'maps', 'all'];
 const PLACEHOLDER_PATTERN = /{{-?\s*([A-Za-z_][A-Za-z0-9_.]*)[^}]*}}/g;
 const RAW_HTML_PATTERN = /<\/?[A-Za-z][^>]*>/;
 const CONTROL_CHARACTER_PATTERN =
@@ -16,21 +17,23 @@ const MARKDOWN_INLINE_PATTERN = /`[^`\r\n]+`|(?:\*\*|__|~~)[^\r\n]+?(?:\*\*|__|~
 const WORD_CHARACTER_PATTERN = /[\p{L}\p{N}_]/u;
 const PLURAL_KEY_PATTERN = /_(zero|one|two|few|many|other)$/;
 
-export async function validatePublicBridge({ bridge, mode, locale }) {
-  const details = await inspectPublicBridge({ bridge, mode, locale });
-  return { command: 'validate', locales: details.selectedLocales, mode, valid: true };
+export async function validatePublicBridge({ bridge, mode, locale, surface = 'all' }) {
+  const details = await inspectPublicBridge({ bridge, mode, locale, surface });
+  return { command: 'validate', locales: details.selectedLocales, mode, surface, valid: true };
 }
 
 export async function inspectPublicBridge({
   bridge,
   mode,
   locale,
-  requireSeals = mode === 'release',
-  validateExistingSeals = mode === 'release',
+  surface = 'all',
+  requireSeals = mode !== 'draft',
+  validateExistingSeals = mode !== 'draft',
 }) {
-  if (!['draft', 'release'].includes(mode)) {
-    throw new TypeError('mode must be draft or release');
+  if (!['draft', 'preview', 'release'].includes(mode)) {
+    throw new TypeError('mode must be draft, preview, or release');
   }
+  assertSurface(surface);
   const locales = locale === undefined ? PUBLIC_LOCALES : [assertLocale(locale)];
   await assertNoSymlinks(bridge, bridge);
   await assertTranslationRootInventory(bridge);
@@ -40,6 +43,9 @@ export async function inspectPublicBridge({
   await assertTranslatorContext(bridge, manifest);
   await assertScreenshotManifest(bridge, manifest);
   const maps = await assertMapsSource(bridge, manifest);
+  if (surface === 'maps' && !maps) {
+    throw new Error('maps-manifest.json is required for the maps surface');
+  }
   await assertGeneratedInventory(bridge, manifest, maps);
   const validatedLocales = {};
   for (const targetLocale of locales) {
@@ -48,13 +54,14 @@ export async function inspectPublicBridge({
       manifest,
       locale: targetLocale,
       mode,
+      surface,
       requireSeal: requireSeals,
       validateExistingSeal: validateExistingSeals,
       maps,
     });
   }
 
-  return { manifest, maps, selectedLocales: locales, locales: validatedLocales };
+  return { manifest, maps, selectedLocales: locales, surface, locales: validatedLocales };
 }
 
 async function assertTranslationRootInventory(bridge) {
@@ -111,6 +118,13 @@ function assertLocale(locale) {
     throw new TypeError('locale must be fr or es');
   }
   return locale;
+}
+
+function assertSurface(surface) {
+  if (!PUBLIC_SURFACES.includes(surface)) {
+    throw new TypeError('surface must be app, maps, or all');
+  }
+  return surface;
 }
 
 function assertManifest(manifest) {
@@ -422,68 +436,85 @@ async function assertScreenshotManifest(bridge, manifest) {
   }
 }
 
-async function assertLocaleCatalogs({ bridge, manifest, locale, mode, requireSeal, validateExistingSeal, maps }) {
+async function assertLocaleCatalogs({
+  bridge,
+  manifest,
+  locale,
+  mode,
+  surface,
+  requireSeal,
+  validateExistingSeal,
+  maps,
+}) {
   const entries = new Map(manifest.strings.map(entry => [entry.id, entry]));
   await assertLocaleInventory(bridge, manifest, locale, mode);
-  const catalogs = Object.create(null);
-  for (const file of manifest.files) {
-    const expectedEntries = buildExpectedLocaleEntries(file, entries, locale);
-    const path = join(bridge, 'translations', locale, `${file.namespace}.json`);
-    let catalog;
-    try {
-      catalog = await readJson(path, `translations/${locale}/${file.namespace}.json`);
-    } catch (error) {
-      if (mode === 'draft' && error?.code === 'ENOENT') {
-        catalogs[file.namespace] = {};
-        continue;
+  let catalogs;
+  let catalogSha256;
+  let provenance;
+  if (surface === 'app' || surface === 'all') {
+    catalogs = Object.create(null);
+    for (const file of manifest.files) {
+      const expectedEntries = buildExpectedLocaleEntries(file, entries, locale);
+      const path = join(bridge, 'translations', locale, `${file.namespace}.json`);
+      let catalog;
+      try {
+        catalog = await readJson(path, `translations/${locale}/${file.namespace}.json`);
+      } catch (error) {
+        if (mode !== 'release' && error?.code === 'ENOENT') {
+          catalogs[file.namespace] = {};
+          continue;
+        }
+        throw error;
       }
-      throw error;
-    }
-    if (!isRecord(catalog)) {
-      throw new TypeError(`translations/${locale}/${file.namespace}.json must be a JSON object`);
-    }
-    catalogs[file.namespace] = catalog;
-    for (const [key, value] of Object.entries(catalog)) {
-      if (!expectedEntries.has(key)) {
-        throw new Error(`translations/${locale}/${file.namespace}.json contains unknown key ${key}`);
+      if (!isRecord(catalog)) {
+        throw new TypeError(`translations/${locale}/${file.namespace}.json must be a JSON object`);
       }
-      if (typeof value !== 'string') {
-        throw new TypeError(`translation ${file.namespace}:${key} must be a string`);
+      catalogs[file.namespace] = catalog;
+      for (const [key, value] of Object.entries(catalog)) {
+        if (!expectedEntries.has(key)) {
+          throw new Error(`translations/${locale}/${file.namespace}.json contains unknown key ${key}`);
+        }
+        if (typeof value !== 'string') {
+          throw new TypeError(`translation ${file.namespace}:${key} must be a string`);
+        }
+        if (value.length === 0) continue;
+        if (value.trim().length === 0) {
+          throw new Error(`translation ${file.namespace}:${key} must not be whitespace only`);
+        }
+        assertSafeTranslation({
+          id: `${file.namespace}:${key}`,
+          sourceEntry: expectedEntries.get(key),
+          value,
+        });
       }
-      if (value.length === 0) continue;
-      if (value.trim().length === 0) {
-        throw new Error(`translation ${file.namespace}:${key} must not be whitespace only`);
-      }
-      assertSafeTranslation({
-        id: `${file.namespace}:${key}`,
-        sourceEntry: expectedEntries.get(key),
-        value,
-      });
-    }
-    if (mode === 'release') {
-      for (const key of expectedEntries.keys()) {
-        if (typeof catalog[key] !== 'string' || catalog[key].length === 0) {
-          throw new Error(`translation ${locale}:${file.namespace}:${key} is incomplete`);
+      if (mode === 'release') {
+        for (const key of expectedEntries.keys()) {
+          if (typeof catalog[key] !== 'string' || catalog[key].length === 0) {
+            throw new Error(`translation ${locale}:${file.namespace}:${key} is incomplete`);
+          }
         }
       }
     }
+    catalogSha256 = hashCatalogs(catalogs);
+    provenance = await readOptionalJson(
+      join(bridge, 'translations', locale, '_provenance.json'),
+      `translations/${locale}/_provenance.json`,
+    );
+    if (validateExistingSeal || requireSeal) {
+      assertCatalogProvenance({ locale, manifest, catalogSha256, provenance, required: requireSeal, mode });
+    }
   }
-  const catalogSha256 = hashCatalogs(catalogs);
-  const provenance = await readOptionalJson(
-    join(bridge, 'translations', locale, '_provenance.json'),
-    `translations/${locale}/_provenance.json`,
-  );
-  if (validateExistingSeal || requireSeal) {
-    assertCatalogProvenance({ locale, manifest, catalogSha256, provenance, required: requireSeal });
-  }
-  const mapsTranslation = await assertMapsTranslation({
-    bridge,
-    locale,
-    mode,
-    maps,
-    requireSeal,
-    validateExistingSeal,
-  });
+  const mapsTranslation =
+    surface === 'maps' || surface === 'all'
+      ? await assertMapsTranslation({
+          bridge,
+          locale,
+          mode,
+          maps,
+          requireSeal,
+          validateExistingSeal,
+        })
+      : undefined;
   return { catalogs, catalogSha256, provenance, maps: mapsTranslation };
 }
 
@@ -636,7 +667,7 @@ async function assertMapsTranslation({ bridge, locale, mode, maps, requireSeal, 
     return undefined;
   }
   if (po === undefined) {
-    if (mode === 'release') throw new Error(`${relativePoPath} is required for release`);
+    if (mode !== 'draft') throw new Error(`${relativePoPath} is required for ${mode}`);
     if (provenance !== undefined) throw new Error(`${relativeProvenancePath} exists without maps.po`);
     return { po: undefined, poSha256: undefined, provenance: undefined };
   }
@@ -663,14 +694,14 @@ async function assertMapsTranslation({ bridge, locale, mode, maps, requireSeal, 
   const normalizedPo = normalizeTextFile(po);
   const poSha256 = createHash('sha256').update(normalizedPo, 'utf8').digest('hex');
   if (validateExistingSeal || requireSeal) {
-    assertMapsProvenance({ locale, maps, poSha256, provenance, required: requireSeal });
+    assertMapsProvenance({ locale, maps, poSha256, provenance, required: requireSeal, mode });
   }
   return { po: normalizedPo, poSha256, provenance };
 }
 
-function assertMapsProvenance({ locale, maps, poSha256, provenance, required }) {
+function assertMapsProvenance({ locale, maps, poSha256, provenance, required, mode }) {
   if (provenance === undefined) {
-    if (required) throw new Error(`translations/${locale}/_maps-provenance.json is required for release`);
+    if (required) throw new Error(`translations/${locale}/_maps-provenance.json is required for ${mode}`);
     return;
   }
   const expected = {
@@ -694,7 +725,7 @@ async function assertLocaleInventory(bridge, manifest, locale, mode) {
     entries = await readdir(directory, { withFileTypes: true });
   } catch (error) {
     if (mode === 'draft' && error?.code === 'ENOENT') return;
-    if (error?.code === 'ENOENT') throw new Error(`translations/${locale} is required for release`);
+    if (error?.code === 'ENOENT') throw new Error(`translations/${locale} is required for ${mode}`);
     throw error;
   }
   const allowed = new Set([
@@ -1004,9 +1035,9 @@ export function hashCatalogs(catalogs) {
     .digest('hex');
 }
 
-function assertCatalogProvenance({ locale, manifest, catalogSha256, provenance, required }) {
+function assertCatalogProvenance({ locale, manifest, catalogSha256, provenance, required, mode }) {
   if (provenance === undefined) {
-    if (required) throw new Error(`translations/${locale}/_provenance.json is required for release`);
+    if (required) throw new Error(`translations/${locale}/_provenance.json is required for ${mode}`);
     return;
   }
   const expected = {
