@@ -10,11 +10,21 @@ try {
   if (!['validate', 'seal'].includes(command)) throw new TypeError('command must be validate or seal');
   const bridge = resolve(options.bridge);
   if (command === 'validate' && options.apply) throw new TypeError('--apply is only valid with seal');
-  if (command === 'seal' && options.mode !== undefined) throw new TypeError('--mode is only valid with validate');
   const result =
     command === 'validate'
-      ? await validatePublicBridge({ bridge, mode: options.mode, locale: options.locale })
-      : await sealPublicBridge({ bridge, locale: options.locale, apply: options.apply });
+      ? await validatePublicBridge({
+          bridge,
+          mode: options.mode,
+          locale: options.locale,
+          surface: options.surface,
+        })
+      : await sealPublicBridge({
+          bridge,
+          locale: options.locale,
+          mode: options.mode,
+          surface: options.surface,
+          apply: options.apply,
+        });
   process.stdout.write(`${JSON.stringify(result)}\n`);
 } catch (error) {
   process.stderr.write(`${error.message}\n`);
@@ -33,7 +43,7 @@ function parseArguments(args) {
       options.apply = true;
       continue;
     }
-    if (!['--bridge', '--mode', '--locale'].includes(option)) {
+    if (!['--bridge', '--mode', '--locale', '--surface'].includes(option)) {
       throw new TypeError(`unknown option: ${option}`);
     }
     const value = args.shift();

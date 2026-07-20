@@ -100,12 +100,24 @@ Start with `settings` and `maps` before enabling every component.
 
 Record the installed Weblate version and the observed i18next plural unit shape before enabling context synchronization. Exact nested/plural API keys, approved-only serialization after source edits, screenshot repository paths, PO serialization, and the shared pull request behavior must be verified against the deployed version rather than assumed.
 
-## 7. Release reviewed translations
+## 7. Preview and release reviewed translations
 
-Weblate approval does not create RPGSessions review evidence. After every expected unit for one locale is approved and the Weblate translation PR is merged, create a separate maintainer branch, run the public reviewer sealer in dry-run mode, inspect the result, then apply it and open a protected review-evidence PR. The Weblate branch is deliberately blocked from authoring provenance files. Protected branch review supplies reviewer identity.
+Weblate approval does not create RPGSessions review evidence. After the Weblate translation PR is merged, create a separate maintainer branch, run the public reviewer sealer in dry-run mode, inspect the result, then apply it and open a protected review-evidence PR. The Weblate branch is deliberately blocked from authoring provenance files. Protected branch review supplies reviewer identity.
 
-Draft validation ignores existing review evidence, so a catalog-only Weblate PR can pass while its old seal is stale. Release validation still rejects the locale until a maintainer reseals it.
+Preview seals let one locale and surface ship approved work before its full catalog is translated. Every nonempty value in the selected snapshot must have been written or explicitly selected by a person and reviewed before sealing. Seal the application and SessionsMaps independently when only one is ready:
 
-The private importer accepts only complete, safe catalogs whose content hash, source revision, source digest, human provenance, and review status match the review evidence. Translation changes after sealing invalidate the evidence.
+```sh
+npm run i18n:seal -- --locale fr --mode preview --surface app
+npm run i18n:seal -- --locale fr --mode preview --surface app --apply
+
+npm run i18n:seal -- --locale fr --mode preview --surface maps
+npm run i18n:seal -- --locale fr --mode preview --surface maps --apply
+```
+
+Use `--surface all` only after reviewing both snapshots together. Preview validation requires an explicit locale and surface. Untranslated app values are omitted during private import, while blank PO entries remain in the full Maps catalog. Both runtimes fall back to English.
+
+Draft validation ignores existing review evidence, so a catalog-only Weblate PR can pass while its old seal is stale. Preview validation verifies the exact reviewed partial content. Release validation additionally requires every current key and rejects the locale until its complete snapshot is resealed.
+
+The private importer accepts only safe catalogs whose content hash, source revision, source digest, human provenance, and review status match the review evidence. Translation changes after sealing invalidate the evidence. Use the default release seal only after every expected unit for the selected locale and surface is approved.
 
 Before opening volunteer registration, choose and publish translation contribution terms. This repository does not currently grant a license.

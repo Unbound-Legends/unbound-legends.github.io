@@ -6,7 +6,7 @@ Translate `source/maps/messages.pot` into `translations/fr/maps.po` or `translat
 
 Each PO must contain exactly one `Language: fr` or `Language: es` header matching its directory. Every non-header message must keep exactly one generated key comment. Resolve or remove gettext's `fuzzy` flag before review because fuzzy translations cannot be imported.
 
-After the complete PO is reviewed, a locale reviewer runs `npm run i18n:seal -- --locale fr --apply`. The command ensures the PO has a trailing newline, computes its SHA-256, and writes `_maps-provenance.json`. Do not create or edit the seal by hand. The importer accepts only this exact shape:
+After reviewing every nonempty translation in the exact PO snapshot, a locale reviewer runs `npm run i18n:seal -- --locale fr --mode preview --surface maps --apply`. The command ensures the PO has a trailing newline, computes its SHA-256, and writes `_maps-provenance.json`. Empty `msgstr` values continue to use their English `msgid` in preview builds. Release validation separately requires the selected PO to be complete. Do not create or edit the seal by hand. The importer accepts only this exact shape:
 
 ```json
 {
