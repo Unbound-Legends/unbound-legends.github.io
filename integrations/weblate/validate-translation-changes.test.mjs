@@ -84,13 +84,21 @@ test("rejects changes outside the exact active catalog allowlist", () => {
   );
 });
 
-test("the workflow executes the guard from the trusted base revision", async () => {
+test("the workflow executes the guard from the trusted base revision and declared branch", async () => {
   const workflow = await readFile(
     new URL("../../.github/workflows/i18n-bridge.yml", import.meta.url),
     "utf8",
   );
+  const inventory = JSON.parse(
+    await readFile(new URL("./components.json", import.meta.url), "utf8"),
+  );
   assert.match(workflow, /pull_request_target:/);
   assert.match(workflow, /github\.event_name == 'pull_request_target'/);
+  assert.ok(
+    workflow.includes(
+      `github.event.pull_request.head.ref == '${inventory.repository.translationBranch}'`,
+    ),
+  );
   assert.match(
     workflow,
     /git show "\$BASE_SHA:integrations\/weblate\/validate-translation-changes\.mjs"/,
