@@ -17,14 +17,14 @@ Never rename, remove, or add a placeholder. Keep every value listed under `doNot
 
 ## Human review evidence
 
-After reviewing every nonempty translation in the exact JSON snapshot against source revision `catalogs@2026-07-16.i18n-foundation-2` and digest `sha256:2100df7cd6a8bce5baa0ac23670ec5747f9d1fb876e490ab18fc78ba7b3bd227`, a locale reviewer runs `npm run i18n:seal -- --locale fr --mode preview --surface app --apply`. The command computes a deterministic SHA-256 over every locale JSON catalog and writes `_provenance.json`. Missing or empty translations continue to use English in preview builds. Release validation separately requires the selected snapshot to be complete. Do not create or edit the seal by hand. The importer accepts only this exact shape:
+After reviewing every nonempty translation in the exact JSON snapshot against source revision `catalogs@2026-07-20.profile-page-1` and digest `sha256:8ec2afa9197c7b8010c7789caac0ab813b20f3516624eac9bd99ef94bf5456b9`, a locale reviewer runs `npm run i18n:seal -- --locale fr --mode preview --surface app --apply`. The command computes a deterministic SHA-256 over every locale JSON catalog and writes `_provenance.json`. Missing or empty translations continue to use English in preview builds. Release validation separately requires the selected snapshot to be complete. Do not create or edit the seal by hand. The importer accepts only this exact shape:
 
 ```json
 {
   "schemaVersion": 2,
   "locale": "fr",
-  "sourceRevision": "catalogs@2026-07-16.i18n-foundation-2",
-  "sourceDigest": "sha256:2100df7cd6a8bce5baa0ac23670ec5747f9d1fb876e490ab18fc78ba7b3bd227",
+  "sourceRevision": "catalogs@2026-07-20.profile-page-1",
+  "sourceDigest": "sha256:8ec2afa9197c7b8010c7789caac0ab813b20f3516624eac9bd99ef94bf5456b9",
   "catalogSha256": "<generated content hash>",
   "provenance": "human",
   "reviewStatus": "reviewed"

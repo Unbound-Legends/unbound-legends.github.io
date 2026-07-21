@@ -1,8 +1,2140 @@
 {
   "schemaVersion": 1,
-  "revision": "catalogs@2026-07-16.i18n-foundation-2",
-  "sourceDigest": "sha256:2100df7cd6a8bce5baa0ac23670ec5747f9d1fb876e490ab18fc78ba7b3bd227",
+  "revision": "catalogs@2026-07-20.profile-page-1",
+  "sourceDigest": "sha256:8ec2afa9197c7b8010c7789caac0ab813b20f3516624eac9bd99ef94bf5456b9",
   "strings": [
+    {
+      "id": "access-tokens:copy.action-label",
+      "source": "Copy token",
+      "context": {
+        "description": "Label or prompt for API token management copy action label.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 545,
+            "anchor": "access-tokens:copy.action-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:copy.copied-label",
+      "source": "Token copied",
+      "context": {
+        "description": "Label or prompt for API token management copy copied label.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 544,
+            "anchor": "access-tokens:copy.copied-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:copy.success",
+      "source": "Token copied to clipboard",
+      "context": {
+        "description": "Confirmation shown after API token management copy succeeds.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 532,
+            "anchor": "access-tokens:copy.success"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 4
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.action",
+      "source": "Create token",
+      "context": {
+        "description": "Button or link that applies API token management create.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 410,
+            "anchor": "access-tokens:create.action"
+          },
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 506,
+            "anchor": "access-tokens:create.action"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 5
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.description",
+      "source": "Name it so you remember where it lives, then pick what it can do.",
+      "context": {
+        "description": "Supporting copy that explains API token management create.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 424,
+            "anchor": "access-tokens:create.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 6
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.error",
+      "source": "Unable to create the token. Please check the form and try again.",
+      "context": {
+        "description": "Safe user-facing message for an API token failure: create error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 402,
+            "anchor": "access-tokens:create.error"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 7
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.expiry-description",
+      "source": "Leave blank for a token that never expires.",
+      "context": {
+        "description": "User-facing text for API token management create expiry description.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 489,
+            "anchor": "access-tokens:create.expiry-description"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 8
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.expiry-label",
+      "source": "Expiry",
+      "context": {
+        "description": "Label or prompt for API token management create expiry label.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 480,
+            "anchor": "access-tokens:create.expiry-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 9
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.loading",
+      "source": "Creating token...",
+      "context": {
+        "description": "User-facing text for API token management create loading.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 400,
+            "anchor": "access-tokens:create.loading"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 10
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.name-label",
+      "source": "Name",
+      "context": {
+        "description": "Label or prompt for API token management create name label.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 432,
+            "anchor": "access-tokens:create.name-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 11
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.name-placeholder",
+      "source": "e.g. Discord dice bot",
+      "context": {
+        "description": "User-facing text for API token management create name placeholder.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Discord is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 437,
+            "anchor": "access-tokens:create.name-placeholder"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 12
+          }
+        ],
+        "doNotTranslate": [
+          "Discord"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.required-by-write",
+      "source": "Required by write",
+      "context": {
+        "description": "User-facing text for API token management create required by write.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 468,
+            "anchor": "access-tokens:create.required-by-write"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 13
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.scope.read-description",
+      "source": "View your characters, games, and dice data.",
+      "context": {
+        "description": "User-facing text for API token management create scope read description.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 617,
+            "anchor": "access-tokens:create.scope.read-description"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 14
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.scope.write-description",
+      "source": "Create and change data. Includes read access.",
+      "context": {
+        "description": "User-facing text for API token management create scope write description.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 619,
+            "anchor": "access-tokens:create.scope.write-description"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 15
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.scopes-label",
+      "source": "Scopes",
+      "context": {
+        "description": "Label or prompt for API token management create scopes label.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 444,
+            "anchor": "access-tokens:create.scopes-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 16
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.success",
+      "source": "Token created",
+      "context": {
+        "description": "Confirmation shown after API token management create succeeds.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 401,
+            "anchor": "access-tokens:create.success"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 17
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "access-tokens:create.title",
+      "source": "Create API token",
+      "context": {
+        "description": "Dialog or card title that identifies API token management create.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The API token creation dialog is open or the creation request has completed.",
+        "screenshot": null,
+        "translatorNotes": [
+          "API is a technical abbreviation. Keep it recognizable and do not expand it."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 421,
+            "anchor": "access-tokens:create.title"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 18
+          }
+        ],
+        "doNotTranslate": [
+          "API"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:description",
+      "source": "Authenticate programmatic access to the API with a token instead of your password. A token is shown once when you create it, then never again.",
+      "context": {
+        "description": "Explains why API tokens are used and that each full secret is shown only once.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [
+          "API is a technical abbreviation. Keep it recognizable and do not expand it."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 76,
+            "anchor": "access-tokens:description"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 19
+          }
+        ],
+        "doNotTranslate": [
+          "API"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:docs-action",
+      "source": "View available API endpoints.",
+      "context": {
+        "description": "User-facing text for API token management docs action.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [
+          "API is a technical abbreviation. Keep it recognizable and do not expand it."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 80,
+            "anchor": "access-tokens:docs-action"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 20
+          }
+        ],
+        "doNotTranslate": [
+          "API"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:docs-link",
+      "source": "API docs",
+      "context": {
+        "description": "User-facing text for API token management docs link.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [
+          "API is a technical abbreviation. Keep it recognizable and do not expand it."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 67,
+            "anchor": "access-tokens:docs-link"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 21
+          }
+        ],
+        "doNotTranslate": [
+          "API"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:empty",
+      "source": "No tokens yet. Create one to start using the API.",
+      "context": {
+        "description": "User-facing text for API token management empty.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [
+          "API is a technical abbreviation. Keep it recognizable and do not expand it."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 114,
+            "anchor": "access-tokens:empty"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 22
+          }
+        ],
+        "doNotTranslate": [
+          "API"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:heading",
+      "source": "API Tokens",
+      "context": {
+        "description": "User-facing text for API token management heading.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [
+          "API is a technical abbreviation. Keep it recognizable and do not expand it."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 62,
+            "anchor": "access-tokens:heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 23
+          }
+        ],
+        "doNotTranslate": [
+          "API"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:reveal.description",
+      "source": "This is the only time the full token is shown. Store it somewhere safe. You will not be able to see it again.",
+      "context": {
+        "description": "Supporting copy that explains API token management reveal.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The user has just created an API token and the one-time secret dialog is open.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Keep the security warning clear and unambiguous."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 569,
+            "anchor": "access-tokens:reveal.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 24
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:reveal.title",
+      "source": "Copy your token now",
+      "context": {
+        "description": "Dialog or card title that identifies API token management reveal.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The user has just created an API token and the one-time secret dialog is open.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 566,
+            "anchor": "access-tokens:reveal.title"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 25
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:reveal.warning",
+      "source": "Anyone with this token can act as you within its scopes. Treat it like a password.",
+      "context": {
+        "description": "Security warning shown beside a newly created API token.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The user has just created an API token and the one-time secret dialog is open.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Keep the security warning clear and unambiguous."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 585,
+            "anchor": "access-tokens:reveal.warning"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 26
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct and cautionary"
+      }
+    },
+    {
+      "id": "access-tokens:revoke.action",
+      "source": "Revoke",
+      "context": {
+        "description": "Button or link that applies API token management revoke.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The user is revoking an existing API token or receiving feedback from that action.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 326,
+            "anchor": "access-tokens:revoke.action"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 27
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:revoke.description",
+      "source": "Revoking \"{{name}}\" permanently deletes it. Any integration using it stops working within a minute. This cannot be undone.",
+      "context": {
+        "description": "Confirmation copy explaining the permanent effect of revoking a named token.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {
+          "name": {
+            "type": "string",
+            "meaning": "The API token name entered by the user.",
+            "example": "Discord dice bot",
+            "userAuthored": true
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The user is revoking an existing API token or receiving feedback from that action.",
+        "screenshot": null,
+        "translatorNotes": [
+          "The token name is user-authored. Move it for grammar but do not translate it."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 329,
+            "anchor": "access-tokens:revoke.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 28
+          }
+        ],
+        "doNotTranslate": [
+          "{{name}}"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct and cautionary"
+      }
+    },
+    {
+      "id": "access-tokens:revoke.error",
+      "source": "Unable to revoke the token. Please try again.",
+      "context": {
+        "description": "Safe user-facing message for an API token failure: revoke error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The user is revoking an existing API token or receiving feedback from that action.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 337,
+            "anchor": "access-tokens:revoke.error"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 29
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "access-tokens:revoke.label",
+      "source": "Revoke {{name}}",
+      "context": {
+        "description": "Label or prompt for API token management revoke.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {
+          "name": {
+            "type": "string",
+            "meaning": "The API token name entered by the user.",
+            "example": "Discord dice bot",
+            "userAuthored": true
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The user is revoking an existing API token or receiving feedback from that action.",
+        "screenshot": null,
+        "translatorNotes": [
+          "The token name is user-authored. Move it for grammar but do not translate it."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 319,
+            "anchor": "access-tokens:revoke.label"
+          },
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 320,
+            "anchor": "access-tokens:revoke.label"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 30
+          }
+        ],
+        "doNotTranslate": [
+          "{{name}}"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:revoke.loading",
+      "source": "Revoking token...",
+      "context": {
+        "description": "User-facing text for API token management revoke loading.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The user is revoking an existing API token or receiving feedback from that action.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 335,
+            "anchor": "access-tokens:revoke.loading"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 31
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "access-tokens:revoke.success",
+      "source": "Token revoked",
+      "context": {
+        "description": "Confirmation shown after API token management revoke succeeds.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The user is revoking an existing API token or receiving feedback from that action.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 336,
+            "anchor": "access-tokens:revoke.success"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 32
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "access-tokens:revoke.title",
+      "source": "Revoke token",
+      "context": {
+        "description": "Dialog or card title that identifies API token management revoke.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The user is revoking an existing API token or receiving feedback from that action.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 324,
+            "anchor": "access-tokens:revoke.title"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 33
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:status.active",
+      "source": "Active",
+      "context": {
+        "description": "User-facing text for API token management status active.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 264,
+            "anchor": "access-tokens:status.active"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 34
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:status.expired",
+      "source": "Expired",
+      "context": {
+        "description": "User-facing text for API token management status expired.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 264,
+            "anchor": "access-tokens:status.expired"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 35
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:token.created",
+      "source": "Created {{date}}",
+      "context": {
+        "description": "Lifecycle metadata shown for an API token: token created.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {
+          "date": {
+            "type": "date",
+            "meaning": "Locale-formatted token lifecycle date.",
+            "example": "Jul 20, 2026",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [
+          "The date is already formatted for the viewer locale."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 275,
+            "anchor": "access-tokens:token.created"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 36
+          }
+        ],
+        "doNotTranslate": [
+          "{{date}}"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:token.expired-on",
+      "source": "Expired {{date}}",
+      "context": {
+        "description": "Lifecycle metadata shown for an API token: token expired on.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {
+          "date": {
+            "type": "date",
+            "meaning": "Locale-formatted token lifecycle date.",
+            "example": "Jul 20, 2026",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [
+          "The date is already formatted for the viewer locale."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 292,
+            "anchor": "access-tokens:token.expired-on"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 37
+          }
+        ],
+        "doNotTranslate": [
+          "{{date}}"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:token.expires-on",
+      "source": "Expires {{date}}",
+      "context": {
+        "description": "Lifecycle metadata shown for an API token: token expires on.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {
+          "date": {
+            "type": "date",
+            "meaning": "Locale-formatted token lifecycle date.",
+            "example": "Jul 20, 2026",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [
+          "The date is already formatted for the viewer locale."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 295,
+            "anchor": "access-tokens:token.expires-on"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 38
+          }
+        ],
+        "doNotTranslate": [
+          "{{date}}"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:token.last-used",
+      "source": "Last used {{date}}",
+      "context": {
+        "description": "Lifecycle metadata shown for an API token: token last used.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {
+          "date": {
+            "type": "date",
+            "meaning": "Locale-formatted token lifecycle date.",
+            "example": "Jul 20, 2026",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [
+          "The date is already formatted for the viewer locale."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 283,
+            "anchor": "access-tokens:token.last-used"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 39
+          }
+        ],
+        "doNotTranslate": [
+          "{{date}}"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:token.never-used",
+      "source": "Never used",
+      "context": {
+        "description": "Lifecycle metadata shown for an API token: token never used.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The api-tokens system flag is enabled and the API Tokens card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 286,
+            "anchor": "access-tokens:token.never-used"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 40
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:usage.day-label",
+      "source": "Today",
+      "context": {
+        "description": "API request-limit display text for usage day label.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The API Tokens card is visible, at least one token exists, and request usage has loaded.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 163,
+            "anchor": "access-tokens:usage.day-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 41
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:usage.day-reset",
+      "source": "Resets daily at 00:00 UTC",
+      "context": {
+        "description": "API request-limit display text for usage day reset.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The API Tokens card is visible, at least one token exists, and request usage has loaded.",
+        "screenshot": null,
+        "translatorNotes": [
+          "UTC is a time-zone abbreviation and must remain UTC."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 166,
+            "anchor": "access-tokens:usage.day-reset"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 42
+          }
+        ],
+        "doNotTranslate": [
+          "UTC"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:usage.heading",
+      "source": "Request usage",
+      "context": {
+        "description": "API request-limit display text for usage heading.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The API Tokens card is visible, at least one token exists, and request usage has loaded.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 147,
+            "anchor": "access-tokens:usage.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 43
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:usage.minute-label",
+      "source": "This minute",
+      "context": {
+        "description": "API request-limit display text for usage minute label.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The API Tokens card is visible, at least one token exists, and request usage has loaded.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 157,
+            "anchor": "access-tokens:usage.minute-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 44
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "access-tokens:usage.minute-reset",
+      "source": "Resets every minute",
+      "context": {
+        "description": "API request-limit display text for usage minute reset.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The API Tokens card is visible, at least one token exists, and request usage has loaded.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 160,
+            "anchor": "access-tokens:usage.minute-reset"
+          },
+          {
+            "path": "packages/i18n/locales/en/access-tokens.json",
+            "line": 45
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "achievements:summary.action",
+      "source": "View All Achievements",
+      "context": {
+        "description": "Button or link that applies the achievements summary card.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The achievements summary card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/achievements/components/achievements-section.tsx",
+            "line": 76,
+            "anchor": "achievements:summary.action"
+          },
+          {
+            "path": "packages/i18n/locales/en/achievements.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "achievements:summary.heading",
+      "source": "Achievements",
+      "context": {
+        "description": "Heading that identifies the achievements summary card.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The achievements summary card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/achievements/components/achievements-section.tsx",
+            "line": 18,
+            "anchor": "achievements:summary.heading"
+          },
+          {
+            "path": "apps/web-ui/src/features/achievements/components/achievements-section.tsx",
+            "line": 49,
+            "anchor": "achievements:summary.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/achievements.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "achievements:summary.unlocked_one",
+      "source": "{{unlockedCount}} of {{totalCount}} unlocked",
+      "context": {
+        "description": "Progress summary comparing unlocked achievements with the total available.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {
+          "totalCount": {
+            "type": "number",
+            "meaning": "Locale-formatted total number of available achievements.",
+            "example": 24,
+            "userAuthored": false
+          },
+          "unlockedCount": {
+            "type": "number",
+            "meaning": "Locale-formatted number of achievements the user has unlocked.",
+            "example": 3,
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The achievements summary card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "packages/i18n/locales/en/achievements.json",
+            "line": 4
+          }
+        ],
+        "doNotTranslate": [
+          "{{unlockedCount}}",
+          "{{totalCount}}"
+        ],
+        "relatedKeys": [
+          "achievements:summary.unlocked_other"
+        ],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "achievements:summary.unlocked_other",
+      "source": "{{unlockedCount}} of {{totalCount}} unlocked",
+      "context": {
+        "description": "Progress summary comparing unlocked achievements with the total available.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {
+          "totalCount": {
+            "type": "number",
+            "meaning": "Locale-formatted total number of available achievements.",
+            "example": 24,
+            "userAuthored": false
+          },
+          "unlockedCount": {
+            "type": "number",
+            "meaning": "Locale-formatted number of achievements the user has unlocked.",
+            "example": 3,
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The achievements summary card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "packages/i18n/locales/en/achievements.json",
+            "line": 5
+          }
+        ],
+        "doNotTranslate": [
+          "{{unlockedCount}}",
+          "{{totalCount}}"
+        ],
+        "relatedKeys": [
+          "achievements:summary.unlocked_one"
+        ],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "common:actions.cancel",
+      "source": "Cancel",
+      "context": {
+        "description": "Button or link that applies the shared actions cancel control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "Shared web controls, including /user/profile",
+        "state": "A profile-page control, dialog, or error state is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 325,
+            "anchor": "common:actions.cancel"
+          },
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 497,
+            "anchor": "common:actions.cancel"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 77,
+            "anchor": "common:actions.cancel"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 77,
+            "anchor": "common:actions.cancel"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 94,
+            "anchor": "common:actions.cancel"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 135,
+            "anchor": "common:actions.cancel"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 362,
+            "anchor": "common:actions.cancel"
+          },
+          {
+            "path": "packages/i18n/locales/en/common.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "common:actions.done",
+      "source": "Done",
+      "context": {
+        "description": "Button or link that applies the shared actions done control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "Shared web controls, including /user/profile",
+        "state": "A profile-page control, dialog, or error state is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 594,
+            "anchor": "common:actions.done"
+          },
+          {
+            "path": "packages/i18n/locales/en/common.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "common:actions.edit",
+      "source": "Edit",
+      "context": {
+        "description": "Button or link that applies the shared actions edit control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "Shared web controls, including /user/profile",
+        "state": "A profile-page control, dialog, or error state is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 38,
+            "anchor": "common:actions.edit"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 45,
+            "anchor": "common:actions.edit"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 116,
+            "anchor": "common:actions.edit"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 123,
+            "anchor": "common:actions.edit"
+          },
+          {
+            "path": "packages/i18n/locales/en/common.json",
+            "line": 4
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "common:actions.link",
+      "source": "Link",
+      "context": {
+        "description": "Button or link that applies the shared actions link control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "Shared web controls, including /user/profile",
+        "state": "A profile-page control, dialog, or error state is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 109,
+            "anchor": "common:actions.link"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 151,
+            "anchor": "common:actions.link"
+          },
+          {
+            "path": "packages/i18n/locales/en/common.json",
+            "line": 5
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "common:actions.refresh",
+      "source": "Refresh",
+      "context": {
+        "description": "Button or link that applies the shared actions refresh control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "Shared web controls, including /user/profile",
+        "state": "A profile-page control, dialog, or error state is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 121,
+            "anchor": "common:actions.refresh"
+          },
+          {
+            "path": "packages/i18n/locales/en/common.json",
+            "line": 6
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "common:actions.sign-out",
+      "source": "Sign Out",
+      "context": {
+        "description": "Button or link that applies the shared actions sign out control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "Shared web controls, including /user/profile",
+        "state": "A profile-page control, dialog, or error state is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 213,
+            "anchor": "common:actions.sign-out"
+          },
+          {
+            "path": "packages/i18n/locales/en/common.json",
+            "line": 7
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "common:actions.unlink",
+      "source": "Unlink",
+      "context": {
+        "description": "Button or link that applies the shared actions unlink control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "Shared web controls, including /user/profile",
+        "state": "A profile-page control, dialog, or error state is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 95,
+            "anchor": "common:actions.unlink"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 101,
+            "anchor": "common:actions.unlink"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 136,
+            "anchor": "common:actions.unlink"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 142,
+            "anchor": "common:actions.unlink"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 363,
+            "anchor": "common:actions.unlink"
+          },
+          {
+            "path": "packages/i18n/locales/en/common.json",
+            "line": 8
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "common:feedback.error-title",
+      "source": "Error",
+      "context": {
+        "description": "Safe message shown when the shared feedback error title control fails.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "Shared web controls, including /user/profile",
+        "state": "A profile-page control, dialog, or error state is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 60,
+            "anchor": "common:feedback.error-title"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 60,
+            "anchor": "common:feedback.error-title"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 130,
+            "anchor": "common:feedback.error-title"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 119,
+            "anchor": "common:feedback.error-title"
+          },
+          {
+            "path": "packages/i18n/locales/en/common.json",
+            "line": 9
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
     {
       "id": "discord:destiny.point-type.private.dark-side",
       "source": "dark side",
@@ -613,6 +2745,74 @@
       }
     },
     {
+      "id": "enums:access-token.scope.read",
+      "source": "Read",
+      "context": {
+        "description": "Localized display label for access token scope read.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 605,
+            "anchor": "enums:access-token.scope.read"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:access-token.scope.write",
+      "source": "Write",
+      "context": {
+        "description": "Localized display label for access token scope write.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/access-tokens/components/access-tokens-section.tsx",
+            "line": 607,
+            "anchor": "enums:access-token.scope.write"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
       "id": "enums:character.nds.skill-function.initiative-proactive",
       "source": "Proactive",
       "context": {
@@ -640,7 +2840,7 @@
           },
           {
             "path": "packages/i18n/locales/en/enums.json",
-            "line": 2
+            "line": 4
           }
         ],
         "doNotTranslate": [],
@@ -677,13 +2877,543 @@
           },
           {
             "path": "packages/i18n/locales/en/enums.json",
-            "line": 3
+            "line": 5
           }
         ],
         "doNotTranslate": [],
         "relatedKeys": [
           "enums:character.nds.skill-function.initiative-proactive"
         ]
+      }
+    },
+    {
+      "id": "enums:patreon-tier.adventurer",
+      "source": "Adventurer",
+      "context": {
+        "description": "Localized display label for patreon tier adventurer.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This is the display name of an RPGSessions Patreon membership tier."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 389,
+            "anchor": "enums:patreon-tier.adventurer"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 6
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:patreon-tier.champion",
+      "source": "Champion",
+      "context": {
+        "description": "Localized display label for patreon tier champion.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This is the display name of an RPGSessions Patreon membership tier."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 391,
+            "anchor": "enums:patreon-tier.champion"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 7
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:patreon-tier.explorer",
+      "source": "Explorer",
+      "context": {
+        "description": "Localized display label for patreon tier explorer.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This is the display name of an RPGSessions Patreon membership tier."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 387,
+            "anchor": "enums:patreon-tier.explorer"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 8
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:patreon-tier.high-fiver",
+      "source": "High Fiver",
+      "context": {
+        "description": "Localized display label for patreon tier high fiver.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This is the display name of an RPGSessions Patreon membership tier."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 383,
+            "anchor": "enums:patreon-tier.high-fiver"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 9
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:patreon-tier.none",
+      "source": "None",
+      "context": {
+        "description": "Localized display label for patreon tier none.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This is the display name of an RPGSessions Patreon membership tier."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 377,
+            "anchor": "enums:patreon-tier.none"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 10
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:patreon-tier.scout",
+      "source": "Scout",
+      "context": {
+        "description": "Localized display label for patreon tier scout.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This is the display name of an RPGSessions Patreon membership tier."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 385,
+            "anchor": "enums:patreon-tier.scout"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 11
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:patreon-tier.the-deuce",
+      "source": "The Deuce",
+      "context": {
+        "description": "Localized display label for patreon tier the deuce.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This is the display name of an RPGSessions Patreon membership tier."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 381,
+            "anchor": "enums:patreon-tier.the-deuce"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 12
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:patreon-tier.the-fan",
+      "source": "The Fan",
+      "context": {
+        "description": "Localized display label for patreon tier the fan.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "This is the display name of an RPGSessions Patreon membership tier."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 379,
+            "anchor": "enums:patreon-tier.the-fan"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 13
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:user-settings.dice-shorthand.color",
+      "source": "Color",
+      "context": {
+        "description": "Localized display label for user settings dice shorthand color.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 280,
+            "anchor": "enums:user-settings.dice-shorthand.color"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 17
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:user-settings.dice-shorthand.name",
+      "source": "Name",
+      "context": {
+        "description": "Localized display label for user settings dice shorthand name.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 278,
+            "anchor": "enums:user-settings.dice-shorthand.name"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 18
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:user-settings.dice-theme.generic",
+      "source": "Generic",
+      "context": {
+        "description": "Localized display label for user settings dice theme generic.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 271,
+            "anchor": "enums:user-settings.dice-theme.generic"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 19
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:user-settings.dice-theme.genesys",
+      "source": "Genesys",
+      "context": {
+        "description": "Localized display label for user settings dice theme genesys.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 267,
+            "anchor": "enums:user-settings.dice-theme.genesys"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 20
+          }
+        ],
+        "doNotTranslate": [
+          "Genesys"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:user-settings.dice-theme.star-wars",
+      "source": "Star Wars",
+      "context": {
+        "description": "Localized display label for user settings dice theme star wars.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 269,
+            "anchor": "enums:user-settings.dice-theme.star-wars"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 21
+          }
+        ],
+        "doNotTranslate": [
+          "Star Wars"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:user-settings.site-theme.dark",
+      "source": "Dark",
+      "context": {
+        "description": "Localized display label for user settings site theme dark.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 196,
+            "anchor": "enums:user-settings.site-theme.dark"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 22
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "enums:user-settings.site-theme.light",
+      "source": "Light",
+      "context": {
+        "description": "Localized display label for user settings site theme light.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The associated profile-page selector or account summary is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 193,
+            "anchor": "enums:user-settings.site-theme.light"
+          },
+          {
+            "path": "packages/i18n/locales/en/enums.json",
+            "line": 23
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
       }
     },
     {
@@ -714,22 +3444,22 @@
           },
           {
             "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
-            "line": 317,
+            "line": 315,
             "anchor": "LanguageOption.translationKey(language)"
           },
           {
             "path": "apps/web-ui/src/features/user/sections/settings.tsx",
-            "line": 201,
+            "line": 218,
             "anchor": "LanguageOption.translationKey(LanguageOption.English)"
           },
           {
             "path": "apps/web-ui/src/features/user/sections/settings.tsx",
-            "line": 211,
+            "line": 228,
             "anchor": "LanguageOption.translationKey(locale)"
           },
           {
             "path": "packages/i18n/locales/en/enums.json",
-            "line": 4
+            "line": 14
           }
         ],
         "doNotTranslate": [],
@@ -767,17 +3497,17 @@
           },
           {
             "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
-            "line": 317,
+            "line": 315,
             "anchor": "LanguageOption.translationKey(language)"
           },
           {
             "path": "apps/web-ui/src/features/user/sections/settings.tsx",
-            "line": 211,
+            "line": 228,
             "anchor": "LanguageOption.translationKey(locale)"
           },
           {
             "path": "packages/i18n/locales/en/enums.json",
-            "line": 5
+            "line": 15
           }
         ],
         "doNotTranslate": [],
@@ -816,17 +3546,17 @@
           },
           {
             "path": "apps/web-ui/src/features/game/components/game-settings.tsx",
-            "line": 317,
+            "line": 315,
             "anchor": "LanguageOption.translationKey(language)"
           },
           {
             "path": "apps/web-ui/src/features/user/sections/settings.tsx",
-            "line": 211,
+            "line": 228,
             "anchor": "LanguageOption.translationKey(locale)"
           },
           {
             "path": "packages/i18n/locales/en/enums.json",
-            "line": 6
+            "line": 16
           }
         ],
         "doNotTranslate": [],
@@ -1059,6 +3789,2917 @@
       }
     },
     {
+      "id": "profile:account.email-label",
+      "source": "Email:",
+      "context": {
+        "description": "Label or prompt for the profile account email label control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 42,
+            "anchor": "profile:account.email-label"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 120,
+            "anchor": "profile:account.email-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:account.heading",
+      "source": "Account Information",
+      "context": {
+        "description": "Heading that identifies the profile account control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 31,
+            "anchor": "profile:account.heading"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 109,
+            "anchor": "profile:account.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:account.username-label",
+      "source": "Username:",
+      "context": {
+        "description": "Label or prompt for the profile account username label control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 78,
+            "anchor": "profile:account.username-label"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 100,
+            "anchor": "profile:account.username-label"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 35,
+            "anchor": "profile:account.username-label"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 113,
+            "anchor": "profile:account.username-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 4
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:discord.heading",
+      "source": "Discord Account",
+      "context": {
+        "description": "Heading that identifies the profile discord control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Discord account card or its unlink confirmation is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Discord is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 25,
+            "anchor": "profile:discord.heading"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 68,
+            "anchor": "profile:discord.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 5
+          }
+        ],
+        "doNotTranslate": [
+          "Discord"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:discord.link-error",
+      "source": "Unable to link your Discord account. Please try again.",
+      "context": {
+        "description": "Safe profile-page error message for discord link error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Discord account card or its unlink confirmation is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Discord is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 119,
+            "anchor": "profile:discord.link-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 6
+          }
+        ],
+        "doNotTranslate": [
+          "Discord"
+        ],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:discord.unlink-description",
+      "source": "Are you sure you want to unlink your Discord account? You will no longer be able to use most commands from Discord.",
+      "context": {
+        "description": "Confirmation copy explaining the effect of discord unlink description.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Discord account card or its unlink confirmation is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Discord is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 91,
+            "anchor": "profile:discord.unlink-description"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 7
+          }
+        ],
+        "doNotTranslate": [
+          "Discord"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct and cautionary"
+      }
+    },
+    {
+      "id": "profile:discord.unlink-error",
+      "source": "Unable to unlink your Discord account. Please try again.",
+      "context": {
+        "description": "Safe profile-page error message for discord unlink error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Discord account card or its unlink confirmation is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Discord is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 127,
+            "anchor": "profile:discord.unlink-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 8
+          }
+        ],
+        "doNotTranslate": [
+          "Discord"
+        ],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:discord.unlink-success",
+      "source": "Discord unlinked",
+      "context": {
+        "description": "User-facing text for the profile discord unlink success control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Discord account card or its unlink confirmation is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Discord is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 59,
+            "anchor": "profile:discord.unlink-success"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 9
+          }
+        ],
+        "doNotTranslate": [
+          "Discord"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:discord.unlink-title",
+      "source": "Unlink Discord",
+      "context": {
+        "description": "User-facing text for the profile discord unlink title control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Discord account card or its unlink confirmation is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Discord is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 89,
+            "anchor": "profile:discord.unlink-title"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 10
+          }
+        ],
+        "doNotTranslate": [
+          "Discord"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:email-dialog.action",
+      "source": "Change Email",
+      "context": {
+        "description": "Button or link that applies the profile email dialog control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The change-email dialog is open or the email update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 80,
+            "anchor": "profile:email-dialog.action"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 11
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:email-dialog.description",
+      "source": "Change your email address",
+      "context": {
+        "description": "Supporting copy that explains the profile email dialog control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The change-email dialog is open or the email update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 54,
+            "anchor": "profile:email-dialog.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 12
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:email-dialog.error",
+      "source": "Unable to change your email address. Please try again.",
+      "context": {
+        "description": "Safe profile-page error message for email dialog error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The change-email dialog is open or the email update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 64,
+            "anchor": "profile:email-dialog.error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 13
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:email-dialog.in-use-error",
+      "source": "That email address is already in use.",
+      "context": {
+        "description": "Safe profile-page error message for email dialog in use error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The change-email dialog is open or the email update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 63,
+            "anchor": "profile:email-dialog.in-use-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 14
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:email-dialog.new-label",
+      "source": "New Email",
+      "context": {
+        "description": "Label or prompt for the profile email dialog new label control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The change-email dialog is open or the email update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 71,
+            "anchor": "profile:email-dialog.new-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 15
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:email-dialog.success",
+      "source": "Email updated",
+      "context": {
+        "description": "Confirmation shown after the profile email dialog control or state succeeds.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The change-email dialog is open or the email update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 28,
+            "anchor": "profile:email-dialog.success"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 16
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:email-dialog.title",
+      "source": "Change Email",
+      "context": {
+        "description": "Dialog or card title that identifies the profile email dialog control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The change-email dialog is open or the email update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 51,
+            "anchor": "profile:email-dialog.title"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 17
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:email-dialog.validation",
+      "source": "Please enter a valid email address",
+      "context": {
+        "description": "Validation feedback for the profile email dialog control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "validation",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The change-email dialog is open or the email update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-email-modal.tsx",
+            "line": 72,
+            "anchor": "profile:email-dialog.validation"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 18
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:linked-account.already-linked-error",
+      "source": "This account is already linked.",
+      "context": {
+        "description": "Safe profile-page error message for linked account already linked error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 118,
+            "anchor": "profile:linked-account.already-linked-error"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 160,
+            "anchor": "profile:linked-account.already-linked-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 19
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:linked-account.link-error-title",
+      "source": "Link Error",
+      "context": {
+        "description": "Safe profile-page error message for linked account link error title.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 115,
+            "anchor": "profile:linked-account.link-error-title"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 157,
+            "anchor": "profile:linked-account.link-error-title"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 20
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:linked-account.not-linked",
+      "source": "Account not linked",
+      "context": {
+        "description": "User-facing text for the profile linked account not linked control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 74,
+            "anchor": "profile:linked-account.not-linked"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 96,
+            "anchor": "profile:linked-account.not-linked"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 21
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:linked-account.unlink-error-title",
+      "source": "Unlink Error",
+      "context": {
+        "description": "Safe profile-page error message for linked account unlink error title.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/discord.tsx",
+            "line": 125,
+            "anchor": "profile:linked-account.unlink-error-title"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 181,
+            "anchor": "profile:linked-account.unlink-error-title"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 22
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:page.error",
+      "source": "Unable to load your profile.",
+      "context": {
+        "description": "Safe profile-page error message for page error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/views/profile.tsx",
+            "line": 32,
+            "anchor": "profile:page.error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 23
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:page.title",
+      "source": "Profile",
+      "context": {
+        "description": "Dialog or card title that identifies the profile page control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/views/profile.tsx",
+            "line": 18,
+            "anchor": "profile:page.title"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 24
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:password.action",
+      "source": "Change Password",
+      "context": {
+        "description": "Button or link that applies the profile password control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The password form is visible or a password update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 179,
+            "anchor": "profile:password.action"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 25
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:password.confirm-label",
+      "source": "Confirm New Password",
+      "context": {
+        "description": "Label or prompt for the profile password confirm label control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The password form is visible or a password update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 170,
+            "anchor": "profile:password.confirm-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 26
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:password.error",
+      "source": "Unable to change your password. Please try again.",
+      "context": {
+        "description": "Safe profile-page error message for password error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The password form is visible or a password update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 132,
+            "anchor": "profile:password.error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 27
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:password.heading",
+      "source": "Change Password",
+      "context": {
+        "description": "Heading that identifies the profile password control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The password form is visible or a password update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 127,
+            "anchor": "profile:password.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 28
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:password.new-label",
+      "source": "New Password",
+      "context": {
+        "description": "Label or prompt for the profile password new label control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The password form is visible or a password update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 157,
+            "anchor": "profile:password.new-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 29
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:password.success",
+      "source": "Password changed successfully",
+      "context": {
+        "description": "Confirmation shown after the profile password control or state succeeds.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The password form is visible or a password update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 98,
+            "anchor": "profile:password.success"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 30
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:password.validation.confirm-required",
+      "source": "Confirm New Password is required",
+      "context": {
+        "description": "Validation feedback for the profile password validation confirm required control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "validation",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The password form is visible or a password update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 68,
+            "anchor": "profile:password.validation.confirm-required"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 31
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:password.validation.minimum",
+      "source": "New Password must be at least 8 characters",
+      "context": {
+        "description": "Validation feedback for the profile password validation minimum control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "validation",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The password form is visible or a password update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 65,
+            "anchor": "profile:password.validation.minimum"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 32
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:password.validation.mismatch",
+      "source": "New Passwords do not match",
+      "context": {
+        "description": "Validation feedback for the profile password validation mismatch control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "validation",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The password form is visible or a password update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 71,
+            "anchor": "profile:password.validation.mismatch"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 33
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:patreon.heading",
+      "source": "Patreon Account",
+      "context": {
+        "description": "Heading that identifies the profile patreon control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 37,
+            "anchor": "profile:patreon.heading"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 89,
+            "anchor": "profile:patreon.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 34
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.link-error",
+      "source": "Unable to link your Patreon account. Please try again.",
+      "context": {
+        "description": "Safe profile-page error message for patreon link error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 161,
+            "anchor": "profile:patreon.link-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 35
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:patreon.refresh-error",
+      "source": "Unable to refresh your Patreon information. Please try again.",
+      "context": {
+        "description": "Safe profile-page error message for patreon refresh error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 175,
+            "anchor": "profile:patreon.refresh-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 36
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:patreon.refresh-error-title",
+      "source": "Refresh Error",
+      "context": {
+        "description": "Safe profile-page error message for patreon refresh error title.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 167,
+            "anchor": "profile:patreon.refresh-error-title"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 37
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:patreon.refresh-reconnect-error",
+      "source": "Unable to refresh your Patreon information. Unlink and relink your Patreon account, then try again.",
+      "context": {
+        "description": "Safe profile-page error message for patreon refresh reconnect error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 172,
+            "anchor": "profile:patreon.refresh-reconnect-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 38
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:patreon.refresh-success",
+      "source": "Patreon account information refreshed",
+      "context": {
+        "description": "User-facing text for the profile patreon refresh success control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 74,
+            "anchor": "profile:patreon.refresh-success"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 39
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.storage.action",
+      "source": "Manage Images",
+      "context": {
+        "description": "Button or link that applies the profile patreon storage control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 287,
+            "anchor": "profile:patreon.storage.action"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 40
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.storage.heading",
+      "source": "Storage Usage",
+      "context": {
+        "description": "Heading that identifies the profile patreon storage control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 236,
+            "anchor": "profile:patreon.storage.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 41
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.storage.low",
+      "source": "Storage space is running low. Consider freeing up space.",
+      "context": {
+        "description": "User-facing text for the profile patreon storage low control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 281,
+            "anchor": "profile:patreon.storage.low"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 42
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.storage.low-with-upgrade",
+      "source": "Storage space is running low. Consider upgrading your tier or freeing up space.",
+      "context": {
+        "description": "User-facing text for the profile patreon storage low with upgrade control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 278,
+            "anchor": "profile:patreon.storage.low-with-upgrade"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 43
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.storage.unlimited-usage",
+      "source": "{{consumed}} {{consumedUnit}} used with no storage limit",
+      "context": {
+        "description": "User-facing text for the profile patreon storage unlimited usage control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {
+          "consumed": {
+            "type": "number",
+            "meaning": "Locale-formatted amount of image storage currently used.",
+            "example": "1.25",
+            "userAuthored": false
+          },
+          "consumedUnit": {
+            "type": "enum",
+            "meaning": "Storage unit abbreviation for the consumed amount.",
+            "example": "GB",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 248,
+            "anchor": "profile:patreon.storage.unlimited-usage"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 44
+          }
+        ],
+        "doNotTranslate": [
+          "{{consumed}}",
+          "{{consumedUnit}}"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.storage.usage",
+      "source": "{{consumed}} {{consumedUnit}} used of {{maximum}} {{maximumUnit}}",
+      "context": {
+        "description": "Storage usage sentence containing locale-formatted amounts and their unit abbreviations.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {
+          "consumed": {
+            "type": "number",
+            "meaning": "Locale-formatted amount of image storage currently used.",
+            "example": "1.25",
+            "userAuthored": false
+          },
+          "consumedUnit": {
+            "type": "enum",
+            "meaning": "Storage unit abbreviation for the consumed amount.",
+            "example": "GB",
+            "userAuthored": false
+          },
+          "maximum": {
+            "type": "number",
+            "meaning": "Locale-formatted maximum storage amount for the account.",
+            "example": "5",
+            "userAuthored": false
+          },
+          "maximumUnit": {
+            "type": "enum",
+            "meaning": "Storage unit abbreviation for the maximum amount.",
+            "example": "GB",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 256,
+            "anchor": "profile:patreon.storage.usage"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 45
+          }
+        ],
+        "doNotTranslate": [
+          "{{consumed}}",
+          "{{consumedUnit}}",
+          "{{maximum}}",
+          "{{maximumUnit}}"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.cooldown",
+      "source": "Cooldown: {{remaining}}",
+      "context": {
+        "description": "User-facing text for the profile patreon table tokens cooldown control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {
+          "remaining": {
+            "type": "string",
+            "meaning": "Locale-formatted relative duration until the table token can be assigned again.",
+            "example": "in 3 days",
+            "userAuthored": false
+          }
+        },
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "The relative duration is already formatted for the viewer locale."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 329,
+            "anchor": "profile:patreon.table-tokens.cooldown"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 46
+          }
+        ],
+        "doNotTranslate": [
+          "{{remaining}}"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.description",
+      "source": "Table tokens enable your Patreon benefits for a game table. Each token can be assigned up to twice during a 7-day cooldown period.",
+      "context": {
+        "description": "Explains how Patreon table tokens grant benefits and how often they can be reassigned.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 194,
+            "anchor": "profile:patreon.table-tokens.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 47
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.heading",
+      "source": "Table Tokens",
+      "context": {
+        "description": "Heading that identifies the profile patreon table tokens control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 191,
+            "anchor": "profile:patreon.table-tokens.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 48
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.not-assigned",
+      "source": "Not Assigned",
+      "context": {
+        "description": "User-facing text for the profile patreon table tokens not assigned control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 315,
+            "anchor": "profile:patreon.table-tokens.not-assigned"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 49
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.pending",
+      "source": "Pending",
+      "context": {
+        "description": "User-facing text for the profile patreon table tokens pending control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 327,
+            "anchor": "profile:patreon.table-tokens.pending"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 50
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.unlink-action",
+      "source": "Unlink Token",
+      "context": {
+        "description": "User-facing text for the profile patreon table tokens unlink action control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 369,
+            "anchor": "profile:patreon.table-tokens.unlink-action"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 51
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.unlink-description",
+      "source": "Are you sure you want to unlink this table token? The game table will immediately lose the benefits provided by this token.",
+      "context": {
+        "description": "Confirmation copy explaining the effect of patreon table tokens unlink description.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 359,
+            "anchor": "profile:patreon.table-tokens.unlink-description"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 52
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct and cautionary"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.unlink-error",
+      "source": "Unable to unlink the table token. Please try again.",
+      "context": {
+        "description": "Safe profile-page error message for patreon table tokens unlink error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 342,
+            "anchor": "profile:patreon.table-tokens.unlink-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 53
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.unlink-success",
+      "source": "Table token unlinked",
+      "context": {
+        "description": "User-facing text for the profile patreon table tokens unlink success control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 338,
+            "anchor": "profile:patreon.table-tokens.unlink-success"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 54
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.table-tokens.unlink-title",
+      "source": "Unlink Table Token",
+      "context": {
+        "description": "User-facing text for the profile patreon table tokens unlink title control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 357,
+            "anchor": "profile:patreon.table-tokens.unlink-title"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 55
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.tier-label",
+      "source": "Tier:",
+      "context": {
+        "description": "Label or prompt for the profile patreon tier label control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 105,
+            "anchor": "profile:patreon.tier-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 56
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.unlink-description",
+      "source": "Are you sure you want to unlink your Patreon account? This will remove the benefits and table tokens received from that account.",
+      "context": {
+        "description": "Confirmation copy explaining the effect of patreon unlink description.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 132,
+            "anchor": "profile:patreon.unlink-description"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 57
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct and cautionary"
+      }
+    },
+    {
+      "id": "profile:patreon.unlink-error",
+      "source": "Unable to unlink your Patreon account. Please try again.",
+      "context": {
+        "description": "Safe profile-page error message for patreon unlink error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 183,
+            "anchor": "profile:patreon.unlink-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 58
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:patreon.unlink-success",
+      "source": "Patreon unlinked",
+      "context": {
+        "description": "User-facing text for the profile patreon unlink success control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 80,
+            "anchor": "profile:patreon.unlink-success"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 59
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:patreon.unlink-title",
+      "source": "Unlink Patreon",
+      "context": {
+        "description": "User-facing text for the profile patreon unlink title control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The Patreon account card or one of its conditional states is visible.",
+        "screenshot": null,
+        "translatorNotes": [
+          "Patreon is a product name. Keep it unchanged."
+        ],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/patreon.tsx",
+            "line": 130,
+            "anchor": "profile:patreon.unlink-title"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 60
+          }
+        ],
+        "doNotTranslate": [
+          "Patreon"
+        ],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:sign-out.description",
+      "source": "Sign out of your account on this device",
+      "context": {
+        "description": "Supporting copy that explains the profile sign out control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 204,
+            "anchor": "profile:sign-out.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 61
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:sign-out.heading",
+      "source": "Sign Out",
+      "context": {
+        "description": "Heading that identifies the profile sign out control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 202,
+            "anchor": "profile:sign-out.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 62
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:tags.action",
+      "source": "Manage Tags",
+      "context": {
+        "description": "Button or link that applies the profile tags control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 194,
+            "anchor": "profile:tags.action"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 63
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:tags.description",
+      "source": "Manage your tags for the data library",
+      "context": {
+        "description": "Supporting copy that explains the profile tags control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 190,
+            "anchor": "profile:tags.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 64
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:tags.heading",
+      "source": "Tags",
+      "context": {
+        "description": "Heading that identifies the profile tags control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The signed-in user is viewing the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/profile.tsx",
+            "line": 188,
+            "anchor": "profile:tags.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 65
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:username-dialog.action",
+      "source": "Change Username",
+      "context": {
+        "description": "Button or link that applies the profile username dialog control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The change-username dialog is open or the username update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 80,
+            "anchor": "profile:username-dialog.action"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 66
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:username-dialog.description",
+      "source": "Change your username",
+      "context": {
+        "description": "Supporting copy that explains the profile username dialog control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "body",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 260,
+        "route": "/user/profile",
+        "state": "The change-username dialog is open or the username update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 54,
+            "anchor": "profile:username-dialog.description"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 67
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:username-dialog.error",
+      "source": "Unable to change your username. Please try again.",
+      "context": {
+        "description": "Safe profile-page error message for username dialog error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The change-username dialog is open or the username update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 64,
+            "anchor": "profile:username-dialog.error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 68
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:username-dialog.in-use-error",
+      "source": "That username is already in use.",
+      "context": {
+        "description": "Safe profile-page error message for username dialog in use error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The change-username dialog is open or the username update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 63,
+            "anchor": "profile:username-dialog.in-use-error"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 69
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:username-dialog.new-label",
+      "source": "New Username",
+      "context": {
+        "description": "Label or prompt for the profile username dialog new label control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The change-username dialog is open or the username update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 71,
+            "anchor": "profile:username-dialog.new-label"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 70
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:username-dialog.success",
+      "source": "Username updated",
+      "context": {
+        "description": "Confirmation shown after the profile username dialog control or state succeeds.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The change-username dialog is open or the username update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 28,
+            "anchor": "profile:username-dialog.success"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 71
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "profile:username-dialog.title",
+      "source": "Change Username",
+      "context": {
+        "description": "Dialog or card title that identifies the profile username dialog control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The change-username dialog is open or the username update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 51,
+            "anchor": "profile:username-dialog.title"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 72
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "profile:username-dialog.validation",
+      "source": "Username is required",
+      "context": {
+        "description": "Validation feedback for the profile username dialog control or state.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "validation",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The change-username dialog is open or the username update has completed.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/modals/change-username-modal.tsx",
+            "line": 72,
+            "anchor": "profile:username-dialog.validation"
+          },
+          {
+            "path": "packages/i18n/locales/en/profile.json",
+            "line": 73
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "settings:account.error",
+      "source": "Unable to update your settings. Please try again.",
+      "context": {
+        "description": "Safe message shown when account settings cannot be saved: account error.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 121,
+            "anchor": "settings:account.error"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 2
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "settings:account.heading",
+      "source": "Account Settings",
+      "context": {
+        "description": "Heading that identifies the account settings account control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "heading",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 42,
+            "anchor": "settings:account.heading"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 114,
+            "anchor": "settings:account.heading"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 3
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "settings:account.save",
+      "source": "Save Settings",
+      "context": {
+        "description": "Button or link that applies the account settings account save control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "button",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 40,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 255,
+            "anchor": "settings:account.save"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 4
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "settings:account.success",
+      "source": "Settings updated",
+      "context": {
+        "description": "Confirmation shown after the account settings account control succeeds.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "notification",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 180,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 89,
+            "anchor": "settings:account.success"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 5
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Calm and direct"
+      }
+    },
+    {
+      "id": "settings:dice-shorthand.label",
+      "source": "Dice Shorthand Style",
+      "context": {
+        "description": "Label or prompt for the account settings dice shorthand control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 51,
+            "anchor": "settings:dice-shorthand.label"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 158,
+            "anchor": "settings:dice-shorthand.label"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 6
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "settings:dice-shorthand.placeholder",
+      "source": "Select a shorthand style",
+      "context": {
+        "description": "Label or prompt for the account settings dice shorthand placeholder control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 163,
+            "anchor": "settings:dice-shorthand.placeholder"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 7
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "settings:dice-theme.label",
+      "source": "Dice Theme",
+      "context": {
+        "description": "Label or prompt for the account settings dice theme control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 47,
+            "anchor": "settings:dice-theme.label"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 132,
+            "anchor": "settings:dice-theme.label"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 8
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "settings:dice-theme.placeholder",
+      "source": "Select a dice theme",
+      "context": {
+        "description": "Label or prompt for the account settings dice theme placeholder control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 136,
+            "anchor": "settings:dice-theme.placeholder"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 9
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
       "id": "settings:game-language.description",
       "source": "Sets the language for newly generated shared game output. Existing game history is not changed.",
       "context": {
@@ -1088,7 +6729,7 @@
           },
           {
             "path": "packages/i18n/locales/en/settings.json",
-            "line": 7
+            "line": 15
           }
         ],
         "doNotTranslate": [],
@@ -1128,7 +6769,7 @@
           },
           {
             "path": "packages/i18n/locales/en/settings.json",
-            "line": 5
+            "line": 13
           }
         ],
         "doNotTranslate": [],
@@ -1167,7 +6808,7 @@
           },
           {
             "path": "packages/i18n/locales/en/settings.json",
-            "line": 6
+            "line": 14
           }
         ],
         "doNotTranslate": [],
@@ -1206,12 +6847,12 @@
         "sourceLocations": [
           {
             "path": "apps/web-ui/src/features/user/sections/settings.tsx",
-            "line": 228,
+            "line": 245,
             "anchor": "settings:language.description"
           },
           {
             "path": "packages/i18n/locales/en/settings.json",
-            "line": 3
+            "line": 11
           }
         ],
         "doNotTranslate": [],
@@ -1250,12 +6891,12 @@
         "sourceLocations": [
           {
             "path": "apps/web-ui/src/features/user/sections/settings.tsx",
-            "line": 195,
+            "line": 212,
             "anchor": "settings:language.label"
           },
           {
             "path": "packages/i18n/locales/en/settings.json",
-            "line": 2
+            "line": 10
           }
         ],
         "doNotTranslate": [],
@@ -1308,12 +6949,12 @@
           },
           {
             "path": "apps/web-ui/src/features/user/sections/settings.tsx",
-            "line": 215,
+            "line": 232,
             "anchor": "settings:language.preview-option"
           },
           {
             "path": "packages/i18n/locales/en/settings.json",
-            "line": 4
+            "line": 12
           }
         ],
         "doNotTranslate": [
@@ -1324,6 +6965,79 @@
           "settings:language.description"
         ],
         "tone": "Concise and transparent"
+      }
+    },
+    {
+      "id": "settings:site-theme.label",
+      "source": "Site Theme",
+      "context": {
+        "description": "Label or prompt for the account settings site theme control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 55,
+            "anchor": "settings:site-theme.label"
+          },
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 184,
+            "anchor": "settings:site-theme.label"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 16
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
+      }
+    },
+    {
+      "id": "settings:site-theme.placeholder",
+      "source": "Select a theme",
+      "context": {
+        "description": "Label or prompt for the account settings site theme placeholder control.",
+        "surface": "web",
+        "audience": "personal",
+        "uiRole": "label",
+        "placeholders": {},
+        "formatting": {
+          "kind": "plain-text",
+          "preserveWhitespace": false
+        },
+        "maxLength": 64,
+        "route": "/user/profile",
+        "state": "The Account Settings card is visible on the profile page.",
+        "screenshot": null,
+        "translatorNotes": [],
+        "sourceLocations": [
+          {
+            "path": "apps/web-ui/src/features/user/sections/settings.tsx",
+            "line": 188,
+            "anchor": "settings:site-theme.placeholder"
+          },
+          {
+            "path": "packages/i18n/locales/en/settings.json",
+            "line": 17
+          }
+        ],
+        "doNotTranslate": [],
+        "relatedKeys": [],
+        "tone": "Direct"
       }
     }
   ]

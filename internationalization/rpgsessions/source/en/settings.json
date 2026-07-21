@@ -1,8 +1,18 @@
 {
+  "account.error": "Unable to update your settings. Please try again.",
+  "account.heading": "Account Settings",
+  "account.save": "Save Settings",
+  "account.success": "Settings updated",
+  "dice-shorthand.label": "Dice Shorthand Style",
+  "dice-shorthand.placeholder": "Select a shorthand style",
+  "dice-theme.label": "Dice Theme",
+  "dice-theme.placeholder": "Select a dice theme",
   "game-language.description": "Sets the language for newly generated shared game output. Existing game history is not changed.",
   "game-language.label": "Game Language",
   "game-language.placeholder": "Select a language",
   "language.description": "Language for app labels. Your characters keep their own skill names.",
   "language.label": "Language",
-  "language.preview-option": "{{languageName}} (Preview)"
+  "language.preview-option": "{{languageName}} (Preview)",
+  "site-theme.label": "Site Theme",
+  "site-theme.placeholder": "Select a theme"
 }

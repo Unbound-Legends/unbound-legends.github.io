@@ -12,7 +12,7 @@ After reviewing every nonempty translation in the exact PO snapshot, a locale re
 {
   "schemaVersion": 2,
   "locale": "fr",
-  "sourceRevision": "catalogs@2026-07-16.i18n-foundation-2",
+  "sourceRevision": "catalogs@2026-07-20.profile-page-1",
   "sourceDigest": "sha256:d50f33526842ca0c8e7c608935161cb8509d625618bcd38e18c3d3e9d29e9395",
   "poSha256": "<generated content hash>",
   "provenance": "human",

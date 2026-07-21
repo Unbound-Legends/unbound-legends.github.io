@@ -2,7 +2,7 @@
 
 English source strings for the maps namespace.
 
-Source revision: `catalogs@2026-07-16.i18n-foundation-2`
+Source revision: `catalogs@2026-07-20.profile-page-1`
 
 Source digest: `sha256:d50f33526842ca0c8e7c608935161cb8509d625618bcd38e18c3d3e9d29e9395`
 

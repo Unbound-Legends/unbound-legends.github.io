@@ -1,1 +1,10 @@
-{}
+{
+  "actions.cancel": "Cancel",
+  "actions.done": "Done",
+  "actions.edit": "Edit",
+  "actions.link": "Link",
+  "actions.refresh": "Refresh",
+  "actions.sign-out": "Sign Out",
+  "actions.unlink": "Unlink",
+  "feedback.error-title": "Error"
+}
