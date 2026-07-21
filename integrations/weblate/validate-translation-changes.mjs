@@ -4,7 +4,7 @@ import { spawnSync } from "node:child_process";
 import { pathToFileURL } from "node:url";
 
 const MANAGED_TRANSLATION_PATH =
-  /^internationalization\/rpgsessions\/translations\/(?:fr|es)\/(?:common|discord|email|enums|game-table|settings)\.json$|^internationalization\/rpgsessions\/translations\/(?:fr|es)\/maps\.po$/;
+  /^internationalization\/rpgsessions\/translations\/(?:fr|es)\/(?:(?:[a-z][a-z0-9]*(?:-[a-z0-9]+)*)\.json|maps\.po)$/;
 
 export function validateWeblateChanges(changes) {
   const issues = [];
