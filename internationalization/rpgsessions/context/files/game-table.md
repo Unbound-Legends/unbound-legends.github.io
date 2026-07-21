@@ -2,9 +2,9 @@
 
 English source strings for the game-table namespace.
 
-Source revision: `catalogs@2026-07-16.i18n-foundation-2`
+Source revision: `catalogs@2026-07-20.profile-page-1`
 
-Source digest: `sha256:2100df7cd6a8bce5baa0ac23670ec5747f9d1fb876e490ab18fc78ba7b3bd227`
+Source digest: `sha256:8ec2afa9197c7b8010c7789caac0ab813b20f3516624eac9bd99ef94bf5456b9`
 
 ## `game-table:initiative.label`
 

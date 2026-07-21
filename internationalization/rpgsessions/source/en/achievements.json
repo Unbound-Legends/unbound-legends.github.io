@@ -1,0 +1,6 @@
+{
+  "summary.action": "View All Achievements",
+  "summary.heading": "Achievements",
+  "summary.unlocked_one": "{{unlockedCount}} of {{totalCount}} unlocked",
+  "summary.unlocked_other": "{{unlockedCount}} of {{totalCount}} unlocked"
+}
