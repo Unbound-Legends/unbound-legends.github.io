@@ -6,6 +6,13 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2026-07-21 01:04+0000\n"
+"Last-Translator: Admin <info@unboundlegends.com>\n"
+"Language-Team: French <https://weblate-"
+"q12rfqnl0m9xi9b5a2b9qsar.production.unboundlegends.com/projects/rpgsessions/"
+"maps/fr/>\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2026.7.1\n"
 
 #. Key: maps:wall-mode.add.tooltip
 #. Context: Tooltip for switching the wall editor into add mode.
@@ -49,7 +56,7 @@ msgstr ""
 #. Context: Tooltip for the default pointer tool. Keep the V shortcut unchanged.
 #: scenes/ToolContainer/tool_container.tscn:721
 msgid "Pointer Tool (V)"
-msgstr ""
+msgstr "Outil de sélection (V)"
 
 #. Key: maps:toolbar.ping.tooltip
 #. Context: Tooltip for the map ping tool. Keep P, Alt-click, and Alt-drag unchanged. Preserve line breaks.
