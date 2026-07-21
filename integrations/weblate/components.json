@@ -19,6 +19,22 @@
   },
   "components": [
     {
+      "slug": "access-tokens",
+      "format": "i18nextv4",
+      "fileMask": "internationalization/rpgsessions/translations/*/access-tokens.json",
+      "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/access-tokens.json",
+      "templateForNewTranslations": null,
+      "repositoryOwner": false
+    },
+    {
+      "slug": "achievements",
+      "format": "i18nextv4",
+      "fileMask": "internationalization/rpgsessions/translations/*/achievements.json",
+      "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/achievements.json",
+      "templateForNewTranslations": null,
+      "repositoryOwner": false
+    },
+    {
       "slug": "settings",
       "format": "i18nextv4",
       "fileMask": "internationalization/rpgsessions/translations/*/settings.json",
@@ -32,8 +48,7 @@
       "fileMask": "internationalization/rpgsessions/translations/*/common.json",
       "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/common.json",
       "templateForNewTranslations": null,
-      "repositoryOwner": false,
-      "activation": "defer-while-source-empty"
+      "repositoryOwner": false
     },
     {
       "slug": "discord",
@@ -79,6 +94,14 @@
       "fileFormatParameters": {
         "po_remove_obsolete": true
       }
+    },
+    {
+      "slug": "profile",
+      "format": "i18nextv4",
+      "fileMask": "internationalization/rpgsessions/translations/*/profile.json",
+      "monolingualBaseLanguageFile": "internationalization/rpgsessions/source/en/profile.json",
+      "templateForNewTranslations": null,
+      "repositoryOwner": false
     }
   ]
 }

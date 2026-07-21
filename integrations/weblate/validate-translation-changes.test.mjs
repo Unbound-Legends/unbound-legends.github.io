@@ -25,12 +25,24 @@ test("parses NUL-delimited Git name-status output without treating paths as shel
   );
 });
 
-test("accepts only additions and modifications to the managed French and Spanish catalogs", () => {
+test("accepts additions and modifications to conventionally named French and Spanish catalogs", () => {
   assert.deepEqual(
     validateWeblateChanges([
       {
         status: "M",
         path: "internationalization/rpgsessions/translations/fr/settings.json",
+      },
+      {
+        status: "A",
+        path: "internationalization/rpgsessions/translations/fr/access-tokens.json",
+      },
+      {
+        status: "A",
+        path: "internationalization/rpgsessions/translations/es/achievements.json",
+      },
+      {
+        status: "A",
+        path: "internationalization/rpgsessions/translations/es/profile.json",
       },
       {
         status: "A",
@@ -65,12 +77,28 @@ test("rejects deletion or rename of every Weblate-managed translation file", () 
   );
 });
 
-test("rejects changes outside the exact active catalog allowlist", () => {
+test("rejects changes outside the locale-scoped catalog convention", () => {
   assert.deepEqual(
     validateWeblateChanges([
       {
         status: "M",
         path: "internationalization/rpgsessions/translations/fr/_provenance.json",
+      },
+      {
+        status: "A",
+        path: "internationalization/rpgsessions/translations/fr/profile_draft.json",
+      },
+      {
+        status: "A",
+        path: "internationalization/rpgsessions/translations/fr/profile/heading.json",
+      },
+      {
+        status: "A",
+        path: "internationalization/rpgsessions/translations/de/profile.json",
+      },
+      {
+        status: "A",
+        path: "internationalization/rpgsessions/translations/es/profile.po",
       },
       {
         status: "M",
@@ -79,6 +107,10 @@ test("rejects changes outside the exact active catalog allowlist", () => {
     ]),
     [
       "Weblate may not modify: internationalization/rpgsessions/translations/fr/_provenance.json",
+      "Weblate may not modify: internationalization/rpgsessions/translations/fr/profile_draft.json",
+      "Weblate may not modify: internationalization/rpgsessions/translations/fr/profile/heading.json",
+      "Weblate may not modify: internationalization/rpgsessions/translations/de/profile.json",
+      "Weblate may not modify: internationalization/rpgsessions/translations/es/profile.po",
       "Weblate may not modify: internationalization/rpgsessions/source/en/settings.json",
     ],
   );
